@@ -1,0 +1,142 @@
+
+body{
+    background-color: black;
+}
+
+.main-net{
+    background: url('../img/fondo2.jpg');
+    height: 580px;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: -1;
+    
+}
+
+.letras{
+    height: 45px;
+    width: 167px; 
+    margin-top: 18px;
+    margin-left: 150px;
+}
+
+.btn-i-s{
+    background-color: #e50914;
+    color: #ffffff;
+    float: right;
+    margin: 18px 3% 0 3%;
+    padding: 4px 17px 4px 17px;
+    font-weight: 400;
+    font-size: 16px;
+    border-radius: 3px;
+}
+
+.btn-p-g{
+    background-color: #e50914;
+    color: #ffffff;
+    font-size: 30px;
+    margin: 30px 0;
+    border-radius: 2px!important;
+    height: 90px;
+    width: 600px;
+}
+
+.btn-p-g-2{
+    background-color: #e50914;
+    color: #ffffff;
+    font-size: 14px;
+    margin: 30px 0;
+    border-radius: 2px!important;
+    height: 45px;
+    width: 250px;
+}
+
+.white-text{
+    color: #ffffff;
+}
+
+.h1{
+    font-size: 80px;
+    /*font-family: 'Staatliches';*/
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700!important;
+}
+
+.h4{
+    font-size: 30px;
+    font-family: 'Staatliches';
+    font-weight: 400!important;
+}
+
+.texto{
+    margin: 80px 0 0 0;
+}
+
+.middle-net{
+    background-color: #171717;
+    height: 180px;
+}
+
+.mt-30{
+    margin-top: 30px;
+}
+
+/*centrar contenido*/ 
+.column{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center; 
+}
+
+.txt-55{
+    font-size: 55px;
+}
+
+.txt-32{
+    font-size: 32px;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 35px;
+    word-spacing: 1px;
+}
+
+.txt-22{
+    font-size: 22px;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 35px;
+    word-spacing: 1px;
+}
+
+.center-text{
+    text-align: center;
+}
+
+/*.icon-content{
+    height: 600px;
+}*/
+
+.door-content{
+    padding: 40px 150px 510px 150px;
+    height: 200px;
+}
+
+.tv-content{
+    padding: 40px 150px 510px 150px;
+    height: 600px;
+}
+
+.tag-content{
+    padding: 40px 200px 510px 200px;
+    height: 650px;
+}
+
+.d-none{
+    display: none;
+}
+
+.d-block{
+    display: block;
+}
