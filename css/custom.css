@@ -137,6 +137,10 @@ body{
     display: none;
 }
 
-.d-block{
-    display: block;
+.d-flex{
+    display: flex;
+}
+
+#icon:hover{
+    color:white;
 }
