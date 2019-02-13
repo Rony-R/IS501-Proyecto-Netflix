@@ -119,8 +119,8 @@ body{
 }*/
 
 .door-content{
-    padding: 40px 150px 510px 150px;
-    height: 200px;
+    padding: 30px 150px 400px 150px;
+    height: 150px;
 }
 
 .tv-content{
@@ -143,4 +143,17 @@ body{
 
 #icon:hover{
     color:white;
+}
+
+.no-m-p{
+    margin: 0px 0px !important;
+    padding: 0px 0px !important;
+}
+
+.margin-footer{
+    margin: 20px 150px 30px 100px;
+}
+
+.txt-sub:hover{
+    text-decoration: underline;
 }
