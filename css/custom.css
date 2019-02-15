@@ -157,3 +157,60 @@ body{
 .txt-sub:hover{
     text-decoration: underline;
 }
+
+.margin-footer2{
+    padding: 20px 150px 80px 200px;
+}
+
+.btn-i-s-2{
+    background-color: #e50914;
+    color: #ffffff;
+    float: right;
+    font-weight: 400;
+    font-size: 16px;
+    border-radius: 3px;
+}
+
+.bd-2{
+    background: url('../img/fondo1.jpg');
+}
+
+.letras2{
+    height: 45px;
+    width: 167px; 
+    margin-top: 25px;
+    margin-left: 50px;
+}
+
+.bg-dark{
+    border-color: #000000!important;
+}
+
+.form-sesion{
+    width: 450px;
+    height: 580px;
+    background-color: rgba(0,0,0,.75);
+    padding: 60px 68px 40px 68px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.c-blue{
+    color: rgb(3, 0, 255);
+}
+
+.footer-sesion{
+    background-color: rgba(0,0,0,.75);
+}
+
+.no-pd-r{
+    padding-right: 0px !important;
+}
+
+.no-pd-l{
+    padding-left: 0px !important;
+}
+
+.mt-150{
+    margin-top: 150px;
+}

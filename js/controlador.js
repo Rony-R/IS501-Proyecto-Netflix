@@ -30,3 +30,7 @@ function contenidoIcono(idContenido){
         }
     }
 }
+
+$("#btn-iniciar-sesion").click(function(){
+    window.location.href="sesion.html";
+});
