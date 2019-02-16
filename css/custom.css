@@ -4,14 +4,14 @@ body{
 }
 
 .main-net{
-    background: url('../img/fondo2.jpg');
+    background: url('../img/fondo4.jpg');
     height: 580px;
     background-size: cover;
     align-items: center;
     justify-content: center;
     text-align: center;
     z-index: -1;
-    
+
 }
 
 .letras{
@@ -169,6 +169,9 @@ body{
     font-weight: 400;
     font-size: 16px;
     border-radius: 3px;
+    width: 315px;
+    height: 55px;
+    margin-left: 15px;
 }
 
 .bd-2{
@@ -188,7 +191,7 @@ body{
 
 .form-sesion{
     width: 450px;
-    height: 580px;
+    height: 640px;
     background-color: rgba(0,0,0,.75);
     padding: 60px 68px 40px 68px;
     margin-left: auto;
@@ -200,7 +203,7 @@ body{
 }
 
 .footer-sesion{
-    background-color: rgba(0,0,0,.75);
+    background-color: rgba(0,0,0,.85);
 }
 
 .no-pd-r{
@@ -211,6 +214,48 @@ body{
     padding-left: 0px !important;
 }
 
-.mt-150{
-    margin-top: 150px;
+.mt-100{
+    margin-top: 100px;
+}
+
+.cover{
+    background-color: rgba(0,0,0,.65);
+    height: 580px;
+}
+
+.cover2{
+    background-color: rgba(0,0,0,.55);
+    padding-bottom: 3rem;
+}
+
+.ml-lb{
+    margin-left: 37px;
+}
+
+.ml-ayu{
+    margin-left: 80px;
+}
+
+.valido{
+    border-bottom-color: rgb(0, 251, 0) !important;
+}
+
+.invalido{
+    border-bottom-color: #e87c03 !important;
+}
+
+.naranja{
+    color: #e87c03;
+}
+
+.verde{
+    color: rgb(0, 251, 0);
+}
+
+.fnt-700{
+    font-weight: 700;
+}
+
+.ht-input{
+    height: 50px !important;
 }

@@ -12,42 +12,56 @@
 </head>
 <body class="bd-2">
 
-    <div class="main-continer mb-5">
+    <div class="main-continer">
 
-        <div class="top-sesion">
-            <a href="index.html" class="net-logo-sesion">
-                <img src="img/letras.png" class="letras2">
-            </a>
-        </div>
-
-        <div class="form-sesion">
-            <div class="sign-up">
-                <p class="white-text txt-32 mb-4">Inicia Sesión</p>
-            </div>
-            <div class="inputs">
-                <input type="text" placeholder="Email o número de teléfono" class="form-control bg-dark mb-3">
-                <input type="password" placeholder="Contraseña" class="form-control bg-dark mb-5">
-            </div>
-            <div class="div-boton-inicio">
-                <button id="btn-iniciar-sesion"  type="button" class="btn btn-i-s-2 form-control">
-                    Iniciar Sesión
-                </button>
-            </div>
-            <div class="low-content">
-                <input type="checkbox" class="form-check-input" id="remeber-chk">
-                <label class="form-check-label white-text" for="exampleCheck1">Remember me</label>
+        <div class="cover2">
+            <div class="top-sesion">
+                <a href="index.html" class="net-logo-sesion">
+                    <img src="img/letras.png" class="letras2">
+                </a>
             </div>
 
-            <footer class="mt-150">
-                <div class="row">
-                    <i class="col-lg-2 fab fa-facebook-square c-blue no-pd-r mt-1"></i>
-                    <p class="col-lg-10 white-text no-pd-l">Iniciar sesión con Facebook</p>
+            <div class="form-sesion">
+
+                <div class="sign-up">
+                    <p class="white-text txt-32 mb-4 fnt-700">Inicia Sesión</p>
                 </div>
-                <div class="row">
-                    <p class="white-text">¿Primera vez en Netflix? Suscribete ya.</p>
-                </div>
-            </footer>
 
+                <div class="inputs">
+                    <input id="input-correo" type="text" placeholder="Email o número de teléfono" onkeydown="validarEmail('input-correo')" class="form-control bg-dark mb-3 white-text ht-input">
+                    <div id="correo-correcto" class="d-none verde">Correo Valido</div>
+                    <div id="correo-incorrecto" class="d-none naranja">Correo Invalido</div>
+                    <input id="input-contra" type="password" onkeydown="validarContrasena(this)" placeholder="Contraseña" class="form-control bg-dark white-text ht-input">
+                    <div id="contra-correcta" class="d-none verde">Correcto</div>
+                    <div id="contra-incorrecta" class="d-none naranja">Debe tener mas de 8 caracteres</div>
+                    
+                </div>
+
+                <div class="div-boton-inicio row">
+                    <button id="btn-iniciar-sesion-2"  type="button" class="btn btn-i-s-2 form-control mt-5">
+                        Iniciar Sesión
+                    </button>
+                </div>
+
+                <div class="low-content">
+                    <div class="row mt-3">
+                        <input type="checkbox" class="form-check-input ml-3" id="remeber-chk">
+                        <label class="form-check-label white-text ml-lb" for="exampleCheck1">Recuérdame</label>
+                        <p class="white-text txt-sub ml-ayu">¿Necesitas ayuda?</p>
+                    </div>
+                </div>
+
+                <div class="mt-100 ps-fx">
+                    <div class="row">
+                        <i class="col-lg-2 fab fa-facebook-square c-blue no-pd-r mt-1 txt-22"></i>
+                        <p class="col-lg-10 white-text no-pd-l">Iniciar sesión con Facebook</p>
+                    </div>
+                    <div class="row">
+                        <p class="white-text">¿Primera vez en Netflix? Suscribete ya.</p>
+                    </div>
+                </div>
+
+            </div>
         </div>
 
     </div>
@@ -71,6 +85,10 @@
         </div>
 
     </footer>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/controlador.js"></script>
     
 </body>
 </html>
