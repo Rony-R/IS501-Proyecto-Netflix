@@ -1,0 +1,78 @@
+html {
+    font-size: 14px;
+  }
+  @media (min-width: 768px) {
+    html {
+      font-size: 16px;
+    }
+  }
+  
+  .container {
+    max-width: 960px;
+  }
+  
+  .pricing-header {
+    max-width: 700px;
+  }
+  
+  .card-deck .card {
+    min-width: 220px;
+  }
+
+  #a-iniciar-sesion:hover{
+    color: #333;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 90px;
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+ }
+
+ #a-iniciar-sesion{
+  color: #333;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 90px;
+  font-size: 20px;
+}
+
+#head{
+  padding-top: 0% !important;
+  padding-bottom: 0% !important; 
+}
+
+.enlace-gris-footer{
+  font-size: 1em;
+  color: #a6a6a6;
+  font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+ 
+#a-gris-1:hover{
+  color: #a6a6a6;
+  font-size: 13px;
+}
+
+#a-gris-2:hover{
+  color: #a6a6a6;
+  font-size: 13px;
+}
+#a-gris-3:hover{
+  color: #a6a6a6;
+  font-size: 13px;
+}
+#a-gris-4:hover{
+  color: #a6a6a6;
+  font-size: 13px;
+}
+#a-gris-5:hover{
+  color: #a6a6a6;
+  font-size: 13px;
+}
+#a-gris-6:hover{
+  color: #a6a6a6;
+  font-size: 13px;
+}
+
+#a-gris-7:hover{
+  color: #a6a6a6;
+  font-size: 13px;
+}

@@ -138,3 +138,7 @@ var validarCampoVacio = function(id){
   }
 
 };
+
+$("#btn-prueba-gratuita").click(function(){ 
+  window.location ="Registro.html";
+});
