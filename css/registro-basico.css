@@ -6,6 +6,7 @@ html {
       font-size: 16px;
     }
   }
+
   
   .container {
     max-width: 960px;
@@ -36,6 +37,8 @@ html {
   float: right;
   padding-right: 0rem;
 }
+
+
 
 #head{
   padding-top: 0% !important;
@@ -126,4 +129,58 @@ html {
 #row-2-footer{
   margin: 1rem;
   margin-left: 0%;
+}
+
+
+@media (max-width: 768px) {
+    #letras-img {
+      margin: 0.5rem;
+      width: 50%;
+      margin-left: 10%;
+    }
+    #a-iniciar-sesion {
+      font-size: 19px;
+      line-height: 30px;
+      font-size: 15px;
+      float: right; 
+    }
+    .background-select {
+      background: #fff;
+      font-size: 1em;
+      border: 1px solid #a6a6a6;
+  }
+}
+
+.nfSelect {
+    background: #fff;
+    font-size: 16px;
+    height: 48px;
+    border: 1px solid #a6a6a6;
+    -moz-appearance: none;
+    border-radius: 2px;
+    width: 70%;
+    padding: 10px;
+    border-color: transparent;
+    color: #a6a6a6;
+}
+
+.background-select{
+  background: #fff;
+  font-size: 1em;
+  border: 1px solid #a6a6a6;
+}
+
+.select-1::after {
+  background-color: #fff;
+  content: '';
+  position: absolute;
+  pointer-events: none;
+  border: 6px solid;
+      border-top-color: currentcolor;
+      border-right-color: currentcolor;
+      border-bottom-color: currentcolor;
+      border-left-color: currentcolor;
+  border-color: #333 #fff #fff #fff;
+  right: 10px;
+  top: 49%;
 }

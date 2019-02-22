@@ -1,0 +1,47 @@
+.padding-span-texto{
+    padding-top: 0.2rem;
+    padding: 0.2rem !important;
+    
+}
+
+.text-selecciona{
+    font-size: 23px;
+    text-align: center;
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    color: #333;
+    margin: 0 0 .4em;
+    font-weight: bold
+}
+
+.btn-danger {
+    color: #fff;
+    background-color: #e50914;
+    border-color: #e50914;
+    width: 100%;
+    border-radius: 2px;
+    min-height: 48px;
+    font-weight: 400;
+    font-size: 17px;
+}
+
+#btn-ver:hover{
+    background-color: #ec111c;
+}
+
+.red{
+    color: #e50914;
+}
+
+.text-paso{
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 0.8rem !important;
+}
+
+.margin-sup{
+    margin-top: 5rem;
+}
+
+.bold-txt{
+    font-weight: bold;
+}
+
