@@ -184,3 +184,16 @@ html {
   right: 10px;
   top: 49%;
 }
+
+/*btn-red*/
+.btn-danger {
+  color: #fff;
+  background-color: #e50914;
+  border-color: #e50914;
+  width: 100%;
+  border-radius: 2px;
+  min-height: 48px;
+  font-weight: 400;
+  font-size: 17px;
+}
+
