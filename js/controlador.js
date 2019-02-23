@@ -138,3 +138,11 @@ var validarCampoVacio = function(id){
   }
 
 };
+
+$("#btn-manage-profiles").click(function(){
+  window.location.href="manage.html";
+});
+
+$("#btn-done").click(function(){
+  window.location.href="users.html";
+});
