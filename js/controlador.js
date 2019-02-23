@@ -146,3 +146,7 @@ $("#btn-manage-profiles").click(function(){
 $("#btn-done").click(function(){
   window.location.href="users.html";
 });
+
+$("#btn-prueba-gratuita").click(function(){ 
+  window.location ="Registro.html";
+});
