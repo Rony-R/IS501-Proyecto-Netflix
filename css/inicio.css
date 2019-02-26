@@ -64,7 +64,7 @@ html {
 
 #wrapper{
   max-width:100%;
-  padding:50px 75px 50px 45px;
+  padding:0px 55px 0px 55px;
   position:relative;
 }
 
@@ -73,16 +73,15 @@ button:focus {outline:0 !important;}
 .left-controls{
   
   position:absolute;
-  top:0;
+  top:7.8%;
   left:0;
   width:4%;
   height:150px;
   z-index:40;
-  background:#fff;
-  opacity:1;
+  background:rgb(0, 0, 0);
+  opacity:0.8;
   cursor:pointer;
   text-align:center;
-  webkit justify content: center;
   justify-content:center;
   display: webkit box;
   display: webkit flex;
@@ -98,7 +97,7 @@ button:focus {outline:0 !important;}
   align-self:center;
   position:relative;
   height:auto;
-  top:-250px;
+  top:-5px;
   transform-origin: 55% 50%;
   font-style:normal;
   font-weight:400;
@@ -111,23 +110,23 @@ button:focus {outline:0 !important;}
   transition-duration: 0.1s;
   transition-timing-function: ease-out;
   transition-delay: 0s;
-  color:blue;
+  color:white;
   opacity:.1;
 }
 
 
 .right-controls{
   position:absolute;
-  top:0;
+  top:7.8%;
   right:0;
   width:4%;
   height:150px;
   z-index:40;
-  background:#fff;
-  opacity:1;
+  background:rgb(0, 0, 0);
+  opacity:0.8;
   cursor:pointer;
   text-align:center;
-  webkit justify content: center;
+  /*webkit justify content: center;*/
   justify-content:center;
   display: webkit box;
   display: webkit flex;
@@ -142,7 +141,7 @@ button:focus {outline:0 !important;}
   align-self:center;
   position:relative;
   height:auto;
-  top:-250px;
+  top:-5px;
  transform-origin: 55% 50%;
   font-style:normal;
   font-weight:400;
@@ -155,7 +154,7 @@ button:focus {outline:0 !important;}
   transition-duration: 0.1s;
   transition-timing-function: ease-out;
   transition-delay: 0s;
-  color:blue;
+  color:white;
   opacity:.1;
 }
 
@@ -165,8 +164,6 @@ button:focus {outline:0 !important;}
 
 .module-section{
   max-width: 100%;
- 
-  
   overflow: hidden;
   overflow-x:scroll;
   border-left:1px solid #fff;
@@ -177,7 +174,7 @@ button:focus {outline:0 !important;}
 .lista{
 width:600em;
 list-style-type:none;
-padding:50px 0 50px 0;
+padding:15px 0 15px 0;
 
 }
 
@@ -186,12 +183,12 @@ padding:50px 0 50px 0;
 }
 
 .card{
-  width: 25em;
+  width: 23em;
   height:150px;
   background:#fff;
   float:left;
-  margin-right:10px;
-  margin-bottom:50px;
+  margin-right:5px;
+  margin-bottom:10px;
   cursor:pointer;
   transform: scale(1);
   visibility:visible;
