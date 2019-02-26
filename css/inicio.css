@@ -1,0 +1,52 @@
+body{
+    background-color: black;
+    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    color: white;
+    
+}
+
+.letras{
+    width: 100px; 
+    margin-right: 5px;
+    margin-top: 10%;
+    float:left;
+    margin-left: 1%;
+    position: relative;
+    
+}
+
+.nav-margen{
+    margin-top: 0.5%;
+    margin-left: 18px;
+    height: 100%;
+    font-size: 1rem;
+}
+
+.iconos{
+    color:white !important; 
+    font-size:20px; 
+    margin-top:50%;
+    padding-right: 18%;
+}
+
+.descripcion1{
+    position:relative; 
+    width:38%; 
+    padding-top:8%;
+    padding-left: 5%;
+}
+
+
+#btn-1y2{
+    font-weight: bold;
+    font-size: 1em;
+    width: 165px;
+    opacity: 0.5;
+    
+}
+/*-----------------carousel 1-------------------*/
+.carousel1{
+    position:relative; 
+    width:42%; 
+    padding:3.5% 5%;
+}
