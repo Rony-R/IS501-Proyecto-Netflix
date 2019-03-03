@@ -6,17 +6,18 @@
 
 .text-selecciona{
     font-size: 23px;
-    text-align: center;
     font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
     color: #333;
     margin: 0 0 .4em;
     font-weight: bold
-    
+}
+
+.text-selecciona-2{
+    margin: 0rem;
 }
 
 
-
-#btn-ver:hover{
+#btn-continuar:hover{
     background-color: #ec111c;
 }
 
@@ -34,3 +35,23 @@
     font-weight: bold;
 }
 
+
+.margin-sup-1{
+     margin-top: 2rem;
+}
+
+#span-2{
+     font-size: 19px !important;
+}
+
+.text-selecciona-3{
+    font-size: 19px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+#input-correo, #input-contraseña{
+   height: 60px;
+   border: solid 1px #8c8c8c;
+   border-radius: 2px;
+}

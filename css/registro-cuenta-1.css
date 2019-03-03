@@ -1,0 +1,27 @@
+#img-dispositivos{
+    width: 260px;
+    margin-bottom: 5%;
+    
+}
+ 
+
+#div-img-dispositivo{
+    text-align: center;
+}
+
+.text{
+    font-size: 17px;
+    margin: 0%;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.pb-md-4, .py-md-4 {
+    padding-bottom: 0rem !important;
+}
+
+
+.pricing-header {
+
+    padding-top: 1rem !important;
+}

@@ -6,7 +6,8 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v3.8.5">
-    <title>Pricing example · Bootstrap</title>
+    <title>Netflix Honduras</title>
+    <link rel="icon" type="image/png" href="img/favicon.ico">
     <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/pricing/">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/registro-basico.css" rel="stylesheet">
@@ -29,18 +30,37 @@
       <div class="container">    
         <span class="lead text-paso padding-enc ">PASO <span class="bold-txt">1</span> DE <span class="bold-txt">3</span></span>
         <h1 class="lead text-selecciona padding-enc">Selecciona el plan ideal para ti.</h1>
+
+        <div class="row border-bottom-tab padding-bottom-box">
+            <div class="col-12 col-sm-6"></div> 
+            <div class="col-12 col-sm-6">
+                  <div class="row">
+                     <div id="div-basico"  class="col-4 col-sm-3 element-box">
+                        <spam class="white txt-negro element-box-1">Básico</spam>
+                     </div>
+                     <div id="div-estandar" class="col-4 col-sm-3 txt-center element-box">
+                        <spam  class="white txt-negro">Estándar</spam>
+                     </div>
+                 
+                     <div id="div-premium" class="col-4 col-sm-3 txt-center element-box">
+                        <spam class="white txt-negro"> Premiun</spam>
+                     </div>
+                  </div>
+            </div>
+         </div>    
+ 
         <div class="row border-bottom-tab ">
            <div class="col-12 col-sm-6">
               <spam class="txt-negro">Precio mensual cuando termine el mes gratis, el 03‑23‑19</spam>
            </div>
-           <div class="col-4 col-sm-2 txt-center">
-              <spam class="txt-negro element-tab">USD7.99</spam>
+           <div  class="col-4 col-sm-2 txt-center">
+              <spam id="e-1-1" class="txt-negro element-tab">USD7.99</spam>
            </div>
            <div class="col-4 col-sm-2 txt-center">
-              <spam class="txt-negro element-tab ">USD10.99</spam>
+              <spam id="e-1-2" class="txt-negro element-tab ">USD10.99</spam>
            </div>
            <div class="col-4 col-sm-2 txt-center">
-              <spam class="txt-negro element-tab red">USD13.99</spam>
+              <spam id="e-1-3" class="txt-negro element-tab ">USD13.99</spam>
            </div>
         </div>    
 
@@ -50,13 +70,13 @@
                <spam  class="btn-continuar">Disponible en HD</spam>
             </div>
             <div class="col-4 col-sm-2 txt-center">
-               <spam><i class="fas fa-times element-tab"></i></spam>
+               <spam ><i id="e-2-1"  class="fas fa-times element-tab"></i></spam>
             </div>
             <div class="col-4 col-sm-2 txt-center">
-               <spam><i class="fas fa-check element-tab"></i></spam>
+               <spam ><i id="e-2-2" class="fas fa-check element-tab"></i></spam>
             </div>
             <div class="col-4 col-sm-2 txt-center">
-               <spam><i class="fas fa-check element-tab red"></i></spam>
+               <spam ><i id="e-2-3" class="fas fa-check element-tab "></i></spam>
             </div>
          </div>   
          
@@ -65,13 +85,13 @@
                <spam  class="btn-continuar">Disponible en Ultra HD</spam>
             </div>
             <div class="col-4 col-sm-2 txt-center">
-               <spam><i class="fas fa-times element-tab"></i></spam>
+               <spam><i id="e-3-1" class="fas fa-times element-tab"></i></spam>
             </div>
             <div class="col-4 col-sm-2 txt-center">
-               <spam><i class="fas fa-times element-tab"></i></spam>
+               <spam><i id="e-3-2" class="fas fa-times element-tab"></i></spam>
             </div>
             <div class="col-4 col-sm-2 txt-center">
-               <spam><i class="fas fa-check element-tab red"></i></spam>
+               <spam><i id="e-3-3" class="fas fa-check element-tab "></i></spam>
             </div>
          </div>   
         
@@ -80,13 +100,13 @@
                <spam  class="btn-continuar">Pantallas que se pueden ver al mismo tiempoo</spam>
             </div>
             <div class="col-4 col-sm-2 txt-center">
-               <spam class="element-tab">1</spam>
+               <spam id="e-4-1" class="element-tab">1</spam>
             </div>
             <div class="col-4 col-sm-2 txt-center">
-               <spam class="element-tab">2</spam>
+               <spam  id="e-4-2" class="element-tab">2</spam>
             </div>
             <div class="col-4 col-sm-2 txt-center">
-               <spam class="element-tab red">4</spam>
+               <spam id="e-4-3" class="element-tab ">4</spam>
             </div>
          </div>   
 
@@ -95,13 +115,13 @@
                <spam  class="btn-continuar ">Multidispositivo: portátil, TV, teléfono y tableta</spam>
             </div>
             <div class="col-4 col-sm-2 txt-center">
-               <spam><i class="fas fa-check element-tab"></i></spam>
+               <spam><i id="e-5-1" class="fas fa-check element-tab"></i></spam>
             </div>
             <div class="col-4 col-sm-2 txt-center">
-               <spam><i class="fas fa-check element-tab"></i></spam>
+               <spam><i id="e-5-2" class="fas fa-check element-tab"></i></spam>
             </div>
             <div class="col-4 col-sm-2 txt-center">
-               <spam><i class="fas fa-check element-tab red"></i></spam>
+               <spam><i id="e-5-3" class="fas fa-check element-tab "></i></spam>
             </div>
          </div>    
 
@@ -110,13 +130,13 @@
                <spam  class="btn-continuar">Todas las películas y series que desees</spam>
             </div>
             <div class="col-4 col-sm-2 txt-center">
-               <spam><i class="fas fa-check element-tab"></i></spam>
+               <spam><i id="e-6-1" class="fas fa-check element-tab"></i></spam>
             </div>
             <div class="col-4 col-sm-2 txt-center">
-               <spam><i class="fas fa-check element-tab"></i></spam>
+               <spam><i id="e-6-2"  class="fas fa-check element-tab"></i></spam>
             </div>
             <div class="col-4 col-sm-2 txt-center">
-               <spam><i class="fas fa-check element-tab red"></i></spam>
+               <spam><i id="e-6-3"  class="fas fa-check element-tab "></i></spam>
             </div>
          </div> 
 
@@ -125,13 +145,13 @@
                <spam  class="btn-continuar">Cancela cuando quieras.</spam>
             </div>
             <div class="col-4 col-sm-2 txt-center">
-               <spam><i class="fas fa-check element-tab"></i></spam>
+               <spam><i id="e-7-1"  class="fas fa-check element-tab"></i></spam>
             </div>
             <div class="col-4 col-sm-2 txt-center">
-               <spam><i class="fas fa-check element-tab"></i></spam>
+               <spam><i id="e-7-2"  class="fas fa-check element-tab"></i></spam>
             </div>
             <div class="col-4 col-sm-2 txt-center">
-               <spam><i class="fas fa-check element-tab red"></i></spam>
+               <spam><i id="e-7-3"  class="fas fa-check element-tab "></i></spam>
             </div>
          </div> 
 
@@ -140,16 +160,18 @@
                <spam  class="btn-continuar">El primer mes es gratis</spam>
             </div>
             <div class="col-4 col-sm-2 txt-center">
-               <spam><i class="fas fa-check element-tab"></i></spam>
+               <spam><i id="e-8-1"  class="fas fa-check element-tab"></i></spam>
             </div> 
             <div class="col-4 col-sm-2 txt-center">
-               <spam><i class="fas fa-check element-tab"></i></spam>
+               <spam><i id="e-8-2"  class="fas fa-check element-tab"></i></spam>
             </div>
             <div class="col-4 col-sm-2 txt-center">
-               <spam><i class="fas fa-check element-tab red"></i></spam>
+               <spam><i id="e-8-3"  class="fas fa-check element-tab "></i></spam>
             </div>
          </div>
-
+         <span class="text-gray">La disponibilidad de contenido en HD y en Ultra HD depende de la capacidad de tu servicio de Internet y 
+               del dispositivo. No todo el contenido está disponible en HD o en Ultra HD. Consulta los <a href="#">Términos de uso</a>
+              para obtener más información.</span>
       </div>  
       <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center padding-bottom ">
          <div class="row">
@@ -161,8 +183,10 @@
          </div>   
       </div>
 
+      
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/registro-plataforma.js"></script>
 </body>
 <footer class="border-top margin-sup" id ="footer-gray">
     <div class="row">

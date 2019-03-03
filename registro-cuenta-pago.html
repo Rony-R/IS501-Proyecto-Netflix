@@ -12,6 +12,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/registro-basico.css" rel="stylesheet">
     <link href="css/registro-1.css" rel="stylesheet">
+    <link href="css/registro-cuenta-pago.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
   </head>
@@ -26,43 +27,24 @@
                <div class="col-1 col-sm-12 col-md-10">
                </div>    
       </div>
-      <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center margin-sup">
-        <h1 class="display-4"><i class="far fa-check-circle red"></i></h1>
-        <span class="lead text-paso">PASO <span class="bold-txt">1</span> DE <span class="bold-txt">3</span></span>
-        <h1 class="lead text-selecciona">Selecciona tu plan.</h1>
+      <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+        <div id="div-img-lock" ><img id="img-lock" src="img/img-lock.png"></div>
+        <span class="lead text-paso">PASO <span class="bold-txt">3</span> DE <span class="bold-txt">3</span></span>
+        <h1 class="lead text-selecciona">Configura tu pago.</h1>
       </div>
       <div class="container">    
           <div class="row" >
               <div class="col-1 col-sm-2 col-md-4"></div>
-              <div class="col-10 col-sm-8 col-md-4">
+              <div class="col-10 col-sm-8 col-md-4 text-center text">
+                    <div class="padd">Para que no se te cobre,<br> cancela antes del <b>1/04/19.</b></div>
+                    <div class="padd">Te enviaremos <b> un correo <br> recordatorio 3 días antes. </b></div>
+                    <div><b>Sin compromisos.<br> Podrás cancelar en línea <br>cuando quieras.</b></div>
+
                   <div class="row">
-                      <div class="col-1 col-sm-1 padding-span-texto" >
-                          <i class="fas fa-check red"></i>
-                      </div>
                       <div class="col-11 col-sm-10 padding-span-texto" >
-                          <span>No se te cobrará hasta que termine tu mes gratis.</span>
+                         
                       </div>
-                      <div class="col-1 col-sm-1">  
-                      </div>
-                  </div>
-                  <div class="row">
-                      <div class="col-1 col-sm-1 padding-span-texto" >
-                          <i class="fas fa-check red"></i>
-                      </div>
-                      <div class="col-11 col-sm-10 padding-span-texto" >
-                          <span>Te recordaremos 3 días antes de que termine tu prueba.</span>
-                      </div>
-                      <div class="col-1 col-sm-1">   
-                      </div>
-                  </div>
-                  <div class="row">
-                      <div class="col-1 col-sm-1 padding-span-texto" >
-                          <i class="fas fa-check red"></i>
-                      </div>
-                      <div class="col-11 col-sm-10 padding-span-texto" >
-                          <span>Sin compromisos, cancela cuando quieras.</span>
-                      </div>
-                      <div class="col-1 col-sm-1">  
+                      <div class="col-1 col-sm-2">  
                       </div>
                   </div>
               </div>
@@ -71,17 +53,17 @@
       </div>  
       <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
          <div class="row">
-            <div class="col-1 col-sm-2 col-md-3"></div>
-            <div class="col-10 col-sm-8 col-md-6">
-                <button type="button" class="btn btn-danger" id="btn-ver">VER LOS PLANES</button> 
+            <div class="col-1 col-sm-2 col-md-2"></div>
+            <div class="col-10 col-sm-8 col-md-8">
+                <button type="button" class="btn btn-danger" id="btn-continuar">CONTINUAR</button> 
             </div>
-            <div class="col-1 col-sm-2 col-sm-3"></div>
+            <div class="col-1 col-sm-2 col-sm-2"></div>
          </div>   
       </div>
 
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <script src="js/registro.js"></script>
+  <script src="js/registro-cuenta-1.js"></script>
   </body>
   <footer class="border-top margin-sup" id ="footer-gray">
     <div class="row">

@@ -58,6 +58,9 @@
     color: #e50914;
 }
 
+.white{
+    color: #ffffff;
+}
 
 .border-top{
     margin-top: 5rem; 
@@ -65,4 +68,53 @@
 
 .padding-bottom{
     padding-bottom:5rem !important;
+}
+
+.text-gray{
+    color: #737373;
+    font-weight: 400;
+    font-size: 13px;
+    text-align: left;
+    white-space: normal;
+}
+
+.element-box{
+    color: #fff;
+    font-size: 17px;
+    font-weight: 700;
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    background-color: #e50914;
+    opacity: 1;
+    margin: 1rem;
+}
+
+.element-box-1{
+  margin: 1rem;
+}
+
+.padding-bottom-box{
+    padding-bottom:10rem !important;
+}
+
+@media (max-width: 768px) {
+    .element-box{
+        color: #fff;
+        font-size: 17px;
+        font-weight: 700;
+        width: 120px;
+        height: 120px;
+        line-height: 120px;
+        background-color: #e50914;
+        opacity: 1;
+        margin: 0rem;
+    }
+
+
+    .border-bottom-tab {
+        border-bottom: 1px solid rgb(255, 255, 255);
+        padding: 12px 15px;
+        height: 60px;
+    }
 }
