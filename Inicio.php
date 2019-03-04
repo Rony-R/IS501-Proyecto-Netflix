@@ -127,7 +127,7 @@
                          
                          <li class="card effect1">
                               <div class="inside-top">
-                              <img src="img/series/casapapel/prueba.png" id="img">
+                              <img src="img/series/casapapel/1.jpg" id="img">
                               </div>
                          </li>
                               <li class="card">
@@ -137,110 +137,65 @@
                          </li>
                               <li class="card">
                               <div class="inside-top">
-                              <img src="img/series/casapapel/prueba.png" id="img"> 
+                              <img src="img/series/breakingbad/1.jpg" id="img"> 
                               </div>
                          </li>
                               <li class="card">
                               <div class="inside-top">
-                              <img src="img/series/casapapel/prueba.png" id="img">
+                              <img src="img/series/flash/portada.jpg" id="img">
                               </div>
                          </li>
                               <li class="card">
                               <div class="inside-top">
-                              <img src="img/series/casapapel/prueba.png" id="img">
+                              <img src="img/series/TWD/portada.jpg" id="img">
                               </div>
                          </li>
                               <li class="card">
                               <div class="inside-top">
-                              <img src="img/series/casapapel/prueba.png" id="img">
+                              <img src="img/series/you/portada.png" id="img">
                               </div>
                          </li>
                               <li class="card">
                               <div class="inside-top">
-                              <img src="img/series/casapapel/prueba.png" id="img">
+                              <img src="img/series/stranger/1.jpg" id="img">
                               </div>
                          </li>
                               <li class="card">
                               <div class="inside-top">
-                              <img src="http://placehold.it/350x150">
+                              <img src="img/series/innocents/1.jpg" id="img">
                               </div>
                          </li>
                               <li class="card">
                               <div class="inside-top">
-                              <img src="http://placehold.it/350x150">
+                              <img src="img/peliculas/increibles/1.jpg" id="img">
                               </div>
                          </li>
                               <li class="card">
                               <div class="inside-top">
-                              <img src="http://placehold.it/350x150">
+                              <img src="img/peliculas/revenant/1.jpg" id="img">
                               </div>
                          </li>
                               <li class="card">
                               <div class="inside-top">
-                              <img src="http://placehold.it/350x150">
+                              <img src="img/peliculas/rosie/1.jpg" id="img">
                               </div>
                          </li>
                               <li class="card">
                               <div class="inside-top">
-                              <img src="http://placehold.it/350x150">
+                              <img src="img/peliculas/ninos/1.jpg" id="img">
                               </div>
                          </li>
                               <li class="card">
                               <div class="inside-top">
-                              <img src="http://placehold.it/350x150">
+                              <img src="img/peliculas/alien/1.jpg" id="img">
                               </div>
                          </li>
                               <li class="card">
                               <div class="inside-top">
-                              <img src="http://placehold.it/350x150">
+                              <img src="img/peliculas/bird/1.jpg" id="img">
                               </div>
                          </li>
-                         <li class="card">
-                              <div class="inside-top">
-                              <img src="http://placehold.it/350x150">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="http://placehold.it/350x150">
-                              </div>
-                         </li>
-                         <li class="card">
-                              <div class="inside-top">
-                              <img src="http://placehold.it/350x150">
-                              </div>
-                         </li>
-                         <li class="card">
-                              <div class="inside-top">
-                              <img src="http://placehold.it/350x150">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="http://placehold.it/350x150">
-                              </div>
-                         </li>
-                         <li class="card">
-                              <div class="inside-top">
-                              <img src="http://placehold.it/350x150">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="http://placehold.it/350x150">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="http://placehold.it/350x150">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="http://placehold.it/350x150">
-                              </div>
-                              
-                         </li>
+                 
                          
                          </ul>
                          
