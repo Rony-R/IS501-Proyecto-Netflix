@@ -36,6 +36,11 @@ body{
     padding-left: 5%;
 }
 
+#texto1{
+  width:90%; 
+  padding:3% 0 4.5% 0; 
+  font-weight:bold;
+}
 
 #btn-1y2{
     font-weight: bold;
@@ -44,11 +49,18 @@ body{
     opacity: 0.5;
     
 }
-/*-----------------carousel 1-------------------*/
+
+.seccion{
+  height: 500px;
+  max-width: 100%;
+}
+
+
+/*-----------------carousel -------------------*/
 .carousel1{
     position:relative; 
     width:42%; 
-    padding:3.5% 0 0 5%;
+    padding:1% 0 0 5%;
 }
 
 
@@ -73,10 +85,10 @@ button:focus {outline:0 !important;}
 .left-controls{
   
   position:absolute;
-  top:7.8%;
+  top:14.8%;
   left:0;
   width:4%;
-  height:150px;
+  height:145px;
   z-index:40;
   background:rgb(0, 0, 0);
   opacity:0.8;
@@ -117,10 +129,10 @@ button:focus {outline:0 !important;}
 
 .right-controls{
   position:absolute;
-  top:7.8%;
+  top:14.8%;
   right:0;
   width:4%;
-  height:150px;
+  height:145px;
   z-index:40;
   background:rgb(0, 0, 0);
   opacity:0.8;
@@ -166,13 +178,13 @@ button:focus {outline:0 !important;}
   max-width: 100%;
   overflow: hidden;
   overflow-x:scroll;
-  height: 800px;
+  height: 230px;
 }
 
 .lista{
 width:220em;
 list-style-type:none;
-padding:65px 0 65px 0;
+padding:36px 0 0px 0;
 
 }
 

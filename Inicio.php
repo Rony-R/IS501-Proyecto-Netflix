@@ -91,7 +91,7 @@
                 </nav>
           </header>
 
-          <section>
+          <section class="seccion1">
            <img src="img/series/vikingos/9.jpg" style="width:100%; height:800px; position:absolute"> 
                <div class="descripcion1">
                     <div>
@@ -104,7 +104,7 @@
                          <button type="button" id="btn-1y2" class="btn btn-secondary"><i class="fas fa-plus"></i> Mi Lista</button>
                     </div>
                     <br>
-                    <div style="width:90%; padding-top:3%; font-weight:bold">                       
+                    <div id="texto1">                       
                          <h5><b>Ver la temporada 4</b></h5>
                          <p style="text-align : justify;">Seremos testigos del regreso de Ragnar a Wessex. Por otro lado, Lagertha tratará de mantenerse en el poder en Kattegat y comenzará una relación amorosa. Además, veremos a Bjorn surcando el Mediterráneo.</p>                     
                     </div>
@@ -212,6 +212,110 @@
                          
                          </div>
        
+         
+          </section>
+
+          <section>
+                     <div class="carousel1">
+                         <h5><b>Tendencias</b></h5>
+                    </div>
+
+                    <div id="wrapper">
+  
+                         <span id="controlL" class="left-controls" role="button" aria-label="See Previous Modules">
+                         <b class="fa fa-chevron-left fa-chevron-left-extra" aria-hidden="true"></b>
+                         </span>
+                         
+                         <div class="module-section clearfix">
+                         <!-- <button class="btn arrow-guides fa-chevron-left"></button> -->
+                         <ul id="content" class="lista">
+                         
+                         <li class="card effect1">
+                              <div class="inside-top">
+                              <img src="img/series/casapapel/1.jpg" id="img">
+                              </div>
+                         </li>
+                              <li class="card">
+                              <div class="inside-top">
+                              <img src="img/series/outlander/4.jpg" id="img">
+                              </div>
+                         </li>
+                              <li class="card">
+                              <div class="inside-top">
+                              <img src="img/series/breakingbad/1.jpg" id="img"> 
+                              </div>
+                         </li>
+                              <li class="card">
+                              <div class="inside-top">
+                              <img src="img/series/flash/portada.jpg" id="img">
+                              </div>
+                         </li>
+                              <li class="card">
+                              <div class="inside-top">
+                              <img src="img/series/TWD/portada.jpg" id="img">
+                              </div>
+                         </li>
+                              <li class="card">
+                              <div class="inside-top">
+                              <img src="img/series/you/portada.png" id="img">
+                              </div>
+                         </li>
+                              <li class="card">
+                              <div class="inside-top">
+                              <img src="img/series/stranger/1.jpg" id="img">
+                              </div>
+                         </li>
+                              <li class="card">
+                              <div class="inside-top">
+                              <img src="img/series/innocents/1.jpg" id="img">
+                              </div>
+                         </li>
+                              <li class="card">
+                              <div class="inside-top">
+                              <img src="img/peliculas/increibles/1.jpg" id="img">
+                              </div>
+                         </li>
+                              <li class="card">
+                              <div class="inside-top">
+                              <img src="img/peliculas/revenant/1.jpg" id="img">
+                              </div>
+                         </li>
+                              <li class="card">
+                              <div class="inside-top">
+                              <img src="img/peliculas/rosie/1.jpg" id="img">
+                              </div>
+                         </li>
+                              <li class="card">
+                              <div class="inside-top">
+                              <img src="img/peliculas/ninos/1.jpg" id="img">
+                              </div>
+                         </li>
+                              <li class="card">
+                              <div class="inside-top">
+                              <img src="img/peliculas/alien/1.jpg" id="img">
+                              </div>
+                         </li>
+                              <li class="card">
+                              <div class="inside-top">
+                              <img src="img/peliculas/bird/1.jpg" id="img">
+                              </div>
+                         </li>
+                 
+                         
+                         </ul>
+                         
+                         
+                         
+                         </div><!--end of module-section-->
+                         
+                         <span id="controlR" class="right-controls" role="button" aria-label="See Previous Modules">
+                         <b class="fa fa-chevron-right fa-chevron-right-extra" aria-hidden="true"></b>
+                         </span>
+                         <!-- <button class="btn arrow-guides-right fa-chevron-right"></button> -->
+                         
+                         
+                         
+                         </div>
           </section>
 
 
