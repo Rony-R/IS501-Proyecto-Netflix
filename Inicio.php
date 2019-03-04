@@ -127,37 +127,37 @@
                          
                          <li class="card effect1">
                               <div class="inside-top">
-                              <img src="img/series/casapapel/prueba.png">
+                              <img src="img/series/casapapel/prueba.png" id="img">
                               </div>
                          </li>
                               <li class="card">
                               <div class="inside-top">
-                              <img src="img/series/outlander/4.jpg">
+                              <img src="img/series/outlander/4.jpg" id="img">
                               </div>
                          </li>
                               <li class="card">
                               <div class="inside-top">
-                              <img src="img/series/casapapel/prueba.png">
+                              <img src="img/series/casapapel/prueba.png" id="img"> 
                               </div>
                          </li>
                               <li class="card">
                               <div class="inside-top">
-                              <img src="img/series/casapapel/prueba.png">
+                              <img src="img/series/casapapel/prueba.png" id="img">
                               </div>
                          </li>
                               <li class="card">
                               <div class="inside-top">
-                              <img src="img/series/casapapel/prueba.png">
+                              <img src="img/series/casapapel/prueba.png" id="img">
                               </div>
                          </li>
                               <li class="card">
                               <div class="inside-top">
-                              <img src="img/series/casapapel/prueba.png">
+                              <img src="img/series/casapapel/prueba.png" id="img">
                               </div>
                          </li>
                               <li class="card">
                               <div class="inside-top">
-                              <img src="img/series/casapapel/prueba.png">
+                              <img src="img/series/casapapel/prueba.png" id="img">
                               </div>
                          </li>
                               <li class="card">
