@@ -127,37 +127,37 @@
                          
                          <li class="card effect1">
                               <div class="inside-top">
-                              <img src="http://placehold.it/350x150">
+                              <img src="img/series/casapapel/prueba.png">
                               </div>
                          </li>
                               <li class="card">
                               <div class="inside-top">
-                              <img src="http://placehold.it/350x150">
+                              <img src="img/series/outlander/4.jpg">
                               </div>
                          </li>
                               <li class="card">
                               <div class="inside-top">
-                              <img src="http://placehold.it/350x150">
+                              <img src="img/series/casapapel/prueba.png">
                               </div>
                          </li>
                               <li class="card">
                               <div class="inside-top">
-                              <img src="http://placehold.it/350x150">
+                              <img src="img/series/casapapel/prueba.png">
                               </div>
                          </li>
                               <li class="card">
                               <div class="inside-top">
-                              <img src="http://placehold.it/350x150">
+                              <img src="img/series/casapapel/prueba.png">
                               </div>
                          </li>
                               <li class="card">
                               <div class="inside-top">
-                              <img src="http://placehold.it/350x150">
+                              <img src="img/series/casapapel/prueba.png">
                               </div>
                          </li>
                               <li class="card">
                               <div class="inside-top">
-                              <img src="http://placehold.it/350x150">
+                              <img src="img/series/casapapel/prueba.png">
                               </div>
                          </li>
                               <li class="card">
