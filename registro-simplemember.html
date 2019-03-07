@@ -11,7 +11,7 @@
     <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/pricing/">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/registro-basico.css" rel="stylesheet">
-    <link href="css/registro-regform.css" rel="stylesheet">
+    <link href="css/registro-simplemember.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
   </head>
@@ -33,20 +33,30 @@
           <div class="row" >
               <div class="col-1 col-sm-1 col-md-3"></div>
               <div class="col-10 col-sm-8 col-md-6">
-                  <span class="lead text-paso">PASO <span class="bold-txt">2</span> DE <span class="bold-txt">3</span></span>
+                  <span class="lead text-paso">PASO <span class="bold-txt">3</span> DE <span class="bold-txt">3</span></span>
                   <h1 class="lead text-selecciona text-selecciona-2">Suscríbete para empezar tu mes gratis</h1>  
                   <span id="span-2">¡Faltan solo dos pasos!</span><br>
                   <span id="span-2">También odiamos el papeleo.</span>
                   <h1 class="lead text-selecciona text-selecciona-3">Crea tu cuenta.</h1>  
                   <form>
                       <div class="form-group">
-                        <input type="text" class="form-control" id="input-correo" placeholder="Correo">
+                        <input type="text" class="form-control" id="input-nombre" placeholder="Nombre">
                       </div>
                       <div class="form-group">
-                        <input type="text" class="form-control" id="input-contraseña" placeholder="Contraseña">
+                        <input type="text" class="form-control" id="input-apellido" placeholder="Apellido">
+                      </div>
+                      <div class="form-group">
+                        <input type="text" class="form-control" id="input-numero-tarjeta" placeholder="Número de tarjeta">
+                      </div>
+                      <div class="form-group">
+                        <input type="text" class="form-control" id="input-fecha-vencimiento" placeholder="Fecha de Vencimiento (MM/AA)">
+                      </div>
+                      <div class="form-group">
+                        <input type="text" class="form-control" id="input-codigo-CVV" placeholder="Código de seguridad (CVV)">
                       </div>
                   </form>
-                  <button type="button" class="btn btn-danger" id="btn-continuar">CONTINUAR</button> 
+                  <div class="text">Los pagos se procesarán internacionalmente. Es posible que se apliquen comisiones bancarias adicionales.</div>
+                  <button type="button" class="btn btn-danger" id="btn-guardar">GUARDAR</button> 
               </div>
               <div class="col-1 col-sm-2 col-md-4 col-md-3"></div>
           </div>
@@ -55,7 +65,7 @@
 
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <script src="js/registro-regform.js"></script>
+  <script src="js/registro-simplemember.js"></script>
   </body>
   <footer class="border-top margin-sup" id ="footer-gray">
     <div class="row">

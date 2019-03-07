@@ -5,7 +5,43 @@
     margin-bottom: 30px;   
 }
 
-
 .padd{
-    padding-bottom: 10px;
+   padding-bottom: 10px;
+   font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+   color: #333;
+   font-size: 16px;
+   line-height: 1.2;
+}
+
+.line-height-text{
+    line-height: 1.2;
+ }
+
+.logo-icon{
+    height: 25px;
+    margin: 1px 6px 1px 0;
+    float: left;
+ }
+
+ .btn-primary {
+   color: #333;
+   background-color: #fff;
+   padding: 20px 3px 20px;
+   margin: 5px 0;
+   border: 2px solid #ccc;
+   font-size: 16px;
+   padding: 1rem;
+}
+
+.flecha{
+    float: right!important;
+}
+
+#btn-tarjeta:hover{
+   background-color: #e50914;
+   border-color: #e50914 !important;
+}
+#btn-tarjeta:active{
+   background-color: #e50914;
+   border-color: #e50914 !important;
 }

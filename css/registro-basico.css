@@ -202,3 +202,14 @@ html {
   margin-top: 7.5rem;
 }
 
+
+#letras-img {
+  margin: 0.5rem;
+  width: 50%;
+  margin-left: 10%;
+  padding-top: 15px;
+}
+
+.margin-logo{
+ margin-top: 1.5rem;
+}
