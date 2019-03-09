@@ -45,3 +45,17 @@
    background-color: #e50914;
    border-color: #e50914 !important;
 }
+
+#btn-tar-1:hover {
+   color: rgb(3, 3, 3);
+   background-color: #ffffff;
+   border-color: #ccc;
+}
+
+
+#btn-tar-1:active {
+   color: rgb(3, 3, 3);
+   background-color: #ffffff;
+   border-color: #ccc;
+}
+

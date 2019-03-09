@@ -29,6 +29,10 @@ $(document).ready(function(){
   document.getElementById("e-7-3").style.color ="red";
   document.getElementById("e-8-3").style.color ="red";
 
+  $("#body").hide();
+  $("#body").show(1000);
+  
+
 });
 
 $("#btn-continuar").click(function(){ 
@@ -133,7 +137,6 @@ $("#div-premium").click(function(){
   document.getElementById("e-6-3").style.color ="red";
   document.getElementById("e-7-3").style.color ="red";
   document.getElementById("e-8-3").style.color ="red";
-
 
 
 });
