@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Inicio</title>
+    <title>Peliculas</title>
     <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css" />
     <link href="css/inicio.css" type="text/css" rel="stylesheet">
     <link href="css/all.css" type="text/css" rel="stylesheet">
@@ -32,7 +32,7 @@
                             <div class="collapse navbar-collapse" id="navbarCollapse" style="float=left">
                               <ul class="navbar-nav nav-margen">
                                 <li class="nav-item active">
-                                     <a class="nav-link" href=""><b>Inicio</b></a>      
+                                     <a class="nav-link" href="inicio.php">Inicio</a>      
                                 </li>
 
                                 <li class="nav-item active">
@@ -40,7 +40,7 @@
                                 </li>
 
                                 <li class="nav-item active">
-                                     <a class="nav-link" href="peliculas.php">Películas</a>      
+                                     <a class="nav-link" href="peliculas.php"><b>Películas</b></a>      
                                 </li>
 
                                 <li class="nav-item active">
@@ -96,11 +96,23 @@
           </header>
 
           <section class="seccion1">
-           <img src="img/series/vikingos/9.jpg" style="width:100%; height:800px; position:absolute"> 
+           <img src="img/peliculas/bird/5.jpg" style="width:100%; height:800px; position:absolute"> 
                <div class="descripcion1">
                     <div>
-                         <h4 style="color:white">ORIGINAL DE <b>NETFLIX</b></h4>
-                         <img src="img/series/vikingos/logo.png" style="width:85%">
+                         <h4 style="color:white; float:left"><b>Peliculas</b></h4>
+                         <div class="dropdown">
+                              <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
+                              <span class="caret"></span></button>
+                              <ul class="dropdown-menu">
+                                   <li><a href="#">HTML</a></li>
+                                   <li><a href="#">CSS</a></li>
+                                   <li><a href="#">JavaScript</a></li>
+                              </ul>
+                         </div>
+                    </div>
+                    <br>
+                    <div>
+                         <img src="img/peliculas/bird/logo.png" style="width:85%">
                     </div>
                     <br>
                     <div class="btn" role="group">
@@ -109,8 +121,7 @@
                     </div>
                     <br>
                     <div id="texto1">                       
-                         <h5><b>Ver la temporada 4</b></h5>
-                         <p style="text-align : justify;">Seremos testigos del regreso de Ragnar a Wessex. Por otro lado, Lagertha tratará de mantenerse en el poder en Kattegat y comenzará una relación amorosa. Además, veremos a Bjorn surcando el Mediterráneo.</p>                     
+                         <p style="text-align : justify;">Los sobrevivientes de un planeta diezmado deben evitar encontrarse cara a cara con una entidad que toma la forma de sus peores temores y los mata.</p>                     
                     </div>
 
                </div>

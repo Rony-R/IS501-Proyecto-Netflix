@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Inicio</title>
+    <title>Series</title>
     <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css" />
     <link href="css/inicio.css" type="text/css" rel="stylesheet">
     <link href="css/all.css" type="text/css" rel="stylesheet">
@@ -32,11 +32,11 @@
                             <div class="collapse navbar-collapse" id="navbarCollapse" style="float=left">
                               <ul class="navbar-nav nav-margen">
                                 <li class="nav-item active">
-                                     <a class="nav-link" href=""><b>Inicio</b></a>      
+                                     <a class="nav-link" href="inicio.php">Inicio</a>      
                                 </li>
 
                                 <li class="nav-item active">
-                                     <a class="nav-link" href="series.php">Series</a>      
+                                     <a class="nav-link" href=""><b>Series</b></a>      
                                 </li>
 
                                 <li class="nav-item active">
@@ -96,11 +96,11 @@
           </header>
 
           <section class="seccion1">
-           <img src="img/series/vikingos/9.jpg" style="width:100%; height:800px; position:absolute"> 
+           <img src="img/series/umbrella/3.jpg" style="width:100%; height:800px; position:absolute"> 
                <div class="descripcion1">
                     <div>
                          <h4 style="color:white">ORIGINAL DE <b>NETFLIX</b></h4>
-                         <img src="img/series/vikingos/logo.png" style="width:85%">
+                         <img src="img/series/umbrella/logo.png" style="width:85%">
                     </div>
                     <br>
                     <div class="btn" role="group">
@@ -109,8 +109,8 @@
                     </div>
                     <br>
                     <div id="texto1">                       
-                         <h5><b>Ver la temporada 4</b></h5>
-                         <p style="text-align : justify;">Seremos testigos del regreso de Ragnar a Wessex. Por otro lado, Lagertha tratará de mantenerse en el poder en Kattegat y comenzará una relación amorosa. Además, veremos a Bjorn surcando el Mediterráneo.</p>                     
+                         <h5><b>Ver la temporada 1</b></h5>
+                         <p style="text-align : justify;">Una familia disfuncional de superhéroes se reúne para resolver el misterio de la muerte de su padre y la amenaza del apocalipsis.</p>                     
                     </div>
 
                </div>
@@ -120,14 +120,10 @@
                     </div>
 
                     <div id="wrapper">
-  
-                         <span id="controlL" class="left-controls" role="button" aria-label="See Previous Modules">
-                         <b class="fa fa-chevron-left fa-chevron-left-extra" aria-hidden="true"></b>
-                         </span>
                          
                          <div class="module-section clearfix">
                          <!-- <button class="btn arrow-guides fa-chevron-left"></button> -->
-                         <ul id="content" class="lista">
+                         <ul id="content" class="lista" style="margin-left:5%; margin-right:5%">
                          
                          <li class="card effect1">
                               <div class="inside-top">
@@ -206,11 +202,6 @@
                          
                          
                          </div><!--end of module-section-->
-                         
-                         <span id="controlR" class="right-controls" role="button" aria-label="See Previous Modules">
-                         <b class="fa fa-chevron-right fa-chevron-right-extra" aria-hidden="true"></b>
-                         </span>
-                         <!-- <button class="btn arrow-guides-right fa-chevron-right"></button> -->
                          
                          
                          

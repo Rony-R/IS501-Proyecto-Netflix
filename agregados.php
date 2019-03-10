@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Inicio</title>
+    <title>Agregados</title>
     <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css" />
     <link href="css/inicio.css" type="text/css" rel="stylesheet">
     <link href="css/all.css" type="text/css" rel="stylesheet">
@@ -32,7 +32,7 @@
                             <div class="collapse navbar-collapse" id="navbarCollapse" style="float=left">
                               <ul class="navbar-nav nav-margen">
                                 <li class="nav-item active">
-                                     <a class="nav-link" href=""><b>Inicio</b></a>      
+                                     <a class="nav-link" href="inicio.php">Inicio</a>      
                                 </li>
 
                                 <li class="nav-item active">
@@ -44,7 +44,7 @@
                                 </li>
 
                                 <li class="nav-item active">
-                                     <a class="nav-link" href="agregados.php">Agregados recientemente</span></a>      
+                                     <a class="nav-link" href=""><b>Agregados recientemente</b></span></a>      
                                 </li>
 
                                 <li class="nav-item active">
