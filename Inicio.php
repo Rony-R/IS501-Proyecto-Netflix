@@ -29,10 +29,10 @@
                               <span class="navbar-toggler-icon"></span>
                             </button>
 
-                            <div class="collapse navbar-collapse" id="navbarCollapse" style="float=left">
-                              <ul class="navbar-nav nav-margen">
+                            <div class="collapse navbar-collapse" id="navbarCollapse" style="float=left;">
+                              <ul class="navbar-nav nav-margen" >
                                 <li class="nav-item active">
-                                     <a class="nav-link" href=""><b>Inicio</b></a>      
+                                     <a class="nav-link" href="" style="font-size=50rem"><b>Inicio</b></a>      
                                 </li>
 
                                 <li class="nav-item active">

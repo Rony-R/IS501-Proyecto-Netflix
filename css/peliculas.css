@@ -50,8 +50,14 @@ body{
     
 }
 
+#btn-genero{
+    background-color:transparent; 
+    color:white; 
+    margin-left:10%;
+}
+
 .seccion{
-  height: 650px;
+  height: 500px;
   max-width: 100%;
 }
 
@@ -113,6 +119,93 @@ html {
 
 button:focus {outline:0 !important;}
 
+.left-controls{
+  
+  position:absolute;
+  top:14.8%;
+  left:0;
+  width:4%;
+  height:145px;
+  z-index:40;
+  background:rgb(0, 0, 0);
+  opacity:0.8;
+  cursor:pointer;
+  text-align:center;
+  justify-content:center;
+  display: webkit box;
+  display: webkit flex;
+  display: moz box;
+  display:ms flexbox;
+  display:flex;
+  color:#fff;
+
+}
+
+.fa-chevron-left-extra
+{
+  align-self:center;
+  position:relative;
+  height:auto;
+  top:-5px;
+  transform-origin: 55% 50%;
+  font-style:normal;
+  font-weight:400;
+  line-height:1;
+  font-variant:normal;
+  text-transform:none;
+  font-size:2.5vw;
+  transition:transform .1s ease-out 0s;
+  transition-property: transform;
+  transition-duration: 0.1s;
+  transition-timing-function: ease-out;
+  transition-delay: 0s;
+  color:white;
+  opacity:.1;
+}
+
+
+.right-controls{
+  position:absolute;
+  top:14.8%;
+  right:0;
+  width:4%;
+  height:145px;
+  z-index:40;
+  background:rgb(0, 0, 0);
+  opacity:0.8;
+  cursor:pointer;
+  text-align:center;
+  /*webkit justify content: center;*/
+  justify-content:center;
+  display: webkit box;
+  display: webkit flex;
+  display: moz box;
+  display:ms flexbox;
+  display:flex;
+  color:#fff;
+}
+
+.fa-chevron-right-extra
+{
+  align-self:center;
+  position:relative;
+  height:auto;
+  top:-5px;
+ transform-origin: 55% 50%;
+  font-style:normal;
+  font-weight:400;
+  line-height:1;
+  font-variant:normal;
+  text-transform:none;
+  font-size:2.5vw;
+  transition:transform .1s ease-out 0s;
+  transition-property: transform;
+  transition-duration: 0.1s;
+  transition-timing-function: ease-out;
+  transition-delay: 0s;
+  color:white;
+  opacity:.1;
+}
 
 .title{
   color:#eee;
@@ -128,7 +221,7 @@ button:focus {outline:0 !important;}
 .lista{
 width:220em;
 list-style-type:none;
-padding:36px 0 0 5%;
+padding:36px 0 0px 0;
 
 }
 

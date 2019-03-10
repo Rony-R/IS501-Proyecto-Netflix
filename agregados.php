@@ -96,11 +96,11 @@
           </header>
 
           <section class="seccion1">
-           <img src="img/series/vikingos/9.jpg" style="width:100%; height:800px; position:absolute"> 
+           <img src="img/series/saul/2.jpg" style="width:100%; height:800px; position:absolute"> 
                <div class="descripcion1">
                     <div>
                          <h4 style="color:white">ORIGINAL DE <b>NETFLIX</b></h4>
-                         <img src="img/series/vikingos/logo.png" style="width:85%">
+                         <img src="img/series/saul/logo.png" style="width:85%">
                     </div>
                     <br>
                     <div class="btn" role="group">
@@ -109,8 +109,7 @@
                     </div>
                     <br>
                     <div id="texto1">                       
-                         <h5><b>Ver la temporada 4</b></h5>
-                         <p style="text-align : justify;">Seremos testigos del regreso de Ragnar a Wessex. Por otro lado, Lagertha tratará de mantenerse en el poder en Kattegat y comenzará una relación amorosa. Además, veremos a Bjorn surcando el Mediterráneo.</p>                     
+                         <p style="text-align : justify;">Antes de convertirse en Saul Goodman, fue Jimmy McGill. Y si lo llamas es porque estás en serios problemas.</p>                     
                     </div>
 
                </div>

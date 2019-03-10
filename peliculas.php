@@ -6,9 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Peliculas</title>
     <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css" />
-    <link href="css/inicio.css" type="text/css" rel="stylesheet">
+    <link href="css/peliculas.css" type="text/css" rel="stylesheet">
     <link href="css/all.css" type="text/css" rel="stylesheet">
     <link rel="icon" type="image/png" href="img/favicon.ico">
+    
 
 </head>
 <body>
@@ -88,12 +89,14 @@
                                         </div>
                                    </div>
                               </div>
+                              
                                 
                             </ul>
 
                  </div>
                 </nav>
           </header>
+         
 
           <section class="seccion1">
            <img src="img/peliculas/bird/5.jpg" style="width:100%; height:800px; position:absolute"> 
@@ -101,14 +104,16 @@
                     <div>
                          <h4 style="color:white; float:left"><b>Peliculas</b></h4>
                          <div class="dropdown">
-                              <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
-                              <span class="caret"></span></button>
+                              <button class="dropdown-toggle" type="button" data-toggle="dropdown" id="btn-genero">Géneros 
+                              <span class="caret"></span>
+                              </button>
                               <ul class="dropdown-menu">
                                    <li><a href="#">HTML</a></li>
                                    <li><a href="#">CSS</a></li>
                                    <li><a href="#">JavaScript</a></li>
                               </ul>
                          </div>
+                         
                     </div>
                     <br>
                     <div>
@@ -125,7 +130,7 @@
                     </div>
 
                </div>
-
+<section>
                     <div class="carousel1">
                          <h5><b>Populares en Netflix</b></h5>
                     </div>
@@ -226,7 +231,6 @@
                          
                          
                          </div>
-       
          
           </section>
 
@@ -4188,10 +4192,11 @@
                         </table>
           </section>
 
+</section>
 
 
     <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/controlador-inicio.js"></script>
    
 

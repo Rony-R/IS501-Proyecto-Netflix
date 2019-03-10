@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Series</title>
     <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css" />
-    <link href="css/inicio.css" type="text/css" rel="stylesheet">
+    <link href="css/series.css" type="text/css" rel="stylesheet">
     <link href="css/all.css" type="text/css" rel="stylesheet">
     <link rel="icon" type="image/png" href="img/favicon.ico">
 
@@ -99,7 +99,22 @@
            <img src="img/series/umbrella/3.jpg" style="width:100%; height:800px; position:absolute"> 
                <div class="descripcion1">
                     <div>
-                         <h4 style="color:white">ORIGINAL DE <b>NETFLIX</b></h4>
+                              <h4 style="color:white; float:left"><b>Series</b></h4>
+                              <div class="dropdown">
+                                   <button class="dropdown-toggle" type="button" data-toggle="dropdown" id="btn-genero">Géneros 
+                                   <span class="caret"></span>
+                                   </button>
+                                   <ul class="dropdown-menu">
+                                        <li><a href="#">HTML</a></li>
+                                        <li><a href="#">CSS</a></li>
+                                        <li><a href="#">JavaScript</a></li>
+                                   </ul>
+                              </div>
+                              
+                    </div>
+                    <br>
+                    <div>
+                         <h4 style="color:white;margin:0">ORIGINAL DE <b>NETFLIX</b></h4>
                          <img src="img/series/umbrella/logo.png" style="width:85%">
                     </div>
                     <br>
@@ -120,10 +135,14 @@
                     </div>
 
                     <div id="wrapper">
+  
+                         <span id="controlL" class="left-controls" role="button" aria-label="See Previous Modules">
+                         <b class="fa fa-chevron-left fa-chevron-left-extra" aria-hidden="true"></b>
+                         </span>
                          
                          <div class="module-section clearfix">
                          <!-- <button class="btn arrow-guides fa-chevron-left"></button> -->
-                         <ul id="content" class="lista" style="margin-left:5%; margin-right:5%">
+                         <ul id="content" class="lista">
                          
                          <li class="card effect1">
                               <div class="inside-top">
@@ -202,6 +221,11 @@
                          
                          
                          </div><!--end of module-section-->
+                         
+                         <span id="controlR" class="right-controls" role="button" aria-label="See Previous Modules">
+                         <b class="fa fa-chevron-right fa-chevron-right-extra" aria-hidden="true"></b>
+                         </span>
+                         <!-- <button class="btn arrow-guides-right fa-chevron-right"></button> -->
                          
                          
                          
