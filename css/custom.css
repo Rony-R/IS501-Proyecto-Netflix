@@ -1,4 +1,5 @@
 
+
 body{
     background-color: black;
 }
@@ -53,7 +54,7 @@ body{
 }
 
 .white-text{
-    color: #ffffff;
+    color: #ffffff !important;
 }
 
 .h1{
@@ -258,4 +259,95 @@ body{
 
 .ht-input{
     height: 50px !important;
+}
+
+.whatching{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 45px; 
+}
+
+.min-user{
+    height: 10vw;
+    width: 10vw;
+    margin-right: 30px;
+    margin-bottom: 7px;
+    z-index: -1;
+}
+
+.justify{
+    justify-content: center;
+}
+
+.btn-manage{
+    color: grey;
+    background-color: transparent;
+    font-weight: 600;
+    width: 250px;
+    height: 50px;
+}
+
+#btn-manage-profiles:hover{
+    color: #ffffff;
+}
+
+#btn-done:hover{
+    color: #ffffff;
+}
+
+.edit-icon{
+    font-size: 40px;
+    color: #ffffff;
+}
+
+/*.img-opcty{
+    opacity: .50;
+}*/
+
+.width-100{
+    width: 100%;
+}
+
+#user-1{
+    background: url('../img/usr-1.png');
+}
+
+#user-2{
+    background: url('../img/usr-2.png');
+}  
+
+#user-3{
+    background: url('../img/usr-3.png');
+}
+
+.dim-div-usr{
+    opacity: .50;
+    height: 10vw;
+    width: 10vw;
+    margin-right: 30px;
+    margin-bottom: 7px;
+}
+
+.mt-120{
+    margin-top: 110px;
+}
+
+.img-editar{
+    background: url('../img/usr-1.png');
+    width: 100%;
+    background-repeat: no-repeat;
+}
+
+.edit-icon2{
+    font-size: 20px;
+    color: #000000;
+}
+
+.gray-bckd{
+    background-color: #141414;
+}
+
+.edit-icon3{
+    font-size: 40px;
+    color: #000000;
 }
