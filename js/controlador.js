@@ -134,7 +134,7 @@ if(r1 == true && r2 == true)
 }
 else
 {
-  alert("Hola");
+ /* alert("Hola");*/
 }
 
 };
