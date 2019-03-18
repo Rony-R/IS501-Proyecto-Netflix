@@ -1,4 +1,94 @@
 
+$(document).ready(function(){
+
+  $.ajax({
+   url: "ajax/landing.php?accion='door-landing'",
+   success: function(respuesta){
+     $("#door-icon").html(respuesta);
+   },
+   error: function(){
+     console.log("Ocurrio un error!!!");
+   }
+ });
+
+ $.ajax({
+  url: "ajax/landing.php?accion='footer-landing'",
+  success: function(respuesta){
+    $("#foot-landing").html(respuesta);
+  },
+  error: function(){
+    console.log("Ocurrio un error!!!");
+  }
+});
+
+  htmlPantallas();
+
+  htmlPantallas2();
+
+  imgEditUser();
+
+});
+
+function phpTabla(){
+  $.ajax({
+    url: "ajax/landing.php?accion='tabla-landing'",
+    success: function(respuesta){
+      $("#tag-icon").html(respuesta);
+    },
+    error: function(){
+      console.log("Ocurrio un error!!!");
+    }
+  });
+}
+
+function phpTv(){
+  $.ajax({
+    url: "ajax/landing.php?accion='tv-landing'",
+    success: function(respuesta){
+      $("#tv-icon").html(respuesta);
+    },
+    error: function(){
+      console.log("Ocurrio un error!!!");
+    }
+  });
+}
+
+function htmlPantallas(){
+  $.ajax({
+    url: "ajax/landing.php?accion='pantallas'",
+    success: function(respuesta){
+      $("#div-pantallas").html(respuesta);
+    },
+    error: function(){
+      console.log("Ha ocurrido un error!!!");
+    }
+  });
+}
+
+function htmlPantallas2(){
+  $.ajax({
+    url: "ajax/landing.php?accion='pantallas-2'",
+    success: function(respuesta){
+      $("#div-pantallas-2").html(respuesta);
+    },
+    error: function(){
+      console.log("Ha ocurrido un error!!!");
+    }
+  });
+}
+
+function imgEditUser(){
+  $.ajax({
+    url: "ajax/landing.php?accion='imgEdit'",
+    success: function(respuesta){
+      $("#img-edit").append(respuesta);
+    },
+    error: function(){
+      console.log("Ha ocurrido un error!!!");
+    }
+  });
+}
+
 function contenidoIcono(idContenido){
     
   if(idContenido == "door-icon")
@@ -14,25 +104,26 @@ function contenidoIcono(idContenido){
   {
       if(idContenido == "tv-icon")
       {
-          $("#" + idContenido).addClass("d-block");
-          $("#door-icon").addClass("d-none");
-          $("#tag-icon").addClass("d-none");
-          $("#door-icon").removeClass("d-flex");
-          $("#tag-icon").removeClass("d-block");
+        phpTv();
+        $("#" + idContenido).addClass("d-block");
+        $("#door-icon").addClass("d-none");
+        $("#tag-icon").addClass("d-none");
+        $("#door-icon").removeClass("d-flex");
+        $("#tag-icon").removeClass("d-block");
       }
       else
       {
-          $("#" + idContenido).addClass("d-block");
-          $("#door-icon").addClass("d-none");
-          $("#tv-icon").addClass("d-none");
-          $("#door-icon").removeClass("d-flex");
-          $("#tv-icon").removeClass("d-block");
+        phpTabla();
+        $("#" + idContenido).addClass("d-block");
+        $("#door-icon").addClass("d-none");
+        $("#tv-icon").addClass("d-none");
+        $("#door-icon").removeClass("d-flex");
+        $("#tv-icon").removeClass("d-block");
       }
   }
 }
 
 $("#btn-iniciar-sesion").click(function(){
-
   window.location.href="sesion.html";
 });
 
@@ -77,7 +168,7 @@ function validarEmail(id){
 }
 
 $("#btn-iniciar-sesion-2").click(function(){
-validar();
+  validar();
 });
 
 function validar()
@@ -148,5 +239,5 @@ window.location.href="users.html";
 });
 
 $("#btn-prueba-gratuita").click(function(){ 
-window.location ="Registro.html";
+window.location ="selec-plan.html";
 });

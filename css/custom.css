@@ -1,5 +1,4 @@
 
-
 body{
     background-color: black;
 }
@@ -308,18 +307,6 @@ body{
     width: 100%;
 }
 
-#user-1{
-    background: url('../img/usr-1.png');
-}
-
-#user-2{
-    background: url('../img/usr-2.png');
-}  
-
-#user-3{
-    background: url('../img/usr-3.png');
-}
-
 .dim-div-usr{
     opacity: .50;
     height: 10vw;
@@ -332,22 +319,12 @@ body{
     margin-top: 110px;
 }
 
-.img-editar{
-    background: url('../img/usr-1.png');
-    width: 100%;
-    background-repeat: no-repeat;
-}
-
-.edit-icon2{
-    font-size: 20px;
-    color: #000000;
-}
-
 .gray-bckd{
     background-color: #141414;
 }
 
 .edit-icon3{
-    font-size: 40px;
-    color: #000000;
+    font-size: 30px;
+    color: #ffffff;
 }
+

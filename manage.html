@@ -13,49 +13,23 @@
 <body class="width-100">
 
     <div class="top-sesion">
-        <a href="index.html" class="net-logo-sesion">
+        <a href="Inicio.php" class="net-logo-sesion">
             <img src="img/letras.png" class="letras2">
         </a>
     </div>
 
     <div class="row">
-        <p class="whatching white-text txt-55">Manage Profiles</p>
+        <p class="whatching white-text txt-55 mb-3">Manage Profiles</p>
     </div>
 
-    <div class="justify row mt-3">
-
-        <div class="dim-div-usr column" id="user-1">
-            <div class="top">
-              <i class="fas fa-edit edit-icon3 mt-120 ml-1" data-toggle="modal" data-target="#modal-editar"></i>
-              <!--<img class="min-user img-opcty" src="img/usr-1.png">-->
-              <p class="white-text center-text mt-5 mr-3">Rony</p>
-            </div>
-        </div>
-
-        <div class="dim-div-usr column" id="user-2">
-          <div class="top">
-            <i class="fas fa-edit edit-icon3 mt-120 ml-1" data-toggle="modal" data-target="#modal-editar"></i>
-            <!--<img class="min-user img-opcty" src="img/usr-2.png">-->
-            <p class="white-text center-text mt-5 mr-3">Signe</p>
-          </div>
-        </div>
-
-        <div class="dim-div-usr column" id="user-3">
-          <div class="top">
-            <i class="fas fa-edit edit-icon3 mt-120 ml-1" data-toggle="modal" data-target="#modal-editar"></i>
-            <!--<img class="min-user img-opcty" src="img/usr-2.png">-->
-            <p class="white-text center-text mt-5 mr-3">Signe</p>
-          </div>
-        </div>
-
+    <div id="div-pantallas-2" class="justify row mt-5">
     </div>
 
     <div class="justify row mt-5">
-
-        <button id="btn-done" class="btn-manage mt-5">DONE</button>
-
+      <button id="btn-done" class="btn-manage mt-3">DONE</button>
     </div>
 
+    <!--Modal editar pantalla-->
     <div class="modal" id="modal-editar" tabindex="-1" role="dialog">
         <div class="modal-dialog modal-dialog-centered" role="document">
           <div class="modal-content">
@@ -71,8 +45,10 @@
 
               <div class="row">
 
-                <div class="col-lg-4 img-editar">
-                  <i class="fas fa-edit edit-icon2 mt-100"></i>
+                <div class="col-lg-4">
+                  <label id="img-edit">
+                    
+                  </label>
                 </div>
 
                 <div class="col-lg-8">
@@ -102,7 +78,7 @@
           </div>
         </div>
     </div>
-    
+    <!--Fin modal editar pantalla-->
 
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.js"></script>
