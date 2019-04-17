@@ -209,7 +209,7 @@
                             <label class="row txt-blck ml-4">Phone: 9853-8090</label>  
                         </td> 
                         <td class="b-d">
-                            <a href="#" class="row ml-95"><label>Cambiar email de cuenta</label></a>
+                            <a href="updateCorreo.html" class="row ml-95"><label>Cambiar email de cuenta</label></a>
                             <a href="#" class="row ml-95"><label>Cambia la contraseña</label></a>
                             <a href="#" class="row ml-95"><label>Cambiar número de teléfono</label></a> 
                         </td>
@@ -280,6 +280,40 @@
 
             </tbody>
         </table>';
+    break;
+
+    case "'tablaHist'": 
+    echo'
+    <table id="tabla-historial" cellspacing="2" cellpadding="9">
+                <thead>
+                    <tr class="txt-blck b-d">
+                        <td class="td-custom">Fecha</td>
+                        <td class="td-custom txt-c">Descripcion</td>
+                        <td class="td-custom txt-c">Periodo de Servicio</td>
+                        <td class="td-custom txt-c">Metodo de pago</td>
+                        <td class="td-custom txt-r">Total</td>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr class="txt-blck b-d">
+                        <td class="td-custom">4/5/19</td>
+                        <td class="td-custom txt-c">Srevicio de Netflix</td>
+                        <td class="td-custom txt-c">4/5/19 – 5/4/19</td>
+                        <td class="td-custom txt-c">AMEX **********2061</td>
+                        <td class="td-custom txt-r">USD13.99</td>
+                    </tr>
+
+                    <tr class="txt-blck b-d">
+                        <td class="td-custom">4/5/19</td>
+                        <td class="td-custom txt-c">Srevicio de Netflix</td>
+                        <td class="td-custom txt-c">4/5/19 – 5/4/19</td>
+                        <td class="td-custom txt-c">AMEX **********2061</td>
+                        <td class="td-custom txt-r">USD13.99</td>
+                    </tr>
+
+                </tbody>
+            </table>';
     break;
 }
 

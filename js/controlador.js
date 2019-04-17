@@ -27,6 +27,8 @@ $(document).ready(function(){
 
   imgEditUser();
 
+  tablaHistorial();
+
 });
 
 function phpTabla(){
@@ -85,6 +87,15 @@ function imgEditUser(){
     },
     error: function(){
       console.log("Ha ocurrido un error!!!");
+    }
+  });
+}
+
+function tablaHistorial(){
+  $.ajax({
+    url: "ajax/landing.php?accion='tablaHist'",
+    success: function(respuesta){
+      $("#contenedor-hist").append(respuesta);
     }
   });
 }
@@ -208,8 +219,13 @@ else
   {
     $("#" + id).addClass("invalido");
     $("#" + id).removeClass("valido");
-    $("#contra-incorrecta").removeClass("d-none");
-    $("#contra-correcta").addClass("d-none");
+    $("#"+id+"-contra-incorrecta").removeClass("d-none");
+    $("#"+id+"-contra-correcta").addClass("d-none");
+    $("#"+id+"-contra-incorrecta2").removeClass("d-none");
+    $("#"+id+"-contra-correcta2").addClass("d-none");
+    $("#"+id+"-contra-incorrecta3").removeClass("d-none");
+    $("#"+id+"-contra-correcta3").addClass("d-none");
+
     r2 = false;
   }
   else
@@ -240,4 +256,24 @@ window.location.href="users.html";
 
 $("#btn-prueba-gratuita").click(function(){ 
 window.location ="selec-plan.html";
+});
+
+$("#save-upd-corr").click(function(){
+  validarCampoVacio("correo-update");
+  validarEmail("correo-update");
+});
+
+$("#cancel-upd-corr").click(function(){
+  window.location ="account.html";
+});
+
+$("#save-upd-contra").click(function(){
+  validarCampoVacio("contra-update1");
+  validarCampoVacio("contra-update2");
+  validarCampoVacio("contra-update3");
+});
+
+$("#save-upd-pone").click(function(){
+  validarCampoVacio("contra-phone");
+  validarCampoVacio("contra-update4");
 });

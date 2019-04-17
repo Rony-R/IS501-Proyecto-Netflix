@@ -213,3 +213,9 @@ html {
 .margin-logo{
  margin-top: 1.5rem;
 }
+
+.p-phone{
+  font-size: 13px;
+  color: #828282;
+  margin: 20px 3%;
+}
