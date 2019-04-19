@@ -1,3 +1,4 @@
+<?php include("ajax/seguridad-reg.php"); ?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -28,6 +29,7 @@
              </div>
          </div>        
       </div>
+      <input type="text" class="form-control" id="input-pag"  value="2">
       <div id="body">
          <div class="container">    
             <span class="lead text-paso padding-enc ">PASO <span class="bold-txt">1</span> DE <span class="bold-txt">3</span></span>
@@ -181,7 +183,13 @@
                 <div class="col-10 col-sm-8 col-md-8">
                     <button type="button" class="btn btn-danger" id="btn-continuar-1">CONTINUAR</button> 
                 </div>
-                <div class="col-1 col-sm-2 col-sm-2"></div>
+                <div class="col-1 col-sm-2 col-sm-2">
+                  <select class="custom-select mr-sm-2" id="slc-plan">
+                     <option value="1">basico</option>
+                     <option value="2">estandar</option>
+                     <option value="3">premium</option>
+                   </select>
+                </div>
              </div>   
           </div>    
       </div>  
@@ -190,6 +198,7 @@
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/controlador-R.js"></script>
+
 </body>
 <footer class="border-top margin-sup" id ="footer-gray">
     <div class="row">

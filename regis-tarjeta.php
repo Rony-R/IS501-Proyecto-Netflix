@@ -1,3 +1,4 @@
+<?php include("ajax/seguridad-reg.php"); ?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -28,7 +29,7 @@
             </div>
         </div>        
       </div>
-
+      <input type="text" class="form-control" id="input-pag"  value="6">
       <div id="body" class="container margin-sup-1">    
         <div class="row" >
             <div class="col-1 col-sm-1 col-md-3">
@@ -42,27 +43,69 @@
             
                 <form>
                   <div class="form-group">
-                    <input type="text" class="form-control" id="input-nombre" placeholder="Nombre">
+                    <input type="text" class="form-control" id="txt-nombre" placeholder="Nombre" value="">
+                    <div class="valid-feedback">
+                      Este campo esta correcto!
+                    </div>
+                    <div class="invalid-feedback">
+                      Este campo esta incorrecto
+                    </div>
                   </div>
                   <div class="form-group">
-                    <input type="text" class="form-control" id="input-apellido" placeholder="Apellido">
+                    <input type="text" class="form-control" id="txt-apellido" placeholder="Apellido" value="">
+                    <div class="valid-feedback">
+                      Este campo esta correcto!
+                    </div>
+                    <div class="invalid-feedback">
+                      Este campo esta incorrecto
+                    </div>
                   </div>
                   <div class="form-group">
-                    <input type="text" class="form-control" id="input-numero-tarjeta" placeholder="Número de tarjeta">
+                    <input type="text" class="form-control" id="txt-numero-tarjeta" placeholder="Número de tarjeta" value="">
+                    <div class="valid-feedback">
+                      Este campo esta correcto!
+                    </div>
+                    <div class="invalid-feedback">
+                      Este campo esta incorrecto
+                    </div>
                   </div>
                   <div class="form-group">
-                    <input type="text" class="form-control" id="input-fecha-vencimiento" placeholder="Fecha de Vencimiento (MM/AA)">
+                    <input type="text" class="form-control" id="txt-fecha-vencimiento" placeholder="Fecha de Vencimiento (MM/AA)" value="">
+                    <div class="valid-feedback">
+                      Este campo esta correcto!
+                    </div>
+                    <div class="invalid-feedback">
+                      Este campo esta incorrecto
+                    </div>
                   </div>
                   <div class="input-group">
-                    <input id="input-codigo-CVV" type="text" class="form-control" placeholder="Código de seguridad (CVV)">
+                    <input id="txt-codigo-CVV"  type="text" class="form-control" placeholder="Código de seguridad (CVV)" value="">
                     <div class="input-group-append">
-                      <span class="input-group-text">
+                      <span class="input-group-text input-group-text-2">
                           <button type="button" class="btn-1" data-toggle="modal" data-target="#modal">
                               <i class="far fa-question-circle"></i>
                           </button>
                       </span>
                     </div>
+                    <div class="valid-feedback">
+                      Este campo esta correcto!
+                    </div>
+                    <div class="invalid-feedback">
+                      Este campo esta incorrecto
+                    </div>
+                   
                   </div>
+                
+         
+                  <div class="input-group mb-3" id="input-slc-tipo-tarjeta">
+                      <div class="input-group-prepend">
+                        <label class="input-group-text-1" for="slc-tipo-tarjeta" id="label-tipo-tarjeta">Tipo de tarjeta</label>
+                      </div>
+                      <select class="custom-select" id="slc-tipo-tarjeta">
+                       <option value="1" selected>Crédito</option>
+                       <option value="2">Débito</option>
+                      </select>
+                    </div>
                 </form>
                 <div class= "row row-style">
                   <div class="col-8 col-sm-10">
@@ -70,11 +113,11 @@
                         <span class="txt-b-1">TU PLAN</span> 
                     </div>
                     <div >
-                        <span class="txt-b-2">Streaming ilimitado en HD y Ultra HD por USD13.99 al mes.</span> 
+                        <span class="txt-b-2" id="span-descripcion-plan"></span> 
                     </div>
                   </div>
                   <div class="col-4 col-sm-2">
-                     <a id="a-1" href="registro-plataforma.html">Cambiar</a>
+                     <a id="a-1" href="planes.html">Cambiar</a>
                   </div>
                 </div>
                 <div class= "row row-style">
@@ -95,7 +138,7 @@
                       </div>
                     </div>
                 </div>
-                <button type="button" class="btn btn-danger" id="btn-iniciar-membresia"><a href="sesion.html" style="color:white">INICIAR MEMBRESÍA</a> </button> 
+                <button type="button" class="btn btn-danger" id="btn-iniciar-membresia">INICIAR MEMBRESÍA</button> 
             </div>
             <div class="col-1 col-sm-2 col-md-4 col-md-3">
             </div>

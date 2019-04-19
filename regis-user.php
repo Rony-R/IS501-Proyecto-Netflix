@@ -1,3 +1,4 @@
+<?php include("ajax/seguridad-reg.php"); ?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -28,7 +29,7 @@
             </div>
         </div>        
       </div>
-
+      <input type="text" class="form-control" id="input-pag"  value="4">
       <div id="body" class="container margin-sup-1">    
           <div class="row" >
               <div class="col-1 col-sm-1 col-md-3"></div>
@@ -40,11 +41,24 @@
                   <h1 class="lead text-selecciona text-selecciona-3">Crea tu cuenta.</h1>  
                   <form>
                       <div class="form-group">
-                        <input type="text" class="form-control" id="input-correo" placeholder="Correo">
+                        <input type="text" class="form-control" id="txt-correo" placeholder="Correo electrónico" onkeyup="validarEmail(this.value)" >
+                        <div class="valid-feedback">
+                          Este campo esta correcto!
+                        </div>
+                        <div class="invalid-feedback">
+                          Este campo esta incorrecto
+                        </div>
                       </div>
                       <div class="form-group">
-                        <input type="text" class="form-control" id="input-contraseña" placeholder="Contraseña">
+                        <input type="password" class="form-control" id="txt-contrasenia" placeholder="Contraseña" value="">
+                        <div class="valid-feedback">
+                          Este campo esta correcto!
+                        </div>
+                        <div class="invalid-feedback">
+                          Este campo esta incorrecto
+                        </div>
                       </div>
+              
                   </form>
                   <button type="button" class="btn btn-danger" id="btn-continuar-2">CONTINUAR</button> 
               </div>

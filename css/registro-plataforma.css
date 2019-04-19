@@ -118,3 +118,7 @@
         height: 60px;
     }
 }
+
+.ocultar-div{
+    display:none;
+  }

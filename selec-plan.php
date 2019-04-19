@@ -1,3 +1,4 @@
+<?php include("ajax/seguridad-reg.php"); ?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -28,6 +29,7 @@
             </div>
         </div>        
     </div>
+    <input type="text" class="form-control" id="input-pag"  value="1">
       <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center margin-sup">
         <h1 class="display-4"><i class="far fa-check-circle red"></i></h1>
         <span class="lead text-paso">PASO <span class="bold-txt">1</span> DE <span class="bold-txt">3</span></span>

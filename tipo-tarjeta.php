@@ -1,3 +1,4 @@
+<?php include("ajax/seguridad-reg.php"); ?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -28,6 +29,7 @@
           </div>
       </div>        
       </div>
+      <input type="text" class="form-control" id="input-pag"  value="5">
       <div id="body">
         <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
           <div id="div-img-lock" ><img id="img-lock" src="img/img-lock.png"></div>
