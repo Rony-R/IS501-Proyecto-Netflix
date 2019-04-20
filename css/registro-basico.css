@@ -219,3 +219,7 @@ html {
   color: #828282;
   margin: 20px 3%;
 }
+
+.ocultar-elemento{
+  display:none;
+}

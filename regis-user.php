@@ -25,11 +25,11 @@
             <div class="col-12 col-sm-7">
             </div>
             <div class="col-12 col-sm-3 letras-img">
-                <a id="a-iniciar-sesion" href="#">Inicia sesión</a>
+               <a id="a-iniciar-sesion" href="users.html" onclick="location.href='ajax/logout-reg.php'">Inicia sesión</a>
             </div>
         </div>        
       </div>
-      <input type="text" class="form-control" id="input-pag"  value="4">
+      <input type="text" class="form-control ocultar-elemento" id="input-pag"  value="4">
       <div id="body" class="container margin-sup-1">    
           <div class="row" >
               <div class="col-1 col-sm-1 col-md-3"></div>

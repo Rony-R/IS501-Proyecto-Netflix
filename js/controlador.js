@@ -255,7 +255,7 @@ window.location.href="users.html";
 });
 
 $("#btn-prueba-gratuita").click(function(){ 
-  window.location = "selec-plan.php";
+  window.location = "selec-plan.html";
 });
 
 $("#save-upd-corr").click(function(){

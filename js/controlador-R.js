@@ -1,16 +1,24 @@
-var  var_tipo_plan = 0;
-var var_correo = "";
-var var_contrasenia = "";
 
 
-
-
-  
 $(document).ready(function(){
     $("#body").hide();
     $("#body").show(1000);
-   
-    
+    if(document.getElementById("input-pag").value == "1"){
+        var parametros= "estado=1"+"&peticion=estado";
+        console.log(parametros);
+        $.ajax({
+          url:"ajax/procesamiento-reg.php",
+          data:parametros,
+          method:"POST",
+          dataType:"json",
+          success:function(respuesta){
+            console.log(respuesta.codigo);   
+           },
+           error:function(error){
+             console.log(error);
+           }
+       });
+    }
     if(document.getElementById("input-pag").value == "2"){
         document.getElementById("div-basico").style.opacity = "0.5";
         document.getElementById("div-estandar").style.opacity = "0.5";
@@ -42,26 +50,38 @@ $(document).ready(function(){
         document.getElementById("e-7-3").style.color ="red";
         document.getElementById("e-8-3").style.color ="red";
         document.getElementById("slc-plan").value = "3";
-        var_tipo_plan=3; 
-    
-    
+
+        var parametros= "tipo-plan="+$("#slc-plan").val()+ "&peticion=establecer-tipo-plan";
+        console.log(parametros);
+        $.ajax({
+          url:"ajax/procesamiento-reg.php",
+          data:parametros,
+          method:"POST",
+          dataType:"json",
+          success:function(respuesta){
+            console.log(respuesta.codigo);   
+           },
+           error:function(error){
+             console.log(error);
+           }
+       });
+       
     }
-    
+
     if(document.getElementById("input-pag").value == "6"){
-        if(var_tipo_plan ==1){
+        
+        if(document.getElementById("input-tipo-plan").value==1){
             document.getElementById("span-descripcion-plan").innerHTML = "Streaming ilimitado en SD por USD7.99 al mes.";
-           
+    
         }
-        if(var_tipo_plan == 2){
+        if(document.getElementById("input-tipo-plan").value==2){
             document.getElementById("span-descripcion-plan").innerHTML= "Streaming ilimitado en HD por USD10.99 al mes.";  
         }
-        if(var_tipo_plan == 3){
+        if(document.getElementById("input-tipo-plan").value==3){
             document.getElementById("span-descripcion-plan").innerHTML= "Streaming ilimitado en HD y Ultra HD por USD13.99 al mes.";
         } 
-        console.log(var_tipo_plan);
+    
     }
-
-
  
 });
 
@@ -96,10 +116,7 @@ $("#div-basico").click(function(){
     document.getElementById("e-6-3").style.color = "#a6a6a6";
     document.getElementById("e-7-3").style.color = "#a6a6a6";
     document.getElementById("e-8-3").style.color = "#a6a6a6";
-
     document.getElementById("slc-plan").value = "1";
-    var_tipo_plan=1;
-    console.log(var_tipo_plan);
     
 });
   
@@ -134,9 +151,6 @@ $("#div-estandar").click(function(){
     document.getElementById("e-7-3").style.color = "#a6a6a6";
     document.getElementById("e-8-3").style.color = "#a6a6a6";
     document.getElementById("slc-plan").value = "2";
-    var_tipo_plan=2;
-
-
 });
   
 $("#div-premium").click(function(){ 
@@ -170,17 +184,11 @@ $("#div-premium").click(function(){
     document.getElementById("e-7-3").style.color ="red";
     document.getElementById("e-8-3").style.color ="red";
     document.getElementById("slc-plan").value = "3";
-    var_tipo_plan=3;
-    console.log(var_tipo_plan);
 });
-
 
 $("#btn-continuar").click(function(){ 
     window.location ="registro-cuenta-1.html";
 });
-
-
-/*VALIDAR*/
 
 function validarCampoVacio(id) {
     if (document.getElementById(id).value == "") {
@@ -211,20 +219,36 @@ function validarEmail(email) {
 /*SELECT-VER 1.1*/ 
 
 $("#btn-ver").click(function(){ 
-    window.location ="planes.html";
+    window.location ="planes.php";
 });
 
 /*PLANES 1.2*/ 
 
 $("#btn-continuar-1").click(function(){
-    window.location ="paso-2.html";
+     var parametros= "tipo-plan="+$("#slc-plan").val()+ "&peticion=establecer-tipo-plan";
+     console.log(parametros);
+     $.ajax({
+       url:"ajax/procesamiento-reg.php",
+       data:parametros,
+       method:"POST",
+       dataType:"json",
+       success:function(respuesta){
+         console.log(respuesta.codigo);   
+         window.location ="paso-2.html";
+        },
+        error:function(error){
+          console.log(error);
+          window.location ="planes.php";
+        }
+    });
+
 });
 
 
 /*PASO 2.1*/ 
   
 $("#btn-continuar").click(function(){ 
-    window.location ="regis-user.html";
+    window.location ="regis-user.php";
 });
 
 /*REG-USER 2.2*/ 
@@ -232,9 +256,25 @@ $("#btn-continuar").click(function(){
 $("#btn-continuar-2").click(function(){ 
     if ( validarCampoVacio("txt-correo") && validarCampoVacio("txt-contrasenia") )
     {   
-        var_correo = document.getElementById("txt-correo").value ;
-        var_contrasenia = document.getElementById("txt-contrasenia").value ; 
-        window.location ="tipo-tarjeta.html";
+    /* ";*/
+      var parametros= "correo="+$("#txt-correo").val()+"&contra="+$("#txt-contrasenia").val()+
+      "&peticion=info-usuario";
+      console.log(parametros);
+      $.ajax({
+        url:"ajax/procesamiento-reg.php",
+        data:parametros,
+        method:"POST",
+        dataType:"json",
+        success:function(respuesta){
+          console.log(respuesta.codigo);   
+          window.location ="tipo-tarjeta.html";
+         },
+         error:function(error){
+           console.log(error);
+           window.location ="regis-user.php";
+          
+         }
+       });
     }
 });
 
@@ -243,7 +283,7 @@ $("#btn-continuar-2").click(function(){
 /*TIPO-TAR 3.1*/ 
 
 $("#btn-tar-1").click(function(){ 
-    window.location ="regis-tarjeta.html";
+    window.location ="regis-tarjeta.php";
 });
 
 /*REG-TAR 3.2*/ 
@@ -253,16 +293,18 @@ $("#btn-iniciar-membresia").click(function(){
          validarCampoVacio("txt-numero-tarjeta") && validarCampoVacio("txt-fecha-vencimiento") && 
          validarCampoVacio("txt-codigo-CVV" ))
     {   
-        var parametros= "&tipo-plan="+var_tipo_plan+"&correo="+var_correo+ 
-        "&contra="+var_contrasenia+"&nombre-tarj="+ $("#txt-nombre").val()+
+        var parametros= "tipo-plan="+$("#input-tipo-plan").val()+ "&correo="+$("#input-correo").val()+
+        "&contra="+$("#input-contra").val()+
+        "&nombre-tarj="+ $("#txt-nombre").val()+
         "&apellido-tarj="+ $("#txt-apellido").val()+"&num-tarj="+ $("#txt-numero-tarjeta").val()+
         "&fecha-venc-tarj="+ $("#txt-fecha-vencimiento").val()+"&codigo-cvv="+ $("#txt-codigo-CVV").val()+
         "&tipo-tarj="+ $("#slc-tipo-tarjeta").val() ; 
 
         console.log(parametros);
+     
     /*
         $.ajax({
-          url:"ajax/registro-usuario.php",
+          url:"ajax/procesamiento-reg.php",
           method:"POST",
           data:parametros,
           dataType:"json",

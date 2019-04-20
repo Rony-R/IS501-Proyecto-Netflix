@@ -25,11 +25,11 @@
             <div class="col-12 col-sm-7">
             </div>
             <div class="col-12 col-sm-3 letras-img">
-                <a id="a-iniciar-sesion" href="users.html">Inicia sesión</a>
+            <a id="a-iniciar-sesion" href="users.html" onclick="location.href='ajax/logout-reg.php'">Inicia sesión</a>
             </div>
         </div>        
       </div>
-      <input type="text" class="form-control" id="input-pag"  value="6">
+      <input type="text" class="form-control ocultar-elemento" id="input-pag"  value="6">
       <div id="body" class="container margin-sup-1">    
         <div class="row" >
             <div class="col-1 col-sm-1 col-md-3">
@@ -117,7 +117,7 @@
                     </div>
                   </div>
                   <div class="col-4 col-sm-2">
-                     <a id="a-1" href="planes.html">Cambiar</a>
+                     <a id="a-1" href="planes.php">Cambiar</a>
                   </div>
                 </div>
                 <div class= "row row-style">
@@ -138,9 +138,23 @@
                       </div>
                     </div>
                 </div>
-                <button type="button" class="btn btn-danger" id="btn-iniciar-membresia">INICIAR MEMBRESÍA</button> 
+                <button type="button" class="btn btn-danger" id="btn-iniciar-membresia" onclick="location.href='ajax/logout-reg.php'" >INICIAR MEMBRESÍA</button> 
+                <form>
+                  <div class="form-row">
+                    <div class="col-2 col-sm-2">
+                       <input type="txt" class="form-control ocultar-elemento" id="input-tipo-plan" value="<?php echo $_SESSION["tipo-plan"];?>">
+                    </div>
+                    <div class="col-8 col-sm-8">
+                        <input type="txt" class="form-control ocultar-elemento" id="input-correo" value="<?php echo $_SESSION["correo"];?>">
+                    </div>
+                    <div class="col-2 col-sm-2">
+                        <input type="txt" class="form-control ocultar-elemento" id="input-contra" value="<?php echo $_SESSION["contra"];?>">
+                    </div>
+                  </div>
+                </form>
             </div>
             <div class="col-1 col-sm-2 col-md-4 col-md-3">
+          
             </div>
         </div>
       </div>  

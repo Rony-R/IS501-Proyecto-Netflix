@@ -1,4 +1,5 @@
-<?php include("ajax/seguridad-reg.php"); ?>
+<?php include("ajax/seguridad-reg.php");
+?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -25,11 +26,11 @@
              <div class="col-12 col-sm-7">
              </div>
              <div class="col-12 col-sm-3 letras-img">
-                 <a id="a-iniciar-sesion" href="#">Inicia sesión</a>
+             <a id="a-iniciar-sesion" href="users.html" onclick="location.href='ajax/logout-reg.php'">Inicia sesión</a>
              </div>
          </div>        
       </div>
-      <input type="text" class="form-control" id="input-pag"  value="2">
+      <input type="text" class="form-control ocultar-elemento" id="input-pag"  value="2">
       <div id="body">
          <div class="container">    
             <span class="lead text-paso padding-enc ">PASO <span class="bold-txt">1</span> DE <span class="bold-txt">3</span></span>
@@ -40,14 +41,14 @@
                 <div class="col-12 col-sm-6">
                       <div class="row">
                          <div id="div-basico"  class="col-4 col-sm-3 element-box">
-                            <spam class="white txt-negro element-box-1">Básico</spam>
+                            <span class="white txt-negro element-box-1">Básico</span>
                          </div>
                          <div id="div-estandar" class="col-4 col-sm-3 txt-center element-box">
-                            <spam  class="white txt-negro">Estándar</spam>
+                            <span  class="white txt-negro">Estándar</span>
                          </div>
                      
                          <div id="div-premium" class="col-4 col-sm-3 txt-center element-box">
-                            <spam class="white txt-negro"> Premiun</spam>
+                            <span class="white txt-negro"> Premiun</span>
                          </div>
                       </div>
                 </div>
@@ -55,122 +56,122 @@
      
             <div class="row border-bottom-tab ">
                <div class="col-12 col-sm-6">
-                  <spam class="txt-negro">Precio mensual cuando termine el mes gratis, el 03‑23‑19</spam>
+                  <span class="txt-negro">Precio mensual cuando termine el mes gratis, el 03‑23‑19</span>
                </div>
                <div  class="col-4 col-sm-2 txt-center">
-                  <spam id="e-1-1" class="txt-negro element-tab">USD7.99</spam>
+                  <span id="e-1-1" class="txt-negro element-tab">USD7.99</span>
                </div>
                <div class="col-4 col-sm-2 txt-center">
-                  <spam id="e-1-2" class="txt-negro element-tab ">USD10.99</spam>
+                  <span id="e-1-2" class="txt-negro element-tab ">USD10.99</span>
                </div>
                <div class="col-4 col-sm-2 txt-center">
-                  <spam id="e-1-3" class="txt-negro element-tab ">USD13.99</spam>
+                  <span id="e-1-3" class="txt-negro element-tab ">USD13.99</span>
                </div>
             </div>    
     
     
             <div class="row  border-bottom-tab">
                 <div class="col-12 col-sm-6">
-                   <spam  class="btn-continuar">Disponible en HD</spam>
+                   <span  class="btn-continuar">Disponible en HD</span>
                 </div>
                 <div class="col-4 col-sm-2 txt-center">
-                   <spam ><i id="e-2-1"  class="fas fa-times element-tab"></i></spam>
+                   <span ><i id="e-2-1"  class="fas fa-times element-tab"></i></span>
                 </div>
                 <div class="col-4 col-sm-2 txt-center">
-                   <spam ><i id="e-2-2" class="fas fa-check element-tab"></i></spam>
+                   <span ><i id="e-2-2" class="fas fa-check element-tab"></i></span>
                 </div>
                 <div class="col-4 col-sm-2 txt-center">
-                   <spam ><i id="e-2-3" class="fas fa-check element-tab "></i></spam>
+                   <span ><i id="e-2-3" class="fas fa-check element-tab "></i></span>
                 </div>
              </div>   
              
             <div class="row  border-bottom-tab">
                 <div class="col-12 col-sm-6">
-                   <spam  class="btn-continuar">Disponible en Ultra HD</spam>
+                   <span  class="btn-continuar">Disponible en Ultra HD</span>
                 </div>
                 <div class="col-4 col-sm-2 txt-center">
-                   <spam><i id="e-3-1" class="fas fa-times element-tab"></i></spam>
+                   <span><i id="e-3-1" class="fas fa-times element-tab"></i></span>
                 </div>
                 <div class="col-4 col-sm-2 txt-center">
-                   <spam><i id="e-3-2" class="fas fa-times element-tab"></i></spam>
+                   <span><i id="e-3-2" class="fas fa-times element-tab"></i></span>
                 </div>
                 <div class="col-4 col-sm-2 txt-center">
-                   <spam><i id="e-3-3" class="fas fa-check element-tab "></i></spam>
+                   <span><i id="e-3-3" class="fas fa-check element-tab "></i></span>
                 </div>
              </div>   
             
              <div class="row  border-bottom-tab">
                 <div class="col-12 col-sm-6">
-                   <spam  class="btn-continuar">Pantallas que se pueden ver al mismo tiempoo</spam>
+                   <span  class="btn-continuar">Pantallas que se pueden ver al mismo tiempoo</span>
                 </div>
                 <div class="col-4 col-sm-2 txt-center">
-                   <spam id="e-4-1" class="element-tab">1</spam>
+                   <span id="e-4-1" class="element-tab">1</span>
                 </div>
                 <div class="col-4 col-sm-2 txt-center">
-                   <spam  id="e-4-2" class="element-tab">2</spam>
+                   <span  id="e-4-2" class="element-tab">2</span>
                 </div>
                 <div class="col-4 col-sm-2 txt-center">
-                   <spam id="e-4-3" class="element-tab ">4</spam>
+                   <span id="e-4-3" class="element-tab ">4</span>
                 </div>
              </div>   
     
              <div class="row  border-bottom-tab">
                 <div class="col-12 col-sm-6">
-                   <spam  class="btn-continuar ">Multidispositivo: portátil, TV, teléfono y tableta</spam>
+                   <span  class="btn-continuar ">Multidispositivo: portátil, TV, teléfono y tableta</span>
                 </div>
                 <div class="col-4 col-sm-2 txt-center">
-                   <spam><i id="e-5-1" class="fas fa-check element-tab"></i></spam>
+                   <span><i id="e-5-1" class="fas fa-check element-tab"></i></span>
                 </div>
                 <div class="col-4 col-sm-2 txt-center">
-                   <spam><i id="e-5-2" class="fas fa-check element-tab"></i></spam>
+                   <span><i id="e-5-2" class="fas fa-check element-tab"></i></span>
                 </div>
                 <div class="col-4 col-sm-2 txt-center">
-                   <spam><i id="e-5-3" class="fas fa-check element-tab "></i></spam>
+                   <span><i id="e-5-3" class="fas fa-check element-tab "></i></span>
                 </div>
              </div>    
     
              <div class="row  border-bottom-tab">
                 <div class="col-12 col-sm-6">
-                   <spam  class="btn-continuar">Todas las películas y series que desees</spam>
+                   <span  class="btn-continuar">Todas las películas y series que desees</span>
                 </div>
                 <div class="col-4 col-sm-2 txt-center">
-                   <spam><i id="e-6-1" class="fas fa-check element-tab"></i></spam>
+                   <span><i id="e-6-1" class="fas fa-check element-tab"></i></span>
                 </div>
                 <div class="col-4 col-sm-2 txt-center">
-                   <spam><i id="e-6-2"  class="fas fa-check element-tab"></i></spam>
+                   <span><i id="e-6-2"  class="fas fa-check element-tab"></i></span>
                 </div>
                 <div class="col-4 col-sm-2 txt-center">
-                   <spam><i id="e-6-3"  class="fas fa-check element-tab "></i></spam>
+                   <span><i id="e-6-3"  class="fas fa-check element-tab "></i></span>
                 </div>
              </div> 
     
              <div class="row  border-bottom-tab">
                 <div class="col-12 col-sm-6">
-                   <spam  class="btn-continuar">Cancela cuando quieras.</spam>
+                   <span  class="btn-continuar">Cancela cuando quieras.</span>
                 </div>
                 <div class="col-4 col-sm-2 txt-center">
-                   <spam><i id="e-7-1"  class="fas fa-check element-tab"></i></spam>
+                   <span><i id="e-7-1"  class="fas fa-check element-tab"></i></span>
                 </div>
                 <div class="col-4 col-sm-2 txt-center">
-                   <spam><i id="e-7-2"  class="fas fa-check element-tab"></i></spam>
+                   <span><i id="e-7-2"  class="fas fa-check element-tab"></i></span>
                 </div>
                 <div class="col-4 col-sm-2 txt-center">
-                   <spam><i id="e-7-3"  class="fas fa-check element-tab "></i></spam>
+                   <span><i id="e-7-3"  class="fas fa-check element-tab "></i></span>
                 </div>
              </div> 
     
              <div class="row padding-tab-1">
                 <div class="col-12 col-sm-6">
-                   <spam  class="btn-continuar">El primer mes es gratis</spam>
+                   <span  class="btn-continuar">El primer mes es gratis</span>
                 </div>
                 <div class="col-4 col-sm-2 txt-center">
-                   <spam><i id="e-8-1"  class="fas fa-check element-tab"></i></spam>
+                   <span><i id="e-8-1"  class="fas fa-check element-tab"></i></span>
                 </div> 
                 <div class="col-4 col-sm-2 txt-center">
-                   <spam><i id="e-8-2"  class="fas fa-check element-tab"></i></spam>
+                   <span><i id="e-8-2"  class="fas fa-check element-tab"></i></span>
                 </div>
                 <div class="col-4 col-sm-2 txt-center">
-                   <spam><i id="e-8-3"  class="fas fa-check element-tab "></i></spam>
+                   <span><i id="e-8-3"  class="fas fa-check element-tab "></i></span>
                 </div>
              </div>
              <span class="text-gray">La disponibilidad de contenido en HD y en Ultra HD depende de la capacidad de tu servicio de Internet y 
@@ -184,7 +185,7 @@
                     <button type="button" class="btn btn-danger" id="btn-continuar-1">CONTINUAR</button> 
                 </div>
                 <div class="col-1 col-sm-2 col-sm-2">
-                  <select class="custom-select mr-sm-2" id="slc-plan">
+                  <select class="custom-select mr-sm-2 ocultar-elemento" id="slc-plan">
                      <option value="1">basico</option>
                      <option value="2">estandar</option>
                      <option value="3">premium</option>
