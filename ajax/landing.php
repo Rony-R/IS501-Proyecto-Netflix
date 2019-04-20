@@ -210,8 +210,8 @@
                         </td> 
                         <td class="b-d">
                             <a href="updateCorreo.html" class="row ml-95"><label>Cambiar email de cuenta</label></a>
-                            <a href="#" class="row ml-95"><label>Cambia la contraseña</label></a>
-                            <a href="#" class="row ml-95"><label>Cambiar número de teléfono</label></a> 
+                            <a href="updateContra.html" class="row ml-95"><label>Cambia la contraseña</label></a>
+                            <a href="updatePhone.html" class="row ml-95"><label>Cambiar número de teléfono</label></a> 
                         </td>
                     </tr>
                     <tr>
@@ -220,8 +220,8 @@
                             <label class="row txt-blck ml-4">TARJETA-CREDITO</label>
                         </td>
                         <td class="b-d">
-                            <a href="#" class="row ml-95"><label>Actualizar información de pago</label></a>
-                            <a href="#" class="row ml-95"><label>Detalles de facturación</label></a>
+                            <a href="update-info-pago.html" class="row ml-95"><label>Actualizar información de pago</label></a>
+                            <a href="historial-pagos.html" class="row ml-95"><label>Detalles de facturación</label></a>
                         </td>
                     </tr>
                     <tr>
