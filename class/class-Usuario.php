@@ -71,5 +71,7 @@
 
 		//Otros Metodos
 
+		public function insertarUsuario($conexion){}
+
 	}
 ?>

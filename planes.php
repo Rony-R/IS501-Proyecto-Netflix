@@ -102,7 +102,7 @@
             
              <div class="row  border-bottom-tab">
                 <div class="col-12 col-sm-6">
-                   <span  class="btn-continuar">Pantallas que se pueden ver al mismo tiempoo</span>
+                   <span  class="btn-continuar">Pantallas que se pueden ver al mismo tiempo</span>
                 </div>
                 <div class="col-4 col-sm-2 txt-center">
                    <span id="e-4-1" class="element-tab">1</span>
