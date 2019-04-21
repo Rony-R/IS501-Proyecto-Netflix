@@ -57,6 +57,13 @@
                         <div class="invalid-feedback">
                           Este campo esta incorrecto
                         </div>
+                        <label class="mt-3">Selecciona tu genero</label> <br>
+                        <div id="chk-gen">
+                          <label>Femenino</label>
+                          <input id="btn-genero" type="radio" name="genero" value="1">
+                          <label class="ml-5">Masculino</label>
+                          <input id="btn-genero1" type="radio" name="genero" value="2">
+                        </div>
                       </div>
               
                   </form>

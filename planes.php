@@ -48,7 +48,7 @@
                          </div>
                      
                          <div id="div-premium" class="col-4 col-sm-3 txt-center element-box">
-                            <span class="white txt-negro"> Premiun</span>
+                            <span class="white txt-negro"> Premium</span>
                          </div>
                       </div>
                 </div>

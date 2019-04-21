@@ -227,6 +227,7 @@ $("#btn-ver").click(function(){
 $("#btn-continuar-1").click(function(){
      var parametros= "tipo-plan="+$("#slc-plan").val()+ "&peticion=establecer-tipo-plan";
      console.log(parametros);
+     //alert(parametros);
      $.ajax({
        url:"ajax/procesamiento-reg.php",
        data:parametros,
@@ -257,9 +258,10 @@ $("#btn-continuar-2").click(function(){
     if ( validarCampoVacio("txt-correo") && validarCampoVacio("txt-contrasenia") )
     {   
     /* ";*/
-      var parametros= "correo="+$("#txt-correo").val()+"&contra="+$("#txt-contrasenia").val()+
+      var parametros= "correo="+$("#txt-correo").val()+"&contra="+ $("#txt-contrasenia").val()+"&genero="+ $("input[name='genero']:checked").val() +
       "&peticion=info-usuario";
       console.log(parametros);
+      //alert(parametros);
       $.ajax({
         url:"ajax/procesamiento-reg.php",
         data:parametros,
@@ -295,12 +297,13 @@ $("#btn-iniciar-membresia").click(function(){
     {   
         var parametros= "tipo-plan="+$("#input-tipo-plan").val()+ "&correo="+$("#input-correo").val()+
         "&contra="+$("#input-contra").val()+
+        "&genero="+$("#input-genero").val()+
         "&nombre-tarj="+ $("#txt-nombre").val()+
         "&apellido-tarj="+ $("#txt-apellido").val()+"&num-tarj="+ $("#txt-numero-tarjeta").val()+
         "&fecha-venc-tarj="+ $("#txt-fecha-vencimiento").val()+"&codigo-cvv="+ $("#txt-codigo-CVV").val()+
         "&tipo-tarj="+ $("#slc-tipo-tarjeta").val() ; 
 
-        console.log(parametros);
+        alert(parametros);
      
     /*
         $.ajax({
@@ -316,10 +319,4 @@ $("#btn-iniciar-membresia").click(function(){
     }  
 
 });
-
-
-
-
-
- 
 

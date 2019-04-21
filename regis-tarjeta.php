@@ -144,11 +144,14 @@
                     <div class="col-2 col-sm-2">
                        <input type="txt" class="form-control ocultar-elemento" id="input-tipo-plan" value="<?php echo $_SESSION["tipo-plan"];?>">
                     </div>
-                    <div class="col-8 col-sm-8">
+                    <div class="col-8 col-sm-6">
                         <input type="txt" class="form-control ocultar-elemento" id="input-correo" value="<?php echo $_SESSION["correo"];?>">
                     </div>
                     <div class="col-2 col-sm-2">
                         <input type="txt" class="form-control ocultar-elemento" id="input-contra" value="<?php echo $_SESSION["contra"];?>">
+                    </div>
+                    <div class="col-2 col-sm-2">
+                        <input type="txt" class="form-control ocultar-elemento" id="input-genero" value="<?php echo $_SESSION["genero"];?>">
                     </div>
                   </div>
                 </form>
