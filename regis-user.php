@@ -57,6 +57,7 @@
                         <div class="invalid-feedback">
                           Este campo esta incorrecto
                         </div>
+                        <input type="text" class="form-control mt-3" id="txt-telefono" placeholder="Telefono" value="">
                         <label class="mt-3">Selecciona tu genero</label> <br>
                         <div id="chk-gen">
                           <label>Femenino</label>

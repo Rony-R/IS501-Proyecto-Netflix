@@ -3,7 +3,7 @@
 	class Conexion{
 
 		private $db = "oci:dbname=XE";
-		private $usuario = "trello";
+		private $usuario = "RONY";
         private $password = "oracle";
         private $conexion;
 
@@ -16,6 +16,11 @@
         public function ejecutarConsulta($sql){
             $stmt = $this->conexion->query($sql);
             return $stmt;
+        }
+
+        public function ejecutarConsulta2($sql){
+            $stmt = $this->conexion->prepare($sql);
+            $stmt->execute();
         }
 
         public function obtenerFila($stmt){

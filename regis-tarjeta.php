@@ -138,7 +138,7 @@
                       </div>
                     </div>
                 </div>
-                <button type="button" class="btn btn-danger" id="btn-iniciar-membresia" onclick="location.href='ajax/logout-reg.php'" >INICIAR MEMBRESÍA</button> 
+                <button type="button" class="btn btn-danger" id="btn-iniciar-membresia"  >INICIAR MEMBRESÍA</button> 
                 <form>
                   <div class="form-row">
                     <div class="col-2 col-sm-2">
@@ -152,6 +152,9 @@
                     </div>
                     <div class="col-2 col-sm-2">
                         <input type="txt" class="form-control ocultar-elemento" id="input-genero" value="<?php echo $_SESSION["genero"];?>">
+                    </div>
+                    <div class="col-2 col-sm-2">
+                        <input type="txt" class="form-control ocultar-elemento" id="input-telefono" value="<?php echo $_SESSION["telefono"];?>">
                     </div>
                   </div>
                 </form>

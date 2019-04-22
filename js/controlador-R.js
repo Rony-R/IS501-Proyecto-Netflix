@@ -258,10 +258,15 @@ $("#btn-continuar-2").click(function(){
     if ( validarCampoVacio("txt-correo") && validarCampoVacio("txt-contrasenia") )
     {   
     /* ";*/
-      var parametros= "correo="+$("#txt-correo").val()+"&contra="+ $("#txt-contrasenia").val()+"&genero="+ $("input[name='genero']:checked").val() +
-      "&peticion=info-usuario";
+      var parametros= "correo="+$("#txt-correo").val() +
+                      "&contra="+ $("#txt-contrasenia").val() +
+                      "&telefono="+ $("#txt-telefono").val() +
+                      "&genero="+ $("input[name='genero']:checked").val() +
+                      "&peticion=info-usuario";
+
       console.log(parametros);
       //alert(parametros);
+
       $.ajax({
         url:"ajax/procesamiento-reg.php",
         data:parametros,
@@ -293,29 +298,48 @@ $("#btn-iniciar-membresia").click(function(){
     
     if ( validarCampoVacio("txt-nombre") && validarCampoVacio("txt-apellido") && 
          validarCampoVacio("txt-numero-tarjeta") && validarCampoVacio("txt-fecha-vencimiento") && 
-         validarCampoVacio("txt-codigo-CVV" ))
-    {   
-        var parametros= "tipo-plan="+$("#input-tipo-plan").val()+ "&correo="+$("#input-correo").val()+
-        "&contra="+$("#input-contra").val()+
-        "&genero="+$("#input-genero").val()+
-        "&nombre-tarj="+ $("#txt-nombre").val()+
-        "&apellido-tarj="+ $("#txt-apellido").val()+"&num-tarj="+ $("#txt-numero-tarjeta").val()+
-        "&fecha-venc-tarj="+ $("#txt-fecha-vencimiento").val()+"&codigo-cvv="+ $("#txt-codigo-CVV").val()+
-        "&tipo-tarj="+ $("#slc-tipo-tarjeta").val() ; 
+         validarCampoVacio("txt-codigo-CVV" )){
 
-        alert(parametros);
-     
-    /*
+        var parametrosUsuarios = "tipo-plan="+$("#input-tipo-plan").val() + 
+                                 "&genero="+$("#input-genero").val() + 
+                                 "&correo="+$("#input-correo").val() + 
+                                 "&contra="+$("#input-contra").val() +
+                                 "&telefono="+$("#input-telefono").val();
+
+        var parametrosTarjeta = "&tipo-tarj="+ $("#slc-tipo-tarjeta").val() + 
+                                "&nombre-tarj="+ $("#txt-nombre").val() + 
+                                "&apellido-tarj="+ $("#txt-apellido").val() + 
+                                "&num-tarj="+ $("#txt-numero-tarjeta").val() + 
+                                "&codigo-cvv="+ $("#txt-codigo-CVV").val() + 
+                                "&fecha-venc-tarj="+ $("#txt-fecha-vencimiento").val();
+
         $.ajax({
-          url:"ajax/procesamiento-reg.php",
-          method:"POST",
-          data:parametros,
-          dataType:"json",
-          success:function(respuesta){ 
-             console.log(respuesta);
-          }
+            url: "ajax/api.php?accion='insertar-usuario'",
+            method: "POST",
+            data:parametrosUsuarios,
+            dataType: "json",
+            success: function(respuesta){
+                alert(respuesta.mensaje);
+            },
+            error: function(e){
+                alert("Ocurrio un error!!!");
+                console.log(e);
+            }
         });
-       */
+
+        /*$.ajax({
+            url: "ajax/api.php?accion='insertar-registro-tarjeta'",
+            method: "POST",
+            data:parametrosTarjeta,
+            success: function(respuesta){
+                alert(respuesta.mensaje);
+            },
+            error: function(e){
+                console.log(e);
+            }
+        });*/
+
+        //alert("Parametros Usuario: " + parametrosUsuarios + "Parametros Tarjeta: " + parametrosTarjeta);
     }  
 
 });
