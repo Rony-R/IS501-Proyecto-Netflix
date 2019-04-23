@@ -317,9 +317,9 @@ $("#btn-iniciar-membresia").click(function(){
             url: "ajax/api.php?accion='insertar-usuario'",
             method: "POST",
             data:parametrosUsuarios,
-            dataType: "json",
+            //dataType: "json",
             success: function(respuesta){
-                alert(respuesta.mensaje);
+                alert(respuesta);
             },
             error: function(e){
                 alert("Ocurrio un error!!!");
