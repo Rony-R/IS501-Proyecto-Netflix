@@ -7,7 +7,8 @@
     <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/sticky-footer-navbar/">
     <link href="css/config-subtitulos.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/config-subtitulos.css" rel="stylesheet">
+    <link href="css/config-cuenta.css" rel="stylesheet">
+
   </head>
 
   <body class="d-flex flex-column h-100">
@@ -46,8 +47,11 @@
       <div class="row">
            <div class="col-12 col-sm-8">
                  <h1>Aspecto de los subtítulos</h1>
-                 <div class="div-sub" style="background-image: url('img/fondo-sub.jpg') ;">
-                   Esta configuración afectará a los subtítulos en todos los dispositivos compatibles.
+                 <div id="div-text" class="div-sub" style="background-image: url('img/fondo-sub.jpg') ;">
+                    <div id="div-ventana-text">
+                      <span id="span-text">Esta configuración afectará a los subtítulos en todos los dispositivos compatibles.</span>
+                    </div>
+                 
                  </div>
            </div>
            <div class="col-12 col-sm-4">
@@ -59,129 +63,138 @@
            <div class="row">
               <div class="col-12 col-sm-8">
                   <div class="form-group">
-                      <select class="form-control" id="exampleFormControlSelect1">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                      </select>
+                      <div class="dropdown">
+                          <button class="btn btn-secondary-dd dropdown-toggle" type="button" id="dp-fuentes" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            
+                          </button>
+                          <div class="dropdown-menu" aria-labelledby="dp-fuentes">
+                            <a id="a-fuente-inconsolata" class="dropdown-item " href="#">Inconsolata</a>
+                            <a id="a-fuente-lora" class="dropdown-item" href="#">Lora</a>
+                            <a id="a-fuente-openSans" class="dropdown-item" href="#">OpenSans</a>
+                            <a id="a-fuente-oswald" class="dropdown-item" href="#">Oswald</a>
+                            <a id="a-fuente-slabo" class="dropdown-item" href="#">Slabo</a>
+                            <a id="a-fuente-staatliche" class="dropdown-item" href="#">Staatliche</a>
+                          </div>
+                        </div>
                     </div>
               </div>
               <div class="col-12 col-sm-4">
                 <div class="dropdown">
-                  <a class="btn btn-secondary dropdown-toggle cpColor cpMulti cpSquare large cpColorGREEN" href="#" role="button" id="div-colors" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <a  class="btn btn-secondary dropdown-toggle cpColor cpMulti cpSquare large" href="#" role="button" id="color-fuente" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   </a>
-                  <div class="dropdown-menu" aria-labelledby="div-colors">
-                    <a href="#" class="cpColor cpSelected cpMulti cpSquare large cpColorWHITE">Blanco</a>
-                    <a href="#" class="cpColor cpMulti cpSquare large cpColorBLACK">Negro</a>
-                    <a href="#" class="cpColor cpMulti cpSquare large cpColorRED">Rojo</a>
-                    <a href="#" class="cpColor cpMulti cpSquare large cpColorGREEN">Verde</a>
-                    <a href="#" class="cpColor cpMulti cpSquare large cpColorBLUE">Azul</a>
-                    <a href="#" class="cpColor cpMulti cpSquare large cpColorYELLOW">Amarillo</a>
-                    <a href="#" class="cpColor cpMulti cpSquare large cpColorMAGENTA">Magenta</a>
-                    <a href="#" class="cpColor cpMulti cpSquare large cpColorCYAN">Azul turquesa</a>
+                  <div class="dropdown-menu" aria-labelledby="color-fuente">
+                    <a href="#" id="color-fuente-blanco" class="cpColor cpSelected cpMulti cpSquare large cpMarg-1 cpColorWHITE">Blanco</a>
+                    <a href="#" id="color-fuente-negro" class="cpColor cpMulti cpSquare large cpColorBLACK">Negro</a>
+                    <a href="#" id="color-fuente-rojo" class="cpColor cpMulti cpSquare large cpColorRED">Rojo</a>
+                    <a href="#" id="color-fuente-verde" class="cpColor cpMulti cpSquare large cpMarg-1 cpColorGREEN">Verde</a>
+                    <a href="#" id="color-fuente-azul" class="cpColor cpMulti cpSquare large cpColorBLUE">Azul</a>
+                    <a href="#" id="color-fuente-amarillo" class="cpColor cpMulti cpSquare large cpColorYELLOW">Amarillo</a>
+                    <a href="#" id="color-fuente-magenta" class="cpColor cpMulti cpSquare large cpMarg-1 cpColorMAGENTA">Magenta</a>
+                    <a href="#" id="color-fuente-azul-turquesa" class="cpColor cpMulti cpSquare large cpColorCYAN">Azul turquesa</a>
                     <div class="cpFooter">
                     <div class="ui-binary-input">
-                    <input type="checkbox" class="" name="charOpacity" id="bxid_charOpacity_SEMI_TRANSPARENT" tabindex="0" data-uia="charOpacity" value="SEMI_TRANSPARENT" checked=""><label for="bxid_charOpacity_SEMI_TRANSPARENT" data-uia="label+charOpacity">Semitransparente</label><div class="helper"></div></div></div>
+                    <div class="helper"></div></div></div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="col-12 col-sm-3">
-            Tamaño del texto: Pequeño
+            Tamaño del texto: <label id="lbl-tam-text"></label> 
             <div class="btn-group" role="group" aria-label="Basic example">
-              <button type="button" class="btn btn-secondary btn-tam">A</button>
-              <button type="button" class="btn btn-secondary btn-tam">A</button>
-              <button type="button" class="btn btn-secondary btn-tam">A</button>
+              <button id="btn-tam-peq" type="button" class="btn btn-secondary btn-tam" >A</button>
+              <button id="btn-tam-med" type="button" class="btn btn-secondary btn-tam">A</button>
+              <button id="btn-tam-grand" type="button" class="btn btn-secondary btn-tam">A</button>
             </div>
           </div>
           <div class="col-12 col-sm-4">
           </div>
-     </div>
-     <div class="row">
+      </div>
+      <div class="row">
         <div class="col-12 col-sm-5">
           Sombra
          <div class="row">
             <div class="col-12 col-sm-8">
                 <div class="form-group">
-                    <select class="form-control" id="exampleFormControlSelect1">
-                      <option>1</option>
-                      <option>2</option>
-                      <option>3</option>
-                      <option>4</option>
-                      <option>5</option>
-                    </select>
+                  <div class="dropdown">
+                    <button class="btn btn-secondary-dd " type="button" id="dp-sombras" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Sombra paralela
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dp-sombras">
+                      <a id="a-sombra-ninguna" class="dropdown-item " href="#">Ninguna</a>
+                      <a id="a-sombra-paralela" class="dropdown-item " href="#">Sombra paralela</a>
+                      <a id="a-sombra-uniforme" class="dropdown-item " href="#">Uniforme</a>
+                    </div>
                   </div>
+                </div>
             </div>
             <div class="col-12 col-sm-4">
-              <div class="dropdown">
-                <a class="btn btn-secondary dropdown-toggle cpColor cpMulti cpSquare large cpColorGREEN" href="#" role="button" id="div-colors" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                </a>
-                <div class="dropdown-menu" aria-labelledby="div-colors">
-                  <a href="#" class="cpColor cpSelected cpMulti cpSquare large cpColorWHITE">Blanco</a>
-                  <a href="#" class="cpColor cpMulti cpSquare large cpColorBLACK">Negro</a>
-                  <a href="#" class="cpColor cpMulti cpSquare large cpColorRED">Rojo</a>
-                  <a href="#" class="cpColor cpMulti cpSquare large cpColorGREEN">Verde</a>
-                  <a href="#" class="cpColor cpMulti cpSquare large cpColorBLUE">Azul</a>
-                  <a href="#" class="cpColor cpMulti cpSquare large cpColorYELLOW">Amarillo</a>
-                  <a href="#" class="cpColor cpMulti cpSquare large cpColorMAGENTA">Magenta</a>
-                  <a href="#" class="cpColor cpMulti cpSquare large cpColorCYAN">Azul turquesa</a>
-                  <div class="cpFooter">
-                  <div class="ui-binary-input">
-                  <input type="checkbox" class="" name="charOpacity" id="bxid_charOpacity_SEMI_TRANSPARENT" tabindex="0" data-uia="charOpacity" value="SEMI_TRANSPARENT" checked=""><label for="bxid_charOpacity_SEMI_TRANSPARENT" data-uia="label+charOpacity">Semitransparente</label><div class="helper"></div></div></div>
+                <div class="dropdown">
+                    <a  class="btn btn-secondary dropdown-toggle cpColor cpMulti cpSquare large" href="#" role="button" id="color-sombra" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="color-sombra">
+                      <a href="#" id="color-sombra-blanco" class="cpColor cpSelected cpMulti cpSquare large cpMarg-1 cpColorWHITE">Blanco</a>
+                      <a href="#" id="color-sombra-negro" class="cpColor cpMulti cpSquare large cpColorBLACK">Negro</a>
+                      <a href="#" id="color-sombra-rojo" class="cpColor cpMulti cpSquare large cpColorRED">Rojo</a>
+                      <a href="#" id="color-sombra-verde" class="cpColor cpMulti cpSquare large cpMarg-1 cpColorGREEN">Verde</a>
+                      <a href="#" id="color-sombra-azul" class="cpColor cpMulti cpSquare large cpColorBLUE">Azul</a>
+                      <a href="#" id="color-sombra-amarillo" class="cpColor cpMulti cpSquare large cpColorYELLOW">Amarillo</a>
+                      <a href="#" id="color-sombra-magenta" class="cpColor cpMulti cpSquare large cpMarg-1 cpColorMAGENTA">Magenta</a>
+                      <a href="#" id="color-sombra-azul-turquesa" class="cpColor cpMulti cpSquare large cpColorCYAN">Azul turquesa</a>
+                      <div class="cpFooter">
+                      <div class="ui-binary-input">
+                      <div class="helper"></div></div></div>
+                    </div>
                 </div>
-              </div>
             </div>
        </div>
         </div>
         <div class="col-12 col-sm-2">
           Fondo
           <div class="dropdown">
-              <a class="btn btn-secondary dropdown-toggle cpColor cpMulti cpSquare large cpColorGREEN" href="#" role="button" id="div-colors" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a class="btn btn-secondary dropdown-toggle cpColor cpMulti cpSquare large cpMarg" href="#" role="button" id="color-fondo" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               </a>
-              <div class="dropdown-menu" aria-labelledby="div-colors">
-                <a href="#" class="cpColor cpSelected cpMulti cpSquare large cpColorWHITE">Blanco</a>
-                <a href="#" class="cpColor cpMulti cpSquare large cpColorBLACK">Negro</a>
-                <a href="#" class="cpColor cpMulti cpSquare large cpColorRED">Rojo</a>
-                <a href="#" class="cpColor cpMulti cpSquare large cpColorGREEN">Verde</a>
-                <a href="#" class="cpColor cpMulti cpSquare large cpColorBLUE">Azul</a>
-                <a href="#" class="cpColor cpMulti cpSquare large cpColorYELLOW">Amarillo</a>
-                <a href="#" class="cpColor cpMulti cpSquare large cpColorMAGENTA">Magenta</a>
-                <a href="#" class="cpColor cpMulti cpSquare large cpColorCYAN">Azul turquesa</a>
+              <div class="dropdown-menu" aria-labelledby="color-fondo">
+                <a  id="color-fondo-ninguno" href="#" class="cpColor cpFeatured large cpColorNONE cpColor-botton">Ninguno</a>
+                <a  id="color-fondo-blanco" href="#" class="cpColor cpSelected cpMulti cpSquare large cpMarg  cpMarg cpColorWHITE" >Blanco</a>
+                <a  id="color-fondo-negro" href="#" class="cpColor cpMulti cpSquare large cpColorBLACK">Negro</a>
+                <a  id="color-fondo-rojo" href="#" class="cpColor cpMulti cpSquare large cpColorRED">Rojo</a>
+                <a  id="color-fondo-verde" href="#" class="cpColor cpMulti cpSquare large cpMarg cpColorGREEN ">Verde</a>
+                <a  id="color-fondo-azul" href="#" class="cpColor cpMulti cpSquare large cpColorBLUE">Azul</a>
+                <a  id="color-fondo-amarillo" href="#" class="cpColor cpMulti cpSquare large cpColorYELLOW">Amarillo</a>
+                <a  id="color-fondo-magenta" href="#" class="cpColor cpMulti cpSquare large cpMarg cpColorMAGENTA">Magenta</a>
+                <a  id="color-fondo-azul-turquesa" href="#" class="cpColor cpMulti cpSquare large cpColorCYAN">Azul turquesa</a>
                 <div class="cpFooter">
                 <div class="ui-binary-input">
-                <input type="checkbox" class="" name="charOpacity" id="bxid_charOpacity_SEMI_TRANSPARENT" tabindex="0" data-uia="charOpacity" value="SEMI_TRANSPARENT" checked=""><label for="bxid_charOpacity_SEMI_TRANSPARENT" data-uia="label+charOpacity">Semitransparente</label><div class="helper"></div></div></div>
+                <div class="helper"></div></div></div>
               </div>
             </div>
         </div>
-      
         <div class="col-12 col-sm-2">
             Ventana
             <div class="dropdown">
-                <a class="btn btn-secondary dropdown-toggle cpColor cpMulti cpSquare large cpColorGREEN" href="#" role="button" id="div-colors" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="btn btn-secondary dropdown-toggle cpColor cpMulti cpSquare large cpMarg" href="#" role="button" id="color-ventana" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 </a>
-                <div class="dropdown-menu" aria-labelledby="div-colors">
-                  <a href="#" class="cpColor cpSelected cpMulti cpSquare large cpColorWHITE">Blanco</a>
-                  <a href="#" class="cpColor cpMulti cpSquare large cpColorBLACK">Negro</a>
-                  <a href="#" class="cpColor cpMulti cpSquare large cpColorRED">Rojo</a>
-                  <a href="#" class="cpColor cpMulti cpSquare large cpColorGREEN">Verde</a>
-                  <a href="#" class="cpColor cpMulti cpSquare large cpColorBLUE">Azul</a>
-                  <a href="#" class="cpColor cpMulti cpSquare large cpColorYELLOW">Amarillo</a>
-                  <a href="#" class="cpColor cpMulti cpSquare large cpColorMAGENTA">Magenta</a>
-                  <a href="#" class="cpColor cpMulti cpSquare large cpColorCYAN">Azul turquesa</a>
+                <div class="dropdown-menu" aria-labelledby="color-ventana">
+                  <a id="color-ventana-ninguno" href="#" class="cpColor cpFeatured large cpColorNONE cpColor-botton"> Ninguno</a>
+                  <a id="color-ventana-blanco" href="#" class="cpColor cpSelected cpMulti cpSquare large cpMarg cpColorWHITE">Blanco</a>
+                  <a id="color-ventana-negro" href="#" class="cpColor cpMulti cpSquare large cpColorBLACK">Negro</a>
+                  <a id="color-ventana-rojo" href="#" class="cpColor cpMulti cpSquare large cpColorRED">Rojo</a>
+                  <a id="color-ventana-verde" href="#" class="cpColor cpMulti cpSquare large cpMarg cpColorGREEN">Verde</a>
+                  <a id="color-ventana-azul" href="#" class="cpColor cpMulti cpSquare large cpColorBLUE">Azul</a>
+                  <a id="color-ventana-amarillo" href="#" class="cpColor cpMulti cpSquare large cpColorYELLOW">Amarillo</a>
+                  <a id="color-ventana-magenta" href="#" class="cpColor cpMulti cpSquare large cpMarg cpColorMAGENTA">Magenta</a>
+                  <a id="color-ventana-azul-turquesa" href="#" class="cpColor cpMulti cpSquare large cpColorCYAN">Azul turquesa</a>
                   <div class="cpFooter">
                   <div class="ui-binary-input">
-                  <input type="checkbox" class="" name="charOpacity" id="bxid_charOpacity_SEMI_TRANSPARENT" tabindex="0" data-uia="charOpacity" value="SEMI_TRANSPARENT" checked=""><label for="bxid_charOpacity_SEMI_TRANSPARENT" data-uia="label+charOpacity">Semitransparente</label><div class="helper"></div></div></div>
+                  <div class="helper"></div></div></div>
                 </div>
             </div>
         </div>
-        <div class="col-12 col-sm-4">
-           
+        <div class="col-12 col-sm-4">  
         </div>
 
-   </div>
+      </div>
    <button type="button" class="btn btn-primary btn-funcion btn-gruardar ">Guardar</button>
    <button type="button" class="btn btn-primary btn-funcion btn-otros">Restablecer valores predeterminados</button>
    <button type="button" class="btn btn-primary btn-funcion btn-otros">Cancelar</button>
@@ -193,13 +206,13 @@
   </div>
 </footer>
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-</script>
+
 <script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
 <script src="js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
-
+<script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/config-cuenta.js"></script>
 </body>
 </html>
