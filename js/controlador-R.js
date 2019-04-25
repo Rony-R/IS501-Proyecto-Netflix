@@ -344,3 +344,111 @@ $("#btn-iniciar-membresia").click(function(){
 
 });
 
+$("#btn-iniciar-membresia2").click(function(){
+
+    var variable = true;
+    if(validarCampoVacio2("txt-nombre") &&
+        validarCampoVacio2("txt-apellido") &&
+        validarCampoVacio2("txt-numero-tarjeta") &&
+        validarCampoVacio2("txt-fecha-vencimiento") &&
+        validarCampoVacio2("txt-codigo-CVV")){
+            variable = true;
+        }
+    else{
+        variable = false;
+    }   
+
+    alert(variable);
+});
+
+function validarCampoVacio2(id){
+
+    if($("#"+id).val() ==""){
+        switch(id){
+
+            case "txt-nombre":
+                $("#txt-nombre").addClass("is-invalid");
+                $("#txt-nombre").removeClass("is-valid");
+
+            case "txt-apellido":
+                $("#txt-apellido").addClass("is-invalid");
+                $("#txt-apellido").removeClass("is-valid");
+            
+            case "txt-numero-tarjeta":
+                $("#txt-numero-tarjeta").addClass("is-invalid");
+                $("#txt-numero-tarjeta").removeClass("is-valid");
+
+            case "txt-fecha-vencimiento":
+                $("#txt-fecha-vencimiento").addClass("is-invalid");
+                $("#txt-fecha-vencimiento").removeClass("is-valid");
+
+            case "txt-codigo-CVV":
+                $("#txt-codigo-CVV").addClass("is-invalid");
+                $("#txt-codigo-CVV").removeClass("is-valid");
+        }
+        /*if(id == "txt-nombre"){
+            $("#txt-nombre").addClass("is-invalid");
+            $("#txt-nombre").removeClass("is-valid");
+        }
+        if(id == "txt-apellido"){
+            $("#txt-apellido").addClass("is-invalid");
+            $("#txt-apellido").removeClass("is-valid");
+        }
+        if(id == "txt-numero-tarjeta"){
+            $("#txt-numero-tarjeta").addClass("is-invalid");
+            $("#txt-numero-tarjeta").removeClass("is-valid");
+        }
+        if(id == "txt-fecha-vencimiento"){
+            $("#txt-fecha-vencimiento").addClass("is-invalid");
+            $("#txt-fecha-vencimiento").removeClass("is-valid");
+        }
+        if(id == "txt-codigo-CVV"){
+            $("#txt-codigo-CVV").addClass("is-invalid");
+            $("#txt-codigo-CVV").removeClass("is-valid");
+        }*/
+    }
+    else{
+        switch(id){
+
+            case "txt-nombre":
+                $("#txt-nombre").addClass("is-valid");
+                $("#txt-nombre").removeClass("is-invalid");
+
+            case "txt-apellido":
+                $("#txt-apellido").addClass("is-valid");
+                $("#txt-apellido").removeClass("is-invalid");
+            
+            case "txt-numero-tarjeta":
+                $("#txt-numero-tarjeta").addClass("is-valid");
+                $("#txt-numero-tarjeta").removeClass("is-invalid");
+
+            case "txt-fecha-vencimiento":
+                $("#txt-fecha-vencimiento").addClass("is-valid");
+                $("#txt-fecha-vencimiento").removeClass("is-invalid");
+
+            case "txt-codigo-CVV":
+                $("#txt-codigo-CVV").addClass("is-valid");
+                $("#txt-codigo-CVV").removeClass("is-invalid");
+        }
+        /*if(id == "txt-nombre"){
+            $("#txt-nombre").addClass("is-valid");
+            $("#txt-nombre").removeClass("is-invalid");
+        }
+        if(id == "txt-apellido"){
+            $("#txt-apellido").addClass("is-valid");
+            $("#txt-apellido").removeClass("is-invalid");
+        }
+        if(id == "txt-numero-tarjeta"){
+            $("#txt-numero-tarjeta").addClass("is-valid");
+            $("#txt-numero-tarjeta").removeClass("is-invalid");
+        }
+        if(id == "txt-fecha-vencimiento"){
+            $("#txt-fecha-vencimiento").addClass("is-valid");
+            $("#txt-fecha-vencimiento").removeClass("is-invalid");
+        }
+        if(id == "txt-codigo-CVV"){
+            $("#txt-codigo-CVV").addClass("is-valid");
+            $("#txt-codigo-CVV").removeClass("is-invalid");
+        }*/
+    }
+}

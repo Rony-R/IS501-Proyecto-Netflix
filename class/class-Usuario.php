@@ -75,7 +75,7 @@
 
 			$instruccion = "INSERT INTO TBL_USUARIOS (CODIGO_USUARIO, CODIGO_TIPO_PLAN, CODIGO_GENERO, CORREO, CONTRASENIA, TELEFONO) VALUES ($this->codigo_usuario, $this->codigo_tipo_plan, $this->codigo_genero, '$this->correo', '$this->contrasenia', '$this->telefono')";
 
-			/*$conexion->ejecutarConsulta2($instruccion);
+			$conexion->ejecutarConsulta2($instruccion);
 			$conexion->commit();
 
 			if($conexion->ejecutarConsulta2($instruccion))
@@ -87,8 +87,7 @@
 			{
 				$msj['mensaje'] = "No se agrego el usuario!!!";
 				return json_encode($msj);
-			}*/
-			return $instruccion;
+			}
 
 		}
 

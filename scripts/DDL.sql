@@ -370,7 +370,7 @@ CREATE TABLE tbl_tipo_plan (
     codigo_tipo_plan      INTEGER NOT NULL,
     codigo_unidad_pago    INTEGER NOT NULL,
     nombre_tipo_plan      VARCHAR2(50) NOT NULL,
-    precio_mensual        FLOAT(3) NOT NULL,
+    precio_mensual        NUMBER(4, 2) NOT NULL,
     numero_de_pantallas   INTEGER NOT NULL
 );
 
