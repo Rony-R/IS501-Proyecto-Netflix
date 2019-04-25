@@ -89,7 +89,27 @@
 				" Fecha_vencimiento: " . $this->fecha_vencimiento;
         }
 
-        //Otros Metodos
+				//Otros Metodos
+				
+				public function insertarTarjeta($conexion){
+
+					$instruccion = "";
+
+					$conexion->ejecutarConsulta($instruccion);
+					$conexion->commit();
+
+					if($conexion->ejecutarConsulta($instruccion))
+					{
+						$msj['mensaje'] = "Se ha insertado la tarjeta con exito!!!";
+						return json_encode($msj);
+					}
+					else
+					{
+						$msj['mensaje'] = "No se inserto la tarjeta!!!";
+						return json_encode($msj);
+					}
+
+				}
         
 	}
 ?>

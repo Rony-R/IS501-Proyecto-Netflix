@@ -14,7 +14,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/registro-basico.css" rel="stylesheet">
     <link href="css/registro-plataforma.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="css/all.css" type="text/css" rel="stylesheet">
 
   </head>
   <body>
@@ -48,7 +48,7 @@
                          </div>
                      
                          <div id="div-premium" class="col-4 col-sm-3 txt-center element-box">
-                            <span class="white txt-negro"> Premiun</span>
+                            <span class="white txt-negro"> Premium</span>
                          </div>
                       </div>
                 </div>
@@ -102,7 +102,7 @@
             
              <div class="row  border-bottom-tab">
                 <div class="col-12 col-sm-6">
-                   <span  class="btn-continuar">Pantallas que se pueden ver al mismo tiempoo</span>
+                   <span  class="btn-continuar">Pantallas que se pueden ver al mismo tiempo</span>
                 </div>
                 <div class="col-4 col-sm-2 txt-center">
                    <span id="e-4-1" class="element-tab">1</span>

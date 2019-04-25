@@ -1,16 +1,16 @@
 --Crear nuevo usuario(esquema) con el password "PASSWORD" 
-CREATE USER RONY
+CREATE USER NET
   IDENTIFIED BY "oracle"
   DEFAULT TABLESPACE USERS
   TEMPORARY TABLESPACE TEMP;
 --asignar cuota ilimitada al tablespace por defecto  
-ALTER USER RONY QUOTA UNLIMITED ON USERS;
+ALTER USER NET QUOTA UNLIMITED ON USERS;
 
 --Asignar privilegios basicos
-GRANT create session TO RONY;
-GRANT create table TO RONY;
-GRANT create view TO RONY;
-GRANT create any trigger TO RONY;
-GRANT create any procedure TO RONY;
-GRANT create sequence TO RONY;
-GRANT create synonym TO RONY;
+GRANT create session TO NET;
+GRANT create table TO NET;
+GRANT create view TO NET;
+GRANT create any trigger TO NET;
+GRANT create any procedure TO NET;
+GRANT create sequence TO NET;
+GRANT create synonym TO NET;

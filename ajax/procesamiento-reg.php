@@ -9,6 +9,8 @@
   if($_POST["peticion"]=="info-usuario"){
     $_SESSION["correo"] = $_POST["correo"];
     $_SESSION["contra"] = $_POST["contra"];
+    $_SESSION["genero"] = $_POST["genero"];
+    $_SESSION["telefono"] = $_POST["telefono"];
     $respuesta["codigo"]=1;
     echo json_encode($respuesta);
  }

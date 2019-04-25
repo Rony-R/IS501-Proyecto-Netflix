@@ -13,7 +13,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/registro-basico.css" rel="stylesheet">
     <link href="css/registro-creditoption.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="css/all.css" type="text/css" rel="stylesheet">
 
   </head>
   <body>
@@ -138,17 +138,23 @@
                       </div>
                     </div>
                 </div>
-                <button type="button" class="btn btn-danger" id="btn-iniciar-membresia" onclick="location.href='ajax/logout-reg.php'" >INICIAR MEMBRESÍA</button> 
+                <button type="button" class="btn btn-danger" id="btn-iniciar-membresia2"  >INICIAR MEMBRESÍA</button> 
                 <form>
                   <div class="form-row">
                     <div class="col-2 col-sm-2">
                        <input type="txt" class="form-control ocultar-elemento" id="input-tipo-plan" value="<?php echo $_SESSION["tipo-plan"];?>">
                     </div>
-                    <div class="col-8 col-sm-8">
+                    <div class="col-8 col-sm-6">
                         <input type="txt" class="form-control ocultar-elemento" id="input-correo" value="<?php echo $_SESSION["correo"];?>">
                     </div>
                     <div class="col-2 col-sm-2">
                         <input type="txt" class="form-control ocultar-elemento" id="input-contra" value="<?php echo $_SESSION["contra"];?>">
+                    </div>
+                    <div class="col-2 col-sm-2">
+                        <input type="txt" class="form-control ocultar-elemento" id="input-genero" value="<?php echo $_SESSION["genero"];?>">
+                    </div>
+                    <div class="col-2 col-sm-2">
+                        <input type="txt" class="form-control ocultar-elemento" id="input-telefono" value="<?php echo $_SESSION["telefono"];?>">
                     </div>
                   </div>
                 </form>
