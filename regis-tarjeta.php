@@ -42,42 +42,31 @@
                 <span class="logo-icon"><img src="img/img-icon-amex.png"></span> 
             
                 <form>
+
                   <div class="form-group">
                     <input type="text" class="form-control" id="txt-nombre" placeholder="Nombre" value="">
-                    <div class="valid-feedback">
-                      Este campo esta correcto!
-                    </div>
-                    <div class="invalid-feedback">
-                      Este campo esta incorrecto
-                    </div>
+                    <div class="valid-feedback">Este campo esta correcto!</div>
+                    <div class="invalid-feedback">Este campo esta vacio o incorrecto</div>
                   </div>
+
                   <div class="form-group">
                     <input type="text" class="form-control" id="txt-apellido" placeholder="Apellido" value="">
-                    <div class="valid-feedback">
-                      Este campo esta correcto!
-                    </div>
-                    <div class="invalid-feedback">
-                      Este campo esta incorrecto
-                    </div>
+                    <div class="valid-feedback">Este campo esta correcto!</div>
+                    <div class="invalid-feedback">Este campo esta vacio o incorrecto</div>
                   </div>
+
                   <div class="form-group">
                     <input type="text" class="form-control" id="txt-numero-tarjeta" placeholder="Número de tarjeta" value="">
-                    <div class="valid-feedback">
-                      Este campo esta correcto!
-                    </div>
-                    <div class="invalid-feedback">
-                      Este campo esta incorrecto
-                    </div>
+                    <div class="valid-feedback">Este campo esta correcto!</div>
+                    <div class="invalid-feedback">Este campo esta vacio o incorrecto</div>
                   </div>
+
                   <div class="form-group">
                     <input type="text" class="form-control" id="txt-fecha-vencimiento" placeholder="Fecha de Vencimiento (MM/AA)" value="">
-                    <div class="valid-feedback">
-                      Este campo esta correcto!
-                    </div>
-                    <div class="invalid-feedback">
-                      Este campo esta incorrecto
-                    </div>
+                    <div class="valid-feedback">Este campo esta correcto!</div>
+                    <div class="invalid-feedback">Este campo esta vacio o incorrecto</div>
                   </div>
+
                   <div class="input-group">
                     <input id="txt-codigo-CVV"  type="text" class="form-control" placeholder="Código de seguridad (CVV)" value="">
                     <div class="input-group-append">
@@ -87,16 +76,10 @@
                           </button>
                       </span>
                     </div>
-                    <div class="valid-feedback">
-                      Este campo esta correcto!
-                    </div>
-                    <div class="invalid-feedback">
-                      Este campo esta incorrecto
-                    </div>
-                   
+                    <div class="valid-feedback">Este campo esta correcto!</div>
+                    <div class="invalid-feedback">Este campo esta vacio o incorrecto</div>                   
                   </div>
-                
-         
+                         
                   <div class="input-group mb-3" id="input-slc-tipo-tarjeta">
                       <div class="input-group-prepend">
                         <label class="input-group-text-1" for="slc-tipo-tarjeta" id="label-tipo-tarjeta">Tipo de tarjeta</label>
@@ -106,7 +89,9 @@
                        <option value="2">Débito</option>
                       </select>
                     </div>
+
                 </form>
+
                 <div class= "row row-style">
                   <div class="col-8 col-sm-10">
                     <div>
@@ -138,7 +123,8 @@
                       </div>
                     </div>
                 </div>
-                <button type="button" class="btn btn-danger" id="btn-iniciar-membresia2"  >INICIAR MEMBRESÍA</button> 
+                <button type="button" class="btn btn-danger" id="btn-iniciar-membresia">INICIAR MEMBRESÍA</button> 
+                
                 <form>
                   <div class="form-row">
                     <div class="col-2 col-sm-2">
@@ -158,6 +144,7 @@
                     </div>
                   </div>
                 </form>
+
             </div>
             <div class="col-1 col-sm-2 col-md-4 col-md-3">
           
@@ -189,8 +176,6 @@
       </div>
     </div>
   </div>
-
-
 
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>

@@ -13,7 +13,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/registro-basico.css" rel="stylesheet">
     <link href="css/registro-regform.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="css/all.css" type="text/css" rel="stylesheet">
 
   </head>
   <body>
@@ -46,7 +46,7 @@
                           Este campo esta correcto!
                         </div>
                         <div class="invalid-feedback">
-                          Este campo esta incorrecto
+                          Este campo esta vacio o incorrecto
                         </div>
                       </div>
                       <div class="form-group">
@@ -55,9 +55,15 @@
                           Este campo esta correcto!
                         </div>
                         <div class="invalid-feedback">
-                          Este campo esta incorrecto
+                          Este campo esta vacio o incorrecto
                         </div>
                         <input type="text" class="form-control mt-3" id="txt-telefono" placeholder="Telefono" value="">
+                        <div class="valid-feedback">
+                          Este campo esta correcto!
+                        </div>
+                        <div class="invalid-feedback">
+                          Este campo esta vacio o incorrecto
+                        </div>
                         <label class="mt-3">Selecciona tu genero</label> <br>
                         <div id="chk-gen">
                           <label>Femenino</label>

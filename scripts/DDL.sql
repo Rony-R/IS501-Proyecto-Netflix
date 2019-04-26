@@ -75,6 +75,7 @@ CREATE TABLE tbl_contenido (
     codigo_idioma           INTEGER NOT NULL,
     codigo_calif_edad       INTEGER NOT NULL,
     nombre_contenido        VARCHAR2(150) NOT NULL,
+    url_contenido           VARCHAR2(350) NOT NULL,
     descripcion             VARCHAR2(150) NOT NULL,
     fecha_subida            DATE NOT NULL
 );

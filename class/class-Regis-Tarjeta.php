@@ -96,7 +96,7 @@
 					$instruccion = "";
 
 					$conexion->ejecutarConsulta($instruccion);
-					$conexion->commit();
+					//$conexion->commit();
 
 					if($conexion->ejecutarConsulta($instruccion))
 					{

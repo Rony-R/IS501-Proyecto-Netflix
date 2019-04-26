@@ -190,16 +190,31 @@ $("#btn-continuar").click(function(){
     window.location ="registro-cuenta-1.html";
 });
 
-function validarCampoVacio(id) {
-    if (document.getElementById(id).value == "") {
+function validarCampoVacio(id){
+    if(document.getElementById(id).value == ""){
         document.getElementById(id).classList.remove("is-valid");
         document.getElementById(id).classList.add("is-invalid");
         return false;
-    } else {
+    }else{
         document.getElementById(id).classList.remove("is-invalid");
         document.getElementById(id).classList.add("is-valid");
         return true;
     }
+}
+
+function validarGenero(name){
+    var campo = $("input[name=\""+name+"\"]:checked").val();    
+    console.log("---"+campo+"----"+name);
+
+    if(campo == undefined || campo == null || campo=="" || !campo){                
+            $("#invalid-gen").css("display","block");
+        return false;        
+    }
+
+    else{        
+        $("#invalid-gen").css("display","none");                                
+        return true;
+    }        
 }
 
 function validarEmail(email) {
@@ -254,10 +269,15 @@ $("#btn-continuar").click(function(){
 
 /*REG-USER 2.2*/ 
 
-$("#btn-continuar-2").click(function(){ 
-    if ( validarCampoVacio("txt-correo") && validarCampoVacio("txt-contrasenia") )
-    {   
-    /* ";*/
+$("#btn-continuar-2").click(function(){
+
+    var v1 = validarCampoVacio("txt-correo");
+    var v2 = validarCampoVacio("txt-contrasenia");
+    var v3 = validarCampoVacio("txt-telefono");
+    var v4 = validarGenero("genero");
+
+    if (v1 && v2 && v3 && v4){
+
       var parametros= "correo="+$("#txt-correo").val() +
                       "&contra="+ $("#txt-contrasenia").val() +
                       "&telefono="+ $("#txt-telefono").val() +
@@ -283,6 +303,9 @@ $("#btn-continuar-2").click(function(){
          }
        });
     }
+    else{
+        console.log("Los campos no pueden estar vacios!!!");
+    }
 });
 
 
@@ -295,10 +318,14 @@ $("#btn-tar-1").click(function(){
 
 /*REG-TAR 3.2*/ 
 $("#btn-iniciar-membresia").click(function(){
+
+    var v1 = validarCampoVacio("txt-nombre");
+    var v2 = validarCampoVacio("txt-apellido");
+    var v3 = validarCampoVacio("txt-numero-tarjeta");
+    var v4 = validarCampoVacio("txt-fecha-vencimiento");
+    var v5 = validarCampoVacio("txt-codigo-CVV");
     
-    if ( validarCampoVacio("txt-nombre") && validarCampoVacio("txt-apellido") && 
-         validarCampoVacio("txt-numero-tarjeta") && validarCampoVacio("txt-fecha-vencimiento") && 
-         validarCampoVacio("txt-codigo-CVV" )){
+    if (v1 && v2 && v3 && v4 && v5){
 
         var parametrosUsuarios = "tipo-plan="+$("#input-tipo-plan").val() + 
                                  "&genero="+$("#input-genero").val() + 
@@ -313,11 +340,14 @@ $("#btn-iniciar-membresia").click(function(){
                                 "&codigo-cvv="+ $("#txt-codigo-CVV").val() + 
                                 "&fecha-venc-tarj="+ $("#txt-fecha-vencimiento").val();
 
-        $.ajax({
+        alert("Parametros Usuario: " + parametrosUsuarios)
+        alert("Parametros Tarjeta" + parametrosTarjeta);
+
+        /*$.ajax({
             url: "ajax/api.php?accion='insertar-usuario'",
             method: "POST",
             data:parametrosUsuarios,
-            //dataType: "json",
+            dataType: "json",
             success: function(respuesta){
                 alert(respuesta);
             },
@@ -325,12 +355,13 @@ $("#btn-iniciar-membresia").click(function(){
                 alert("Ocurrio un error!!!");
                 console.log(e);
             }
-        });
+        });*/
 
         /*$.ajax({
             url: "ajax/api.php?accion='insertar-registro-tarjeta'",
             method: "POST",
             data:parametrosTarjeta,
+            dataType: "json",
             success: function(respuesta){
                 alert(respuesta.mensaje);
             },
@@ -339,116 +370,9 @@ $("#btn-iniciar-membresia").click(function(){
             }
         });*/
 
-        //alert("Parametros Usuario: " + parametrosUsuarios + "Parametros Tarjeta: " + parametrosTarjeta);
+    }
+    else{
+        console.log("Los campos no pueden estar vacios!!!");
     }  
 
 });
-
-$("#btn-iniciar-membresia2").click(function(){
-
-    var variable = true;
-    if(validarCampoVacio2("txt-nombre") &&
-        validarCampoVacio2("txt-apellido") &&
-        validarCampoVacio2("txt-numero-tarjeta") &&
-        validarCampoVacio2("txt-fecha-vencimiento") &&
-        validarCampoVacio2("txt-codigo-CVV")){
-            variable = true;
-        }
-    else{
-        variable = false;
-    }   
-
-    alert(variable);
-});
-
-function validarCampoVacio2(id){
-
-    if($("#"+id).val() ==""){
-        switch(id){
-
-            case "txt-nombre":
-                $("#txt-nombre").addClass("is-invalid");
-                $("#txt-nombre").removeClass("is-valid");
-
-            case "txt-apellido":
-                $("#txt-apellido").addClass("is-invalid");
-                $("#txt-apellido").removeClass("is-valid");
-            
-            case "txt-numero-tarjeta":
-                $("#txt-numero-tarjeta").addClass("is-invalid");
-                $("#txt-numero-tarjeta").removeClass("is-valid");
-
-            case "txt-fecha-vencimiento":
-                $("#txt-fecha-vencimiento").addClass("is-invalid");
-                $("#txt-fecha-vencimiento").removeClass("is-valid");
-
-            case "txt-codigo-CVV":
-                $("#txt-codigo-CVV").addClass("is-invalid");
-                $("#txt-codigo-CVV").removeClass("is-valid");
-        }
-        /*if(id == "txt-nombre"){
-            $("#txt-nombre").addClass("is-invalid");
-            $("#txt-nombre").removeClass("is-valid");
-        }
-        if(id == "txt-apellido"){
-            $("#txt-apellido").addClass("is-invalid");
-            $("#txt-apellido").removeClass("is-valid");
-        }
-        if(id == "txt-numero-tarjeta"){
-            $("#txt-numero-tarjeta").addClass("is-invalid");
-            $("#txt-numero-tarjeta").removeClass("is-valid");
-        }
-        if(id == "txt-fecha-vencimiento"){
-            $("#txt-fecha-vencimiento").addClass("is-invalid");
-            $("#txt-fecha-vencimiento").removeClass("is-valid");
-        }
-        if(id == "txt-codigo-CVV"){
-            $("#txt-codigo-CVV").addClass("is-invalid");
-            $("#txt-codigo-CVV").removeClass("is-valid");
-        }*/
-    }
-    else{
-        switch(id){
-
-            case "txt-nombre":
-                $("#txt-nombre").addClass("is-valid");
-                $("#txt-nombre").removeClass("is-invalid");
-
-            case "txt-apellido":
-                $("#txt-apellido").addClass("is-valid");
-                $("#txt-apellido").removeClass("is-invalid");
-            
-            case "txt-numero-tarjeta":
-                $("#txt-numero-tarjeta").addClass("is-valid");
-                $("#txt-numero-tarjeta").removeClass("is-invalid");
-
-            case "txt-fecha-vencimiento":
-                $("#txt-fecha-vencimiento").addClass("is-valid");
-                $("#txt-fecha-vencimiento").removeClass("is-invalid");
-
-            case "txt-codigo-CVV":
-                $("#txt-codigo-CVV").addClass("is-valid");
-                $("#txt-codigo-CVV").removeClass("is-invalid");
-        }
-        /*if(id == "txt-nombre"){
-            $("#txt-nombre").addClass("is-valid");
-            $("#txt-nombre").removeClass("is-invalid");
-        }
-        if(id == "txt-apellido"){
-            $("#txt-apellido").addClass("is-valid");
-            $("#txt-apellido").removeClass("is-invalid");
-        }
-        if(id == "txt-numero-tarjeta"){
-            $("#txt-numero-tarjeta").addClass("is-valid");
-            $("#txt-numero-tarjeta").removeClass("is-invalid");
-        }
-        if(id == "txt-fecha-vencimiento"){
-            $("#txt-fecha-vencimiento").addClass("is-valid");
-            $("#txt-fecha-vencimiento").removeClass("is-invalid");
-        }
-        if(id == "txt-codigo-CVV"){
-            $("#txt-codigo-CVV").addClass("is-valid");
-            $("#txt-codigo-CVV").removeClass("is-invalid");
-        }*/
-    }
-}

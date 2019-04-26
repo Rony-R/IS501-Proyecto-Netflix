@@ -76,7 +76,7 @@
 			$instruccion = "INSERT INTO TBL_USUARIOS (CODIGO_USUARIO, CODIGO_TIPO_PLAN, CODIGO_GENERO, CORREO, CONTRASENIA, TELEFONO) VALUES ($this->codigo_usuario, $this->codigo_tipo_plan, $this->codigo_genero, '$this->correo', '$this->contrasenia', '$this->telefono')";
 
 			$conexion->ejecutarConsulta2($instruccion);
-			$conexion->commit();
+			//$conexion->commit();
 
 			if($conexion->ejecutarConsulta2($instruccion))
 			{
