@@ -1,4 +1,6 @@
-
+$(document).ready(function(){
+    inicializar_valores_Sub() ;
+});
 
 $("#btn-tam-peq").click(function(){ 
     document.getElementById("lbl-tam-text").innerHTML= "Pequeño";  
@@ -11,7 +13,6 @@ $("#btn-tam-med").click(function(){
 $("#btn-tam-grand").click(function(){
     document.getElementById("lbl-tam-text").innerHTML= "Grande";  
     document.getElementById("div-text").style.fontSize = "20pt";
-
 });
 
 
@@ -21,6 +22,7 @@ $("#color-fuente-blanco").click(function(){
     document.getElementById("color-fuente").style.backgroundColor="#fff";
     document.getElementById("div-text").style.color = "#fff";
 });
+
 
 $("#color-fuente-negro").click(function(){
     document.getElementById("color-fuente").style.backgroundColor="#000";
@@ -58,7 +60,7 @@ $("#color-fuente-azul-turquesa").click(function(){
 });
 
 
-/*color fuente*/
+/*color sombra*/
 
 $("#color-sombra-blanco").click(function(){
     document.getElementById("color-sombra").style.backgroundColor="#fff";
@@ -101,52 +103,9 @@ $("#color-sombra-azul-turquesa").click(function(){
 });
 
 
-/*color fuente*/
-
-$("#color-fuente-blanco").click(function(){
-    document.getElementById("color-fuente").style.backgroundColor="#fff";
-    document.getElementById("div-text").style.color = "#fff";
-});
-
-$("#color-fuente-negro").click(function(){
-    document.getElementById("color-fuente").style.backgroundColor="#000";
-    document.getElementById("div-text").style.color = "#000";
-});
-
-$("#color-fuente-rojo").click(function(){ 
-    document.getElementById("color-fuente").style.backgroundColor="#c80000";
-    document.getElementById("div-text").style.color = "#c80000";
-});
-
-$("#color-fuente-verde").click(function(){
-    document.getElementById("color-fuente").style.backgroundColor="#00c800";
-    document.getElementById("div-text").style.color = "#00c800";
-});
-
-$("#color-fuente-azul").click(function(){
-    document.getElementById("color-fuente").style.backgroundColor="#0000c8";
-    document.getElementById("div-text").style.color = "#0000c8";
-});
-
-$("#color-fuente-amarillo").click(function(){ 
-    document.getElementById("color-fuente").style.backgroundColor="#eedc00";
-    document.getElementById("div-text").style.color = "#eedc00";
-});
-
-$("#color-fuente-magenta").click(function(){ 
-    document.getElementById("color-fuente").style.backgroundColor="#d60080";
-    document.getElementById("div-text").style.color = "#d60080";
-});
-
-$("#color-fuente-azul-turquesa").click(function(){ 
-    document.getElementById("color-fuente").style.backgroundColor="#009fda";
-    document.getElementById("div-text").style.color = "#009fda";
-});
-
-
 /*SOMBRA*/
 
-
+/*Tipo*/
 $("#a-sombra-ninguna").click(function(){ 
     document.getElementById("div-text").style.textShadow = "transparent 0em 0em 0em";
     document.getElementById("dp-sombras").innerHTML = "Ninguno";
@@ -157,6 +116,9 @@ $("#a-sombra-paralela").click(function(){
     document.getElementById("dp-sombras").innerHTML = "Sombra paralela";
     var color = document.getElementById("color-sombra").style.backgroundColor;
     document.getElementById("div-text").style.textShadow =  color+" 0.1em 0.1em 0.2em"; 
+    document.getElementById("dp-sombras").style.textShadow = "grey 0.1em 0.1em 0.2em";
+    document.getElementById("dp-sombras").style.color= "black";
+
 });
 
 
@@ -164,9 +126,9 @@ $("#a-sombra-uniforme").click(function(){
     document.getElementById("dp-sombras").innerHTML = "Uniforme";
     var color_2 = document.getElementById("color-sombra").style.backgroundColor;
     document.getElementById("div-text").style.textShadow = "-1px 0 "+color_2+" , 0 1px "+color_2+" ,  1px 0 "+color_2+", 0 -1px "+color_2;
+    document.getElementById("dp-sombras").style.textShadow = "-1px 0 #000 , 0 1px #000 , 1px 0 #000, 0 -1px #000";
+    document.getElementById("dp-sombras").style.color= "white";
 });
-
-
 
 
 
@@ -429,4 +391,99 @@ $("#color-ventana-azul-turquesa").click(function(){
     document.getElementById("color-ventana").style.backgroundColor="#009fda";
     document.getElementById("div-ventana-text").style.backgroundColor = "#009fda";
 });
+
+/*Botones*/
+
+$("#btn-guardar").click(function(){
+
+
+    var nombre_fuente = document.getElementById("div-text").style.fontFamily;                    /* ="staatliche";*/
+    var cod_hexa_color_fuente  = document.getElementById("color-fuente").style.backgroundColor;  /* ="#fff"; */
+    var tamanio_fuente = document.getElementById("div-text").style.fontSize;                     /*= "20pt"; */
+    var nombre_sobra = document.getElementById("dp-sombras").innerHTML;                          /* = "Sombra paralela";*/
+    var cod_hexa_color_sombra =  document.getElementById("color-sombra").style.backgroundColor;   /*="#000";*/
+    var cod_hexa_color_fondo = document.getElementById("color-fondo").style.backgroundColor;      /*="transparent";*/
+    var cod_hexa_color_ventana =document.getElementById("color-ventana").style.backgroundColor;   /*="transparent";*/
+     
+ 
+    var parametros= 
+    "nombre_fuente="+nombre_fuente+"&cod_hexa_color_fuente="+cod_hexa_color_fuente+  
+    "&tamanio_fuente="+tamanio_fuente+"&nombre_sobra="+nombre_sobra+ 
+    "&cod_hexa_color_sombra="+ cod_hexa_color_sombra+"&cod_hexa_color_fondo="+cod_hexa_color_fondo+
+    "&cod_hexa_color_ventana="+cod_hexa_color_ventana+"&peticion=guardar_cambios_estilo_subtitulos";
+/*
+    console.log(parametros);
+
+    $.ajax({
+      url:"ajax/procesamiento-reg.php",
+      data:parametros,
+      method:"POST",
+      dataType:"json",
+      success:function(respuesta){
+        console.log(respuesta.codigo);   
+        window.location ="paso-2.html";
+       },
+       error:function(error){
+         console.log(error);
+         window.location ="planes.php";
+       }
+   });
+*/
+});
+
+$("#btn-restablecer-valores").click(function(){
+    document.getElementById("lbl-tam-text").innerHTML= "Grande";  
+    document.getElementById("div-text").style.fontSize = "20pt";
+
+    document.getElementById("color-fuente").style.backgroundColor="#fff";
+    document.getElementById("div-text").style.color = "#fff";
+
+    document.getElementById("color-sombra").style.backgroundColor="#000";
+
+    document.getElementById("dp-sombras").innerHTML = "Sombra paralela";
+    document.getElementById("dp-sombras").style.textShadow ="grey 0.1em 0.1em 0.2em";
+    document.getElementById("dp-sombras").style.color ="black";
+
+    document.getElementById("dp-sombras").style.textShadow = "grey 0.1em 0.1em 0.2em";
+    document.getElementById("dp-sombras").style.color= "black";
+
+    document.getElementById("div-text").style.textShadow =  "#000 0.1em 0.1em 0.2em";
+
+    document.getElementById("div-text").style.fontFamily ="staatliche";
+    document.getElementById("dp-fuentes").style.fontFamily = "staatliche";
+    document.getElementById("dp-fuentes").innerHTML ="Staatliche";
+
+    document.getElementById("color-fondo").style.backgroundColor="transparent";
+    document.getElementById("span-text").style.backgroundColor ="transparent";
+
+    document.getElementById("color-ventana").style.backgroundColor="transparent";
+    document.getElementById("div-ventana-text").style.backgroundColor = "transparent";
+
+});
+$("#btn-cancelar").click(function(){
+    window.location ="account.html";
+});
+
+function inicializar_valores_Sub() {
+    document.getElementById("lbl-tam-text").innerHTML= "Grande";  
+    document.getElementById("div-text").style.fontSize = "20pt";
+    document.getElementById("color-fuente").style.backgroundColor="#fff";
+    document.getElementById("div-text").style.color = "#fff";
+    document.getElementById("color-sombra").style.backgroundColor="#000";
+    document.getElementById("dp-sombras").innerHTML = "Sombra paralela";
+    document.getElementById("dp-sombras").style.textShadow ="grey 0.1em 0.1em 0.2em";
+    document.getElementById("dp-sombras").style.color ="black";
+    document.getElementById("dp-sombras").style.textShadow = "grey 0.1em 0.1em 0.2em";
+    document.getElementById("dp-sombras").style.color= "black";
+    document.getElementById("div-text").style.textShadow =  "#000 0.1em 0.1em 0.2em";
+    document.getElementById("div-text").style.fontFamily ="staatliche";
+    document.getElementById("dp-fuentes").style.fontFamily = "staatliche";
+    document.getElementById("dp-fuentes").innerHTML ="Staatliche";
+    document.getElementById("color-fondo").style.backgroundColor="transparent";
+    document.getElementById("span-text").style.backgroundColor ="transparent";
+    document.getElementById("color-ventana").style.backgroundColor="transparent";
+    document.getElementById("div-ventana-text").style.backgroundColor = "transparent";
+}
+
+
 

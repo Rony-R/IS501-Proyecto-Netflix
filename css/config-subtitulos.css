@@ -1,0 +1,282 @@
+
+.div-sub{
+    height: 8em;
+    overflow: hidden;
+    padding: 8px;
+    border: 1px solid #999;
+    margin-bottom: 20px;
+    text-align: center;
+    height: 150px;
+  }
+  
+  
+  /**/
+  .cpMenu {
+    position: absolute;
+    top: 0;
+    width: 235px;
+    z-index: 10;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px 0 10px 10px;
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+    list-style: none;
+    margin: 0;
+    text-align: center;
+  }
+  .colorPicker .cpMenuAnchor {
+    position: relative;
+  }
+  .cpMenu.cpPin-right {
+    right: 0;
+  }
+  
+  .cpColor.cpMulti {
+    display: inline-block;
+    padding: 0;
+  }
+  
+  .cpColor {
+    display: block;
+    margin: 0 10px 10px 0;
+    border: 1px solid #ccc;
+  }
+  
+  
+  .cpSquare {
+    width: 45px;
+    height: 45px;
+    text-indent: -9999px;
+    outline: 0;
+  }
+  
+  .cpColorBLACK {
+    background-color: #000;
+    color: #fff;
+    margin: 0.1rem;
+  }
+  
+  .cpColorWHITE {
+    background-color: #fff;
+    margin: 0.1rem;
+  }
+  
+  .cpColorRED {
+    background-color: #c80000;
+    margin: 0.1rem;
+  }
+  
+  .cpColorGREEN {
+    background-color: #00c800;
+    margin: 0.1rem;
+  }
+  .cpColorBLUE {
+    background-color: #0000c8;
+    color: #fff;
+    margin: 0.1rem;
+  }
+  
+  .cpColorYELLOW {
+    background-color: #eedc00;
+    margin: 0.1rem;
+  }
+  
+  .cpColorMAGENTA {
+    background-color: #d60080;
+    margin: 0.1rem;
+  }
+  
+  .cpColorCYAN {
+    background-color: #009fda;
+    margin: 0.1rem;
+  }
+  
+  .cpColorNONE{
+      background-color: transparent;
+  }
+  
+  .dropdown, .dropup {
+    position: static;
+  }
+  
+  
+  .cpColor-botton {
+      margin: 0px 10px 10px 5px !important;
+      padding: 0px 45px !important;
+  }
+  
+  
+  
+  body{
+    background: #f3f3f3;
+  }
+  
+  
+  .btn-tam {
+    display: inline-block;
+    line-height: 28px;
+    vertical-align: bottom;
+    border-top: 1px solid grey;
+    border-left: 1px solid grey;
+    border-bottom: 1px solid grey;
+    background-color: #e5e5e5;
+    padding: 6px 8px;
+    width: 33.3%;
+    color: grey;
+    margin: 0;
+    text-align: center;
+    cursor: pointer;
+    padding-left:2rem;
+    padding-right: 2rem; 
+    border-radius: 0px;
+  }
+  
+  
+  .btn-funcion {
+    display: inline-block;
+    font-size: 13px;
+    padding: 12px 2em;
+        padding-right: 2em;
+        padding-left: 2em;
+    min-width: 98px;
+    min-height: 37px;
+    margin-right: .5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: auto;
+    line-height: 1em;
+  }
+  
+  .btn-gruardar{
+    color: #fff;
+    background-color: #0080ff ;
+  }
+  
+  .btn-otros{
+    color: #000;
+    background-color: #e6e6e6;
+  }
+  
+  
+  
+  #btn-tam-peq{
+      font-size: 10pt !important;
+  }
+  
+  #btn-tam-med{
+      font-size: 15pt !important;
+  }
+  
+  #btn-tam-grand{
+      font-size: 20pt !important;
+  }
+  
+  .cpMarg{
+      margin-left :10px !important;
+  }
+  
+  .cpMarg-1{
+      margin-left :4px !important;
+  }
+  
+  
+  .btn-secondary-dd{
+      color: #000;
+      background-color: #fff;
+      border-color: #6c757d;
+      border-radius: 0px;
+  }
+  
+  @font-face{
+      font-family:inconsolata;
+      src: url(../Fonts/Inconsolata-Regular.ttf);
+  }
+  
+  @font-face{
+      font-family:lora;
+      src: url(../Fonts/Lora-Regular.ttf);
+  }
+  
+  @font-face{
+      font-family:openSans;
+      src: url(../Fonts/OpenSans-Light.ttf);
+  }
+  
+  @font-face{
+      font-family:oswald;
+      src: url(../Fonts/Oswald-Regular.ttf);
+  }
+  
+  @font-face{
+      font-family:slabo;
+      src: url(../Fonts/Slabo27px-Regular.ttf);
+  }
+  
+  @font-face{
+      font-family:staatliche;
+      src: url(../Fonts/Staatliches-Regular.ttf);
+  }
+  
+  #a-fuente-inconsolata{
+      font-family:inconsolata;
+  }
+  
+  #a-fuente-lora{
+      font-family:lora;
+  }
+  
+  #a-fuente-openSans{
+      font-family:openSans;
+  }
+  
+  #a-fuente-oswald{
+      font-family:oswald;
+  }
+  
+  #a-fuente-slabo{
+      font-family:slabo;
+  }
+  
+  #a-fuente-staatliche{
+      font-family:staatliche;
+  }
+  
+  /*
+  .dropdown-toggle::after {
+      margin-left: 9rem;
+  }
+  .dropdown-toggle-sombra::after {
+    margin-left: 9rem;
+  }
+  */
+  #dp-fuentes,#dp-sombras{
+      width: 100% !important;
+  }
+  
+  .btn {
+      text-align: left;
+      border-radius: 0px;
+  }
+  
+  #btn-restablecer-valores,#btn-cancelar{
+   border-color:  #e6e6e6;
+  }
+  
+  #a-sombra-paralela{
+    text-shadow:grey 0.1em 0.1em 0.2em; 
+    color: black;
+  }
+  
+  
+  #a-sombra-uniforme{
+    text-shadow : -1px 0 #000 , 0 1px #000 ,  1px 0 #000, 0 -1px #000;
+    color: white;
+  }
+  
+
+  #spn-fuente, #spn-sombra,#lbl-tam,#lbl-tam-text,#spn-fondo,#spn-ventana{
+     color: grey; 
+     margin-bottom: 6px;
+  }
