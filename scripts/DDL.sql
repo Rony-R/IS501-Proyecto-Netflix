@@ -1,4 +1,5 @@
 
+
 CREATE TABLE tbl_audios (
     codigo_audio       INTEGER NOT NULL,
     codigo_idioma      INTEGER NOT NULL,
@@ -738,3 +739,6 @@ ALTER TABLE tbl_vistos
 ALTER TABLE tbl_vistos
     ADD CONSTRAINT vis_usu_fk FOREIGN KEY ( codigo_usuario )
         REFERENCES tbl_usuarios ( codigo_usuario );
+
+
+

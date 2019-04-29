@@ -82,7 +82,7 @@
                                              <img style="width:30px" src="img/profile.png">
                                         </button>
                                         <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                                             <img style="width:30px; float:left; margin-rigth:5px" src="img/profile.png"><a class="dropdown-item" href="#">Cuenta2</a>
+                                             <img class="img-nav" src="img/profile.png"><a class="dropdown-item" href="#">Cuenta2</a>
                                              <a class="dropdown-item" href="#">Niños</a>
                                              <a class="dropdown-item" href="manage.html">Administrar perfiles</a>
                                              <hr>
