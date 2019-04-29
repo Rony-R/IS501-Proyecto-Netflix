@@ -328,3 +328,6 @@ body{
     color: #ffffff;
 }
 
+.plc-inp::placeholder { 
+    color: white; 
+}

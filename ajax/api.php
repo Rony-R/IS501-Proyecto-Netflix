@@ -20,6 +20,64 @@
             echo $r1->insertarTarjeta($conexion);
         break;
 
+        case "'verificar-usuario'":
+            $u1 = new Usuario(null, null, null, $_POST["correo"], $_POST["contra"], null);
+            echo $u1->verificarUsuario($conexion);
+        break;
+
+        case "'crearLogin'":
+            session_start(); 
+
+            $_SESSION["Usuario"] = $_POST["correo"];
+            $_SESSION["Contrasenia"] = $_POST["contra"];
+
+            if($_SESSION["Usuario"] != "" && $_SESSION["Contrasenia"] != "")
+                echo ("1");
+            else
+                echo ("0");
+
+        break;
+
+        case "'sesion-pantallas'":
+            session_start();
+
+            $_SESSION["Creadas"] = $_POST["creadas"];
+            $_SESSION["Posibles"] = $_POST["posibles"];
+            $_SESSION["CodUsuario"] = $_POST["usuario"];
+
+            if($_SESSION["Creadas"] != "" && $_SESSION["Posibles"] != "")
+                echo ("1");
+            else
+                echo ("0");
+
+        break;
+
+        case "'pantallas-usuario'":
+            $u2 = new Usuario (null, null, null, $_POST["user"], null, null);
+            echo $u2->obtenerPantallas($conexion);
+        break;
+
+        case "'nombre-pantallas'":
+            $u3 = new Usuario ($_POST["idUser"], null, null, null, null, null);
+            echo $u3->obtenerNombrePantallas($conexion);
+        break;
+
+        case "'insertar-pantalla'":
+            $p1 = new Pantalla(null, $_POST["codusuario"], $_POST["madurez"], $_POST["idioma"], $_POST["estiloSub"], $_POST["confiRepro"], $_POST["nombre"], null, null);
+            echo $p1->insertarPantalla($conexion);
+        break;
+
+        case "'actualizar-pantalla''":
+        break;
+
+        case "'verificarCorreo'":
+            $u4 = new Usuario(null, null, null, $_POST["nuevoCorreo"], null, null);
+            echo $u4->verificarCorreo($conexion);
+        break;
+
+        case "''":
+        break;
+
         case "''":
         break;
 

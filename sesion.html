@@ -28,12 +28,15 @@
                 </div>
 
                 <div class="inputs">
-                    <input id="input-correo" type="text" placeholder="Email o número de teléfono" onkeydown="validarEmail('input-correo')" class="form-control bg-dark mb-3 white-text ht-input">
+                    <input id="input-correo" type="text" placeholder="Email o número de teléfono" onkeydown="validarEmail('input-correo')" class="form-control bg-dark white-text ht-input">
                     <div id="correo-correcto" class="d-none verde">Correo Valido</div>
                     <div id="correo-incorrecto" class="d-none naranja">Correo Invalido</div>
-                    <input id="input-contra" type="password" onkeydown="validarContrasena(this)" placeholder="Contraseña" class="form-control bg-dark white-text ht-input">
+                    <div id="correo-incorrecto2" class="d-none naranja">El Correo y la Contraseña no coinciden</div>
+
+                    <input id="input-contra" type="password"  placeholder="Contraseña" class="form-control bg-dark white-text ht-input mt-4">
                     <div id="input-contra-contra-correcta" class="d-none verde">Correcto</div>
-                    <div id="input-contra-contra-incorrecta" class="d-none naranja">Debe tener mas de 8 caracteres</div>
+                    <div id="input-contra-contra-incorrecta" class="d-none naranja">Este campo no puede estar vacio</div>
+                    <div id="input-contra-contra-incorrecta2" class="d-none naranja">El Correo y la Contraseña no coinciden</div>
                     
                 </div>
 

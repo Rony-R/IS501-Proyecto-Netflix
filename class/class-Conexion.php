@@ -3,7 +3,7 @@
 	class Conexion{
 
 		private $db = "oci:dbname=XE";
-		private $usuario = "NET";
+		private $usuario = "NET4";
         private $password = "oracle";
         private $conexion;
 
@@ -23,7 +23,9 @@
             $stmt->execute();
         }
 
-        public function obtenerFila($stmt){
+        public function obtenerFila($sql){
+            $stmt = $this->conexion->prepare($sql);
+            $stmt->execute();
             $fila = $stmt->fetch();
             return $fila;
         }
@@ -34,6 +36,20 @@
 
         public function rollback(){
             $this->conexion->rollback();
+        }
+
+        public function numFilas($sql){
+            $stmt = $this->conexion->prepare($sql);
+            $stmt->execute();
+            $num = $stmt->rowCount();
+            return $num;
+        }
+
+        public function numColumnas($sql){
+        	$stmt = $this->conexion->prepare($sql);
+        	$stmt->execute();
+        	$numcol = $stmt->fetch();
+        	return $numcol;
         }
 	
 	}

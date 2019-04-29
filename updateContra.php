@@ -1,3 +1,9 @@
+<?php
+
+    session_start();
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -98,22 +104,28 @@
     <div id="main-container">
 
         <div class="col-lg-7">
-            <h1 id="h1-cambiar-correo">Numero de Telefono</h1>
+            <h1 id="h1-cambiar-correo">Cambiar Contraseña</h1>
 
-            <p id="p1">
-                Su número de teléfono se utilizará si olvida su contraseña y para mensajes importantes de la cuenta.
-            </p>
+            <input disabled id ="correo-actual2" type="text" class="form-control d-none" value="<?php echo$_SESSION["Usuario"]?>"> <br>
         
-            <label class="label-upd-corr">Número de teléfono móvil</label>
-            <input id ="contra-phone" type="text" class="form-control">
-            <div id="contra-phone-contra-incorrecta" class="d-none naranja">Telefono Vacio</div>
+            <label class="label-upd-corr">Contraseña Actual</label>
+            <input id ="contra-update1" type="password" class="form-control">
+            <div id="contra-update1-contra-correcta" class="d-none verde">Correcto</div>
+            <div id="val-contra-act" class="d-none naranja">Contraseña incorrecta</div>
 
-            <label class="label-upd-corr mt-4">Contraseña Actual</label>
-            <input id ="contra-update4" type="password" class="form-control">
-            <div id="contra-update4-contra-incorrecta2" class="d-none naranja">Contraseña Vacia</div>
+            <label class="label-upd-corr mt-4">Nueva Contraseña</label>
+            <input id ="contra-update2" type="password" class="form-control">
+            <div id="contra-update2-contra-correcta2" class="d-none verde">Correcto</div>
+            <div id="contra-update2-contra-incorrecta2" class="d-none naranja">Contraseña Vacia</div>
+            <div id="val-contras1" class="d-none naranja">Las contraseñas no coinciden!!!</div>
         
-            <button id="save-upd-pone" class="btn btn-primary mt-5">Guardar</button>
-            <button id="borrar-telefono" class="btn btn-secondary mt-5">Borrar Numero de Telefono</button>
+            <label class="label-upd-corr mt-4">Confirme la contraseña</label>
+            <input id="contra-update3" type="password" class="form-control">
+            <div id="contra-update3-contra-correcta3" class="d-none verde">Correcto</div>
+            <div id="contra-update3-contra-incorrecta3" class="d-none naranja">Contraseña Vacia</div>
+            <div id="val-contras2" class="d-none naranja">Las contraseñas no coinciden!!!</div>
+        
+            <button id="save-upd-contra" class="btn btn-primary mt-5">Guardar</button>
             <button id="cancel-upd-corr" class="btn btn-secondary mt-5">Cancelar</button>
         </div>
 

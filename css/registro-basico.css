@@ -223,3 +223,19 @@ html {
 .ocultar-elemento{
   display:none;
 }
+
+.naranja{
+  color: #e87c03;
+}
+
+.verde{
+  color: rgb(0, 251, 0);
+}
+
+.valido{
+  border-bottom-color: rgb(0, 251, 0) !important;
+}
+
+.invalido{
+  border-bottom-color: #e87c03 !important;
+}

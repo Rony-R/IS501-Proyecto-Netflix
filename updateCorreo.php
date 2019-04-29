@@ -1,3 +1,10 @@
+
+<?php
+
+    session_start();
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -98,24 +105,28 @@
     <div id="main-container">
 
         <div class="col-lg-7">
-            <h1 id="h1-cambiar-correo">Cambiar Contraseña</h1>
-        
-            <label class="label-upd-corr">Contraseña Actual</label>
-            <input id ="contra-update1" type="password" class="form-control">
-            <div id="contra-update1-contra-correcta" class="d-none verde">Correcto</div>
-            <div id="contra-update1-contra-incorrecta" class="d-none naranja">Contraseña Vacia</div>
+            <h1 id="h1-cambiar-correo">Cambiar cuenta de correo electrónico</h1>
 
-            <label class="label-upd-corr mt-4">Nueva Contraseña</label>
-            <input id ="contra-update2" type="password" class="form-control">
-            <div id="contra-update2-contra-correcta2" class="d-none verde">Correcto</div>
-            <div id="contra-update2-contra-incorrecta2" class="d-none naranja">Contraseña Vacia</div>
+            <p id="p1">
+                El correo electrónico de la cuenta se utiliza para iniciar sesión en todos los perfiles y para enviar 
+                correos electrónicos al propietario de la cuenta.
+            </p>
         
-            <label class="label-upd-corr mt-4">Confirme la contraseña</label>
-            <input id="contra-update3" type="password" class="form-control">
-            <div id="contra-update3-contra-correcta3" class="d-none verde">Correcto</div>
-            <div id="contra-update3-contra-incorrecta3" class="d-none naranja">Contraseña Vacia</div>
+            <label class="label-upd-corr">Correo actual</label> <br>
+            <input disabled id ="correo-actual" type="text" class="form-control" value="<?php echo$_SESSION["Usuario"]?>"> <br>
         
-            <button id="save-upd-contra" class="btn btn-primary mt-5">Guardar</button>
+            <label class="label-upd-corr">Nuevo Correo</label>
+            <input id ="correo-update" type="text" class="form-control" onkeydown="validarEmail('correo-update')">
+            <div id="correo-correcto" class="d-none verde">Correo Valido</div>
+            <div id="correo-incorrecto" class="d-none naranja">Correo Invalido</div>
+            <div id="upd-correo-incorrecto" class="d-none naranja">Este correo ya existe!!!</div>
+        
+            <label class="label-upd-corr mt-4">Contraseña actual</label>
+            <input id="password-update" type="password" class="form-control">
+            <div id="contra-upd-corr1" class="d-none verde">Contraseña Correta</div>
+            <div id="contra-upd-corr2" class="d-none naranja">Contraseña incorrecta o vacia</div>
+        
+            <button id="save-upd-corr" class="btn btn-primary mt-5">Guardar</button>
             <button id="cancel-upd-corr" class="btn btn-secondary mt-5">Cancelar</button>
         </div>
 

@@ -152,7 +152,10 @@
     break;
 
     case "'pantallas'":
-    for($i=0; $i<3; $i++)
+
+    $n1 = $_POST["pos"] - $_POST["crea"];
+
+    for($i=0; $i<$_POST["crea"]; $i++)
     {
         echo'
         <div id="user-'.$i.'">
@@ -160,10 +163,21 @@
             <p class="white-text center-text mt-2 mr-3">User'.$i.'</p>
         </div>';
     }
+
+    for($i=0; $i<$n1; $i++)
+    {
+        echo'
+        <div id="user-'.$i.'">
+            <a data-toggle="modal" data-target="#modal-agregar"><img class="min-user" src="img/newUser.png"></a>
+            <p class="white-text center-text mt-2 mr-3">User'.$i.'</p>
+        </div>';
+    }
+
     break;
 
     case "'pantallas-2'":
-    for($i=0; $i<3; $i++)
+
+    for($i=0; $i<$_POST["crea"]; $i++)
     {
         echo'
         <div class="dim-div-usr column mt-3" id="user-'.$i.'">
@@ -176,13 +190,14 @@
             </div>
         </div>';
     }
+
     break;
 
     case "'imgEdit'":
-    echo'
-    <img class="min-user img-opcty" src="img/usr-1.png">
-    <i class="fas fa-edit edit-icon3"></i>
-    <input type="file" class="form-control-file d-none" name="video">';
+        echo'
+        <img class="min-user img-opcty" src="img/newUser.png">
+        <i class="fas fa-edit edit-icon3"></i>
+        <input type="file" class="form-control-file d-none" name="video">';
     break;
 
     case "'table-account'":
@@ -209,9 +224,9 @@
                             <label class="row txt-blck ml-4">Phone: 9853-8090</label>  
                         </td> 
                         <td class="b-d">
-                            <a href="updateCorreo.html" class="row ml-95"><label>Cambiar email de cuenta</label></a>
-                            <a href="updateContra.html" class="row ml-95"><label>Cambia la contraseña</label></a>
-                            <a href="updatePhone.html" class="row ml-95"><label>Cambiar número de teléfono</label></a> 
+                            <a href="updateCorreo.php" class="row ml-95"><label>Cambiar email de cuenta</label></a>
+                            <a href="updateContra.php" class="row ml-95"><label>Cambia la contraseña</label></a>
+                            <a href="updatePhone.php" class="row ml-95"><label>Cambiar número de teléfono</label></a> 
                         </td>
                     </tr>
                     <tr>
@@ -220,8 +235,8 @@
                             <label class="row txt-blck ml-4">TARJETA-CREDITO</label>
                         </td>
                         <td class="b-d">
-                            <a href="update-info-pago.html" class="row ml-95"><label>Actualizar información de pago</label></a>
-                            <a href="historial-pagos.html" class="row ml-95"><label>Detalles de facturación</label></a>
+                            <a href="update-info-pago.php" class="row ml-95"><label>Actualizar información de pago</label></a>
+                            <a href="historial-pagos.php" class="row ml-95"><label>Detalles de facturación</label></a>
                         </td>
                     </tr>
                     <tr>

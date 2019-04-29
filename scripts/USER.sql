@@ -1,16 +1,16 @@
 --Crear nuevo usuario(esquema) con el password "PASSWORD" 
-CREATE USER NET
+CREATE USER NET4
   IDENTIFIED BY "oracle"
   DEFAULT TABLESPACE USERS
   TEMPORARY TABLESPACE TEMP;
 --asignar cuota ilimitada al tablespace por defecto  
-ALTER USER NET QUOTA UNLIMITED ON USERS;
+ALTER USER NET4 QUOTA UNLIMITED ON USERS;
 
 --Asignar privilegios basicos
-GRANT create session TO NET;
-GRANT create table TO NET;
-GRANT create view TO NET;
-GRANT create any trigger TO NET;
-GRANT create any procedure TO NET;
-GRANT create sequence TO NET;
-GRANT create synonym TO NET;
+GRANT create session TO NET4;
+GRANT create table TO NET4;
+GRANT create view TO NET4;
+GRANT create any trigger TO NET4;
+GRANT create any procedure TO NET4;
+GRANT create sequence TO NET4;
+GRANT create synonym TO NET4;

@@ -1,3 +1,10 @@
+
+<?php
+
+    session_start();
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -98,26 +105,27 @@
     <div id="main-container">
 
         <div class="col-lg-7">
-            <h1 id="h1-cambiar-correo">Cambiar cuenta de correo electrónico</h1>
+            <h1 id="h1-cambiar-correo">Numero de Telefono</h1>
+
+            <input disabled id ="correo-actual3" type="text" class="form-control d-none" value="<?php echo$_SESSION["Usuario"]?>"> <br>
 
             <p id="p1">
-                El correo electrónico de la cuenta se utiliza para iniciar sesión en todos los perfiles y para enviar 
-                correos electrónicos al propietario de la cuenta.
+                Su número de teléfono se utilizará si olvida su contraseña y para mensajes importantes de la cuenta.
             </p>
         
-            <label class="label-upd-corr">Correo actual</label> <br>
-            <label class="label-correo">*****CORREO*****</label> <br>
+            <label class="label-upd-corr">Número de teléfono móvil</label>
+            <input id ="new-phone" type="text" class="form-control">
+            <div id="val-phone1" class="d-none verde">Correcto</div>
+            <div id="val-phone2" class="d-none naranja">Telefono Vacio</div>
+
+            <label class="label-upd-corr mt-4">Contraseña Actual</label>
+            <input id ="contra-phone" type="password" class="form-control">
+            <div id="val-contra-phone1" class="d-none verde">Correcto</div>
+            <div id="val-contra-phone3" class="d-none naranja">Contraseña Incorrecta</div>
         
-            <label class="label-upd-corr">Nuevo Correo</label>
-            <input id ="correo-update" type="text" class="form-control" onkeydown="validarEmail('correo-update')">
-            <div id="correo-correcto" class="d-none verde">Correo Valido</div>
-            <div id="correo-incorrecto" class="d-none naranja">Correo Invalido</div>
-        
-            <label class="label-upd-corr mt-4">Contraseña actual</label>
-            <input id="password-update" type="password" class="form-control mb-5">
-        
-            <button id="save-upd-corr" class="btn btn-primary">Guardar</button>
-            <button id="cancel-upd-corr" class="btn btn-secondary">Cancelar</button>
+            <button id="save-upd-pone" class="btn btn-primary mt-5">Guardar</button>
+            <button id="borrar-telefono" class="btn btn-secondary mt-5">Borrar Numero de Telefono</button>
+            <button id="cancel-upd-corr" class="btn btn-secondary mt-5">Cancelar</button>
         </div>
 
         <div class="col-lg-5"></div>

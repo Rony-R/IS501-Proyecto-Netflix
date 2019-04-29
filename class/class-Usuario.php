@@ -91,5 +91,56 @@
 
 		}
 
+		public function verificarUsuario($conexion){
+
+			$consulta = "SELECT CORREO,CONTRASENIA FROM TBL_USUARIOS WHERE CORREO = '$this->correo' AND CONTRASENIA = '$this->contrasenia'";
+			
+			$numcolumnas = $conexion->numColumnas($consulta);
+
+			if($numcolumnas)
+				return 1;
+			else
+				return 0;
+		}
+
+		public function obtenerPantallas($conexion){
+
+			$instruccion = "SELECT  A.CODIGO_USUARIO, A.CORREO, COUNT(B.CODIGO_PANTALLA) AS NUMERO_DE_PANTALLAS, C.NUMERO_DE_PANTALLAS AS NUMERO_PANTALLAS_POSIBLES FROM TBL_USUARIOS A LEFT JOIN TBL_PANTALLAS B ON (A.CODIGO_USUARIO = B.CODIGO_USUARIO) LEFT JOIN TBL_TIPO_PLAN C ON (A.CODIGO_TIPO_PLAN = C.CODIGO_TIPO_PLAN) WHERE A.CORREO = '$this->correo' GROUP BY A.CODIGO_USUARIO, A.CORREO, C.NUMERO_DE_PANTALLAS";
+
+			$resultado = array();
+
+			$resultado = $conexion->obtenerFila($instruccion);
+
+			return json_encode($resultado);
+
+		}
+
+		public function obtenerNombrePantallas($conexion){
+
+			$instruccion = "SELECT NOMBRE_PANTALLA FROM TBL_PANTALLAS WHERE CODIGO_USUARIO = $this->codigo_usuario";
+
+			$resultado = array();
+
+			while($fila = $conexion->obtenerFila($instruccion)){
+				$resultado[] = $fila;
+			}
+
+			return json_encode($resultado);
+
+		}
+
+		public function verificarCorreo($conexion){
+
+			$sql = "SELECT CORREO FROM TBL_USUARIOS WHERE CORREO = '$this->correo'";
+
+			$numcolumnas = $conexion->numColumnas($sql);
+
+			if($numcolumnas)
+				return 1; //si existe
+			else 
+				return 0; //no existe
+
+		}
+
 	}
 ?>

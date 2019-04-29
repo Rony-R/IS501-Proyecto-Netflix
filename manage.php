@@ -1,3 +1,10 @@
+
+<?php
+
+  session_start();
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,8 +33,13 @@
     </div>
 
     <div class="justify row mt-5">
-      <button id="btn-done" class="btn-manage mt-3">DONE</button>
+      <button id="btn-done" class="btn-manage mt-3">HECHO</button>
     </div>
+
+    <input type="txt" class="d-none" id="manage-pant1" value="<?php echo $_SESSION["Creadas"];?>">
+    <input type="txt" class="d-none" id="idUsuario" value="<?php echo $_SESSION["CodUsuario"];?>">
+    <input type="txt" class="d-none" id="estiloSub" value="0">
+    <input type="txt" class="d-none" id="repro" value="0">
 
     <!--Modal editar pantalla-->
     <div class="modal" id="modal-editar" tabindex="-1" role="dialog">
@@ -52,27 +64,31 @@
                 </div>
 
                 <div class="col-lg-8">
-                  <input class="form-control bg-dark" type="text">
-                  <p class="mt-2 mb-0 white-text">Idioma:</p>
-                  <select class="form-control bg-dark" id="slc-idiomas">
-                    <option value="1">Inglés</option>
-                    <option value="2">Español</option>
-                  </select>
-                  <p class="mt-2 mb-0 white-text">Peliculas y Series permitidas:</p>
-                  <select class="form-control bg-dark" id="slc-madurez">
-                    <option value="1">Sin restriccion</option>
-                    <option value="2">Adultos</option>
-                    <option value="3">Niños</option>
-                  </select>
-                </div>
+                    <input class="form-control bg-dark white-text plc-inp" type="text" placeholder="Nombre Pantalla">
+                    <p class="mt-2 mb-0 white-text">Idioma:</p>
+                    <select class="form-control bg-dark white-text" id="slc-idiomas">
+                      <option value="1">Español</option>
+                      <option value="2">Inglés</option>                  
+                      <option value="3">Aleman</option>
+                      <option value="4">Frances</option>
+                      <option value="5">Italiano</option>
+                    </select>
+                    <p class="mt-2 mb-0 white-text">Peliculas y Series permitidas:</p>
+                    <select class="form-control bg-dark white-text" id="slc-madurez">
+                      <option value="1">Niños</option>
+                      <option value="2">Todo Publico</option>
+                      <option value="3">Adolescentes</option>
+                      <option value="4">Adultos</option>
+                    </select>
+                  </div>
 
-              </div>
+                </div>
               <!--Fin cuerpo del modal-->
 
             </div>
 
             <div class="modal-footer gray-bckd">
-              <button type="button" class="btn">Guardar</button>
+              <button id="actualizar-pantalla" type="button" class="btn">Guardar</button>
               <button type="button" class="btn" data-dismiss="modal">Cancelar</button>
             </div>
           </div>
