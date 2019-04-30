@@ -30,8 +30,6 @@ $(document).ready(function(){
 
   htmlPantallas2(p1);
 
-  imgEditUser();
-
   tablaHistorial();
 
 });
@@ -93,18 +91,6 @@ function htmlPantallas2(crea){
     }
   });
 }
-
-/*function imgEditUser(){
-  $.ajax({
-    url: "ajax/landing.php?accion='imgEdit'",
-    success: function(respuesta){
-      $("#img-edit").append(respuesta);
-    },
-    error: function(){
-      console.log("Ha ocurrido un error!!!");
-    }
-  });
-}*/
 
 function tablaHistorial(){
   $.ajax({

@@ -58,9 +58,14 @@
 
               <div class="row">
 
-                <div class="col-lg-4">
+              <div class="col-lg-4">
                   <label id="img-edit">
-                    
+                    <form action="ajax/moverFotoPant.php" class="" method="POST" enctype="multipart/form-data">
+                      <img class="min-user img-opcty" src="img/newUser.png">
+                      <input type="file" class="form-control-file d-none" name="foto">            
+                      <i class="fas fa-edit edit-icon3 mt-1"></i>
+                      <input type="submit" class="btn btn-light" value="Listo">
+                    </form>
                   </label>
                 </div>
 

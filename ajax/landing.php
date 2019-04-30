@@ -193,16 +193,6 @@
 
     break;
 
-    case "'imgEdit'":
-        echo'
-        <form action="ajax/moverFotoPant.php" class="" method="POST" enctype="multipart/form-data">
-            <img class="min-user img-opcty" src="img/newUser.png">
-            <input type="file" class="form-control-file d-none" name="foto">            
-            <i class="fas fa-edit edit-icon3 mt-1"></i>
-            <input type="submit" class="btn btn-light" value="Listo">
-        </form>';
-    break;
-
     case "'table-account'":
     echo'
     <table cellspacing="4" cellpadding="9" class="mb-5">
