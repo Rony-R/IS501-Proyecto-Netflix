@@ -142,5 +142,44 @@
 
 		}
 
+		public function actualizarCorreo($conexion){
+
+			$sql = "CALL P_ACTUALIZAR_CORREO('$this->contrasenia', '$this->correo')";
+
+			$result = $conexion->ejecutarConsulta($sql);
+
+			if($result)
+				return 1;
+			else
+				return 0;
+
+		}
+
+		public function actualizarContrasenia($conexion){
+
+			$sql = "CALL P_ACTUALIZAR_CONTRA('$this->correo', '$this->contrasenia')";
+
+			$result = $conexion->ejecutarConsulta($sql);
+
+			if($result)
+				return 1;
+			else
+				return 0;
+
+		}
+
+		public function actualizarTelefono($conexion){
+
+			$sql = "CALL P_ACTUALIZAR_TELEFONO('$this->correo', '$this->contrasenia')";
+
+			$result = $conexion->ejecutarConsulta($sql);
+
+			if($result)
+				return 1;
+			else
+				return 0;
+
+		}
+
 	}
 ?>

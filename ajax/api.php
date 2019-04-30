@@ -84,6 +84,24 @@
                 echo 0;
         break;
 
+        case "'actualizar-correo'":
+            $u5 = new Usuario(null, null, null, $_POST["nuevoCorreo"], $_POST["correoActual"], null);
+            echo $u5->actualizarCorreo($conexion);
+        break;
+
+        case "'actulizar-contra'":
+            $u6 = new Usuario(null, null, null, $_POST["vieja"], $_POST["nueva"], null);
+            echo $u6->actualizarContrasenia($conexion);
+        break;
+
+        case "'actualizar-telefono'":
+            $u6 = new Usuario(null, null, null, $_POST["telefono"], $_POST["usuario"], null);
+            echo $u6->actualizarTelefono($conexion);
+        break;
+
+        case "''":
+        break;
+
         case "''":
         break;
 

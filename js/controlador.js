@@ -268,30 +268,54 @@ function nombrePantallas(id){
 
 function verificarCorreo(correoNuevo, correoActual){
 
-  var c = "nuevoCorreo=" +correoNuevo;
+  var c1 = "nuevoCorreo=" +correoNuevo;
 
   var c2 = "correoActual=" +correoActual;
 
   $.ajax({
     url: "ajax/api.php?accion='verificarCorreo'",
-    data: c,
+    data: c1,
     method: "POST",
     success: function(respuesta){
-      if(respuesta = 1){
-        //alert("Usuario ya existente!!!");
-        $("#correo-correcto").removeClass("d-block");
-        $("#correo-correcto").addClass("d-none");
+      if(respuesta == 1){
         $("#correo-update").addClass("invalido");
         $("#upd-correo-incorrecto").removeClass("d-none");
         $("#upd-correo-incorrecto").addClass("d-block");
+        $("#correo-correcto").removeClass("d-block");
+        $("#correo-correcto").addClass("d-none");
+
       }
       else{
-        alert("Proceda!!!"); //Aqui iria el procedimiento para actualizar el correo!!!
+        updtCorreo(c1, c2);
+        //alert("0"); //Aqui iria el procedimiento para actualizar el correo!!!
       }
 
     },
     error: function(){
       alert("Ocurrio un error!!!");
+    }
+  });
+
+}
+
+function updtCorreo(nuevo, viejo){
+
+  //var datos = "nuevo=" +nuevo+ "&viejo=" +viejo;
+
+  var datos = nuevo + "&" + viejo;
+
+  $.ajax({
+    url: "ajax/api.php?accion='actualizar-correo'",
+    data: datos,
+    method: "POST",
+    success: function(respuesta){
+      if(respuesta ==1)
+      cerrarSesion();
+      else
+        window.location.reload();
+    },
+    error: function(){
+      alert("Ocurrio un error!!!!");
     }
   });
 
@@ -434,6 +458,8 @@ $("#save-upd-corr").click(function(){
   else{
     $("#correo-incorrecto").addClass("d-block");
     $("#correo-correcto").removeClass("d-block");
+    $("#correo-update").addClass("invalido");
+    $("#correo-update").removeClass("valido");
   }
   if(v2){
     $("#contra-upd-corr2").removeClass("d-block");
@@ -453,7 +479,7 @@ $("#save-upd-corr").click(function(){
 
     var correoact = $("#correo-actual").val();
 
-    var parametro = $("#correo-update").val();
+    var correonue = $("#correo-update").val();
 
     $.ajax({
       url: "ajax/api.php?accion='verificar-usuario'",
@@ -465,7 +491,7 @@ $("#save-upd-corr").click(function(){
        
         if(v1 == 1){ //si existe
           //alert(respuesta);
-         verificarCorreo(parametro, correoact);
+         verificarCorreo(correonue, correoact);
         }
         else{ //no existe
           $("#contra-upd-corr2").addClass("d-block");
@@ -524,8 +550,7 @@ $("#save-upd-contra").click(function(){
 
   var c1 = $("#contra-update2").val();
   var c2 = $("#contra-update3").val();
-
-  var nueva = "contraNueva=" +$("#contra-update3").val();
+  var c3 = $("#contra-update1").val();
 
   $.ajax({
     url: "ajax/api.php?accion='verificar-usuario'",
@@ -539,6 +564,7 @@ $("#save-upd-contra").click(function(){
         //alert(respuesta);
         if(c1 == c2){
           //alert("Son iguales"); //Aqui iria el procedimiento para actualizar la contraseña!!!
+          updtContrasenia(c3, c2);
         }
         else{
           $("#contra-update1").removeClass("invalido");
@@ -565,6 +591,27 @@ $("#save-upd-contra").click(function(){
   });
 
 });
+
+function updtContrasenia(vieja, nueva){
+
+  var contras = "vieja=" +vieja+ "&nueva=" +nueva;
+
+  $.ajax({
+    url: "ajax/api.php?accion='actulizar-contra'",
+    data: contras,
+    method: "POST",
+    success: function(respuesta){
+      if(respuesta == 1)
+        cerrarSesion();
+      else
+        window.location.reload();
+    },
+    error: function(){
+      alert("Ocurrio un error!!!");
+    }
+  });
+
+}
 
 
 $("#save-upd-pone").click(function(){
@@ -594,7 +641,7 @@ $("#save-upd-pone").click(function(){
 
   var datos = "correo=" +$("#correo-actual3").val()+ "&contra=" +$("#contra-phone").val();
 
-  var t1 = "telefono=" +$("#new-phone").val();
+  var datos2 = "usuario="+$("#correo-actual3").val()+"&telefono=" +$("#new-phone").val();
 
   $.ajax({
     url: "ajax/api.php?accion='verificar-usuario'",
@@ -606,6 +653,7 @@ $("#save-upd-pone").click(function(){
      
       if(v1 == 1){ //si existe
         //alert("Hello"); Aqui iria el procedimiento para actualizar el telefono!!!!
+        updtTelefono(datos2);
       }
       else{ //no existe
         //alert("No existe el usuario!!!");
@@ -619,6 +667,26 @@ $("#save-upd-pone").click(function(){
   });
 
 });
+
+function updtTelefono(datos){
+
+  $.ajax({
+    url: "ajax/api.php?accion='actualizar-telefono'",
+    data: datos,
+    method: "POST",
+    success: function(respuesta){
+      if(respuesta == 1)
+        window.location = "account.html";
+      else
+        window.location.reload();
+
+    },
+    error: function(){
+      alert("Ocurrio un error!!!");
+    }
+  });
+
+}
 
 $("#insert-pantalla").click(function(){
 
