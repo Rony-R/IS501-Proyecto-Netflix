@@ -117,7 +117,7 @@
 
 		public function obtenerNombrePantallas($conexion){
 
-			$instruccion = "SELECT NOMBRE_PANTALLA FROM TBL_PANTALLAS WHERE CODIGO_USUARIO = $this->codigo_usuario";
+			$instruccion = "SELECT CODIGO_PANTALLA, NOMBRE_PANTALLA FROM TBL_PANTALLAS WHERE CODIGO_USUARIO = $this->codigo_usuario";
 
 			$resultado = array();
 

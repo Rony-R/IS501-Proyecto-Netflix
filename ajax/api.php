@@ -75,7 +75,13 @@
             echo $u4->verificarCorreo($conexion);
         break;
 
-        case "''":
+        case "'cerrar-sesion'":
+            session_start();
+
+            if(session_destroy())
+                echo 1;
+            else
+                echo 0;
         break;
 
         case "''":

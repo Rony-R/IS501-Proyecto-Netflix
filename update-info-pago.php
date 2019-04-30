@@ -43,7 +43,7 @@
             <div class="col-10 col-sm-8 col-md-6">
                 <h1 class="lead text-selecciona text-selecciona-2">Actualiza tu tarjeta de crédito o débito.</h1>  
                 
-                <input disabled id ="correo-actual2" type="text" class="form-control d-none" value="<?php echo$_SESSION["Usuario"]?>"> 
+                <input disabled id ="correo-actual2" type="text" class="form-control d-none" value="<?php echo$_SESSION["CodUsuario"]?>"> 
                 
                 <span class="logo-icon"><img src="img/img-icon-visa.png"></span>
                 <span class="logo-icon"><img src="img/img-icon-master.png"></span>

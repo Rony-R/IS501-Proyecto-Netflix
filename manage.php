@@ -3,11 +3,18 @@
 
   session_start();
 
+    /*if(isset($_FILES)){
+        $nombreImg = $_FILES["miniatura"]["name"];
+        move_uploaded_file($_FILES["miniatura"]["tmp_name"],"img/".$nombreImg);
+    }*/
+
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--<span id="url-img-pant" class="d-none"><?php echo $_GET["fotito"]; ?></span>-->
+    <!--<span id="span-img" class="d-none"><?php echo $nombreImg; ?></span>-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -59,7 +66,12 @@
 
                 <div class="col-lg-4">
                   <label id="img-edit">
-                    
+                    <form action="ajax/moverFotoPant.php" class="" method="POST" enctype="multipart/form-data">
+                      <img class="min-user img-opcty" src="img/newUser.png">
+                      <input type="file" class="form-control-file d-none" name="foto">            
+                      <i class="fas fa-edit edit-icon3 mt-1"></i>
+                      <input type="submit" class="btn btn-light" value="Listo">
+                    </form>
                   </label>
                 </div>
 

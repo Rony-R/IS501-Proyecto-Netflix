@@ -94,7 +94,7 @@ function htmlPantallas2(crea){
   });
 }
 
-function imgEditUser(){
+/*function imgEditUser(){
   $.ajax({
     url: "ajax/landing.php?accion='imgEdit'",
     success: function(respuesta){
@@ -104,13 +104,25 @@ function imgEditUser(){
       console.log("Ha ocurrido un error!!!");
     }
   });
-}
+}*/
 
 function tablaHistorial(){
   $.ajax({
     url: "ajax/landing.php?accion='tablaHist'",
     success: function(respuesta){
       $("#contenedor-hist").append(respuesta);
+    }
+  });
+}
+
+function cerrarSesion(){
+  $.ajax({
+    url: "ajax/api.php?accion='cerrar-sesion'",
+    success: function(respuesta){
+      if(respuesta = 1)
+        window.location = "sesion.html";
+      else 
+        window.location.reload();
     }
   });
 }
@@ -242,10 +254,10 @@ function nombrePantallas(id){
       var datos = "";
 
       for(var i=0; i<respuesta.length; i++){
-        datos = "&nombre" + i + "=" + respuesta[i].NOMBRE_PANTALLA;
+        datos = "&nombrePantalla" + i + "=" + respuesta[i].NOMBRE_PANTALLA+
+                "&codPantalla=" +respuesta[i].CODIGO_PANTALLA;
       }
-      alert("Ahora->");
-      alert("Nombres Pantallas:" + datos);
+      console.log("Nombres Pantallas:" + datos);
     },
     error: function(){
       alert("Ocurrio un Error!!!");
