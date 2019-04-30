@@ -99,7 +99,9 @@
             echo $u6->actualizarTelefono($conexion);
         break;
 
-        case "''":
+        case "'datos-cuenta'":
+            $u7 = new Usuario(null, null, null, $_POST["correo"], null, null);
+            echo $u7->datosCuenta($conexion);
         break;
 
         case "''":

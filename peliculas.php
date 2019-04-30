@@ -81,9 +81,9 @@
                                              <a class="dropdown-item" href="#">Niños</a>
                                              <a class="dropdown-item" href="manage.html">Administrar perfiles</a>
                                              <hr>
-                                             <a class="dropdown-item" href="#"><b>Cuenta</b></a>
+                                             <a class="dropdown-item" href="account.php"><b>Cuenta</b></a>
                                              <a class="dropdown-item" href="#"><b>Centro de Ayuda</b></a>
-                                             <a class="dropdown-item" href="sesion.html"><b>Cerrar sesión en Netflix</b></a>
+                                             <a class="dropdown-item" onclick="cerrarSesion()"><b>Cerrar sesión en Netflix</b></a>
                                              
 
                                         </div>

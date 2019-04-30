@@ -181,5 +181,19 @@
 
 		}
 
+		public function datosCuenta($conexion){
+
+			$instruccion = "SELECT A.CORREO, A.CONTRASENIA, A.TELEFONO, C.NUMERO_DE_TARJETA, B.NOMBRE_TIPO_PLAN FROM TBL_USUARIOS A LEFT JOIN TBL_TIPO_PLAN B ON (A.CODIGO_TIPO_PLAN = B.CODIGO_TIPO_PLAN) LEFT JOIN TBL_REGISTRO_TARJETA C ON (A.CODIGO_USUARIO = C.CODIGO_USUARIO) WHERE A.CORREO = '$this->correo'";
+
+			$resultado = array();
+
+			while($fila = $conexion->obtenerFila($instruccion)){
+				$resultado[] = $fila;
+			}
+
+			return json_encode($resultado);
+
+		}
+
 	}
 ?>
