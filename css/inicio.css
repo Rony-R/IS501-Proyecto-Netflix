@@ -335,7 +335,7 @@ padding:36px 0 0px 0;
 
 .hr-ft{
   margin: 0px 0px;
-  border-color: #676767; 
+  border-top: 1px solid #dee2e6 !important;
 }
 
 #h1-cambiar-correo{
@@ -376,12 +376,12 @@ padding:36px 0 0px 0;
   color: rgb(0, 251, 0);
 }
 
-#contra-phone{
+#new-phone{
   height: 44px;
   width: 310px;
 }
 
-#contra-update4{
+#contra-phone{
   height: 44px;
   width: 310px;  
 }
@@ -428,4 +428,21 @@ padding:36px 0 0px 0;
 
 .txt-r{
   text-align: right;
+}
+
+
+#btnGroupDrop1:hover{
+  background-color: transparent;
+  text-decoration: none;
+}
+#btnGroupDrop1{
+  background-color: transparent;
+  text-decoration: none;
+}
+
+
+.img-nav{
+  width: 50px;
+  padding-left: 1.4rem;
+  float:left;
 }

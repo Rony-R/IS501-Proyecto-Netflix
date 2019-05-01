@@ -1,4 +1,11 @@
-<!doctype html>
+
+<?php
+
+  session_start();
+
+?>
+
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -24,7 +31,7 @@
             <div class="col-12 col-sm-7">
             </div>
             <div class="col-12 col-sm-3 letras-img">
-                <a id="a-iniciar-sesion" href="users.html">Inicia sesión</a>
+                <a id="a-iniciar-sesion" href="account.html">Volver a la cuenta</a>
             </div>
         </div>        
       </div>
@@ -34,8 +41,10 @@
             <div class="col-1 col-sm-1 col-md-3">
             </div>
             <div class="col-10 col-sm-8 col-md-6">
-                <span class="lead text-paso">PASO <span class="bold-txt">3</span> DE <span class="bold-txt">3</span></span>
-                <h1 class="lead text-selecciona text-selecciona-2">Configura tu tarjeta de crédito o débito.</h1>  
+                <h1 class="lead text-selecciona text-selecciona-2">Actualiza tu tarjeta de crédito o débito.</h1>  
+                
+                <input disabled id ="correo-actual2" type="text" class="form-control d-none" value="<?php echo$_SESSION["CodUsuario"]?>"> 
+                
                 <span class="logo-icon"><img src="img/img-icon-visa.png"></span>
                 <span class="logo-icon"><img src="img/img-icon-master.png"></span>
                 <span class="logo-icon"><img src="img/img-icon-amex.png"></span> 
@@ -43,15 +52,23 @@
                 <form>
                   <div class="form-group">
                     <input type="text" class="form-control" id="input-nombre" placeholder="Nombre">
+                    <div id="val-nomb1" class="d-none verde">Correcto</div>
+                    <div id="val-nomb2" class="d-none naranja">No puede estar vacio</div>
                   </div>
                   <div class="form-group">
                     <input type="text" class="form-control" id="input-apellido" placeholder="Apellido">
+                    <div id="val-ap1" class="d-none verde">Correcto</div>
+                    <div id="val-ap2" class="d-none naranja">No puede estar vacio</div>
                   </div>
                   <div class="form-group">
                     <input type="text" class="form-control" id="input-numero-tarjeta" placeholder="Número de tarjeta">
+                    <div id="val-tarj1" class="d-none verde">Correcto</div>
+                    <div id="val-tarj2" class="d-none naranja">No puede estar vacio</div>
                   </div>
                   <div class="form-group">
                     <input type="text" class="form-control" id="input-fecha-vencimiento" placeholder="Fecha de Vencimiento (MM/AA)">
+                    <div id="val-fech1" class="d-none verde">Correcto</div>
+                    <div id="val-fech2" class="d-none naranja">No puede estar vacio</div>
                   </div>
                   <div class="input-group">
                     <input id="input-codigo-CVV" type="text" class="form-control" placeholder="Código de seguridad (CVV)">
@@ -63,39 +80,15 @@
                       </span>
                     </div>
                   </div>
+                  <div id="val-codSeg1" class="d-none verde">Correcto</div>
+                    <div id="val-codSeg2" class="d-none naranja">No puede estar vacio</div>
                 </form>
                 <div class= "row row-style">
-                  <div class="col-8 col-sm-10">
-                    <div>
-                        <span class="txt-b-1">TU PLAN</span> 
-                    </div>
-                    <div >
-                        <span class="txt-b-2">Streaming ilimitado en HD y Ultra HD por USD13.99 al mes.</span> 
-                    </div>
-                  </div>
-                  <div class="col-4 col-sm-2">
-                     <a id="a-1" href="registro-plataforma.html">Cambiar</a>
-                  </div>
+                  <p class="p-phone">
+                      Sus pagos serán procesados ​​internacionalmente. Se pueden aplicar cargos bancarios adicionales.
+                  </p>
                 </div>
-                <div class= "row row-style">
-                    <div class="col-12 col-sm-12">
-                      <div class="pad-mar">
-                          <span class="txt-b-3">Los pagos se procesarán internacionalmente. Es posible que se apliquen comisiones bancarias adicionales.</span>
-                      </div>    
-                      <div class="pad-mar"> 
-                          <span class="txt-b-3">hacer clic en el botón "Iniciar membresía", aceptas nuestros <a href="#">Términos de uso</a> y nuestra <a href="#">
-                              Declaración de privacidad</a>, y declaras que tienes más de 18 años. Puedes cancelar tu membresía en cualquier momento.
-                              Para hacerlo, visita tu Cuenta y haz clic en "Cancelar membresía".
-                          </span>
-                      </div>
-                      <div class="pad-mar">
-                          <span class="txt-b-1">Netflix continuará tu membresía de manera automática y, hasta que la canceles, te facturará el cargo mensual
-                             (actualmente de USD13.99) a través de la forma de pago elegida.</span> 
-                          <span  class="txt-b-3"> No se ofrecen reembolsos ni créditos por meses parciales.</span>
-                      </div>
-                    </div>
-                </div>
-                <button type="button" class="btn btn-danger" id="btn-iniciar-membresia"><a href="sesion.html" style="color:white">INICIAR MEMBRESÍA</a> </button> 
+                <button type="button" class="btn btn-danger" id="save-upd-info-pago">GUARDAR</button> 
             </div>
             <div class="col-1 col-sm-2 col-md-4 col-md-3">
             </div>
@@ -131,7 +124,7 @@
 
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/controlador-R.js"></script>
+    <script src="js/controlador.js"></script>
   </body>
   <footer class="border-top margin-sup" id ="footer-gray">
     <div class="row">

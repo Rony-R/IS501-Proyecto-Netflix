@@ -1,0 +1,24 @@
+.descrip{
+    margin-left: 15px;
+    font-size: 14px;
+    line-height: 1.3em;
+    color: grey;
+    margin-bottom: 0;
+}
+
+.tip-rep{
+    color: #333;
+    position: relative;
+    display: block;
+    line-height: 1.2;
+    padding: 6px 0;
+    font-size: 16px;
+}
+
+.form-check-input{
+    margin-top: .7rem;
+}
+
+#chk-tipo-rep{
+    margin-top: .5rem;
+}

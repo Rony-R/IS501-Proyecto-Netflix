@@ -1,3 +1,4 @@
+<?php include("ajax/seguridad-reg.php"); ?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -12,7 +13,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/registro-basico.css" rel="stylesheet">
     <link href="css/registro-regform.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="css/all.css" type="text/css" rel="stylesheet">
 
   </head>
   <body>
@@ -24,11 +25,11 @@
             <div class="col-12 col-sm-7">
             </div>
             <div class="col-12 col-sm-3 letras-img">
-                <a id="a-iniciar-sesion" href="#">Inicia sesión</a>
+               <a id="a-iniciar-sesion" href="users.html" onclick="location.href='ajax/logout-reg.php'">Inicia sesión</a>
             </div>
         </div>        
       </div>
-
+      <input type="text" class="form-control ocultar-elemento" id="input-pag"  value="4">
       <div id="body" class="container margin-sup-1">    
           <div class="row" >
               <div class="col-1 col-sm-1 col-md-3"></div>
@@ -40,11 +41,38 @@
                   <h1 class="lead text-selecciona text-selecciona-3">Crea tu cuenta.</h1>  
                   <form>
                       <div class="form-group">
-                        <input type="text" class="form-control" id="input-correo" placeholder="Correo">
+                        <input type="text" class="form-control" id="txt-correo" placeholder="Correo electrónico" onkeyup="validarEmail(this.value)" >
+                        <div class="valid-feedback">
+                          Este campo esta correcto!
+                        </div>
+                        <div class="invalid-feedback">
+                          Este campo esta vacio o incorrecto
+                        </div>
                       </div>
                       <div class="form-group">
-                        <input type="text" class="form-control" id="input-contraseña" placeholder="Contraseña">
+                        <input type="password" class="form-control" id="txt-contrasenia" placeholder="Contraseña" value="">
+                        <div class="valid-feedback">
+                          Este campo esta correcto!
+                        </div>
+                        <div class="invalid-feedback">
+                          Este campo esta vacio o incorrecto
+                        </div>
+                        <input type="text" class="form-control mt-3" id="txt-telefono" placeholder="Telefono" value="">
+                        <div class="valid-feedback">
+                          Este campo esta correcto!
+                        </div>
+                        <div class="invalid-feedback">
+                          Este campo esta vacio o incorrecto
+                        </div>
+                        <label class="mt-3">Selecciona tu genero</label> <br>
+                        <div id="chk-gen">
+                          <label>Femenino</label>
+                          <input id="btn-genero" type="radio" name="genero" value="1">
+                          <label class="ml-5">Masculino</label>
+                          <input id="btn-genero1" type="radio" name="genero" value="2">
+                        </div>
                       </div>
+              
                   </form>
                   <button type="button" class="btn btn-danger" id="btn-continuar-2">CONTINUAR</button> 
               </div>

@@ -32,7 +32,7 @@
                             <div class="collapse navbar-collapse" id="navbarCollapse" style="float=left">
                               <ul class="navbar-nav nav-margen">
                                 <li class="nav-item active">
-                                     <a class="nav-link" href="inicio.php">Inicio</a>      
+                                     <a class="nav-link" href="Inicio.php">Inicio</a>      
                                 </li>
 
                                 <li class="nav-item active">
@@ -78,11 +78,11 @@
                                         <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
                                              <img style="width:30px; float:left; margin-rigth:5px" src="img/profile.png"><a class="dropdown-item" href="#">Cuenta2</a>
                                              <a class="dropdown-item" href="#">Niños</a>
-                                             <a class="dropdown-item" href="manage.html">Administrar perfiles</a>
+                                             <a class="dropdown-item" href="manage.php">Administrar perfiles</a>
                                              <hr>
-                                             <a class="dropdown-item" href="#"><b>Cuenta</b></a>
+                                             <a class="dropdown-item" href="account.php"><b>Cuenta</b></a>
                                              <a class="dropdown-item" href="#"><b>Centro de Ayuda</b></a>
-                                             <a class="dropdown-item" href="sesion.html"><b>Cerrar sesión en Netflix</b></a>
+                                             <a class="dropdown-item" onclick="cerrarSesion()"><b>Cerrar sesión en Netflix</b></a>
                                              
 
                                         </div>

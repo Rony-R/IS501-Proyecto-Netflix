@@ -18,7 +18,7 @@
                              
                             <ul class="navbar-nav ">
                                 <li class="nav-item active">
-                                        <a class="nav-item"  href="#">
+                                        <a class="nav-item"  href="Inicio.php">
                                         <img class="letras" src="img/letras.png">
                                         </a>
                                 </li>
@@ -32,7 +32,7 @@
                             <div class="collapse navbar-collapse" id="navbarCollapse" >
                               <ul class="navbar-nav nav-margen" >
                                 <li class="nav-item active">
-                                     <a class="nav-link" href="" ><b>Inicio</b></a>      
+                                     <a class="nav-link" href="Inicio.php" ><b>Inicio</b></a>      
                                 </li>
 
                                 <li class="nav-item active">
@@ -78,11 +78,11 @@
                                         <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
                                              <img style="width:30px; float:left; margin-rigth:5px" src="img/profile.png"><a class="dropdown-item" href="#">Cuenta2</a>
                                              <a class="dropdown-item" href="#">Niños</a>
-                                             <a class="dropdown-item" href="manage.html">Administrar perfiles</a>
+                                             <a class="dropdown-item" href="manage.php">Administrar perfiles</a>
                                              <hr>
-                                             <a class="dropdown-item" href="#"><b>Cuenta</b></a>
+                                             <a class="dropdown-item" href="account.php"><b>Cuenta</b></a>
                                              <a class="dropdown-item" href="#"><b>Centro de Ayuda</b></a>
-                                             <a class="dropdown-item" href="sesion.html"><b>Cerrar sesión en Netflix</b></a>
+                                             <a class="dropdown-item" onclick="cerrarSesion()"><b>Cerrar sesión en Netflix</b></a>
                                              
 
                                         </div>
@@ -97,30 +97,8 @@
 
     <div id="main-container">
 
-        <div class="col-lg-7">
-            <h1 id="h1-cambiar-correo">Cambiar cuenta de correo electrónico</h1>
-
-            <p id="p1">
-                El correo electrónico de la cuenta se utiliza para iniciar sesión en todos los perfiles y para enviar 
-                correos electrónicos al propietario de la cuenta.
-            </p>
-        
-            <label class="label-upd-corr">Correo actual</label> <br>
-            <label class="label-correo">*****CORREO*****</label> <br>
-        
-            <label class="label-upd-corr">Nuevo Correo</label>
-            <input id ="correo-update" type="text" class="form-control" onkeydown="validarEmail('correo-update')">
-            <div id="correo-correcto" class="d-none verde">Correo Valido</div>
-            <div id="correo-incorrecto" class="d-none naranja">Correo Invalido</div>
-        
-            <label class="label-upd-corr mt-4">Contraseña actual</label>
-            <input id="password-update" type="password" class="form-control mb-5">
-        
-            <button id="save-upd-corr" class="btn btn-primary">Guardar</button>
-            <button id="cancel-upd-corr" class="btn btn-secondary">Cancelar</button>
+        <div id="contenedor-hist" class="contenedor">
         </div>
-
-        <div class="col-lg-5"></div>
 
     </div>
 
@@ -165,7 +143,7 @@
                         <td><a href="#">Inversores</a></td>
                     </tr>
                         
-                </body>           
+                </tbody>           
         </table>
     </section>
 

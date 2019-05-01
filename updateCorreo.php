@@ -1,3 +1,10 @@
+
+<?php
+
+    session_start();
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,7 +39,7 @@
                             <div class="collapse navbar-collapse" id="navbarCollapse" >
                               <ul class="navbar-nav nav-margen" >
                                 <li class="nav-item active">
-                                     <a class="nav-link" href="" ><b>Inicio</b></a>      
+                                     <a class="nav-link" href="Inicio.php" ><b>Inicio</b></a>      
                                 </li>
 
                                 <li class="nav-item active">
@@ -76,13 +83,13 @@
                                              <img style="width:30px" src="img/profile.png">
                                         </button>
                                         <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                                             <img style="width:30px; float:left; margin-rigth:5px" src="img/profile.png"><a class="dropdown-item" href="#">Cuenta2</a>
+                                             <img class="img-nav" src="img/profile.png"><a class="dropdown-item" href="#">Cuenta2</a>
                                              <a class="dropdown-item" href="#">Niños</a>
-                                             <a class="dropdown-item" href="manage.html">Administrar perfiles</a>
+                                             <a class="dropdown-item" href="manage.php">Administrar perfiles</a>
                                              <hr>
-                                             <a class="dropdown-item" href="#"><b>Cuenta</b></a>
+                                             <a class="dropdown-item" href="account.php"><b>Cuenta</b></a>
                                              <a class="dropdown-item" href="#"><b>Centro de Ayuda</b></a>
-                                             <a class="dropdown-item" href="sesion.html"><b>Cerrar sesión en Netflix</b></a>
+                                             <a class="dropdown-item" onclick="cerrarSesion()"><b>Cerrar sesión en Netflix</b></a>
                                              
 
                                         </div>
@@ -96,6 +103,35 @@
     </header>
 
     <div id="main-container">
+
+        <div class="col-lg-7">
+            <h1 id="h1-cambiar-correo">Cambiar cuenta de correo electrónico</h1>
+
+            <p id="p1">
+                El correo electrónico de la cuenta se utiliza para iniciar sesión en todos los perfiles y para enviar 
+                correos electrónicos al propietario de la cuenta.
+            </p>
+        
+            <label class="label-upd-corr">Correo actual</label> <br>
+            <input disabled id ="correo-actual" type="text" class="form-control" value="<?php echo$_SESSION["Usuario"]?>"> <br>
+        
+            <label class="label-upd-corr">Nuevo Correo</label>
+            <input id ="correo-update" type="text" class="form-control" onkeydown="validarEmail('correo-update')">
+            <div id="correo-correcto" class="d-none verde">Correo Valido</div>
+            <div id="correo-incorrecto" class="d-none naranja">Correo Invalido</div>
+            <div id="upd-correo-incorrecto" class="d-none naranja">Este correo ya existe!!!</div>
+        
+            <label class="label-upd-corr mt-4">Contraseña actual</label>
+            <input id="password-update" type="password" class="form-control">
+            <div id="contra-upd-corr1" class="d-none verde">Contraseña Correta</div>
+            <div id="contra-upd-corr2" class="d-none naranja">Contraseña incorrecta o vacia</div>
+        
+            <button id="save-upd-corr" class="btn btn-primary mt-5">Guardar</button>
+            <button id="cancel-upd-corr" class="btn btn-secondary mt-5">Cancelar</button>
+        </div>
+
+        <div class="col-lg-5"></div>
+
     </div>
 
     <hr class="hr-ft">
@@ -147,7 +183,7 @@
 
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.js"></script>
-    <script src="js/controlador-inicio.js"></script>
+    <script src="js/controlador.js"></script>
    
 
 </body>

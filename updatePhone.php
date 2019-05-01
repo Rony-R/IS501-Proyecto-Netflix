@@ -1,3 +1,10 @@
+
+<?php
+
+    session_start();
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,7 +39,7 @@
                             <div class="collapse navbar-collapse" id="navbarCollapse" >
                               <ul class="navbar-nav nav-margen" >
                                 <li class="nav-item active">
-                                     <a class="nav-link" href="" ><b>Inicio</b></a>      
+                                     <a class="nav-link" href="Inicio.php" ><b>Inicio</b></a>      
                                 </li>
 
                                 <li class="nav-item active">
@@ -76,13 +83,13 @@
                                              <img style="width:30px" src="img/profile.png">
                                         </button>
                                         <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                                             <img style="width:30px; float:left; margin-rigth:5px" src="img/profile.png"><a class="dropdown-item" href="#">Cuenta2</a>
+                                             <img class="img-nav" src="img/profile.png"><a class="dropdown-item" href="#">Cuenta2</a>
                                              <a class="dropdown-item" href="#">Niños</a>
-                                             <a class="dropdown-item" href="manage.html">Administrar perfiles</a>
+                                             <a class="dropdown-item" href="manage.php">Administrar perfiles</a>
                                              <hr>
-                                             <a class="dropdown-item" href="#"><b>Cuenta</b></a>
+                                             <a class="dropdown-item" href="account.php"><b>Cuenta</b></a>
                                              <a class="dropdown-item" href="#"><b>Centro de Ayuda</b></a>
-                                             <a class="dropdown-item" href="sesion.html"><b>Cerrar sesión en Netflix</b></a>
+                                             <a class="dropdown-item" onclick="cerrarSesion()"><b>Cerrar sesión en Netflix</b></a>
                                              
 
                                         </div>
@@ -98,24 +105,26 @@
     <div id="main-container">
 
         <div class="col-lg-7">
-            <h1 id="h1-cambiar-correo">Cambiar Contraseña</h1>
-        
-            <label class="label-upd-corr">Contraseña Actual</label>
-            <input id ="contra-update1" type="password" class="form-control">
-            <div id="contra-update1-contra-correcta" class="d-none verde">Correcto</div>
-            <div id="contra-update1-contra-incorrecta" class="d-none naranja">Contraseña Vacia</div>
+            <h1 id="h1-cambiar-correo">Numero de Telefono</h1>
 
-            <label class="label-upd-corr mt-4">Nueva Contraseña</label>
-            <input id ="contra-update2" type="password" class="form-control">
-            <div id="contra-update2-contra-correcta2" class="d-none verde">Correcto</div>
-            <div id="contra-update2-contra-incorrecta2" class="d-none naranja">Contraseña Vacia</div>
+            <input disabled id ="correo-actual3" type="text" class="form-control d-none" value="<?php echo$_SESSION["Usuario"]?>"> <br>
+
+            <p id="p1">
+                Su número de teléfono se utilizará si olvida su contraseña y para mensajes importantes de la cuenta.
+            </p>
         
-            <label class="label-upd-corr mt-4">Confirme la contraseña</label>
-            <input id="contra-update3" type="password" class="form-control">
-            <div id="contra-update3-contra-correcta3" class="d-none verde">Correcto</div>
-            <div id="contra-update3-contra-incorrecta3" class="d-none naranja">Contraseña Vacia</div>
+            <label class="label-upd-corr">Número de teléfono móvil</label>
+            <input id ="new-phone" type="text" class="form-control">
+            <div id="val-phone1" class="d-none verde">Correcto</div>
+            <div id="val-phone2" class="d-none naranja">Telefono Vacio</div>
+
+            <label class="label-upd-corr mt-4">Contraseña Actual</label>
+            <input id ="contra-phone" type="password" class="form-control">
+            <div id="val-contra-phone1" class="d-none verde">Correcto</div>
+            <div id="val-contra-phone3" class="d-none naranja">Contraseña Incorrecta</div>
         
-            <button id="save-upd-contra" class="btn btn-primary mt-5">Guardar</button>
+            <button id="save-upd-pone" class="btn btn-primary mt-5">Guardar</button>
+            <button id="borrar-telefono" class="btn btn-secondary mt-5">Borrar Numero de Telefono</button>
             <button id="cancel-upd-corr" class="btn btn-secondary mt-5">Cancelar</button>
         </div>
 
