@@ -1,0 +1,233 @@
+body{
+    background-color: black;
+    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    color: white;
+    
+}
+
+.pin1{
+  padding: .2em;
+    margin: 0;
+    width: 1.2em;
+    font-size: 1.7em;
+    text-align: center;
+    border: 1px solid gray;
+    min-height: 38px;
+    min-width: 152px;
+    float: left;
+}
+
+#caja{
+  height:120px; 
+  width:180px;
+  border:1px solid rgb(180, 180, 180); 
+  align-content:center;
+  text-align: center;
+  float: left;
+}
+
+#caja2{
+ font-size:12px; 
+ background-color:#DCDCDC;
+ width:35px; 
+ margin-left:auto; 
+ margin-right:auto;
+}
+
+#guardar{
+  display: inline-block;
+  font-size: 15px;
+  padding: 8px 2em;
+    min-width: 90px;
+    min-height: 37px;
+    height:38px;
+    margin: 8px 0 0 10px;    
+    vertical-align: middle; 
+    background-color:#EAEAEA;
+}
+
+.letras{
+    width: 100px; 
+    margin-right: 5px;
+    margin-top: 10%;
+    float:left;
+    margin-left: 1%;
+    position: relative;
+    
+}
+
+.nav-margen{
+    margin-top: 0.5%;
+    margin-left: 18px;
+    height: 100%;
+    font-size: 0.9rem;
+}
+
+.iconos{
+    color:white !important; 
+    font-size:20px; 
+    margin-top:50%;
+    padding-right: 18%;
+}
+
+.descripcion1{
+    position:relative; 
+    width:38%; 
+    padding-top:8%;
+    padding-left: 5%;
+}
+
+#texto1{
+  width:90%; 
+  padding:3% 0 4.5% 0; 
+  font-weight:bold;
+}
+
+#btn-1y2{
+    font-weight: bold;
+    font-size: 1em;
+    width: 165px;
+    opacity: 0.5;
+    
+}
+
+.seccion{
+  height: 800px;
+  max-width: 100%;
+  background-color:#F3F3F3; 
+  padding:130px; 
+  color:black;
+}
+
+/*---------------footer--------------*/
+.footer{
+  background-position-x: 100%;
+  background-position-y: 100%;
+  background-repeat: no-repeat;
+  background-origin: initial;
+  display: block;
+  max-width:100%;
+  color: grey;
+}
+
+
+.table2 {
+  width: 60%;
+  letter-spacing: normal;
+  padding: 2em 0;
+  border-spacing: 10px 5px;
+  border-collapse: separate;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 13px;
+  
+}
+.table2 a{
+  color: grey;
+}
+
+.table2 a:hover{
+  color: #fff;
+}
+
+
+/*-----------------carousel -------------------*/
+.carousel1{
+    position:relative; 
+    width:42%; 
+    padding:8% 0 0 5%;
+}
+
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+
+
+#wrapper{
+  max-width:100%;
+  padding:0px 0px 0px 0px;
+  position:relative;
+}
+
+button:focus {outline:0 !important;}
+
+
+.title{
+  color:#eee;
+}
+
+.module-section{
+  max-width: 100%;
+  overflow: hidden;
+  overflow-x:scroll;
+  height: 230px;
+}
+
+.lista{
+width:220em;
+list-style-type:none;
+padding:36px 0 0 5%;
+
+}
+
+#content{
+  position:relative;
+}
+
+.card{
+  width: 248px;
+  height:140px;
+  /*background:#fff;*/
+  float:left;
+  margin-right:1px;
+  margin-bottom:px;
+  cursor:pointer;
+  transform: scale(1);
+  visibility:visible;
+  -moz-box-shadow: 0px 1px 2px 0px #676767;
+  -webkit-box-shadow: 0px 1px 2px 0px #676767;
+  box-shadow: 0px 1px 2px 0px #676767;
+  
+}
+
+#img{
+  height: 100%;
+  width: 100%;
+}
+
+.card:hover{
+  cursor:pointer;
+  transform: scale(1);
+  visibility:visible;
+  transition: all .2s ease-in-out;
+  transform: scale(1.5); 
+  z-index:100;
+  position:relative;
+  transition-timing-function:cubic-bezier(0.5, 0, 0.1, 1);
+  transition-duration:400ms;
+ 
+  
+}
+
+ .inside-top{
+  width:100%;
+  height:140px;
+  background:#000;
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:100;
+}
+
+
+
+.clearfix {
+  overflow: auto;
+  zoom: 1;
+}

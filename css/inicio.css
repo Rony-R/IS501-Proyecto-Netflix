@@ -38,7 +38,7 @@ body{
 
 #texto1{
   width:90%; 
-  padding:3% 0 4.5% 0; 
+  padding:3% 0 20% 0; 
   font-weight:bold;
 }
 
@@ -91,7 +91,7 @@ body{
 .carousel1{
     position:relative; 
     width:42%; 
-    padding:8% 0 0 5%;
+    padding:1% 0 0 5%;
 }
 
 

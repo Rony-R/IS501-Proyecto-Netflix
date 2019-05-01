@@ -99,7 +99,7 @@
          
 
           <section class="seccion1">
-           <img src="img/peliculas/bird/5.jpg" style="width:100%; height:800px; position:absolute"> 
+           <img id="portada-peliculas" src="img/peliculas/bird/5.jpg" style="width:100%; height:800px; position:absolute"> 
                <div class="descripcion1">
                     <div>
                          <h4 style="color:white; float:left"><b>Peliculas</b></h4>
@@ -4197,7 +4197,7 @@
 
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/controlador-inicio.js"></script>
+    <script src="js/controlador-peliculas.js"></script>
    
 
 </body>

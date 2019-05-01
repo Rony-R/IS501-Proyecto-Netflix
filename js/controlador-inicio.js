@@ -15,7 +15,7 @@ function tblAccount(){
   });
 }
 
-$('#controlR').click(function() {
+$('#portada-inicio').click(function() {
     event.preventDefault();
     $('#content').animate({
       marginLeft: "-=400px"

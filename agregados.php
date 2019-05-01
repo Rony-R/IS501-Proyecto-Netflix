@@ -96,7 +96,7 @@
           </header>
 
           <section class="seccion1">
-           <img src="img/series/saul/2.jpg" style="width:100%; height:800px; position:absolute"> 
+           <img id="portada-agregados"src="img/series/saul/2.jpg" style="width:100%; height:800px; position:absolute"> 
                <div class="descripcion1">
                     <div>
                          <h4 style="color:white">ORIGINAL DE <b>NETFLIX</b></h4>
@@ -4180,7 +4180,7 @@
 
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.js"></script>
-    <script src="js/controlador-inicio.js"></script>
+    <script src="js/controlador-agregados.js"></script>
    
 
 </body>
