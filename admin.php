@@ -154,10 +154,8 @@
                                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" style="margin-bottom:5px">                  
                                         <select size=4 name="categoria" id="categoria" class="form-control"></select>
                                     </div>
-                               
-                                      
         
-                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" style="margin-bottom:5px; float:right">
+                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" style="margin-bottom:5px">
                                         <select size=4 name="genero" id="genero" class="form-control" placeholder="Duración"></select> 
                                     </div>
                                                           

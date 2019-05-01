@@ -60,7 +60,7 @@ $(document).ready(function(){
 
     //series
     $('#btn-series').click(function() {
-        $('#form1').replaceWith(`<form id="form2" style="width:90%">
+        $('#form1').replaceWith(`<form id="form2">
                                     <div class="form-group">
 
                                         <div class="row" style="margin-left:auto; margin-right:auto"> 
