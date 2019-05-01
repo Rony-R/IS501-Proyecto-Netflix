@@ -209,12 +209,12 @@
                     <tr>
                         <td valign="top">
                             <label class="row txt-gray mr-4 txt-wdt ml-1">MEMBRESÍA Y FACTURACIÓN</label>
-                            <button class="btn-memb" type="button">Cancelar Membresía</button>
+                            <button id="btn-cancel-membresia" class="btn-memb" type="button">Cancelar Membresía</button>
                         </td>
                         <td class="b-d">
-                            <label class="row txt-blck ml-4">Nombre-Usuario</label>
+                            <label class="row txt-blck ml-4">'.$_POST["corr"].'</label>
                             <label class="row txt-blck ml-4">Password: *****</label>
-                            <label class="row txt-blck ml-4">Phone: 9853-8090</label>  
+                            <label class="row txt-blck ml-4">Phone: '.$_POST["tel"].'</label>  
                         </td> 
                         <td class="b-d">
                             <a href="updateCorreo.php" class="row ml-95"><label>Cambiar email de cuenta</label></a>
@@ -225,7 +225,7 @@
                     <tr>
                         <td></td>
                         <td class="b-d">
-                            <label class="row txt-blck ml-4">TARJETA-CREDITO</label>
+                            <label class="row txt-blck ml-4">'.$_POST["tarj"].'</label>
                         </td>
                         <td class="b-d">
                             <a href="update-info-pago.php" class="row ml-95"><label>Actualizar información de pago</label></a>
@@ -246,7 +246,7 @@
                         <label class="row txt-gray ml-1">DETALLES DEL PLAN</label>
                     </td>
                     <td class="b-d">
-                        <label class="txt-blck ml-4">TIPO-PLAN</label>
+                        <label class="txt-blck ml-4">'.$_POST["plan"].'</label>
                     </td>
                     <td class="b-d">
                         <a href="#" class="row ml-95"><label>Cambio de plan</label></a>
@@ -292,6 +292,23 @@
 
     case "'tablaHist'": 
     echo'
+
+    <h1 class="h1-detalles">Detalles de facturación</h1>
+
+    <label class="lbl">SU MEMBRESÍA</label>
+        
+    <div class="container-blanco">
+        <p class="lbl mb-0">Tu próxima factura</p>
+        <p class="txt-blck">*****Tipo plan*****</p>
+        
+        <p class="lbl mb-0">Siguiente Fecha de facturación</p>
+        <p class="txt-blck">*****Fecha*****</p>
+    </div>
+        
+    <p class="txt-blck txt-1">
+        Las tarifas de membresía se facturan al comienzo de cada período y pueden demorar algunos días después de la fecha de facturación en aparecer en su cuenta.
+    </p>
+
     <table id="tabla-historial" cellspacing="2" cellpadding="9">
                 <thead>
                     <tr class="txt-blck b-d">

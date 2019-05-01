@@ -496,7 +496,7 @@ $("#save-upd-corr").click(function(){
 });
 
 $("#cancel-upd-corr").click(function(){
-  window.location ="account.html";
+  window.location ="account.php";
 });
 
 $("#save-upd-contra").click(function(){
@@ -662,7 +662,7 @@ function updtTelefono(datos){
     method: "POST",
     success: function(respuesta){
       if(respuesta == 1)
-        window.location = "account.html";
+        window.location = "account.php";
       else
         window.location.reload();
 

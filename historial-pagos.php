@@ -18,7 +18,7 @@
                              
                             <ul class="navbar-nav ">
                                 <li class="nav-item active">
-                                        <a class="nav-item"  href="#">
+                                        <a class="nav-item"  href="Inicio.php">
                                         <img class="letras" src="img/letras.png">
                                         </a>
                                 </li>
@@ -32,7 +32,7 @@
                             <div class="collapse navbar-collapse" id="navbarCollapse" >
                               <ul class="navbar-nav nav-margen" >
                                 <li class="nav-item active">
-                                     <a class="nav-link" href="" ><b>Inicio</b></a>      
+                                     <a class="nav-link" href="Inicio.php" ><b>Inicio</b></a>      
                                 </li>
 
                                 <li class="nav-item active">
@@ -78,7 +78,7 @@
                                         <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
                                              <img style="width:30px; float:left; margin-rigth:5px" src="img/profile.png"><a class="dropdown-item" href="#">Cuenta2</a>
                                              <a class="dropdown-item" href="#">Niños</a>
-                                             <a class="dropdown-item" href="manage.html">Administrar perfiles</a>
+                                             <a class="dropdown-item" href="manage.php">Administrar perfiles</a>
                                              <hr>
                                              <a class="dropdown-item" href="account.php"><b>Cuenta</b></a>
                                              <a class="dropdown-item" href="#"><b>Centro de Ayuda</b></a>
@@ -98,25 +98,6 @@
     <div id="main-container">
 
         <div id="contenedor-hist" class="contenedor">
-
-            <h1 class="h1-detalles">Detalles de facturación</h1>
-
-            <label class="lbl">SU MEMBRESÍA</label>
-        
-            <div class="container-blanco">
-                <p class="lbl mb-0">Tu próxima factura</p>
-                <p class="txt-blck">*****Tipo plan*****</p>
-        
-                <p class="lbl mb-0">Siguiente Fecha de facturación</p>
-                <p class="txt-blck">*****Fecha*****</p>
-            </div>
-        
-            <p class="txt-blck txt-1">
-                Las tarifas de membresía se facturan al comienzo de cada período y pueden demorar algunos días después de la fecha de facturación en aparecer en su cuenta.
-            </p>
-
-            
-
         </div>
 
     </div>

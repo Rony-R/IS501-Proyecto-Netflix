@@ -38,7 +38,7 @@
                             <div class="collapse navbar-collapse" id="navbarCollapse" >
                               <ul class="navbar-nav nav-margen" >
                                 <li class="nav-item active">
-                                     <a class="nav-link" href="" ><b>Inicio</b></a>      
+                                     <a class="nav-link" href="Inicio.php" ><b>Inicio</b></a>      
                                 </li>
 
                                 <li class="nav-item active">
@@ -84,7 +84,7 @@
                                         <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
                                              <img class="img-nav" src="img/profile.png"><a class="dropdown-item" href="#">Cuenta2</a>
                                              <a class="dropdown-item" href="#">Niños</a>
-                                             <a class="dropdown-item" href="manage.html">Administrar perfiles</a>
+                                             <a class="dropdown-item" href="manage.php">Administrar perfiles</a>
                                              <hr>
                                              <a class="dropdown-item" href="account.php"><b>Cuenta</b></a>
                                              <a class="dropdown-item" href="#"><b>Centro de Ayuda</b></a>

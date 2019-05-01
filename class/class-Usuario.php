@@ -187,9 +187,7 @@
 
 			$resultado = array();
 
-			while($fila = $conexion->obtenerFila($instruccion)){
-				$resultado[] = $fila;
-			}
+			$resultado = $conexion->obtenerFila($instruccion);
 
 			return json_encode($resultado);
 

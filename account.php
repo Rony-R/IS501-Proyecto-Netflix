@@ -21,11 +21,12 @@
 <body>
     <header>
                 <nav class="navbar navbar-expand-md navbar-dark fixed-top " role="navigation">
+                <input type="txt" class="d-none" id="corrusuario" value="<?php echo $_SESSION["Usuario"];?>">
                  <div class="container">
                              
                             <ul class="navbar-nav ">
                                 <li class="nav-item active">
-                                        <a class="nav-item"  href="#">
+                                        <a class="nav-item"  href="Inicio.php">
                                         <img class="letras" src="img/letras.png">
                                         </a>
                                 </li>
@@ -39,7 +40,7 @@
                             <div class="collapse navbar-collapse" id="navbarCollapse" >
                               <ul class="navbar-nav nav-margen" >
                                 <li class="nav-item active">
-                                     <a class="nav-link" href="" ><b>Inicio</b></a>      
+                                     <a class="nav-link" href="Inicio.php" ><b>Inicio</b></a>      
                                 </li>
 
                                 <li class="nav-item active">
@@ -85,7 +86,7 @@
                                         <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
                                              <img style="width:30px; float:left" src="img/profile.png"><a class="dropdown-item" href="#">Cuenta2</a>
                                              <a class="dropdown-item" href="#">Niños</a>
-                                             <a class="dropdown-item" href="manage.html">Administrar perfiles</a>
+                                             <a class="dropdown-item" href="manage.php">Administrar perfiles</a>
                                              <hr>
                                              <a class="dropdown-item" href="account.php"><b>Cuenta</b></a>
                                              <a class="dropdown-item" href="#"><b>Centro de Ayuda</b></a>
@@ -103,7 +104,6 @@
     </header>
 
     <div id="main-container">
-     <input type="txt" class="d-none" id="usuario" value="<?php echo $_SESSION["Usuario"];?>">
     </div>
 
     <hr class="hr-ft">
@@ -156,6 +156,7 @@
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/controlador-inicio.js"></script>
+    <script src="js/controlador.js"></script>
    
 
 </body>
