@@ -20,7 +20,6 @@ function tblAccount(data){
   });
 }
 
-$('#portada-inicio').click(function() {
 function datosUser(){
 
   var usuario = "correo=" +$("#corrusuario").val();
@@ -58,5 +57,4 @@ $('#controlL').click(function() {
     $('#content').animate({
       marginLeft: "+=400px"
     }, "fast");
-});
 });
