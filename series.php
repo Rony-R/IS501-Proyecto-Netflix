@@ -104,11 +104,25 @@
                                    <button class="dropdown-toggle" type="button" data-toggle="dropdown" id="btn-genero">Géneros 
                                    <span class="caret"></span>
                                    </button>
-                                   <ul class="dropdown-menu">
-                                        <li><a href="#">HTML</a></li>
-                                        <li><a href="#">CSS</a></li>
-                                        <li><a href="#">JavaScript</a></li>
-                                   </ul>
+                                   <ul class="dropdown-menu menu2" >
+                                 <div class="container">
+                                   <div class="row">
+
+                                        <div class="col-lg-4">
+                                             <li><a id="menu2" href="#">HTML</a></li>
+                                        </div>
+
+                                        <div class="col-lg-4">
+                                             <li><a id="menu2" href="#">CSS</a></li>
+                                        </div>
+
+                                        <div>
+                                             <li><a id="menu2" href="#">JavaScript</a></li>
+                                        </div>
+
+                                   </div>
+                                 </div>    
+                              </ul>
                               </div>
                               
                     </div>

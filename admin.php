@@ -122,7 +122,9 @@
                                     </div>
 
                                     <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12 col-12" style="margin-bottom:5px">                  
-                                        <select name="idioma" id="idioma" class="form-control"></select>
+                                        <select name="idioma" id="idioma" class="form-control">
+                                            <option value="" selected disabled>Idioma</option>
+                                        </select>
                                     </div>
 
                                     <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12 col-12" style="margin-bottom:5px">

@@ -13,7 +13,9 @@ $(document).ready(function(){
                                                 </div>
             
                                                 <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12 col-12" style="margin-bottom:5px">                  
-                                                    <select name="idioma" id="idioma" class="form-control"></select>
+                                                    <select name="idioma" id="idioma" class="form-control">
+                                                        <option value="" selected disabled>Idioma</option>
+                                                    </select>
                                                 </div>
             
                                                 <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12 col-12" style="margin-bottom:5px">
@@ -88,8 +90,14 @@ $(document).ready(function(){
                                                 <input class="form-control" type="text" placeholder="URL episodio" id="txt-url">
                                             </div>
 
-                                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" style="margin-bottom:5px">
+                                            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12" style="margin-bottom:5px">
                                                 <input class="form-control" type="text" placeholder="URL imagen miniatura" id="url-img">
+                                            </div>
+
+                                            <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12 col-12" style="margin-bottom:5px">                  
+                                                    <select name="idioma" id="idioma" class="form-control">
+                                                        <option value="" selected disabled>Idioma</option>
+                                                    </select>
                                             </div>
 
                                             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" style="margin-bottom:5px">
