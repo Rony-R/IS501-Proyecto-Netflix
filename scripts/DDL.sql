@@ -1,5 +1,4 @@
 
-
 CREATE TABLE tbl_audios (
     codigo_audio       INTEGER NOT NULL,
     codigo_idioma      INTEGER NOT NULL,
@@ -76,7 +75,8 @@ CREATE TABLE tbl_contenido (
     codigo_idioma           INTEGER NOT NULL,
     codigo_calif_edad       INTEGER NOT NULL,
     nombre_contenido        VARCHAR2(150) NOT NULL,
-    url_contenido           VARCHAR2(350) NOT NULL,
+    url_video               VARCHAR2(350),
+    url_miniatura           VARCHAR2(350) NOT NULL,
     descripcion             VARCHAR2(150) NOT NULL,
     fecha_subida            DATE NOT NULL
 );
@@ -271,7 +271,7 @@ ALTER TABLE tbl_pantallas_x_dispositivo ADD CONSTRAINT tbl_pantallas_x_dispositi
 CREATE TABLE tbl_peliculas (
     codigo_pelicula   INTEGER NOT NULL,
     codigo_unidad     INTEGER NOT NULL,
-    duracion_peli     VARCHAR2(100) NOT NULL
+    duracion_peli     INTEGER NOT NULL
 );
 
 ALTER TABLE tbl_peliculas ADD CONSTRAINT tbl_peliculas_pk PRIMARY KEY ( codigo_pelicula );
@@ -739,6 +739,3 @@ ALTER TABLE tbl_vistos
 ALTER TABLE tbl_vistos
     ADD CONSTRAINT vis_usu_fk FOREIGN KEY ( codigo_usuario )
         REFERENCES tbl_usuarios ( codigo_usuario );
-
-
-
