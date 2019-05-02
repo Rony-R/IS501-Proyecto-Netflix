@@ -134,8 +134,8 @@
                               <img src="img/series/casapapel/1.jpg" id="img">
                               </div>
                          </li>
-                              <li class="card">
-                              <div class="inside-top">
+                              <li class="card"  id="c2">
+                              <div class="inside-top"  id="cont2">
                               <img src="img/series/outlander/4.jpg" id="img">
                               </div>
                          </li>
@@ -4050,8 +4050,8 @@
                               <img src="img/series/casapapel/1.jpg" id="img">
                               </div>
                          </li>
-                              <li class="card">
-                              <div class="inside-top">
+                              <li class="card" id="c2">
+                              <div class="inside-top" id="cont">
                               <img src="img/series/outlander/4.jpg" id="img">
                               </div>
                          </li>
