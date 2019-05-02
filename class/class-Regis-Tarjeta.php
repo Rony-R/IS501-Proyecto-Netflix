@@ -91,23 +91,16 @@
 
 				//Otros Metodos
 				
-				public function insertarTarjeta($conexion){
+				public function actualizarTarjeta($conexion){
 
-					$instruccion = "";
+					$instruccion = "CALL P_ACTUALIZAR_INFO_PAGO($this->codigo_usuario, $this->codigo_tipo_tarjeta, '$this->nombre_usuario', '$this->apellido_usuario', '$this->numero_de_tarjeta', '$this->fecha_vencimiento', '$this->codigo_de_seguridad')";
 
-					$conexion->ejecutarConsulta($instruccion);
-					//$conexion->commit();
+					$result = $conexion->ejecutarConsulta($instruccion);
 
-					if($conexion->ejecutarConsulta($instruccion))
-					{
-						$msj['mensaje'] = "Se ha insertado la tarjeta con exito!!!";
-						return json_encode($msj);
-					}
+					if($result)
+						return 1;
 					else
-					{
-						$msj['mensaje'] = "No se inserto la tarjeta!!!";
-						return json_encode($msj);
-					}
+						return 0;
 
 				}
         

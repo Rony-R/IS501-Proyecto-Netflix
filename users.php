@@ -36,6 +36,7 @@
         <button id="btn-manage-profiles" class="btn-manage">ADMINISTRAR PERFILES</button>
     </div>
 
+    <input type="txt" class="d-none" id="usuario" value="<?php echo $_SESSION["Usuario"];?>">
     <input type="txt" class="d-none" id="users-pant1" value="<?php echo $_SESSION["Creadas"];?>">
     <input type="txt" class="d-none" id="users-pant2" value="<?php echo $_SESSION["Posibles"];?>">
     <input type="txt" class="d-none" id="idUsuario" value="<?php echo $_SESSION["CodUsuario"];?>">

@@ -193,5 +193,18 @@
 
 		}
 
+		public function eliminarTelefono($conexion){
+
+			$sql = "CALL P_ELIMINAR_TELEFONO('$this->correo', '$this->contrasenia')";
+
+			$result = $conexion->ejecutarConsulta($sql);
+
+			if($result)
+				return 1;
+			else
+				return 0;
+
+		}
+
 	}
 ?>

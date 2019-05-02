@@ -31,7 +31,7 @@
             <div class="col-12 col-sm-7">
             </div>
             <div class="col-12 col-sm-3 letras-img">
-                <a id="a-iniciar-sesion" href="account.html">Volver a la cuenta</a>
+                <a id="a-iniciar-sesion" href="account.php">Volver a la cuenta</a>
             </div>
         </div>        
       </div>
@@ -55,21 +55,32 @@
                     <div id="val-nomb1" class="d-none verde">Correcto</div>
                     <div id="val-nomb2" class="d-none naranja">No puede estar vacio</div>
                   </div>
+
                   <div class="form-group">
                     <input type="text" class="form-control" id="input-apellido" placeholder="Apellido">
                     <div id="val-ap1" class="d-none verde">Correcto</div>
                     <div id="val-ap2" class="d-none naranja">No puede estar vacio</div>
                   </div>
+
                   <div class="form-group">
                     <input type="text" class="form-control" id="input-numero-tarjeta" placeholder="Número de tarjeta">
                     <div id="val-tarj1" class="d-none verde">Correcto</div>
                     <div id="val-tarj2" class="d-none naranja">No puede estar vacio</div>
                   </div>
+
                   <div class="form-group">
-                    <input type="text" class="form-control" id="input-fecha-vencimiento" placeholder="Fecha de Vencimiento (MM/AA)">
+                  <select class="form-control" id="slc-tipo-tarjeta">
+                      <option value="1">Credito</option>
+                      <option value="2">Debito</option>                  
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <input type="date" class="form-control" id="input-fecha-vencimiento" placeholder="Fecha de Vencimiento (MM/AA)">
                     <div id="val-fech1" class="d-none verde">Correcto</div>
                     <div id="val-fech2" class="d-none naranja">No puede estar vacio</div>
                   </div>
+
                   <div class="input-group">
                     <input id="input-codigo-CVV" type="text" class="form-control" placeholder="Código de seguridad (CVV)">
                     <div class="input-group-append">
@@ -94,6 +105,9 @@
             </div>
         </div>
       </div>  
+
+      <input type="txt" class="d-none" id="usuario" value="<?php echo $_SESSION["Usuario"];?>">
+      <input type="txt" class="d-none" id="idUsuario" value="<?php echo $_SESSION["CodUsuario"];?>">
    
   
   <!-- Modal -->

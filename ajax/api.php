@@ -104,10 +104,14 @@
             echo $u7->datosCuenta($conexion);
         break;
 
-        case "''":
+        case "'borrar-telefono'":
+            $u8 = new Usuario(null, null, null, $_POST["telefono"], $_POST["usuario"], null);
+            echo $u8->eliminarTelefono($conexion);
         break;
 
-        case "''":
+        case "'actualizar-info-pago'":
+            $rt1 = new Regis_Tarjeta(null, $_POST["codUsuario"], $_POST["tipoTarjeta"], $_POST["nuevoNombre"], $_POST["nuevoApellido"], $_POST["nuevaTarjeta"], $_POST["nuevoCodigo"], $_POST["nuevaFecha"]);
+            echo $rt1->actualizarTarjeta($conexion);
         break;
 
         case "''":

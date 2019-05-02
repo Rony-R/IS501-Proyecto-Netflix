@@ -149,6 +149,8 @@ function contenidoIcono(idContenido){
 
 function crearSesion(correo, contra){
 
+  var usuario = correo;
+
   var datos = "correo=" + correo + "&contra=" + contra;
 
   $.ajax({
@@ -159,9 +161,11 @@ function crearSesion(correo, contra){
 
       var codigo = respuesta;
 
-      if(codigo == 1)
+      if(codigo == 1){
         //console.log("Se creo la sesion!!!");
+        pantallasUsuario(usuario);
         window.location = "users.php";
+      }
       else
         alert("NO se creo la sesion!!!");
     },
@@ -393,6 +397,7 @@ $("#btn-iniciar-sesion-2").click(function(){
         if(v1 == 1){
           pantallasUsuario(correo);
           crearSesion(correo, contrasenia);
+          pantallasUsuario(correo);
         }
         else{
           validarSesion();
@@ -692,7 +697,9 @@ $("#insert-pantalla").click(function(){
     success: function(respuesta){
       console.log("Resultado insert pantallas: " +respuesta);
 
-      pantallasUsuario($("#idUsuario").val());
+      var correo = $("#usuario").val();
+
+      pantallasUsuario(correo);
       
       window.location.reload();
 
@@ -804,20 +811,25 @@ $("#save-upd-info-pago").click(function(){
                 "&nuevoApellido=" +$("#input-apellido").val()+
                 "&nuevaTarjeta=" +$("#input-numero-tarjeta").val()+
                 "&nuevaFecha=" +$("#input-fecha-vencimiento").val()+
-                "&nuevoCodigo=" +$("#input-codigo-CVV").val();
-    alert(datos);
+                "&nuevoCodigo=" +$("#input-codigo-CVV").val()+
+                "&codUsuario=" +$("#idUsuario").val()+
+                "&tipoTarjeta=" +$("#slc-tipo-tarjeta").val();              
 
-    /*$.ajax({
-      url: "",
+    $.ajax({
+      url: "ajax/api.php?accion='actualizar-info-pago'",
       data: datos,
       method: "POST",
       success: function(respuesta){
+        if(respuesta ==1)
+          window.location = "account.php";
+        else
+          window.location.reload();
 
       },
       error: function(){
         alert("Ocurrio un error!!!");
       }
-    });*/
+    });
 
   }
   else{
@@ -825,3 +837,77 @@ $("#save-upd-info-pago").click(function(){
   }
 
 });
+
+$("#borrar-telefono").click(function(){
+  var v1 = validarCampoVacio2("new-phone");
+  var v2 = validarCampoVacio2("contra-phone");
+
+  if(v1){
+    $("#val-phone1").addClass("d-block");
+    $("#val-phone2").removeClass("d-block");
+    $("#new-phone").removeClass("invalido");
+    $("#new-phone").addClass("valido");
+  }
+  else{
+    $("#val-phone1").removeClass("d-block");
+    $("#val-phone2").addClass("d-block");
+    $("#new-phone").addClass("invalido");
+  }
+  if(v2){
+    $("#val-contra-phone1").addClass("d-block");
+    $("#val-contra-phone3").removeClass("d-block");
+  }
+  else{
+    $("#val-contra-phone1").removeClass("d-block");
+    $("#val-contra-phone3").addClass("d-block");
+    $("#contra-phone").addClass("invalido");
+  }
+
+  var datos = "correo=" +$("#correo-actual3").val()+ "&contra=" +$("#contra-phone").val();
+
+  var datos2 = "usuario="+$("#correo-actual3").val()+"&telefono=" +$("#new-phone").val();
+
+  $.ajax({
+    url: "ajax/api.php?accion='verificar-usuario'",
+    data: datos,
+    method: "POST",
+    success: function(respuesta){
+
+      var v1 = respuesta;
+     
+      if(v1 == 1){ //si existe
+        //alert("Hello"); Aqui iria el procedimiento para eliminar el telefono!!!!
+        deleteTelefono(datos2);
+      }
+      else{ //no existe
+        //alert("No existe el usuario!!!");
+        $("#val-contra-phone3").addClass("d-block");
+        $("#val-contra-phone1").removeClass("d-block");
+      }
+    },
+    error: function(){
+      console.log("Ocurrio un error!!!");
+    }
+  });
+
+});
+
+function deleteTelefono(datos){
+
+  $.ajax({
+    url: "ajax/api.php?accion='borrar-telefono'",
+    data: datos,
+    method: "POST",
+    success: function(respuesta){
+      if(respuesta == 1)
+        window.location = "account.php";
+      else
+        window.location.reload();
+
+    },
+    error: function(){
+      alert("Ocurrio un error!!!");
+    }
+  });
+
+}
