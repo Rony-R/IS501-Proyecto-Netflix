@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Administrador</title>
+    <title>Actividad</title>
     <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css" />
     <link href="css/lista.css" type="text/css" rel="stylesheet">
     <link href="css/all.css" type="text/css" rel="stylesheet">

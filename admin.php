@@ -117,34 +117,47 @@
                                         <input class="form-control" type="text" placeholder="Nombre Película" id="txt-nombre">
                                     </div>
         
-                                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12" style="margin-bottom:5px">
+                                    <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12 col-12" style="margin-bottom:5px">
                                         <input type="number" class="form-control" placeholder="Duración" id="txt-duracion">
                                     </div>
 
-                                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12" style="margin-bottom:5px">                  
-                                        <select name="idioma" id="idioma" class="form-control"></select>
+                                    <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12 col-12" style="margin-bottom:5px">                  
+                                        <select name="idioma" id="idioma" class="form-control">
+                                            <option value="" selected disabled>Idioma</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12 col-12" style="margin-bottom:5px">
+                                        <input class="form-control" type="text" placeholder="Edad Público" id="txt-edad">
                                     </div>
 
                                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" style="margin-bottom:5px">
                                         <input class="form-control" type="text" placeholder="Nombre Director" id="txt-director">
                                     </div>
-                                
 
-                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" style="margin-bottom:5px">                  
-                                        <select name="estudio" id="estudio" class="form-control"></select>
+                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" style="margin-bottom:5px">
+                                        <input class="form-control" type="text" placeholder="URL imagen miniatura" id="url-img">
                                     </div>
 
-                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" style="margin-bottom:5px; float:left">
+
+
+                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" style="margin-bottom:5px">                  
+                                        <select  name="estudio" id="estudio" class="form-control"></select>
+                                    </div>
+
+                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" style="margin-bottom:5px">
+                                        <input class="form-control" type="text" placeholder="URL" id="txt-url">
+                                    </div>
+
+                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" style="margin-bottom:5px">
                                         <textarea name="descripcion" id="descripcion" cols="30" rows="3" class="form-control">Descripción</textarea><br>
                                     </div> 
         
                                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" style="margin-bottom:5px">                  
                                         <select size=4 name="categoria" id="categoria" class="form-control"></select>
                                     </div>
-                               
-                                      
         
-                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" style="margin-bottom:5px; float:right">
+                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" style="margin-bottom:5px">
                                         <select size=4 name="genero" id="genero" class="form-control" placeholder="Duración"></select> 
                                     </div>
                                                           
