@@ -113,7 +113,7 @@
 
                                 <div class="row" style="margin-left:auto; margin-right:auto">         
                                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" style="margin-bottom:5px">
-                                        <input class="form-control" type="text" placeholder="Nombre Película" id="txt-nombre">
+                                        <input class="form-control" type="text" placeholder="Nombre contenido" id="txt-nombre">
                                     </div>
         
                                     <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12 col-12" style="margin-bottom:5px">
@@ -126,21 +126,11 @@
                                     
                                     </div>
 
-                                    <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12 col-12" style="margin-bottom:5px">                  
-                                        <select name="idioma" id="slc-idiomas" class="form-control">
-                                            <option value="" selected disabled>Idioma</option>
-                                            <option value="1">Español</option>
-                                            <option value="2">Inglés</option>
-                                            <option value="3">Alemán</option>
-                                            <option value="4">Francés</option>
-                                            <option value="5">Italiano</option>
-                                            <option value="6">Portugues</option>
-                                            <option value="7">Ruso</option>
-                                            <option value="8">Japonés</option>
-                                            <option value="9">Árabe</option>
-                                            <option value="10">Chino</option>
-                                        </select>
+                                    <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12 col-12" style="margin-bottom:5px">
+                                        <input class="form-control" type="tel" placeholder=" N° Temporada" id="txt-temporada">
                                     </div>
+
+                                    
 
                                     <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12 col-12" style="margin-bottom:5px">
                                         <select name="edad" id="slc-edad" class="form-control" >
@@ -161,11 +151,27 @@
                                         <input class="form-control" type="text" placeholder="URL imagen miniatura" id="url-img">
                                     </div>
 
+                                    <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12 col-12" style="margin-bottom:5px">                  
+                                        <select name="idioma" id="slc-idiomas" class="form-control">
+                                            <option value="" selected disabled>Idioma</option>
+                                            <option value="1">Español</option>
+                                            <option value="2">Inglés</option>
+                                            <option value="3">Alemán</option>
+                                            <option value="4">Francés</option>
+                                            <option value="5">Italiano</option>
+                                            <option value="6">Portugues</option>
+                                            <option value="7">Ruso</option>
+                                            <option value="8">Japonés</option>
+                                            <option value="9">Árabe</option>
+                                            <option value="10">Chino</option>
+                                        </select>
+                                    </div>
+
                                     <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12 col-12" style="margin-bottom:5px">
                                         <input type="number" class="form-control" placeholder="Duración" id="txt-duracion">
                                     </div>
 
-                                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12" style="margin-bottom:5px">                  
+                                    <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12 col-12" style="margin-bottom:5px">                  
                                         <select  name="estudio" id="slc-estudio" class="form-control">
                                             <option value="" selected disabled>Estudio</option>
                                             <option value="1">Marvel Studios</option>

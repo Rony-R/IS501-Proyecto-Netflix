@@ -13,8 +13,8 @@ $("#btn-agregar").click(function(){
                 "idioma=" +$("#slc-idiomas").val() +"&"+
                 "duracion=" +$("#txt-duracion").val() +"&"+
                 "edad=" +$("#slc-edad").val() +"&"+
-                "urlimg=" +$("#url-img").val() +"&"+
-                "urlcontenido=" +$("#url-contenido").val() +"&"+
+                "urlimg=img/"+$("#slc-tipo").val()+"/miniaturas/min-"+$("#url-img").val() +"&"+
+                "urlcontenido=img/"+$("#slc-tipo").val()+"/videos/"+$("#url-contenido").val() +"&"+
                 "descripcion=" +$("#txt-descripcion").val() +"&"+
                 "fechaSubida=" + fechaa +"&"+
                 "estudio=" +$("#slc-estudio").val();
@@ -30,7 +30,7 @@ $("#btn-agregar").click(function(){
   
       },
       error: function(){
-        alert("Ocurrio un error insertando la pantalla");
+        console.error(error);
       }
     });
   
