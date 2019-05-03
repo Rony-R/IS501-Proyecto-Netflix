@@ -14,15 +14,15 @@ $("#btn-agregar").click(function(){
                 "duracion=" +$("#txt-duracion").val() +"&"+
                 "edad=" +$("#slc-edad").val() +"&"+
                 "urlimg=" +$("#url-img").val() +"&"+
-                "urlpeli=" +$("#url-contenido").val() +"&"+
+                "urlcontenido=" +$("#url-contenido").val() +"&"+
                 "descripcion=" +$("#txt-descripcion").val() +"&"+
                 "fechaSubida=" + fechaa +"&"+
                 "estudio=" +$("#slc-estudio").val();
   
     console.log(datos);
-  /*
+  
     $.ajax({
-      url: "ajax/administrador.php?accion='agregar-pelicula'",
+      url: "ajax/administrador.php?accion='agregar-contenido'",
       data: datos,
       method: "POST",
       success: function(respuesta){
@@ -32,6 +32,6 @@ $("#btn-agregar").click(function(){
       error: function(){
         alert("Ocurrio un error insertando la pantalla");
       }
-    });*/
+    });
   
   });
