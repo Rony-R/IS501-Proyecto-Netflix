@@ -9,16 +9,17 @@ $("#btn-agregar").click(function(){
     
 
     var datos = "tipo="+$("#slc-tipo").val() +"&"+
-                "nombre=" +$("#txt-nombre").val() +"&"+
+                "estudio=" +$("#slc-estudio").val() +"&"+
                 "idioma=" +$("#slc-idiomas").val() +"&"+
-                "duracion=" +$("#txt-duracion").val() +"&"+
                 "edad=" +$("#slc-edad").val() +"&"+
-                "urlimg=img/"+$("#slc-tipo").val()+"/miniaturas/min-"+$("#url-img").val() +"&"+
+                "nombre=" +$("#txt-nombre").val() +"&"+
                 "urlcontenido=img/"+$("#slc-tipo").val()+"/videos/"+$("#url-contenido").val() +"&"+
+                "urlimg=img/"+$("#slc-tipo").val()+"/miniaturas/min-"+$("#url-img").val() +"&"+
                 "descripcion=" +$("#txt-descripcion").val() +"&"+
-                "fechaSubida=" + fechaa +"&"+
-                "estudio=" +$("#slc-estudio").val();
-  
+                "fechaSubida=" + fechaa ;
+
+
+
     console.log(datos);
   
     $.ajax({
