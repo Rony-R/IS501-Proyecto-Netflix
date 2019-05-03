@@ -1,3 +1,5 @@
+<?php  session_start(); 
+?>
 <!doctype html>
 <html lang="en" class="h-100">
   <head>
@@ -11,6 +13,8 @@
     <link href="css/config-cuenta.css" rel="stylesheet">
     <link href="css/config-subtitulos.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="img/favicon.ico">
+
+
   </head>
   <body class="d-flex flex-column h-100">
   <header>
@@ -268,7 +272,7 @@
 </section>
 
 
-<script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+
 <script src="js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/popper.min.js"></script>
@@ -277,3 +281,4 @@
 <script src="js/controlador-ST.js"></script>
 </body>
 </html>
+

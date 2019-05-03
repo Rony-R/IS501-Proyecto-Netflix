@@ -1,3 +1,5 @@
+<?php  session_start(); 
+?>
 <!doctype html>
 <html lang="en" class="h-100">
   <head>
@@ -101,7 +103,7 @@
                 </div>
               </div>
               <div class="form-check">
-                  <input class="form-check-input" type="radio" name="rbt-uso-datos" id="rbt-baja" value="2" checked>
+                  <input class="form-check-input" type="radio" name="rbt-uso-datos" id="rbt-baja" value="2" >
                   <label class="form-check-label tip-rep" for="rbt-baja">
                       Baja
                   </label>
@@ -112,7 +114,7 @@
                   </div>
               </div>
               <div class="form-check">
-                  <input class="form-check-input" type="radio" name="rbt-uso-datos" id="rbt-media" value="3" checked>
+                  <input class="form-check-input" type="radio" name="rbt-uso-datos" id="rbt-media" value="3" >
                   <label class="form-check-label tip-rep" for="rbt-media">
                       Media
                   </label>
@@ -123,7 +125,7 @@
                   </div>
               </div>
               <div class="form-check">
-                  <input class="form-check-input" type="radio" name="rbt-uso-datos" id="rbt-alta" value="4" checked>
+                  <input class="form-check-input" type="radio" name="rbt-uso-datos" id="rbt-alta" value="4">
                   <label class="form-check-label tip-rep" for="rbt-alta">
                      Alta
                   </label>
@@ -140,7 +142,7 @@
         <div class="form-group row">
           <div class="col-sm-12">
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="chk-tipo-rep">
+              <input class="form-check-input" type="checkbox" id="chk-tipo-rep" >
               <label class="form-check-label " for="chk-tipo-rep">
                 Reproducir el siguiente episodio automáticamente
               </label>
