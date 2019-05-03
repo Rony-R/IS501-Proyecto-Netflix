@@ -39,7 +39,7 @@
         
         public function insertarPelicula($conexion){
 
-            $instruccion = "CALL P_INSERTAR_PELI($this->codigo_tipo_contenido, $this->codigo_estudio, $this->codigo_idioma, $this->codigo_calif_edad, '$this->nombre_contenido', '$this->urlVideo', '$this->urlMiniatura', '$this->descripcion', $this->fecha_subida)";
+            $instruccion = "CALL P_INSERTAR_PELI( $this->codigo_unidad, $this->duracion_peli)";
 
             $result = $conexion->ejecutarConsulta($instruccion);
 

@@ -282,12 +282,11 @@
                             <button type="button" id="agregar-temp" class="btn btn-dark"  >Agregar Temporada</button>
                             </div>
 
-                           
-                            
-
                             <div class="col-xl-12 col-lg-12 col-md-6 col-sm-12 col-12" style="margin-bottom:5px">
                                 <textarea name="descripcion" id="descripcion-temp" cols="30" rows="3" class="form-control" placeholder="Descripción"></textarea><br>
                             </div>
+
+
                             <hr>
 
                             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
@@ -311,7 +310,7 @@
                         </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-success" id="agregar-episodio" >Agregar</button>
+          <button type="button" class="btn btn-success" id="guardar-episodio" >Agregar</button>
           <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
         </div>
       </div>
