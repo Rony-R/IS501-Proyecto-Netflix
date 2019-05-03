@@ -103,6 +103,19 @@
 						return 0;
 
 				}
+
+				public function insertarTarjeta($conexion){
+
+					$instruccion = "CALL P_INSERTAR_TARJETA ($this->codigo_tipo_tarjeta, '$this->nombre_usuario', '$this->apellido_usuario', '$this->numero_de_tarjeta', '$this->codigo_de_seguridad', TO_DATE('$this->fecha_vencimiento', 'YYYY-MM-DD'))";
+
+					$result = $conexion->ejecutarConsulta($instruccion);
+
+					if($result)
+						return 1;
+					else
+						return 0;
+
+				}
         
 	}
 ?>
