@@ -151,7 +151,7 @@
     </div>';
     break;
 
-    case "'pantallas'":
+    /*case "'pantallas'":
 
     $n1 = $_POST["pos"] - $_POST["crea"];
 
@@ -173,9 +173,9 @@
         </div>';
     }
 
-    break;
+    break;*/
 
-    case "'pantallas-2'":
+    /*case "'pantallas-2'":
 
     for($i=0; $i<$_POST["crea"]; $i++)
     {
@@ -191,7 +191,7 @@
         </div>';
     }
 
-    break;
+    break;*/
 
     case "'table-account'":
     echo'
@@ -290,56 +290,6 @@
         </table>';
     break;
 
-    case "'tablaHist'": 
-    echo'
-
-    <h1 class="h1-detalles">Detalles de facturación</h1>
-
-    <label class="lbl">SU MEMBRESÍA</label>
-        
-    <div class="container-blanco">
-        <p class="lbl mb-0">Tu próxima factura</p>
-        <p class="txt-blck">*****Tipo plan*****</p>
-        
-        <p class="lbl mb-0">Siguiente Fecha de facturación</p>
-        <p class="txt-blck">*****Fecha*****</p>
-    </div>
-        
-    <p class="txt-blck txt-1">
-        Las tarifas de membresía se facturan al comienzo de cada período y pueden demorar algunos días después de la fecha de facturación en aparecer en su cuenta.
-    </p>
-
-    <table id="tabla-historial" cellspacing="2" cellpadding="9">
-                <thead>
-                    <tr class="txt-blck b-d">
-                        <td class="td-custom">Fecha</td>
-                        <td class="td-custom txt-c">Descripcion</td>
-                        <td class="td-custom txt-c">Periodo de Servicio</td>
-                        <td class="td-custom txt-c">Metodo de pago</td>
-                        <td class="td-custom txt-r">Total</td>
-                    </tr>
-                </thead>
-                <tbody>
-
-                    <tr class="txt-blck b-d">
-                        <td class="td-custom">4/5/19</td>
-                        <td class="td-custom txt-c">Srevicio de Netflix</td>
-                        <td class="td-custom txt-c">4/5/19 – 5/4/19</td>
-                        <td class="td-custom txt-c">AMEX **********2061</td>
-                        <td class="td-custom txt-r">USD13.99</td>
-                    </tr>
-
-                    <tr class="txt-blck b-d">
-                        <td class="td-custom">4/5/19</td>
-                        <td class="td-custom txt-c">Srevicio de Netflix</td>
-                        <td class="td-custom txt-c">4/5/19 – 5/4/19</td>
-                        <td class="td-custom txt-c">AMEX **********2061</td>
-                        <td class="td-custom txt-r">USD13.99</td>
-                    </tr>
-
-                </tbody>
-            </table>';
-    break;
 }
 
 ?>

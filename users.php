@@ -37,9 +37,7 @@
     </div>
 
     <input type="txt" class="d-none" id="usuario" value="<?php echo $_SESSION["Usuario"];?>">
-    <input type="txt" class="d-none" id="users-pant1" value="<?php echo $_SESSION["Creadas"];?>">
-    <input type="txt" class="d-none" id="users-pant2" value="<?php echo $_SESSION["Posibles"];?>">
-    <input type="txt" class="d-none" id="idUsuario" value="<?php echo $_SESSION["CodUsuario"];?>">
+    <input type="txt" class="d-none" id="idusers" value="<?php echo $_SESSION["CodUsuario"];?>">
     <input type="txt" class="d-none" id="estiloSub" value="0">
     <input type="txt" class="d-none" id="repro" value="0">
 

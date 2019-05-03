@@ -43,8 +43,7 @@
       <button id="btn-done" class="btn-manage mt-3">HECHO</button>
     </div>
 
-    <input type="txt" class="d-none" id="manage-pant1" value="<?php echo $_SESSION["Creadas"];?>">
-    <input type="txt" class="d-none" id="idUsuario" value="<?php echo $_SESSION["CodUsuario"];?>">
+    <input type="txt" class="d-none" id="idmanage" value="<?php echo $_SESSION["CodUsuario"];?>">
     <input type="txt" class="d-none" id="estiloSub" value="0">
     <input type="txt" class="d-none" id="repro" value="0">
 
@@ -76,7 +75,7 @@
                 </div>
 
                 <div class="col-lg-8">
-                    <input class="form-control bg-dark white-text plc-inp" type="text" placeholder="Nombre Pantalla">
+                    <input id="nombre-pantalla" class="form-control bg-dark white-text plc-inp" type="text" placeholder="Nombre Pantalla">
                     <p class="mt-2 mb-0 white-text">Idioma:</p>
                     <select class="form-control bg-dark white-text" id="slc-idiomas">
                       <option value="1">Español</option>
