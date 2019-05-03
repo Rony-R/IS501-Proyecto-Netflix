@@ -21,18 +21,16 @@ $(document).ready(function(){
   }
 });
 
-  var p1 = $("#manage-pant1").val();
+  var codigo = "codigo=" +$("#idUsuario-hist").val();
 
-  var p3 = $("#users-pant1").val();
-  var p4 = $("#users-pant2").val();
+  datosHistorial2(codigo);
 
-  htmlPantallas(p3, p4);
+  var id1 = $("#idusers").val();
+  var id2 = $("#idmanage").val();
 
-  htmlPantallas2(p1);
+  pantallasUsuario1(id1);
 
-  imgEditUser();
-
-  tablaHistorial();
+  pantallasUsuario2(id2);
 
 });
 
@@ -60,57 +58,62 @@ function phpTv(){
   });
 }
 
-function htmlPantallas(crea, pos){
-
-  var datos = "crea=" +crea+ "&pos=" +pos;
+function datosHistorial2(cod){
 
   $.ajax({
-    url: "ajax/landing.php?accion='pantallas'",
-    data: datos,
+    url: "ajax/api.php?accion='datos-hist-pago2'",
+    data: cod,
+    dataType: "json",
     method: "POST",
     success: function(respuesta){
-      $("#div-pantallas").html(respuesta);
+
+      $("#contenedor-hist").append(
+        '<h1 class="h1-detalles">Detalles de facturación</h1>'+
+
+        '<label class="lbl">SU MEMBRESÍA</label>'+
+        
+        '<div class="container-blanco">'+
+            '<p class="lbl mb-0">Tu próxima factura</p>'+
+            '<p class="txt-blck mb-0">'+ respuesta[0].PRECIO_MENSUAL +'/Mensual</p>'+
+            '<p class="txt-blck mt-0 mb-0">'+ respuesta[0].NUMERO_DE_PANTALLAS +' Pantalla(s) + '+ respuesta[0].NOMBRE_TIPO_PLAN +'</p>'+
+            
+            '<p class="lbl mt-2 mb-0">Siguiente Fecha de facturación</p>'+
+            '<p class="txt-blck">'+ respuesta[respuesta.length-1].FECHA_FIN +'</p>'+
+        '</div>'+
+            
+        '<p class="txt-blck txt-1">'+
+            'Las tarifas de membresía se facturan al comienzo de cada período y pueden demorar algunos días después de la fecha de facturación en aparecer en su cuenta.'+
+        '</p>'
+      );
+
+      for(var i=0; i<respuesta.length; i++){
+        $("#body-tabla-hist").append(
+          '<tr class="txt-blck b-d">'+
+              '<td class="td-custom">' +respuesta[i].FECHA_INICIO+ '</td>'+
+              '<td class="td-custom txt-c">Srevicio de Netflix</td>'+
+              '<td class="td-custom txt-c">' +respuesta[i].FECHA_INICIO+ ' / ' +respuesta[i].FECHA_FIN+ '</td>'+
+              '<td class="td-custom txt-c">' +respuesta[i].NUMERO_DE_TARJETA+ '</td>'+
+              '<td class="td-custom txt-r">USD' +respuesta[i].PRECIO_MENSUAL+ '</td>'+
+          '</tr>'
+        );
+      }
+
     },
-    error: function(){
-      console.log("Ha ocurrido un error!!!");
+    error: function(e){
+      console.log("Ocurrio un error: " +e);
     }
   });
+
 }
 
-function htmlPantallas2(crea){
-
-  var datos = "crea=" +crea;
-
+function cerrarSesion(){
   $.ajax({
-    url: "ajax/landing.php?accion='pantallas-2'",
-    data: datos,
-    method: "POST",
+    url: "ajax/api.php?accion='cerrar-sesion'",
     success: function(respuesta){
-      $("#div-pantallas-2").html(respuesta);
-    },
-    error: function(){
-      console.log("Ha ocurrido un error!!!");
-    }
-  });
-}
-
-function imgEditUser(){
-  $.ajax({
-    url: "ajax/landing.php?accion='imgEdit'",
-    success: function(respuesta){
-      $("#img-edit").append(respuesta);
-    },
-    error: function(){
-      console.log("Ha ocurrido un error!!!");
-    }
-  });
-}
-
-function tablaHistorial(){
-  $.ajax({
-    url: "ajax/landing.php?accion='tablaHist'",
-    success: function(respuesta){
-      $("#contenedor-hist").append(respuesta);
+      if(respuesta = 1)
+        window.location = "sesion.html";
+      else 
+        window.location.reload();
     }
   });
 }
@@ -151,6 +154,8 @@ function contenidoIcono(idContenido){
 
 function crearSesion(correo, contra){
 
+  var usuario = correo;
+
   var datos = "correo=" + correo + "&contra=" + contra;
 
   $.ajax({
@@ -161,9 +166,11 @@ function crearSesion(correo, contra){
 
       var codigo = respuesta;
 
-      if(codigo == 1)
+      if(codigo == 1){
         //console.log("Se creo la sesion!!!");
-        window.location = "users.php";
+        //pantallasUsuario(usuario);
+        //window.location = "users.php";
+      }
       else
         alert("NO se creo la sesion!!!");
     },
@@ -184,71 +191,117 @@ function validarSesion(){
   $("#input-correo").removeClass("valido");
 }
 
-function sesionPantallas(creadas, posibles, usuario){
+function pantallasUsuario1(codigo){
 
-  var datos = "creadas=" +creadas+ "&posibles=" +posibles+ "&usuario=" +usuario;
+  var cod = "cod=" +codigo;
 
-  $.ajax({
-    url:"ajax/api.php?accion='sesion-pantallas'",
-    data: datos,
-    method: "POST",
-    success: function(respuesta){
-      //alert(respuesta);
-      console.log(respuesta);
-    }
-  });
-}
-
-function pantallasUsuario(usuario){ //Obtengo los dos valores!!!!
-
-  var dato = "user=" +usuario;
+  //alert("Cod pantallasUsuario1: " +cod); Aqui estamos bn
 
   $.ajax({
-    url:"ajax/api.php?accion='pantallas-usuario'",
-    data: dato,
+    url: "ajax/api.php?accion='obtener-info-pantallas'",
+    data: cod,
     dataType: "json",
     method: "POST",
     success: function(respuesta){
-      //alert("Hola3");
-      //alert("Cod Usuario= " +respuesta.CODIGO_USUARIO + " Correo= " +respuesta.CORREO + " Pantallas Creadas= " +respuesta.NUMERO_DE_PANTALLAS + " Pantallas Disponibles: "+respuesta.NUMERO_PANTALLAS_POSIBLES);
 
-      var idUser = respuesta.CODIGO_USUARIO;
-      var pantCreadas = respuesta.NUMERO_DE_PANTALLAS;
-      var pantPosibles = respuesta.NUMERO_PANTALLAS_POSIBLES;
+      //alert("Consulta pantallasUsuario1: " +respuesta);
 
-      //nombrePantallas(idUser);
+      for(var i=0; i<respuesta[0].PANTALLAS_CREADAS; i++){
+        $("#div-pantallas").append(
+          '<div id="pantalla-'+ respuesta[i].CODIGO_PANTALLA +'">'+
+            '<a href="Inicio.php"><img class="min-user" src="img/usr-1.png"></a>'+
+            '<p class="white-text center-text mt-2 mr-3">'+ respuesta[i].NOMBRE_PANTALLA +'</p>'+
+          '</div>'
+        );
+      }
 
-      sesionPantallas(pantCreadas, pantPosibles, idUser);
+      for(var i=0; i<respuesta[0].PANTALLAS_POSIBLES - respuesta[0].PANTALLAS_CREADAS; i++){
+        $("#div-pantallas").append(
+          '<div id="pantalla-'+i+'">'+
+            '<a data-toggle="modal" data-target="#modal-agregar"><img class="min-user" src="img/newUser.png"></a>'+
+            '<p class="white-text center-text mt-2 mr-3">Pantalla-'+i+'</p>'+
+          '</div>'
+        );
+      }
 
     },
-    error: function(){
-      alert("Ocurrio un error!!!");
-      console.log("Error "+ respuesta);
+    error: function(e){
+      console.log("Ocurrio un error!!!: " +e);
     }
+
   });
+
 }
 
-function nombrePantallas(id){
+function pantallasUsuario2(codigo){
 
-  var dato = "idUser=" +id;
+  var cod = "cod=" +codigo;
+
+  //alert("Cod pantallasUsuario2: " +cod); Aqui estamos bn
 
   $.ajax({
-    url: "ajax/api.php?accion='nombre-pantallas'",
-    data: dato,
+    url: "ajax/api.php?accion='obtener-info-pantallas'",
+    data: cod,
+    dataType: "json",
     method: "POST",
     success: function(respuesta){
-      console.log("La consulta del nombre es: " +respuesta);
 
-      var datos = "";
+      //alert("Consulta pantallasUsuario2: " +respuesta);
 
-      for(var i=0; i<respuesta.length; i++){
-        datos = "&nombre" + i + "=" + respuesta[i].NOMBRE_PANTALLA;
+      for(var i=0; i<respuesta[0].PANTALLAS_CREADAS; i++){
+        $("#div-pantallas-2").append(
+          '<div class="dim-div-usr column mt-3" id="user-'+ respuesta[0].CODIGO_USUARIO +'">'+
+            '<div class="top">'+
+              '<img class="min-user img-opcty" src="img/usr-1.png">'+
+              '<div class="row">'+
+                '<i id="user-'+ respuesta[0].CODIGO_USUARIO +'" class="fas fa-edit edit-icon3 ml-3 white-text" data-toggle="modal" data-target="#modal-editar"></i>'+
+                '<p class="white-text center-text mr-3 ml-3">'+ respuesta[i].NOMBRE_PANTALLA +'</p>'+
+                '<input type="text" id="nombre-pantalla" class="d-none" value="'+respuesta[i].NOMBRE_PANTALLA+'">'+
+              '</div>'+
+            '</div>'+
+        '</div>'
+        );
       }
-      alert("Ahora->");
-      alert("Nombres Pantallas:" + datos);
+
+      //window.location = "users.php";
+
     },
-    error: function(){
-      alert("Ocurrio un Error!!!");
+    error: function(e){
+      console.log("Ocurrio un error!!!: " +e);
+    }
+  });
+
+}
+
+function obtenerID(correo){
+
+  var user = "usuario=" +correo;
+
+  $.ajax({
+    url: "ajax/api.php?accion='obtener-id'",
+    data: user,
+    dataType: "json",
+    method: "POST",
+    success: function(respuesta){
+
+      var id = "codusuario=" +respuesta.CODIGO;
+
+      $.ajax({
+        url: "ajax/api.php?accion='sesion-id'",
+        data: id,
+        method: "POST",
+        success: function(){
+          console.log("Se creo la sesion del id");
+          window.location = "users.php";
+        },
+        error: function(){
+          console.log("No se creo la sesion del id");
+        }
+      });
+
+    },
+    error: function(e){
+      console.log("Ocurrio un error!!!: No se creo la sesion del ID" +e);
     }
   });
 
@@ -256,30 +309,53 @@ function nombrePantallas(id){
 
 function verificarCorreo(correoNuevo, correoActual){
 
-  var c = "nuevoCorreo=" +correoNuevo;
+  var c1 = "nuevoCorreo=" +correoNuevo;
 
   var c2 = "correoActual=" +correoActual;
 
   $.ajax({
     url: "ajax/api.php?accion='verificarCorreo'",
-    data: c,
+    data: c1,
     method: "POST",
     success: function(respuesta){
-      if(respuesta = 1){
-        //alert("Usuario ya existente!!!");
-        $("#correo-correcto").removeClass("d-block");
-        $("#correo-correcto").addClass("d-none");
+      if(respuesta == 1){
         $("#correo-update").addClass("invalido");
         $("#upd-correo-incorrecto").removeClass("d-none");
         $("#upd-correo-incorrecto").addClass("d-block");
+        $("#correo-correcto").removeClass("d-block");
+        $("#correo-correcto").addClass("d-none");
+
       }
       else{
-        alert("Proceda!!!"); //Aqui iria el procedimiento para actualizar el correo!!!
+        updtCorreo(c1, c2);
       }
 
     },
     error: function(){
       alert("Ocurrio un error!!!");
+    }
+  });
+
+}
+
+function updtCorreo(nuevo, viejo){
+
+  //var datos = "nuevo=" +nuevo+ "&viejo=" +viejo;
+
+  var datos = nuevo + "&" + viejo;
+
+  $.ajax({
+    url: "ajax/api.php?accion='actualizar-correo'",
+    data: datos,
+    method: "POST",
+    success: function(respuesta){
+      if(respuesta ==1)
+      cerrarSesion();
+      else
+        window.location.reload();
+    },
+    error: function(){
+      alert("Ocurrio un error!!!!");
     }
   });
 
@@ -369,8 +445,8 @@ $("#btn-iniciar-sesion-2").click(function(){
         var v1 = respuesta;
        
         if(v1 == 1){
-          pantallasUsuario(correo);
           crearSesion(correo, contrasenia);
+          obtenerID(correo);
         }
         else{
           validarSesion();
@@ -422,6 +498,8 @@ $("#save-upd-corr").click(function(){
   else{
     $("#correo-incorrecto").addClass("d-block");
     $("#correo-correcto").removeClass("d-block");
+    $("#correo-update").addClass("invalido");
+    $("#correo-update").removeClass("valido");
   }
   if(v2){
     $("#contra-upd-corr2").removeClass("d-block");
@@ -441,7 +519,7 @@ $("#save-upd-corr").click(function(){
 
     var correoact = $("#correo-actual").val();
 
-    var parametro = $("#correo-update").val();
+    var correonue = $("#correo-update").val();
 
     $.ajax({
       url: "ajax/api.php?accion='verificar-usuario'",
@@ -453,7 +531,7 @@ $("#save-upd-corr").click(function(){
        
         if(v1 == 1){ //si existe
           //alert(respuesta);
-         verificarCorreo(parametro, correoact);
+         verificarCorreo(correonue, correoact);
         }
         else{ //no existe
           $("#contra-upd-corr2").addClass("d-block");
@@ -472,7 +550,7 @@ $("#save-upd-corr").click(function(){
 });
 
 $("#cancel-upd-corr").click(function(){
-  window.location ="account.html";
+  window.location ="account.php";
 });
 
 $("#save-upd-contra").click(function(){
@@ -512,8 +590,7 @@ $("#save-upd-contra").click(function(){
 
   var c1 = $("#contra-update2").val();
   var c2 = $("#contra-update3").val();
-
-  var nueva = "contraNueva=" +$("#contra-update3").val();
+  var c3 = $("#contra-update1").val();
 
   $.ajax({
     url: "ajax/api.php?accion='verificar-usuario'",
@@ -527,6 +604,7 @@ $("#save-upd-contra").click(function(){
         //alert(respuesta);
         if(c1 == c2){
           //alert("Son iguales"); //Aqui iria el procedimiento para actualizar la contraseña!!!
+          updtContrasenia(c3, c2);
         }
         else{
           $("#contra-update1").removeClass("invalido");
@@ -553,6 +631,27 @@ $("#save-upd-contra").click(function(){
   });
 
 });
+
+function updtContrasenia(vieja, nueva){
+
+  var contras = "vieja=" +vieja+ "&nueva=" +nueva;
+
+  $.ajax({
+    url: "ajax/api.php?accion='actulizar-contra'",
+    data: contras,
+    method: "POST",
+    success: function(respuesta){
+      if(respuesta == 1)
+        cerrarSesion();
+      else
+        window.location.reload();
+    },
+    error: function(){
+      alert("Ocurrio un error!!!");
+    }
+  });
+
+}
 
 
 $("#save-upd-pone").click(function(){
@@ -582,7 +681,7 @@ $("#save-upd-pone").click(function(){
 
   var datos = "correo=" +$("#correo-actual3").val()+ "&contra=" +$("#contra-phone").val();
 
-  var t1 = "telefono=" +$("#new-phone").val();
+  var datos2 = "usuario="+$("#correo-actual3").val()+"&telefono=" +$("#new-phone").val();
 
   $.ajax({
     url: "ajax/api.php?accion='verificar-usuario'",
@@ -594,6 +693,7 @@ $("#save-upd-pone").click(function(){
      
       if(v1 == 1){ //si existe
         //alert("Hello"); Aqui iria el procedimiento para actualizar el telefono!!!!
+        updtTelefono(datos2);
       }
       else{ //no existe
         //alert("No existe el usuario!!!");
@@ -608,9 +708,29 @@ $("#save-upd-pone").click(function(){
 
 });
 
+function updtTelefono(datos){
+
+  $.ajax({
+    url: "ajax/api.php?accion='actualizar-telefono'",
+    data: datos,
+    method: "POST",
+    success: function(respuesta){
+      if(respuesta == 1)
+        window.location = "account.php";
+      else
+        window.location.reload();
+
+    },
+    error: function(){
+      alert("Ocurrio un error!!!");
+    }
+  });
+
+}
+
 $("#insert-pantalla").click(function(){
 
-  var datos = "codusuario=" +$("#idUsuario").val() +
+  var datos = "codusuario=" +$("#idusers").val() +
               "&nombre=" +$("#nombre-pantalla").val() +
               "&idioma=" +$("#slc-idiomas").val() +
               "&madurez=" +$("#slc-madurez").val() +
@@ -626,7 +746,9 @@ $("#insert-pantalla").click(function(){
     success: function(respuesta){
       console.log("Resultado insert pantallas: " +respuesta);
 
-      pantallasUsuario($("#idUsuario").val());
+      var user = $("#idusers").val();
+
+      pantallasUsuario1(user);
       
       window.location.reload();
 
@@ -643,18 +765,24 @@ $("#actualizar-pantalla").click(function(){
   var datos = "nombre=" +$("#nombre-pantalla").val() +
               "&idioma=" +$("#slc-idiomas").val() +
               "&madurez=" +$("#slc-madurez").val() +
-              "&usuario=" +$("#idUsuario").val() +
-              "&estiloSub=" +$("#estiloSub").val() +
-              "&confiRepro=" +$("#repro").val();
+              "&usuario=" +$("#idmanage").val() +
+              "&nom-pant-viejo=" +$("#nombre-pantalla").val();
 
-  alert("Datos pantalla=" +datos);
+  var cu = $("#idmanage").val()
 
   $.ajax({
     url: "ajax/api.php?accion='actualizar-pantalla'",
     data: datos,
     method: "POST",
     success: function(respuesta){
-      alert("Consulta pantallas: " +respuesta);
+      alert("Update Pantalla: " +respuesta);
+      /*if(respuesta ==1){
+        pantallasUsuario1(cu);
+        window.location = "users.php";
+      }
+      else{
+        alert("No se actualizo");
+      }*/
 
     },
     error: function(){
@@ -738,20 +866,25 @@ $("#save-upd-info-pago").click(function(){
                 "&nuevoApellido=" +$("#input-apellido").val()+
                 "&nuevaTarjeta=" +$("#input-numero-tarjeta").val()+
                 "&nuevaFecha=" +$("#input-fecha-vencimiento").val()+
-                "&nuevoCodigo=" +$("#input-codigo-CVV").val();
-    alert(datos);
+                "&nuevoCodigo=" +$("#input-codigo-CVV").val()+
+                "&codUsuario=" +$("#idUsuario").val()+
+                "&tipoTarjeta=" +$("#slc-tipo-tarjeta").val();              
 
-    /*$.ajax({
-      url: "",
+    $.ajax({
+      url: "ajax/api.php?accion='actualizar-info-pago'",
       data: datos,
       method: "POST",
       success: function(respuesta){
+        if(respuesta ==1)
+          window.location = "account.php";
+        else
+          window.location.reload();
 
       },
       error: function(){
         alert("Ocurrio un error!!!");
       }
-    });*/
+    });
 
   }
   else{
@@ -759,3 +892,77 @@ $("#save-upd-info-pago").click(function(){
   }
 
 });
+
+$("#borrar-telefono").click(function(){
+  var v1 = validarCampoVacio2("new-phone");
+  var v2 = validarCampoVacio2("contra-phone");
+
+  if(v1){
+    $("#val-phone1").addClass("d-block");
+    $("#val-phone2").removeClass("d-block");
+    $("#new-phone").removeClass("invalido");
+    $("#new-phone").addClass("valido");
+  }
+  else{
+    $("#val-phone1").removeClass("d-block");
+    $("#val-phone2").addClass("d-block");
+    $("#new-phone").addClass("invalido");
+  }
+  if(v2){
+    $("#val-contra-phone1").addClass("d-block");
+    $("#val-contra-phone3").removeClass("d-block");
+  }
+  else{
+    $("#val-contra-phone1").removeClass("d-block");
+    $("#val-contra-phone3").addClass("d-block");
+    $("#contra-phone").addClass("invalido");
+  }
+
+  var datos = "correo=" +$("#correo-actual3").val()+ "&contra=" +$("#contra-phone").val();
+
+  var datos2 = "usuario="+$("#correo-actual3").val()+"&telefono=" +$("#new-phone").val();
+
+  $.ajax({
+    url: "ajax/api.php?accion='verificar-usuario'",
+    data: datos,
+    method: "POST",
+    success: function(respuesta){
+
+      var v1 = respuesta;
+     
+      if(v1 == 1){ //si existe
+        //alert("Hello"); Aqui iria el procedimiento para eliminar el telefono!!!!
+        deleteTelefono(datos2);
+      }
+      else{ //no existe
+        //alert("No existe el usuario!!!");
+        $("#val-contra-phone3").addClass("d-block");
+        $("#val-contra-phone1").removeClass("d-block");
+      }
+    },
+    error: function(){
+      console.log("Ocurrio un error!!!");
+    }
+  });
+
+});
+
+function deleteTelefono(datos){
+
+  $.ajax({
+    url: "ajax/api.php?accion='borrar-telefono'",
+    data: datos,
+    method: "POST",
+    success: function(respuesta){
+      if(respuesta == 1)
+        window.location = "account.php";
+      else
+        window.location.reload();
+
+    },
+    error: function(){
+      alert("Ocurrio un error!!!");
+    }
+  });
+
+}

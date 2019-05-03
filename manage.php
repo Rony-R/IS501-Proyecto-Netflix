@@ -3,11 +3,18 @@
 
   session_start();
 
+    /*if(isset($_FILES)){
+        $nombreImg = $_FILES["miniatura"]["name"];
+        move_uploaded_file($_FILES["miniatura"]["tmp_name"],"img/".$nombreImg);
+    }*/
+
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--<span id="url-img-pant" class="d-none"><?php echo $_GET["fotito"]; ?></span>-->
+    <!--<span id="span-img" class="d-none"><?php echo $nombreImg; ?></span>-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -36,8 +43,7 @@
       <button id="btn-done" class="btn-manage mt-3">HECHO</button>
     </div>
 
-    <input type="txt" class="d-none" id="manage-pant1" value="<?php echo $_SESSION["Creadas"];?>">
-    <input type="txt" class="d-none" id="idUsuario" value="<?php echo $_SESSION["CodUsuario"];?>">
+    <input type="txt" class="d-none" id="idmanage" value="<?php echo $_SESSION["CodUsuario"];?>">
     <input type="txt" class="d-none" id="estiloSub" value="0">
     <input type="txt" class="d-none" id="repro" value="0">
 
@@ -59,12 +65,17 @@
 
                 <div class="col-lg-4">
                   <label id="img-edit">
-                    
+                    <form action="ajax/moverFotoPant.php" class="" method="POST" enctype="multipart/form-data">
+                      <img class="min-user img-opcty" src="img/newUser.png">
+                      <input type="file" class="form-control-file d-none" name="foto">            
+                      <i class="fas fa-edit edit-icon3 mt-1"></i>
+                      <input type="submit" class="btn btn-light" value="Listo">
+                    </form>
                   </label>
                 </div>
 
                 <div class="col-lg-8">
-                    <input class="form-control bg-dark white-text plc-inp" type="text" placeholder="Nombre Pantalla">
+                    <input id="nombre-pantalla" class="form-control bg-dark white-text plc-inp" type="text" placeholder="Nombre Pantalla">
                     <p class="mt-2 mb-0 white-text">Idioma:</p>
                     <select class="form-control bg-dark white-text" id="slc-idiomas">
                       <option value="1">Español</option>

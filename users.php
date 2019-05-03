@@ -36,9 +36,8 @@
         <button id="btn-manage-profiles" class="btn-manage">ADMINISTRAR PERFILES</button>
     </div>
 
-    <input type="txt" class="d-none" id="users-pant1" value="<?php echo $_SESSION["Creadas"];?>">
-    <input type="txt" class="d-none" id="users-pant2" value="<?php echo $_SESSION["Posibles"];?>">
-    <input type="txt" class="d-none" id="idUsuario" value="<?php echo $_SESSION["CodUsuario"];?>">
+    <input type="txt" class="d-none" id="usuario" value="<?php echo $_SESSION["Usuario"];?>">
+    <input type="txt" class="d-none" id="idusers" value="<?php echo $_SESSION["CodUsuario"];?>">
     <input type="txt" class="d-none" id="estiloSub" value="0">
     <input type="txt" class="d-none" id="repro" value="0">
 
@@ -58,9 +57,14 @@
 
               <div class="row">
 
-                <div class="col-lg-4">
+              <div class="col-lg-4">
                   <label id="img-edit">
-                    
+                    <form action="ajax/moverFotoPant.php" class="" method="POST" enctype="multipart/form-data">
+                      <img class="min-user img-opcty" src="img/newUser.png">
+                      <input type="file" class="form-control-file d-none" name="foto">            
+                      <i class="fas fa-edit edit-icon3 mt-1"></i>
+                      <input type="submit" class="btn btn-light" value="Listo">
+                    </form>
                   </label>
                 </div>
 

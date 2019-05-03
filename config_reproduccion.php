@@ -23,7 +23,7 @@
       <img src="img/letras.png" alt="Netflix" width="8%">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item ">
-          <a class="nav-link" href="#">Inicio<span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="Inicio.php">Inicio<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item ">
             <a class="nav-link" href="#">Programas de TV<span class="sr-only">(current)</span></a>
@@ -35,7 +35,7 @@
               <a class="nav-link" href="#">Agregados recientemente<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link" href="#">Mi lista<span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="miLista.php">Mi lista<span class="sr-only">(current)</span></a>
           </li>
       </ul>
      
@@ -58,11 +58,11 @@
                 <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
                      <img class="img-nav" src="img/profile.png"><a class="dropdown-item" href="#">Cuenta2</a>
                      <a class="dropdown-item" href="#">Niños</a>
-                     <a class="dropdown-item" href="manage.html">Administrar perfiles</a>
+                     <a class="dropdown-item" href="manage.php">Administrar perfiles</a>
                      <hr>
-                     <a class="dropdown-item" href="#"><b>Cuenta</b></a>
+                     <a class="dropdown-item" href="account.php"><b>Cuenta</b></a>
                      <a class="dropdown-item" href="#"><b>Centro de Ayuda</b></a>
-                     <a class="dropdown-item" href="sesion.html"><b>Cerrar sesión en Netflix</b></a>
+                     <a class="dropdown-item" onclick="cerrarSesion()"><b>Cerrar sesión en Netflix</b></a>
                      
 
                 </div>

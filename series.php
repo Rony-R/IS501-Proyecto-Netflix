@@ -80,9 +80,9 @@
                                              <a class="dropdown-item" href="#">Niños</a>
                                              <a class="dropdown-item" href="manage.html">Administrar perfiles</a>
                                              <hr>
-                                             <a class="dropdown-item" href="#"><b>Cuenta</b></a>
+                                             <a class="dropdown-item" href="account.php"><b>Cuenta</b></a>
                                              <a class="dropdown-item" href="#"><b>Centro de Ayuda</b></a>
-                                             <a class="dropdown-item" href="sesion.html"><b>Cerrar sesión en Netflix</b></a>
+                                             <a class="dropdown-item" onclick="cerrarSesion()"><b>Cerrar sesión en Netflix</b></a>
                                              
 
                                         </div>
@@ -96,7 +96,7 @@
           </header>
 
           <section class="seccion1">
-           <img src="img/series/umbrella/3.jpg" style="width:100%; height:800px; position:absolute"> 
+           <img id="portada-series" src="img/series/umbrella/3.jpg" style="width:100%; height:800px; position:absolute"> 
                <div class="descripcion1">
                     <div>
                               <h4 style="color:white; float:left"><b>Series</b></h4>
@@ -104,11 +104,25 @@
                                    <button class="dropdown-toggle" type="button" data-toggle="dropdown" id="btn-genero">Géneros 
                                    <span class="caret"></span>
                                    </button>
-                                   <ul class="dropdown-menu">
-                                        <li><a href="#">HTML</a></li>
-                                        <li><a href="#">CSS</a></li>
-                                        <li><a href="#">JavaScript</a></li>
-                                   </ul>
+                                   <ul class="dropdown-menu menu2" >
+                                 <div class="container">
+                                   <div class="row">
+
+                                        <div class="col-lg-4">
+                                             <li><a id="menu2" href="#">HTML</a></li>
+                                        </div>
+
+                                        <div class="col-lg-4">
+                                             <li><a id="menu2" href="#">CSS</a></li>
+                                        </div>
+
+                                        <div>
+                                             <li><a id="menu2" href="#">JavaScript</a></li>
+                                        </div>
+
+                                   </div>
+                                 </div>    
+                              </ul>
                               </div>
                               
                     </div>
@@ -131,7 +145,7 @@
                </div>
 
                     <div class="carousel1">
-                         <h5><b>Populares en Netflix</b></h5>
+                         <h5><b>Continuar viendo contenido de #######</b></h5>
                     </div>
 
                     <div id="wrapper">
@@ -339,110 +353,7 @@
 
           <section>
                      <div class="carousel1">
-                         <h5><b>Continuar viendo contenido de #######</b></h5>
-                    </div>
-
-                    <div id="wrapper">
-  
-                         <span id="controlL" class="left-controls" role="button" aria-label="See Previous Modules">
-                         <b class="fa fa-chevron-left fa-chevron-left-extra" aria-hidden="true"></b>
-                         </span>
-                         
-                         <div class="module-section clearfix">
-                         <!-- <button class="btn arrow-guides fa-chevron-left"></button> -->
-                         <ul id="content" class="lista">
-                         
-                         <li class="card effect1">
-                              <div class="inside-top">
-                              <img src="img/series/casapapel/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/outlander/4.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/breakingbad/1.jpg" id="img"> 
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/flash/portada.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/TWD/portada.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/you/portada.png" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/stranger/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/innocents/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/increibles/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/revenant/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/rosie/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/ninos/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/alien/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/bird/1.jpg" id="img">
-                              </div>
-                         </li>
-                 
-                         
-                         </ul>
-                         
-                         
-                         
-                         </div><!--end of module-section-->
-                         
-                         <span id="controlR" class="right-controls" role="button" aria-label="See Previous Modules">
-                         <b class="fa fa-chevron-right fa-chevron-right-extra" aria-hidden="true"></b>
-                         </span>
-                         <!-- <button class="btn arrow-guides-right fa-chevron-right"></button> -->
-                         
-                         
-                         
-                         </div>
-          </section>
-
-          <section>
-                     <div class="carousel1">
-                         <h5><b>Dramas de TV de EE.UU.</b></h5>
+                         <h5><b>Populares en Netflix</b></h5>
                     </div>
 
                     <div id="wrapper">
@@ -546,6 +457,109 @@
           <section>
                      <div class="carousel1">
                          <h5><b>ORIGINALES DE NETFLIX</b></h5>
+                    </div>
+
+                    <div id="wrapper">
+  
+                         <span id="controlL" class="left-controls" role="button" aria-label="See Previous Modules">
+                         <b class="fa fa-chevron-left fa-chevron-left-extra" aria-hidden="true"></b>
+                         </span>
+                         
+                         <div class="module-section clearfix">
+                         <!-- <button class="btn arrow-guides fa-chevron-left"></button> -->
+                         <ul id="content" class="lista">
+                         
+                         <li class="card effect1">
+                              <div class="inside-top">
+                              <img src="img/series/casapapel/1.jpg" id="img">
+                              </div>
+                         </li>
+                              <li class="card">
+                              <div class="inside-top">
+                              <img src="img/series/outlander/4.jpg" id="img">
+                              </div>
+                         </li>
+                              <li class="card">
+                              <div class="inside-top">
+                              <img src="img/series/breakingbad/1.jpg" id="img"> 
+                              </div>
+                         </li>
+                              <li class="card">
+                              <div class="inside-top">
+                              <img src="img/series/flash/portada.jpg" id="img">
+                              </div>
+                         </li>
+                              <li class="card">
+                              <div class="inside-top">
+                              <img src="img/series/TWD/portada.jpg" id="img">
+                              </div>
+                         </li>
+                              <li class="card">
+                              <div class="inside-top">
+                              <img src="img/series/you/portada.png" id="img">
+                              </div>
+                         </li>
+                              <li class="card">
+                              <div class="inside-top">
+                              <img src="img/series/stranger/1.jpg" id="img">
+                              </div>
+                         </li>
+                              <li class="card">
+                              <div class="inside-top">
+                              <img src="img/series/innocents/1.jpg" id="img">
+                              </div>
+                         </li>
+                              <li class="card">
+                              <div class="inside-top">
+                              <img src="img/peliculas/increibles/1.jpg" id="img">
+                              </div>
+                         </li>
+                              <li class="card">
+                              <div class="inside-top">
+                              <img src="img/peliculas/revenant/1.jpg" id="img">
+                              </div>
+                         </li>
+                              <li class="card">
+                              <div class="inside-top">
+                              <img src="img/peliculas/rosie/1.jpg" id="img">
+                              </div>
+                         </li>
+                              <li class="card">
+                              <div class="inside-top">
+                              <img src="img/peliculas/ninos/1.jpg" id="img">
+                              </div>
+                         </li>
+                              <li class="card">
+                              <div class="inside-top">
+                              <img src="img/peliculas/alien/1.jpg" id="img">
+                              </div>
+                         </li>
+                              <li class="card">
+                              <div class="inside-top">
+                              <img src="img/peliculas/bird/1.jpg" id="img">
+                              </div>
+                         </li>
+                 
+                         
+                         </ul>
+                         
+                         
+                         
+                         </div><!--end of module-section-->
+                         
+                         <span id="controlR" class="right-controls" role="button" aria-label="See Previous Modules">
+                         <b class="fa fa-chevron-right fa-chevron-right-extra" aria-hidden="true"></b>
+                         </span>
+                         <!-- <button class="btn arrow-guides-right fa-chevron-right"></button> -->
+                         
+                         
+                         
+                         </div>
+          </section>
+
+          <section>
+                     <div class="carousel1">
+                         <h5><b>Dramas de TV de EE.UU.</b></h5>
                     </div>
 
                     <div id="wrapper">
@@ -4193,10 +4207,10 @@
           </section>
 
 
-
+     <script src="js/popper.min.js"></script>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.js"></script>
-    <script src="js/controlador-inicio.js"></script>
+    <script src="js/controlador-series.js"></script>
    
 
 </body>

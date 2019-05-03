@@ -79,11 +79,11 @@
                                         <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
                                              <img style="width:30px; float:left; margin-rigth:5px" src="img/profile.png"><a class="dropdown-item" href="#">Cuenta2</a>
                                              <a class="dropdown-item" href="#">Niños</a>
-                                             <a class="dropdown-item" href="manage.html">Administrar perfiles</a>
+                                             <a class="dropdown-item" href="manage.php">Administrar perfiles</a>
                                              <hr>
-                                             <a class="dropdown-item" href="#"><b>Cuenta</b></a>
+                                             <a class="dropdown-item" href="account.php"><b>Cuenta</b></a>
                                              <a class="dropdown-item" href="#"><b>Centro de Ayuda</b></a>
-                                             <a class="dropdown-item" href="sesion.html"><b>Cerrar sesión en Netflix</b></a>
+                                             <a class="dropdown-item" onclick="cerrarSesion()"><b>Cerrar sesión en Netflix</b></a>
                                              
 
                                         </div>
@@ -99,7 +99,7 @@
          
 
           <section class="seccion1">
-           <img src="img/peliculas/bird/5.jpg" style="width:100%; height:800px; position:absolute"> 
+           <img id="portada-peliculas" src="img/peliculas/bird/5.jpg" style="width:100%; height:800px; position:absolute"> 
                <div class="descripcion1">
                     <div>
                          <h4 style="color:white; float:left"><b>Peliculas</b></h4>
@@ -107,10 +107,24 @@
                               <button class="dropdown-toggle" type="button" data-toggle="dropdown" id="btn-genero">Géneros 
                               <span class="caret"></span>
                               </button>
-                              <ul class="dropdown-menu">
-                                   <li><a href="#">HTML</a></li>
-                                   <li><a href="#">CSS</a></li>
-                                   <li><a href="#">JavaScript</a></li>
+                              <ul class="dropdown-menu menu2" >
+                                 <div class="container">
+                                   <div class="row">
+
+                                        <div class="col-lg-4">
+                                             <li><a id="menu2" href="#">HTML</a></li>
+                                        </div>
+
+                                        <div class="col-lg-4">
+                                             <li><a id="menu2" href="#">CSS</a></li>
+                                        </div>
+
+                                        <div>
+                                             <li><a id="menu2" href="#">JavaScript</a></li>
+                                        </div>
+
+                                   </div>
+                                 </div>    
                               </ul>
                          </div>
                          
@@ -4194,10 +4208,10 @@
 
 </section>
 
-
+    <script src="js/popper.min.js"></script>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/controlador-inicio.js"></script>
+    <script src="js/controlador-peliculas.js"></script>
    
 
 </body>

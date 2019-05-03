@@ -151,7 +151,7 @@
     </div>';
     break;
 
-    case "'pantallas'":
+    /*case "'pantallas'":
 
     $n1 = $_POST["pos"] - $_POST["crea"];
 
@@ -173,9 +173,9 @@
         </div>';
     }
 
-    break;
+    break;*/
 
-    case "'pantallas-2'":
+    /*case "'pantallas-2'":
 
     for($i=0; $i<$_POST["crea"]; $i++)
     {
@@ -191,14 +191,7 @@
         </div>';
     }
 
-    break;
-
-    case "'imgEdit'":
-        echo'
-        <img class="min-user img-opcty" src="img/newUser.png">
-        <i class="fas fa-edit edit-icon3"></i>
-        <input type="file" class="form-control-file d-none" name="video">';
-    break;
+    break;*/
 
     case "'table-account'":
     echo'
@@ -216,12 +209,12 @@
                     <tr>
                         <td valign="top">
                             <label class="row txt-gray mr-4 txt-wdt ml-1">MEMBRESÍA Y FACTURACIÓN</label>
-                            <button class="btn-memb" type="button">Cancelar Membresía</button>
+                            <button id="btn-cancel-membresia" class="btn-memb" type="button">Cancelar Membresía</button>
                         </td>
                         <td class="b-d">
-                            <label class="row txt-blck ml-4">Nombre-Usuario</label>
+                            <label class="row txt-blck ml-4">'.$_POST["corr"].'</label>
                             <label class="row txt-blck ml-4">Password: *****</label>
-                            <label class="row txt-blck ml-4">Phone: 9853-8090</label>  
+                            <label class="row txt-blck ml-4">Phone: '.$_POST["tel"].'</label>  
                         </td> 
                         <td class="b-d">
                             <a href="updateCorreo.php" class="row ml-95"><label>Cambiar email de cuenta</label></a>
@@ -232,7 +225,7 @@
                     <tr>
                         <td></td>
                         <td class="b-d">
-                            <label class="row txt-blck ml-4">TARJETA-CREDITO</label>
+                            <label class="row txt-blck ml-4">'.$_POST["tarj"].'</label>
                         </td>
                         <td class="b-d">
                             <a href="update-info-pago.php" class="row ml-95"><label>Actualizar información de pago</label></a>
@@ -253,7 +246,7 @@
                         <label class="row txt-gray ml-1">DETALLES DEL PLAN</label>
                     </td>
                     <td class="b-d">
-                        <label class="txt-blck ml-4">TIPO-PLAN</label>
+                        <label class="txt-blck ml-4">'.$_POST["plan"].'</label>
                     </td>
                     <td class="b-d">
                         <a href="#" class="row ml-95"><label>Cambio de plan</label></a>
@@ -297,39 +290,6 @@
         </table>';
     break;
 
-    case "'tablaHist'": 
-    echo'
-    <table id="tabla-historial" cellspacing="2" cellpadding="9">
-                <thead>
-                    <tr class="txt-blck b-d">
-                        <td class="td-custom">Fecha</td>
-                        <td class="td-custom txt-c">Descripcion</td>
-                        <td class="td-custom txt-c">Periodo de Servicio</td>
-                        <td class="td-custom txt-c">Metodo de pago</td>
-                        <td class="td-custom txt-r">Total</td>
-                    </tr>
-                </thead>
-                <tbody>
-
-                    <tr class="txt-blck b-d">
-                        <td class="td-custom">4/5/19</td>
-                        <td class="td-custom txt-c">Srevicio de Netflix</td>
-                        <td class="td-custom txt-c">4/5/19 – 5/4/19</td>
-                        <td class="td-custom txt-c">AMEX **********2061</td>
-                        <td class="td-custom txt-r">USD13.99</td>
-                    </tr>
-
-                    <tr class="txt-blck b-d">
-                        <td class="td-custom">4/5/19</td>
-                        <td class="td-custom txt-c">Srevicio de Netflix</td>
-                        <td class="td-custom txt-c">4/5/19 – 5/4/19</td>
-                        <td class="td-custom txt-c">AMEX **********2061</td>
-                        <td class="td-custom txt-r">USD13.99</td>
-                    </tr>
-
-                </tbody>
-            </table>';
-    break;
 }
 
 ?>
