@@ -2,6 +2,7 @@
 
     include("../class/class-con.php");
     include("../class/class-Contenido.php");
+    include("../class/class-pelicula.php");
 
     $conexion = new Conexion();
 
@@ -12,8 +13,9 @@
             echo $contenido->insertarContenido($conexion);
         break;
 
-        case "''":
-           
+        case "'agregar-pelicula'":
+            $pelicula = new Pelicula(null, $_POST["duracion"]);
+            echo $pelicula->insertarPelicula($conexion);
         break;
 
 
