@@ -30,19 +30,19 @@
             return $fila;
         }
 
+        public function obtenerFila2($sql){
+            $stmt = $this->conexion->prepare($sql);
+            $stmt->execute();
+            $fila = $stmt->fetchAll();
+            return $fila;
+        }
+
         public function commit(){
             $this->conexion->commit();
         }
 
         public function rollback(){
             $this->conexion->rollback();
-        }
-
-        public function numFilas($sql){
-            $stmt = $this->conexion->prepare($sql);
-            $stmt->execute();
-            $num = $stmt->rowCount();
-            return $num;
         }
 
         public function numColumnas($sql){

@@ -105,27 +105,15 @@
 
 		public function obtenerPantallas($conexion){
 
-			$instruccion = "SELECT  A.CODIGO_USUARIO, A.CORREO, COUNT(B.CODIGO_PANTALLA) AS NUMERO_DE_PANTALLAS, C.NUMERO_DE_PANTALLAS AS NUMERO_PANTALLAS_POSIBLES FROM TBL_USUARIOS A LEFT JOIN TBL_PANTALLAS B ON (A.CODIGO_USUARIO = B.CODIGO_USUARIO) LEFT JOIN TBL_TIPO_PLAN C ON (A.CODIGO_TIPO_PLAN = C.CODIGO_TIPO_PLAN) WHERE A.CORREO = '$this->correo' GROUP BY A.CODIGO_USUARIO, A.CORREO, C.NUMERO_DE_PANTALLAS";
+			$instruccion = "WITH NUM_PANTALLAS AS(SELECT  A.CODIGO_USUARIO,A.CORREO,COUNT(B.CODIGO_PANTALLA) AS PANTALLAS_CREADAS,C.NUMERO_DE_PANTALLAS AS PANTALLAS_POSIBLES FROM TBL_USUARIOS A LEFT JOIN TBL_PANTALLAS B ON (A.CODIGO_USUARIO = B.CODIGO_USUARIO) LEFT JOIN TBL_TIPO_PLAN C ON (A.CODIGO_TIPO_PLAN = C.CODIGO_TIPO_PLAN)  GROUP BY A.CODIGO_USUARIO, A.CORREO, C.NUMERO_DE_PANTALLAS) SELECT A.CODIGO_PANTALLA,A.NOMBRE_PANTALLA,B.PANTALLAS_CREADAS,B.PANTALLAS_POSIBLES,A.CODIGO_USUARIO FROM TBL_PANTALLAS A LEFT JOIN NUM_PANTALLAS B ON (A.CODIGO_USUARIO = B.CODIGO_USUARIO) WHERE A.CODIGO_USUARIO =  $this->codigo_usuario";
 
 			$resultado = array();
 
-			$resultado = $conexion->obtenerFila($instruccion);
+			$resultado = $conexion->obtenerFila2($instruccion);
 
 			return json_encode($resultado);
 
-		}
-
-		public function obtenerNombrePantallas($conexion){
-
-			$instruccion = "SELECT CODIGO_PANTALLA, NOMBRE_PANTALLA FROM TBL_PANTALLAS WHERE CODIGO_USUARIO = $this->codigo_usuario";
-
-			$resultado = array();
-
-			while($fila = $conexion->obtenerFila($instruccion)){
-				$resultado[] = $fila;
-			}
-
-			return json_encode($resultado);
+			//return $instruccion;
 
 		}
 
@@ -191,7 +179,7 @@
 
 			return json_encode($resultado);
 
-		}
+		} //Tengo que eliminarlo
 
 		public function eliminarTelefono($conexion){
 
@@ -203,6 +191,42 @@
 				return 1;
 			else
 				return 0;
+
+		}
+
+		public function datosHistPago($conexion){
+
+			$instruccion = "SELECT B.NOMBRE_TIPO_PLAN, B.NUMERO_DE_PANTALLAS, B.PRECIO_MENSUAL, A.CODIGO_USUARIO FROM TBL_USUARIOS A LEFT JOIN TBL_TIPO_PLAN B ON (A.CODIGO_TIPO_PLAN = B.CODIGO_TIPO_PLAN) WHERE A.CODIGO_USUARIO = $this->codigo_usuario";
+
+			$resultado = array();
+
+			$resultado = $conexion->obtenerFila($instruccion);
+
+			return json_encode($resultado);
+
+		}
+
+		public function datosHistPago2($conexion){
+
+			$instruccion = "SELECT B.CODIGO_REGISTRO_HISTORIAL,A.CODIGO_USUARIO,B.FECHA_INICIO,B.FECHA_FIN,C.NUMERO_DE_PANTALLAS,C.NOMBRE_TIPO_PLAN,C.PRECIO_MENSUAL,D.NUMERO_DE_TARJETA FROM TBL_USUARIOS A LEFT JOIN TBL_HISTORIAL_PAGO B ON (A.CODIGO_USUARIO = B.CODIGO_USUARIO) LEFT JOIN TBL_TIPO_PLAN C ON (A.CODIGO_TIPO_PLAN = C.CODIGO_TIPO_PLAN) LEFT JOIN TBL_REGISTRO_TARJETA D ON (A.CODIGO_USUARIO = D.CODIGO_USUARIO) WHERE A.CODIGO_USUARIO = $this->codigo_usuario ORDER BY B.CODIGO_REGISTRO_HISTORIAL";
+
+			$resultado = array();
+
+			$resultado = $conexion->obtenerFila2($instruccion);
+
+			return json_encode($resultado);
+
+		}
+
+		public function obtenerIdUsuario($conexion){
+
+			$instruccion = "SELECT CODIGO_USUARIO AS CODIGO FROM TBL_USUARIOS WHERE CORREO = '$this->correo'";
+
+			$result = array();
+
+			$result = $conexion->obtenerFila($instruccion);
+
+			return json_encode($result);
 
 		}
 

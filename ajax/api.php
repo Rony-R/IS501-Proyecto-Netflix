@@ -38,7 +38,7 @@
 
         break;
 
-        case "'sesion-pantallas'":
+        /*case "'sesion-pantallas'":
             session_start();
 
             $_SESSION["Creadas"] = $_POST["creadas"];
@@ -50,10 +50,22 @@
             else
                 echo ("0");
 
+        break;*/
+
+        case "'sesion-id'":
+            session_start();
+
+            $_SESSION["CodUsuario"] = $_POST["codusuario"];
+
+            if($_SESSION["CodUsuario"] != "")
+                echo "1";
+            else
+                echo "0";
+
         break;
 
-        case "'pantallas-usuario'":
-            $u2 = new Usuario (null, null, null, $_POST["user"], null, null);
+        case "'obtener-info-pantallas'":
+            $u2 = new Usuario ($_POST["cod"], null, null, null, null, null);
             echo $u2->obtenerPantallas($conexion);
         break;
 
@@ -68,6 +80,8 @@
         break;
 
         case "'actualizar-pantalla''":
+            $p2 = new Pantalla(null, $_POST["usuario"], $_POST["madurez"], $_POST["idioma"], null, null, $_POST["nombre"], $_POST["nom-pant-viejo"], null);
+            echo $p2->actualizarPantalla($conexion);
         break;
 
         case "'verificarCorreo'":
@@ -112,6 +126,33 @@
         case "'actualizar-info-pago'":
             $rt1 = new Regis_Tarjeta(null, $_POST["codUsuario"], $_POST["tipoTarjeta"], $_POST["nuevoNombre"], $_POST["nuevoApellido"], $_POST["nuevaTarjeta"], $_POST["nuevoCodigo"], $_POST["nuevaFecha"]);
             echo $rt1->actualizarTarjeta($conexion);
+        break;
+
+        case "'datos-hist-pago'":
+            $u9 = new Usuario($_POST["codigo"], null, null, null, null, null);
+            echo $u9->datosHistPago($conexion);
+        break;
+
+        case "'datos-hist-pago2'":
+            $u10 = new Usuario($_POST["codigo"], null, null, null, null, null);
+            echo $u10->datosHistPago2($conexion);
+        break;
+
+        case "'obtener-id'":
+            $u11 = new Usuario(null, null, null, $_POST["usuario"], null, null);
+            echo $u11->obtenerIdUsuario($conexion);
+        break;
+
+        case "''":
+        break;
+
+        case "''":
+        break;
+
+        case "''":
+        break;
+
+        case "''":
         break;
 
         case "''":

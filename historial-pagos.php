@@ -1,3 +1,10 @@
+
+<?php
+
+    session_start();
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -97,8 +104,31 @@
 
     <div id="main-container">
 
+        <div id="contenedor-hist2" class="contenedor">
+
         <div id="contenedor-hist" class="contenedor">
+        
         </div>
+
+        <table id="tabla-historial" cellspacing="2" cellpadding="9">
+                <thead>
+                    <tr class="txt-blck b-d">
+                        <td class="td-custom">Fecha</td>
+                        <td class="td-custom txt-c">Descripcion</td>
+                        <td class="td-custom txt-c">Periodo de Servicio</td>
+                        <td class="td-custom txt-c">Metodo de pago</td>
+                        <td class="td-custom txt-r">Total</td>
+                    </tr>
+                </thead>
+                <tbody id="body-tabla-hist">
+
+                </tbody>
+            </table>
+
+        </div>
+
+        <input type="txt" class="d-none" id="usuario" value="<?php echo $_SESSION["Usuario"];?>">
+        <input type="txt" class="d-none" id="idUsuario-hist" value="<?php echo $_SESSION["CodUsuario"];?>">
 
     </div>
 
