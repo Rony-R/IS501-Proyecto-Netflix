@@ -1,6 +1,95 @@
 $(document).ready(function(){
-    inicializar_valores_Sub() ;
+        var parametros= "estado=1"+"&peticion=estado";
+        console.log(parametros);
+        $.ajax({
+          url:"ajax/api-2.php",
+          data:parametros,
+          method:"POST",
+          dataType:"json",
+          success:function(respuesta){
+            console.log(respuesta.codigo);   
+           },
+           error:function(error){
+             console.log(error);
+           }
+       });
+    
+
+    inicializar_config();
+ 
 });
+
+
+function inicializar_config() {
+    var codigo_pantalla=3;
+    var parametros="codigo_pantalla="+codigo_pantalla+"&peticion=inicializar-registro";
+    console.log(parametros);
+    $.ajax({
+      url:"ajax/api-2.php",
+      data:parametros,
+      method:"POST",
+      dataType:"json",
+      success:function(respuesta){
+        console.log(respuesta.p_mensaje_1);            
+        console.log(respuesta.p_codigo_mensaje_1); 
+        console.log(respuesta.codigo_respuesta);  
+        console.log(respuesta.nombre_fuente);        
+        console.log(respuesta.cod_rgb_color_fuente); 
+        console.log(respuesta.tamanio_fuente);       
+        console.log(respuesta.nombre_sombra);         
+        console.log(respuesta.cod_rgb_color_sombra); 
+        console.log(respuesta.cod_rgb_color_fondo);  
+        console.log(respuesta.cod_rgb_color_ventana);
+        console.log(respuesta.p_mensaje);            
+        console.log(respuesta.p_codigo_mensaje);  
+     
+
+
+        if(respuesta.tamanio_fuente=='10pt')
+           document.getElementById("lbl-tam-text").innerHTML= "Pequeño"; 
+        if(respuesta.tamanio_fuente=='15pt')
+           document.getElementById("lbl-tam-text").innerHTML= "Media"; 
+        if(respuesta.tamanio_fuente=='20pt')
+           document.getElementById("lbl-tam-text").innerHTML= "Grande"; 
+   
+        document.getElementById("div-text").style.fontSize = respuesta.tamanio_fuente;
+        document.getElementById("color-fuente").style.backgroundColor=respuesta.cod_rgb_color_fuente;
+        document.getElementById("div-text").style.color = respuesta.cod_rgb_color_fuente;
+
+        document.getElementById("color-sombra").style.backgroundColor=respuesta.cod_rgb_color_sombra;
+        document.getElementById("dp-sombras").innerHTML = respuesta.nombre_sombra;
+
+        if(respuesta.nombre_sombra == 'Ninguno'){
+            document.getElementById("div-text").style.textShadow = "transparent 0em 0em 0em";
+        }
+
+        if(respuesta.nombre_sombra == 'Sombra paralela'){
+            document.getElementById("div-text").style.textShadow = respuesta.cod_rgb_color_sombra +" 0.1em 0.1em 0.2em"; 
+            document.getElementById("dp-sombras").style.textShadow = "grey 0.1em 0.1em 0.2em";
+            document.getElementById("dp-sombras").style.color= "black";
+        }
+
+        if(respuesta.nombre_sombra == 'Uniforme'){
+            document.getElementById("div-text").style.textShadow = "-1px 0 "+respuesta.cod_rgb_color_sombra+" , 0 1px "+
+                respuesta.cod_rgb_color_sombra+" ,  1px 0 "+respuesta.cod_rgb_color_sombra+", 0 -1px "+respuesta.cod_rgb_color_sombra;
+            document.getElementById("dp-sombras").style.textShadow = "-1px 0 #000 , 0 1px #000 , 1px 0 #000, 0 -1px #000";
+            document.getElementById("dp-sombras").style.color= "white";
+        }
+
+        document.getElementById("div-text").style.fontFamily =respuesta.nombre_fuente;
+        document.getElementById("dp-fuentes").style.fontFamily = respuesta.nombre_fuente;
+        document.getElementById("dp-fuentes").innerHTML = respuesta.nombre_fuente;
+
+        document.getElementById("color-fondo").style.backgroundColor=respuesta.cod_rgb_color_fondo;
+        document.getElementById("span-text").style.backgroundColor =respuesta.cod_rgb_color_fondo;
+        document.getElementById("color-ventana").style.backgroundColor=respuesta.cod_rgb_color_ventana;
+        document.getElementById("div-ventana-text").style.backgroundColor = respuesta.cod_rgb_color_ventana;
+      },
+      error:function(){
+        inicializar_valores_Sub();
+      }
+   });
+};
 
 $("#btn-tam-peq").click(function(){ 
     document.getElementById("lbl-tam-text").innerHTML= "Pequeño";  
@@ -395,41 +484,64 @@ $("#color-ventana-azul-turquesa").click(function(){
 /*Botones*/
 
 $("#btn-guardar").click(function(){
-
-
-    var nombre_fuente = document.getElementById("div-text").style.fontFamily;                    /* ="staatliche";*/
-    var cod_hexa_color_fuente  = document.getElementById("color-fuente").style.backgroundColor;  /* ="#fff"; */
-    var tamanio_fuente = document.getElementById("div-text").style.fontSize;                     /*= "20pt"; */
-    var nombre_sobra = document.getElementById("dp-sombras").innerHTML;                          /* = "Sombra paralela";*/
-    var cod_hexa_color_sombra =  document.getElementById("color-sombra").style.backgroundColor;   /*="#000";*/
-    var cod_hexa_color_fondo = document.getElementById("color-fondo").style.backgroundColor;      /*="transparent";*/
-    var cod_hexa_color_ventana =document.getElementById("color-ventana").style.backgroundColor;   /*="transparent";*/
-     
- 
-    var parametros= 
-    "nombre_fuente="+nombre_fuente+"&cod_hexa_color_fuente="+cod_hexa_color_fuente+  
-    "&tamanio_fuente="+tamanio_fuente+"&nombre_sobra="+nombre_sobra+ 
-    "&cod_hexa_color_sombra="+ cod_hexa_color_sombra+"&cod_hexa_color_fondo="+cod_hexa_color_fondo+
-    "&cod_hexa_color_ventana="+cod_hexa_color_ventana+"&peticion=guardar_cambios_estilo_subtitulos";
-/*
+    var codigo_pantalla=3;
+    var nombre_fuente = document.getElementById("div-text").style.fontFamily;                  
+    var cod_rgb_color_fuente  = document.getElementById("color-fuente").style.backgroundColor;
+    var tamanio_fuente = document.getElementById("div-text").style.fontSize;                     
+    var nombre_sombra = document.getElementById("dp-sombras").innerHTML;                         
+    var cod_rgb_color_sombra =  document.getElementById("color-sombra").style.backgroundColor;          
+    var cod_rgb_color_fondo = document.getElementById("color-fondo").style.backgroundColor;      
+    var cod_rgb_color_ventana =document.getElementById("color-ventana").style.backgroundColor;   
+   
+    var parametros="codigo_pantalla="+codigo_pantalla+
+     "&nombre_fuente="+nombre_fuente+"&cod_rgb_color_fuente="+cod_rgb_color_fuente+  
+    "&tamanio_fuente="+tamanio_fuente+"&nombre_sombra="+nombre_sombra+ 
+    "&cod_rgb_color_sombra="+ cod_rgb_color_sombra+"&cod_rgb_color_fondo="+cod_rgb_color_fondo+
+    "&cod_rgb_color_ventana="+cod_rgb_color_ventana+"&peticion=actualizar-registro";
     console.log(parametros);
-
     $.ajax({
-      url:"ajax/procesamiento-reg.php",
+      url:"ajax/api-2.php",
       data:parametros,
       method:"POST",
       dataType:"json",
       success:function(respuesta){
-        console.log(respuesta.codigo);   
-        window.location ="paso-2.html";
+        console.log(respuesta.codigo);
+        console.log(respuesta.mensaje);  
        },
        error:function(error){
-         console.log(error);
-         window.location ="planes.php";
+        console.log(error);  
        }
    });
-*/
 });
+
+
+function pantallasUsuario(usuario){ //Obtengo los dos valores!!!!
+
+  
+    $.ajax({
+      url:"ajax/api.php?accion='pantallas-usuario'",
+      data: dato,
+      dataType: "json",
+      method: "POST",
+      success: function(respuesta){
+
+        var idUser = respuesta.CODIGO_USUARIO;
+        var pantCreadas = respuesta.NUMERO_DE_PANTALLAS;
+        var pantPosibles = respuesta.NUMERO_PANTALLAS_POSIBLES;
+  
+        //nombrePantallas(idUser);
+  
+        sesionPantallas(pantCreadas, pantPosibles, idUser);
+  
+      },
+      error: function(){
+        alert("Ocurrio un error!!!");
+        console.log("Error "+ respuesta);
+      }
+    });
+  }
+
+
 
 $("#btn-restablecer-valores").click(function(){
     document.getElementById("lbl-tam-text").innerHTML= "Grande";  
@@ -473,8 +585,6 @@ function inicializar_valores_Sub() {
     document.getElementById("dp-sombras").innerHTML = "Sombra paralela";
     document.getElementById("dp-sombras").style.textShadow ="grey 0.1em 0.1em 0.2em";
     document.getElementById("dp-sombras").style.color ="black";
-    document.getElementById("dp-sombras").style.textShadow = "grey 0.1em 0.1em 0.2em";
-    document.getElementById("dp-sombras").style.color= "black";
     document.getElementById("div-text").style.textShadow =  "#000 0.1em 0.1em 0.2em";
     document.getElementById("div-text").style.fontFamily ="staatliche";
     document.getElementById("dp-fuentes").style.fontFamily = "staatliche";
@@ -483,7 +593,6 @@ function inicializar_valores_Sub() {
     document.getElementById("span-text").style.backgroundColor ="transparent";
     document.getElementById("color-ventana").style.backgroundColor="transparent";
     document.getElementById("div-ventana-text").style.backgroundColor = "transparent";
-}
-
+};
 
 
