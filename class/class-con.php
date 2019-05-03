@@ -13,6 +13,10 @@
             
         }
 
+        public function ejecutarConsulta($sql){
+            $stmt = $this->conexion->query($sql);
+            return $stmt;
+        }
 
         public function ejecutarConsulta2($sql){
             $stmt = $this->conexion->prepare($sql);
