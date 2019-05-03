@@ -38,7 +38,7 @@ $(document).ready(function(){
                                                             <img src="img/series/outlander/1.jpg" id="img">`;*/
 
                 //serie
-              document.getElementById("cont2").innerHTML=`<div style="position:absolute; margin-top:18%; max-width:400px; padding:5px">
+              document.getElementById("cont2").innerHTML=`<div style="position:absolute; margin-top:18%; max-width:400px; padding:5px" id="contenido">
                                                                <div style="float:left; width:220px"> 
                                                                <button id="add-lista" type="button" class="btn btn-link" style="color:red; margin:-1.5% 0;padding:0; font-size:14px;"> <i class="fas fa-play-circle" ></i></i></button>
                                                                 <h6 id="nombre-contenido" style="margin:-2.5% 0;">Outlander</h6>
@@ -61,9 +61,7 @@ $(document).ready(function(){
             };
             
             elemento.onmouseout = function(e) {
-                $('#cont2').replaceWith(`<div class="inside-top"  id="cont2">
-                                                    <img src="img/series/outlander/4.jpg" id="img">
-                                                  </div>`);
+               
 			};
 
 

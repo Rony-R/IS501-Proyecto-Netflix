@@ -3,7 +3,7 @@ $(document).ready(function(){
     
 });
 
-// agregar boton para insertar un episodio a una serie========================================================================
+// //===================================agregar boton para insertar un episodio a una serie========================================================================
 
 $("#slc-tipo").change(function(){
 	//Esta funcion se ejecuta cada vez que el usuario selecciona o cambia un elemento de la lista.
@@ -24,7 +24,7 @@ $("#slc-tipo").change(function(){
   console.log("codigo: " + $("#slc-tipo").val());
 });
 
-//habilitar botones de la ventana modal========================================================================
+////==========================================habilitar botones de la ventana modal========================================================================
       $("#agregar-temp").click(function(){
           $("#txt-episodio").prop('disabled', false);
           $("#duracion-ep").prop('disabled', false);
@@ -33,7 +33,7 @@ $("#slc-tipo").change(function(){
           $('#guardar-episodio').attr("disabled", false);
       });
 
-//agregar contenido a la tabla========================================================================
+////================================================agregar contenido a la tabla========================================================================
 $("#btn-agregar").click(function(){
  
     $('#btn-agregar-episodio').attr("disabled", false);
@@ -89,7 +89,7 @@ $("#btn-agregar").click(function(){
   
   });
 
-//agregar una temporada ========================================================================
+////================================================agregar una temporada ========================================================================
 $("#agregar-temp").click(function(){
 
   var datos = "numTemp="+$("#txt-temporada").val()+"&"+
@@ -115,7 +115,7 @@ $("#agregar-temp").click(function(){
 
 });
 
-//agregar un episodio ========================================================================
+//================================================agregar un episodio ========================================================================
 $("#guardar-episodio").click(function(){
 
   var datos = "nombre="+$("#txt-episodio").val()+"&"+

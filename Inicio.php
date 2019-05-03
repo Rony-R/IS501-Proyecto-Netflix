@@ -136,7 +136,7 @@
                          </li>
                               <li class="card"  id="c2">
                               <div class="inside-top"  id="cont2">
-                              <img src="img/series/outlander/4.jpg" id="img">
+                              <img src="img/series/outlander/1.jpg" id="img">
                               </div>
                          </li>
                               <li class="card">
