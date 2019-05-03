@@ -1,126 +1,37 @@
 $(document).ready(function(){
-    //peliculas
-        $('#btn-peliculas').click(function() {
-            $('#form2').replaceWith(`<form id="form1">
-                                        <div class="form-group">
-                                                <div class="row" style="margin-left:auto; margin-right:auto">         
-                                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" style="margin-bottom:5px">
-                                                    <input class="form-control" type="text" placeholder="Nombre Película" id="txt-nombre">
-                                                </div>
-                    
-                                                <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12 col-12" style="margin-bottom:5px">
-                                                    <input type="number" class="form-control" placeholder="Duración" id="txt-duracion">
-                                                </div>
-            
-                                                <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12 col-12" style="margin-bottom:5px">                  
-                                                    <select name="idioma" id="idioma" class="form-control">
-                                                        <option value="" selected disabled>Idioma</option>
-                                                    </select>
-                                                </div>
-            
-                                                <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12 col-12" style="margin-bottom:5px">
-                                                    <input class="form-control" type="text" placeholder="Edad Público" id="txt-edad">
-                                                </div>
-            
-                                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" style="margin-bottom:5px">
-                                                    <input class="form-control" type="text" placeholder="Nombre Director" id="txt-director">
-                                                </div>
-            
-                                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" style="margin-bottom:5px">
-                                                    <input class="form-control" type="text" placeholder="URL imagen miniatura" id="url-img">
-                                                </div>
-            
-            
-            
-                                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" style="margin-bottom:5px">                  
-                                                    <select  name="estudio" id="estudio" class="form-control"></select>
-                                                </div>
-            
-                                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" style="margin-bottom:5px">
-                                                    <input class="form-control" type="text" placeholder="URL" id="txt-url">
-                                                </div>
-            
-                                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" style="margin-bottom:5px">
-                                                    <textarea name="descripcion" id="descripcion" cols="30" rows="3" class="form-control">Descripción</textarea><br>
-                                                </div> 
-                    
-                                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" style="margin-bottom:5px">                  
-                                                    <select size=4 name="categoria" id="categoria" class="form-control"></select>
-                                                </div>
-                                        
-                                                
-                    
-                                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" style="margin-bottom:5px; float:right">
-                                                    <select size=4 name="genero" id="genero" class="form-control" placeholder="Duración"></select> 
-                                                </div>
-                                                                    
-                                            </div>
-                                        </div>
-
-                                    </form>`);
-        });
-
-    //series
-    $('#btn-series').click(function() {
-        $('#form1').replaceWith(`<form id="form2">
-                                    <div class="form-group">
-
-                                        <div class="row" style="margin-left:auto; margin-right:auto"> 
-                                          
-                                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" style="margin-bottom:5px">
-                                                <input class="form-control" type="text" placeholder="Nombre Episodio" id="txt-nombre">
-                                            </div>
-
-                                            <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12 col-12" style="margin-bottom:5px">
-                                                <input class="form-control" type="number" placeholder="nº temporada" id="txt-temporada">
-                                            </div>
-
-                
-
-                                            <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12 col-12" style="margin-bottom:5px">
-                                                <input type="number" class="form-control" placeholder="Duración min" id="txt-duracion">
-                                            </div>
-
-                                            <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12 col-12" style="margin-bottom:5px">
-                                                    <input class="form-control" type="text" placeholder="Edad Público" id="txt-edad">
-                                            </div>
-                                    
-
-                                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" style="margin-bottom:5px">
-                                                <input class="form-control" type="text" placeholder="URL episodio" id="txt-url">
-                                            </div>
-
-                                            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12" style="margin-bottom:5px">
-                                                <input class="form-control" type="text" placeholder="URL imagen miniatura" id="url-img">
-                                            </div>
-
-                                            <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12 col-12" style="margin-bottom:5px">                  
-                                                    <select name="idioma" id="idioma" class="form-control">
-                                                        <option value="" selected disabled>Idioma</option>
-                                                    </select>
-                                            </div>
-
-                                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" style="margin-bottom:5px">
-                                                <textarea name="descripcion" id="descripcion" cols="30" rows="3" class="form-control">Descripción</textarea><br>
-                                            </div> 
-
-                                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" style="margin-bottom:5px">                  
-                                                <select size=4 name="categoria" id="categoria" class="form-control"></select>
-                                            </div>
-                                    
-                                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" style="margin-bottom:5px">
-                                                <select size=4 name="genero" id="genero" class="form-control" ></select> 
-                                            </div>
-
-                                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" style="margin-bottom:5px">
-                                                <select size=4 name="personas" id="personas" class="form-control" ></select> 
-                                            </div>
-                                        
-                                                                
-                                        </div>
-                                    </div>
-
-                                </form>`);
-    });
+  
     
 });
+
+$("#btn-agregar").click(function(){
+    var fecha = new Date();
+     fechaa = (fecha.getDate() + "/" + (fecha.getMonth() +1) + "/" + fecha. getFullYear());
+    
+
+    var datos = "tipo="+$("#slc-tipo").val() +"&"+
+                "nombre=" +$("#txt-nombre").val() +"&"+
+                "idioma=" +$("#slc-idiomas").val() +"&"+
+                "duracion=" +$("#txt-duracion").val() +"&"+
+                "edad=" +$("#slc-edad").val() +"&"+
+                "urlimg=" +$("#url-img").val() +"&"+
+                "urlpeli=" +$("#url-contenido").val() +"&"+
+                "descripcion=" +$("#txt-descripcion").val() +"&"+
+                "fechaSubida=" + fechaa +"&"+
+                "estudio=" +$("#slc-estudio").val();
+  
+    console.log(datos);
+  /*
+    $.ajax({
+      url: "ajax/administrador.php?accion='agregar-pelicula'",
+      data: datos,
+      method: "POST",
+      success: function(respuesta){
+        console.log(respuesta);
+  
+      },
+      error: function(){
+        alert("Ocurrio un error insertando la pantalla");
+      }
+    });*/
+  
+  });

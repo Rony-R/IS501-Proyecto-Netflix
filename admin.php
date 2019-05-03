@@ -104,9 +104,8 @@
             <div class="container">
                 
                     <div>
-                        <button type="button" id="btn-peliculas" class="btn btn-link" style="color:black"><h5>Agregar Peliculas</h5></button> |
-                        <button type="button" id="btn-series" class="btn btn-link" style="color:black"><h5>Agregar Series</h5></button>
-                        <button type="button" id="btn-agregar" class="btn btn-dark" style="margin-left:40%" >Agregar</button>
+                        <h5 style="float:left">Agregar Contenido</h5>
+                        <button type="button" id="btn-agregar" class="btn btn-dark" style="margin-left:40%" >Agregar Contenido</button>
                         <hr>
                <div class="row">
                         <form id="form1">
@@ -118,48 +117,90 @@
                                     </div>
         
                                     <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12 col-12" style="margin-bottom:5px">
-                                        <input type="number" class="form-control" placeholder="Duración" id="txt-duracion">
+                                        <select name="tipo" id="slc-tipo" class="form-control" >
+                                            <option value="" selected disabled>Tipo</option>
+                                            <option value="1">Película</option>
+                                            <option value="2">Serie</option>
+                                            
+                                        </select>
+                                    
                                     </div>
 
                                     <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12 col-12" style="margin-bottom:5px">                  
-                                        <select name="idioma" id="idioma" class="form-control">
+                                        <select name="idioma" id="slc-idiomas" class="form-control">
                                             <option value="" selected disabled>Idioma</option>
+                                            <option value="1">Español</option>
+                                            <option value="2">Inglés</option>
+                                            <option value="3">Alemán</option>
+                                            <option value="4">Francés</option>
+                                            <option value="5">Italiano</option>
+                                            <option value="6">Portugues</option>
+                                            <option value="7">Ruso</option>
+                                            <option value="8">Japonés</option>
+                                            <option value="9">Árabe</option>
+                                            <option value="10">Chino</option>
                                         </select>
                                     </div>
 
                                     <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12 col-12" style="margin-bottom:5px">
-                                        <input class="form-control" type="text" placeholder="Edad Público" id="txt-edad">
+                                        <select name="edad" id="slc-edad" class="form-control" >
+                                            <option value="" selected disabled>Edad</option>
+                                            <option value="1">A</option>
+                                            <option value="2">+12</option>
+                                            <option value="3">+18</option>
+                                            <option value="4">D</option>
+                                            <option value="5">XXX</option>
+                                            
+                                        </select>
+                                    
                                     </div>
 
-                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" style="margin-bottom:5px">
-                                        <input class="form-control" type="text" placeholder="Nombre Director" id="txt-director">
-                                    </div>
+                                    
 
                                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" style="margin-bottom:5px">
                                         <input class="form-control" type="text" placeholder="URL imagen miniatura" id="url-img">
                                     </div>
 
+                                    <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12 col-12" style="margin-bottom:5px">
+                                        <input type="number" class="form-control" placeholder="Duración" id="txt-duracion">
+                                    </div>
 
-
-                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" style="margin-bottom:5px">                  
-                                        <select  name="estudio" id="estudio" class="form-control"></select>
+                                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12" style="margin-bottom:5px">                  
+                                        <select  name="estudio" id="slc-estudio" class="form-control">
+                                            <option value="" selected disabled>Estudio</option>
+                                            <option value="1">Marvel Studios</option>
+                                            <option value="2">DC Studios</option>
+                                            <option value="3">Warner Studios</option>
+                                            <option value="4">FOX Studios</option>
+                                            <option value="5">ESPN Studios</option>
+                                        </select>
                                     </div>
 
                                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" style="margin-bottom:5px">
-                                        <input class="form-control" type="text" placeholder="URL" id="txt-url">
+                                        <input class="form-control" type="text" placeholder="URL" id="url-contenido">
                                     </div>
 
+                                    
+
                                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" style="margin-bottom:5px">
-                                        <textarea name="descripcion" id="descripcion" cols="30" rows="3" class="form-control">Descripción</textarea><br>
+                                        <textarea name="descripcion" id="txt-descripcion" cols="30" rows="3" class="form-control" placeholder="Descripción"></textarea><br>
                                     </div> 
-        
+        <!--                        
+                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" style="margin-bottom:5px">
+                                        <select name="director" id="slc-director" class="form-control" ></select> 
+                                    </div>
                                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" style="margin-bottom:5px">                  
-                                        <select size=4 name="categoria" id="categoria" class="form-control"></select>
+                                        <select size=4 name="categoria" id="slc-categoria" class="form-control"></select>
                                     </div>
         
                                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" style="margin-bottom:5px">
-                                        <select size=4 name="genero" id="genero" class="form-control" placeholder="Duración"></select> 
+                                        <select size=4 name="genero" id="slc-genero" class="form-control" placeholder="Duración"></select> 
                                     </div>
+
+                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" style="margin-bottom:5px">
+                                        <select size=4 name="personas" id="slc-personas" class="form-control" placeholder="Duración"></select> 
+                                    </div>
+                                    -->
                                                           
                                 </div>
                             </div>

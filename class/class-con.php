@@ -1,0 +1,52 @@
+<?php
+
+	class Conexion{
+
+		private $db = "oci:dbname=XE";
+		private $usuario = "NETFLIX";
+        private $password = "oracle";
+        private $conexion;
+
+		public function __construct(){
+
+            $this->conexion = new PDO($this->db, $this->usuario, $this->password);
+            
+        }
+
+
+        public function ejecutarConsulta2($sql){
+            $stmt = $this->conexion->prepare($sql);
+            $stmt->execute();
+        }
+
+        public function obtenerFila($sql){
+            $stmt = $this->conexion->prepare($sql);
+            $stmt->execute();
+            $fila = $stmt->fetch();
+            return $fila;
+        }
+
+        public function commit(){
+            $this->conexion->commit();
+        }
+
+        public function rollback(){
+            $this->conexion->rollback();
+        }
+
+        public function numFilas($sql){
+            $stmt = $this->conexion->prepare($sql);
+            $stmt->execute();
+            $num = $stmt->rowCount();
+            return $num;
+        }
+
+        public function numColumnas($sql){
+        	$stmt = $this->conexion->prepare($sql);
+        	$stmt->execute();
+        	$numcol = $stmt->fetch();
+        	return $numcol;
+        }
+	
+	}
+?>
