@@ -117,7 +117,7 @@
                                     </div>
         
                                     <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12 col-12" style="margin-bottom:5px">
-                                        <select name="tipo" id="slc-tipo" class="form-control" >
+                                        <select name="tipo" id="slc-tipo" class="form-control">
                                             <option value="" selected disabled>Tipo</option>
                                             <option value="1">Película</option>
                                             <option value="2">Serie</option>
@@ -126,24 +126,20 @@
                                     
                                     </div>
 
-                                    <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12 col-12" style="margin-bottom:5px">
-                                        <input class="form-control" type="tel" placeholder=" N° Temporada" id="txt-temporada">
-                                    </div>
-
-                                    
-
-                                    <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12 col-12" style="margin-bottom:5px">
-                                        <select name="edad" id="slc-edad" class="form-control" >
-                                            <option value="" selected disabled>Edad</option>
-                                            <option value="1">A</option>
-                                            <option value="2">+12</option>
-                                            <option value="3">+18</option>
-                                            <option value="4">D</option>
-                                            <option value="5">XXX</option>
-                                            
+                                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12" style="margin-bottom:5px">                  
+                                        <select  name="estudio" id="slc-estudio" class="form-control">
+                                            <option value="" selected disabled>Estudio</option>
+                                            <option value="1">Marvel Studios</option>
+                                            <option value="2">DC Studios</option>
+                                            <option value="3">Warner Studios</option>
+                                            <option value="4">FOX Studios</option>
+                                            <option value="5">ESPN Studios</option>
                                         </select>
-                                    
                                     </div>
+
+                                    
+
+                                    
 
                                     
 
@@ -171,48 +167,44 @@
                                         <input type="number" class="form-control" placeholder="Duración" id="txt-duracion">
                                     </div>
 
-                                    <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12 col-12" style="margin-bottom:5px">                  
-                                        <select  name="estudio" id="slc-estudio" class="form-control">
-                                            <option value="" selected disabled>Estudio</option>
-                                            <option value="1">Marvel Studios</option>
-                                            <option value="2">DC Studios</option>
-                                            <option value="3">Warner Studios</option>
-                                            <option value="4">FOX Studios</option>
-                                            <option value="5">ESPN Studios</option>
+                 
+
+                                    <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12 col-12" style="margin-bottom:5px">
+                                        <select name="edad" id="slc-edad" class="form-control" >
+                                            <option value="" selected disabled>Edad</option>
+                                            <option value="1">A</option>
+                                            <option value="2">+12</option>
+                                            <option value="3">+18</option>
+                                            <option value="4">D</option>
+                                            <option value="5">XXX</option>
+                                            
                                         </select>
+                                    
                                     </div>
+
+                                                       
 
                                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" style="margin-bottom:5px">
                                         <input class="form-control" type="text" placeholder="URL" id="url-contenido">
                                     </div>
 
-                                    
+
+
 
                                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" style="margin-bottom:5px">
                                         <textarea name="descripcion" id="txt-descripcion" cols="30" rows="3" class="form-control" placeholder="Descripción"></textarea><br>
                                     </div> 
-        <!--                        
-                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" style="margin-bottom:5px">
-                                        <select name="director" id="slc-director" class="form-control" ></select> 
-                                    </div>
-                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" style="margin-bottom:5px">                  
-                                        <select size=4 name="categoria" id="slc-categoria" class="form-control"></select>
-                                    </div>
-        
-                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" style="margin-bottom:5px">
-                                        <select size=4 name="genero" id="slc-genero" class="form-control" placeholder="Duración"></select> 
+
+                                    <div id="agregar-episodio">
                                     </div>
 
-                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" style="margin-bottom:5px">
-                                        <select size=4 name="personas" id="slc-personas" class="form-control" placeholder="Duración"></select> 
-                                    </div>
-                                    -->
                                                           
                                 </div>
                             </div>
              
                         </form>
                     </div>
+
                 </div> 
             </div>     
                     
@@ -267,6 +259,64 @@
                         </table>
           </section>
 
+           
+<!--********************************VENTANA MODAL*****************************************-->
+<!-- Modal -->
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-dialog-centered">
+    
+      <!-- Modal content-->
+      <div class="modal-content" style="background-color:black">
+        <div class="modal-header">
+          <h4 class="modal-title" style="color:white"><b> CREAR NUEVA CUENTA</b></h4>
+        </div>
+        <div class="modal-body" style="background-color:rgb(255, 255, 255);" class="col-12 col-sm-12 col-md-6 col-lg-6 form-control">
+          
+                        <div class="row" style="margin-left:auto; margin-right:auto">         
+                            
+
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" style="margin-bottom:5px">
+                                <input class="form-control" type="tel" placeholder=" N° Temporada" id="txt-temporada">
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" style="margin-bottom:5px">
+                            <button type="button" id="agregar-temp" class="btn btn-dark"  >Agregar Temporada</button>
+                            </div>
+
+                            <div class="col-xl-12 col-lg-12 col-md-6 col-sm-12 col-12" style="margin-bottom:5px">
+                                <textarea name="descripcion" id="descripcion-temp" cols="30" rows="3" class="form-control" placeholder="Descripción"></textarea><br>
+                            </div>
+
+
+                            <hr>
+
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                                <input class="form-control" type="text" placeholder="Nombre Episodio" id="txt-episodio" disabled>
+                            </div>
+
+                            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12" style="margin-bottom:5px">
+                                <input type="number" class="form-control" placeholder="Duración" id="duracion-ep" disabled>
+                            </div>
+
+                            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12" style="margin-bottom:5px">
+                                <input class="form-control" type="tel" placeholder=" N° episodio" id="num-ep" disabled>
+                            </div>
+
+                            <div class="col-xl-12 col-lg-12 col-md-6 col-sm-12 col-12" style="margin-bottom:5px">
+                                <textarea name="descripcion" id="descripcion-ep" cols="30" rows="3" class="form-control" placeholder="Descripción episodio" disabled></textarea><br>
+                            </div>
+
+                                                            
+                            <br>                              
+                        </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success" id="guardar-episodio" >Agregar</button>
+          <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
 
 
     <script src="js/jquery-3.3.1.min.js"></script>
