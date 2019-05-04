@@ -38,20 +38,6 @@
 
         break;
 
-        /*case "'sesion-pantallas'":
-            session_start();
-
-            $_SESSION["Creadas"] = $_POST["creadas"];
-            $_SESSION["Posibles"] = $_POST["posibles"];
-            $_SESSION["CodUsuario"] = $_POST["usuario"];
-
-            if($_SESSION["Creadas"] != "" && $_SESSION["Posibles"] != "")
-                echo ("1");
-            else
-                echo ("0");
-
-        break;*/
-
         case "'sesion-id'":
             session_start();
 
@@ -69,18 +55,13 @@
             echo $u2->obtenerPantallas($conexion);
         break;
 
-        case "'nombre-pantallas'":
-            $u3 = new Usuario ($_POST["idUser"], null, null, null, null, null);
-            echo $u3->obtenerNombrePantallas($conexion);
-        break;
-
         case "'insertar-pantalla'":
             $p1 = new Pantalla(null, $_POST["codusuario"], $_POST["madurez"], $_POST["idioma"], $_POST["estiloSub"], $_POST["confiRepro"], $_POST["nombre"], null, null);
             echo $p1->insertarPantalla($conexion);
         break;
 
-        case "'actualizar-pantalla''":
-            $p2 = new Pantalla(null, $_POST["usuario"], $_POST["madurez"], $_POST["idioma"], null, null, $_POST["nombre"], $_POST["nom-pant-viejo"], null);
+        case "'actualizar-pantalla'":
+            $p2 = new Pantalla(null, $_POST["id-usuario"], $_POST["madurez-nuevo"], $_POST["idioma-nuevo"], null, null, $_POST["nombre-nuevo"], $_POST["nombre-viejo"], null);
             echo $p2->actualizarPantalla($conexion);
         break;
 

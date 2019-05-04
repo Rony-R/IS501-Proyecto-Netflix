@@ -762,11 +762,11 @@ $("#insert-pantalla").click(function(){
 
 $("#actualizar-pantalla").click(function(){
 
-  var datos = "nombre=" +$("#nombre-pantalla").val() +
-              "&idioma=" +$("#slc-idiomas").val() +
-              "&madurez=" +$("#slc-madurez").val() +
-              "&usuario=" +$("#idmanage").val() +
-              "&nom-pant-viejo=" +$("#nombre-pantalla").val();
+  var datos = "nombre-nuevo=" +$("#nombre-nuevo").val() +
+              "&idioma-nuevo=" +$("#slc-idiomas").val() +
+              "&madurez-nuevo=" +$("#slc-madurez").val() +
+              "&id-usuario=" +$("#idmanage").val() +
+              "&nombre-viejo=" +$("#nombre-pantalla").val();
 
   var cu = $("#idmanage").val()
 
@@ -775,14 +775,13 @@ $("#actualizar-pantalla").click(function(){
     data: datos,
     method: "POST",
     success: function(respuesta){
-      alert("Update Pantalla: " +respuesta);
-      /*if(respuesta ==1){
+      if(respuesta ==1){
         pantallasUsuario1(cu);
         window.location = "users.php";
       }
       else{
         alert("No se actualizo");
-      }*/
+      }
 
     },
     error: function(){
