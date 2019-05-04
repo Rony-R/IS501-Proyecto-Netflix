@@ -46,7 +46,7 @@ $(document).ready(function(){
                             }
                         
                 });
-});
+
 
    
 //mostrar contenido categoria 2
@@ -340,7 +340,44 @@ console.log(codigo9);
                 
         });
 
+   
+//mostrar contenido categoria 1
 
+        
+var codigo10 = "codCat="+$("#cod-cat-10").val();
+                
+console.log(codigo10);
+
+                $.ajax({
+                    
+                    url: "ajax/contenido.php?accion='obtener-contenido'",
+                    data:codigo10,
+                    dataType: "json",
+                    method: "POST",
+                    success: function(respuesta){
+
+                        console.log(respuesta);
+                        
+                            for(var i=0; i<respuesta[0].CANTIDAD_CONTENIDO; i++){
+                                $("#content12").append(`
+                                    <li class="card"  id="card-${respuesta[i].CODIGO_CONTENIDO}">
+                                    <div class="inside-top"  id="detalle${respuesta[i].CODIGO_CONTENIDO}" >
+                                    <img src="${respuesta[i].URL_MINIATURA}" id="img">
+                                    </div>
+                                    </li> 
+                                `);
+                            }
+                                            
+                            
+                        
+                    },
+                    error: function(e){
+                    console.log("Ocurrio un error!!!: " +e);
+                    }
+                
+        });
+
+    });
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /*
 //mostrar detalle del contenido
