@@ -139,7 +139,7 @@ console.log(codigo4);
                         console.log(respuesta);
                         
                             for(var i=0; i<respuesta[0].CANTIDAD_CONTENIDO; i++){
-                                $("#content4").append(`
+                                $("#content5").append(`
                                     <li class="card"  id="card-${respuesta[i].CODIGO_CONTENIDO}">
                                     <div class="inside-top"  id="detalle${respuesta[i].CODIGO_CONTENIDO}" >
                                     <img src="${respuesta[i].URL_MINIATURA}" id="img">
@@ -176,7 +176,7 @@ console.log(codigo5);
                         console.log(respuesta);
                         
                             for(var i=0; i<respuesta[0].CANTIDAD_CONTENIDO; i++){
-                                $("#content5").append(`
+                                $("#content6").append(`
                                     <li class="card"  id="card-${respuesta[i].CODIGO_CONTENIDO}">
                                     <div class="inside-top"  id="detalle${respuesta[i].CODIGO_CONTENIDO}" >
                                     <img src="${respuesta[i].URL_MINIATURA}" id="img">
@@ -213,7 +213,7 @@ console.log(codigo6);
                         console.log(respuesta);
                         
                             for(var i=0; i<respuesta[0].CANTIDAD_CONTENIDO; i++){
-                                $("#content6").append(`
+                                $("#content7").append(`
                                     <li class="card"  id="card-${respuesta[i].CODIGO_CONTENIDO}">
                                     <div class="inside-top"  id="detalle${respuesta[i].CODIGO_CONTENIDO}" >
                                     <img src="${respuesta[i].URL_MINIATURA}" id="img">
@@ -250,7 +250,7 @@ console.log(codigo7);
                         console.log(respuesta);
                         
                             for(var i=0; i<respuesta[0].CANTIDAD_CONTENIDO; i++){
-                                $("#content7").append(`
+                                $("#content9").append(`
                                     <li class="card"  id="card-${respuesta[i].CODIGO_CONTENIDO}">
                                     <div class="inside-top"  id="detalle${respuesta[i].CODIGO_CONTENIDO}" >
                                     <img src="${respuesta[i].URL_MINIATURA}" id="img">
@@ -286,7 +286,7 @@ console.log(codigo8);
                         console.log(respuesta);
                         
                             for(var i=0; i<respuesta[0].CANTIDAD_CONTENIDO; i++){
-                                $("#content8").append(`
+                                $("#content10").append(`
                                     <li class="card"  id="card-${respuesta[i].CODIGO_CONTENIDO}">
                                     <div class="inside-top"  id="detalle${respuesta[i].CODIGO_CONTENIDO}" >
                                     <img src="${respuesta[i].URL_MINIATURA}" id="img">
@@ -322,79 +322,6 @@ console.log(codigo9);
                         console.log(respuesta);
                         
                             for(var i=0; i<respuesta[0].CANTIDAD_CONTENIDO; i++){
-                                $("#content9").append(`
-                                    <li class="card"  id="card-${respuesta[i].CODIGO_CONTENIDO}">
-                                    <div class="inside-top"  id="detalle${respuesta[i].CODIGO_CONTENIDO}" >
-                                    <img src="${respuesta[i].URL_MINIATURA}" id="img">
-                                    </div>
-                                    </li> 
-                                `);
-                            }
-                                            
-                            
-                        
-                    },
-                    error: function(e){
-                    console.log("Ocurrio un error!!!: " +e);
-                    }
-                
-        });
-
-
-//mostrar contenido categoria 10
-
-        
-var codigo10 = "codCat="+$("#cod-cat-10").val();
-                
-console.log(codigo10);
-
-                $.ajax({
-                    
-                    url: "ajax/contenido.php?accion='obtener-contenido'",
-                    data:codigo10,
-                    dataType: "json",
-                    method: "POST",
-                    success: function(respuesta){
-
-                        console.log(respuesta);
-                        
-                            for(var i=0; i<respuesta[0].CANTIDAD_CONTENIDO; i++){
-                                $("#content10").append(`
-                                    <li class="card"  id="card-${respuesta[i].CODIGO_CONTENIDO}">
-                                    <div class="inside-top"  id="detalle${respuesta[i].CODIGO_CONTENIDO}" >
-                                    <img src="${respuesta[i].URL_MINIATURA}" id="img">
-                                    </div>
-                                    </li> 
-                                `);
-                            }
-                                            
-                            
-                        
-                    },
-                    error: function(e){
-                    console.log("Ocurrio un error!!!: " +e);
-                    }
-                
-        });
-
-//mostrar contenido categoria 11
-
-        
-var codigo11 = "codCat="+$("#cod-cat-11").val();
-                
-console.log(codigo11);
-
-                $.ajax({
-                    
-                    url: "ajax/contenido.php?accion='obtener-contenido'",
-                    data:codigo11,
-                    dataType: "json",
-                    method: "POST",
-                    success: function(respuesta){
-
-                        console.log(respuesta);
-                        
-                            for(var i=0; i<respuesta[0].CANTIDAD_CONTENIDO; i++){
                                 $("#content11").append(`
                                     <li class="card"  id="card-${respuesta[i].CODIGO_CONTENIDO}">
                                     <div class="inside-top"  id="detalle${respuesta[i].CODIGO_CONTENIDO}" >
@@ -412,7 +339,6 @@ console.log(codigo11);
                     }
                 
         });
-
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////

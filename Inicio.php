@@ -182,37 +182,6 @@
                          </div>
           </section>
 
-          <section>
-                     <div class="carousel1">
-                         <h5><b>Dramas de TV de EE.UU.</b></h5>
-                    </div>
-
-                    <div id="wrapper">
-  
-                         <span id="controlL" class="left-controls" role="button" aria-label="See Previous Modules">
-                         <b class="fa fa-chevron-left fa-chevron-left-extra" aria-hidden="true"></b>
-                         </span>
-                         
-                         <div class="module-section clearfix">
-                         
-                         <ul id="content" class="lista">
-                         
-                         
-                         </ul>
-                         
-                         
-                         
-                         </div><!--end of module-section-->
-                         
-                         <span id="controlR" class="right-controls" role="button" aria-label="See Previous Modules">
-                         <b class="fa fa-chevron-right fa-chevron-right-extra" aria-hidden="true"></b>
-                         </span>
-                         
-                         
-                         
-                         
-                         </div>
-          </section>
 
           <section>
                      <div class="carousel1">
@@ -226,41 +195,9 @@
                          </span>
                          
                          <div class="module-section clearfix">
-                         <!-- <button class="btn arrow-guides fa-chevron-left"></button> -->
-                         <ul id="content" class="lista">
                          
-                         
-                         </ul>
-                         
-                         
-                         
-                         </div><!--end of module-section-->
-                         
-                         <span id="controlR" class="right-controls" role="button" aria-label="See Previous Modules">
-                         <b class="fa fa-chevron-right fa-chevron-right-extra" aria-hidden="true"></b>
-                         </span>
-                         <!-- <button class="btn arrow-guides-right fa-chevron-right"></button> -->
-                         
-                         
-                         
-                         </div>
-          </section>
-
-          <section>
-                     <div class="carousel1">
-                         <h5><b>Dramas europeos aclamados por la crítica</b></h5>
-                    </div>
-
-                    <div id="wrapper">
-  
-                         <span id="controlL" class="left-controls" role="button" aria-label="See Previous Modules">
-                         <b class="fa fa-chevron-left fa-chevron-left-extra" aria-hidden="true"></b>
-                         </span>
-                         
-                         <div class="module-section clearfix">
-                         <!-- <button class="btn arrow-guides fa-chevron-left"></button> -->
-                         <ul id="content" class="lista">
-                         
+                         <ul id="content3" class="lista">
+                              <input type="hidden" id="cod-cat-3" value="3">
                          
                          </ul>
                          
@@ -271,44 +208,10 @@
                          <span id="controlR" class="right-controls" role="button" aria-label="See Previous Modules">
                          <b class="fa fa-chevron-right fa-chevron-right-extra" aria-hidden="true"></b>
                          </span>
-                         <!-- <button class="btn arrow-guides-right fa-chevron-right"></button> -->
-                         
-                         
-                         
-                         </div>
-          </section>
-
-          <section>
-                     <div class="carousel1">
-                         <h5><b>TV policial</b></h5>
-                    </div>
-
-                    <div id="wrapper">
-  
-                         <span id="controlL" class="left-controls" role="button" aria-label="See Previous Modules">
-                         <b class="fa fa-chevron-left fa-chevron-left-extra" aria-hidden="true"></b>
-                         </span>
-                         
-                         <div class="module-section clearfix">
-                         <!-- <button class="btn arrow-guides fa-chevron-left"></button> -->
-                         <ul id="content" class="lista">
-                         
                         
-                         </ul>
-                         
-                         
-                         
-                         </div><!--end of module-section-->
-                         
-                         <span id="controlR" class="right-controls" role="button" aria-label="See Previous Modules">
-                         <b class="fa fa-chevron-right fa-chevron-right-extra" aria-hidden="true"></b>
-                         </span>
-                         <!-- <button class="btn arrow-guides-right fa-chevron-right"></button> -->
-                         
-                         
-                         
                          </div>
           </section>
+
 
           <section>
                      <div class="carousel1">
@@ -323,7 +226,7 @@
                          
                          <div class="module-section clearfix">
                          
-                         <ul id="content" class="lista">
+                         <ul id="content4" class="lista">
                          
                          
                          </ul>
@@ -339,9 +242,11 @@
                          </div>
           </section>
 
+
+
           <section>
                      <div class="carousel1">
-                         <h5><b>Series estadounidenses dramáticas dignas de maratón</b></h5>
+                         <h5><b>Familiares</b></h5>
                     </div>
 
                     <div id="wrapper">
@@ -351,260 +256,25 @@
                          </span>
                          
                          <div class="module-section clearfix">
-                         <!-- <button class="btn arrow-guides fa-chevron-left"></button> -->
-                         <ul id="content" class="lista">
-                         
                         
-                         </ul>
+                         <ul id="content5" class="lista">
                          
-                         
-                         
-                         </div><!--end of module-section-->
-                         
-                         <span id="controlR" class="right-controls" role="button" aria-label="See Previous Modules">
-                         <b class="fa fa-chevron-right fa-chevron-right-extra" aria-hidden="true"></b>
-                         </span>
-                         <!-- <button class="btn arrow-guides-right fa-chevron-right"></button> -->
-                         
-                         
-                         
-                         </div>
-          </section>
-
-          <section>
-                     <div class="carousel1">
-                         <h5><b>Programas históricos</b></h5>
-                    </div>
-
-                    <div id="wrapper">
-  
-                         <span id="controlL" class="left-controls" role="button" aria-label="See Previous Modules">
-                         <b class="fa fa-chevron-left fa-chevron-left-extra" aria-hidden="true"></b>
-                         </span>
-                         
-                         <div class="module-section clearfix">
-                         <!-- <button class="btn arrow-guides fa-chevron-left"></button> -->
-                         <ul id="content" class="lista">
-                         
-                         
+                              <input type="hidden" id="cod-cat-4" value="4">
                  
-                         
                          </ul>
-                         
-                         
-                         
+
                          </div><!--end of module-section-->
                          
                          <span id="controlR" class="right-controls" role="button" aria-label="See Previous Modules">
                          <b class="fa fa-chevron-right fa-chevron-right-extra" aria-hidden="true"></b>
                          </span>
-                         <!-- <button class="btn arrow-guides-right fa-chevron-right"></button> -->
+                        
                          
                          
                          
                          </div>
           </section>
 
-          <section>
-                     <div class="carousel1">
-                         <h5><b>Dramas psicológicos de TV estadounidenses</b></h5>
-                    </div>
-
-                    <div id="wrapper">
-  
-                         <span id="controlL" class="left-controls" role="button" aria-label="See Previous Modules">
-                         <b class="fa fa-chevron-left fa-chevron-left-extra" aria-hidden="true"></b>
-                         </span>
-                         
-                         <div class="module-section clearfix">
-                         <!-- <button class="btn arrow-guides fa-chevron-left"></button> -->
-                         <ul id="content" class="lista">
-                         
-                         
-                 
-                         
-                         </ul>
-                         
-                         
-                         
-                         </div><!--end of module-section-->
-                         
-                         <span id="controlR" class="right-controls" role="button" aria-label="See Previous Modules">
-                         <b class="fa fa-chevron-right fa-chevron-right-extra" aria-hidden="true"></b>
-                         </span>
-                         <!-- <button class="btn arrow-guides-right fa-chevron-right"></button> -->
-                         
-                         
-                         
-                         </div>
-          </section>
-
-          <section>
-                     <div class="carousel1">
-                         <h5><b>Nueva selección para ######</b></h5>
-                    </div>
-
-                    <div id="wrapper">
-  
-                         <span id="controlL" class="left-controls" role="button" aria-label="See Previous Modules">
-                         <b class="fa fa-chevron-left fa-chevron-left-extra" aria-hidden="true"></b>
-                         </span>
-                         
-                         <div class="module-section clearfix">
-                         <!-- <button class="btn arrow-guides fa-chevron-left"></button> -->
-                         <ul id="content" class="lista">
-                         
-                         
-                 
-                         
-                         </ul>
-                         
-                         
-                         
-                         </div><!--end of module-section-->
-                         
-                         <span id="controlR" class="right-controls" role="button" aria-label="See Previous Modules">
-                         <b class="fa fa-chevron-right fa-chevron-right-extra" aria-hidden="true"></b>
-                         </span>
-                         <!-- <button class="btn arrow-guides-right fa-chevron-right"></button> -->
-                         
-                         
-                         
-                         </div>
-          </section>
-
-          <section>
-                     <div class="carousel1">
-                         <h5><b>Thrillers</b></h5>
-                    </div>
-
-                    <div id="wrapper">
-  
-                         <span id="controlL" class="left-controls" role="button" aria-label="See Previous Modules">
-                         <b class="fa fa-chevron-left fa-chevron-left-extra" aria-hidden="true"></b>
-                         </span>
-                         
-                         <div class="module-section clearfix">
-                         <!-- <button class="btn arrow-guides fa-chevron-left"></button> -->
-                         <ul id="content" class="lista">
-                         
-                         
-                 
-                         
-                         </ul>
-                         
-                         
-                         
-                         </div><!--end of module-section-->
-                         
-                         <span id="controlR" class="right-controls" role="button" aria-label="See Previous Modules">
-                         <b class="fa fa-chevron-right fa-chevron-right-extra" aria-hidden="true"></b>
-                         </span>
-                         <!-- <button class="btn arrow-guides-right fa-chevron-right"></button> -->
-                         
-                         
-                         
-                         </div>
-          </section>
-
-          <section>
-                     <div class="carousel1">
-                         <h5><b>Dramas de TV sobre familias disfuncionales</b></h5>
-                    </div>
-
-                    <div id="wrapper">
-  
-                         <span id="controlL" class="left-controls" role="button" aria-label="See Previous Modules">
-                         <b class="fa fa-chevron-left fa-chevron-left-extra" aria-hidden="true"></b>
-                         </span>
-                         
-                         <div class="module-section clearfix">
-                         <!-- <button class="btn arrow-guides fa-chevron-left"></button> -->
-                         <ul id="content" class="lista">
-                         
-                         
-                 
-                         
-                         </ul>
-                         
-                         
-                         
-                         </div><!--end of module-section-->
-                         
-                         <span id="controlR" class="right-controls" role="button" aria-label="See Previous Modules">
-                         <b class="fa fa-chevron-right fa-chevron-right-extra" aria-hidden="true"></b>
-                         </span>
-                         <!-- <button class="btn arrow-guides-right fa-chevron-right"></button> -->
-                         
-                         
-                         
-                         </div>
-          </section>
-
-          <section>
-                     <div class="carousel1">
-                         <h5><b>Series dignas de maratón</b></h5>
-                    </div>
-
-                    <div id="wrapper">
-  
-                         <span id="controlL" class="left-controls" role="button" aria-label="See Previous Modules">
-                         <b class="fa fa-chevron-left fa-chevron-left-extra" aria-hidden="true"></b>
-                         </span>
-                         
-                         <div class="module-section clearfix">
-                         <!-- <button class="btn arrow-guides fa-chevron-left"></button> -->
-                         <ul id="content" class="lista">
-                         
-                         
-                         </ul>
-                         
-                         
-                         
-                         </div><!--end of module-section-->
-                         
-                         <span id="controlR" class="right-controls" role="button" aria-label="See Previous Modules">
-                         <b class="fa fa-chevron-right fa-chevron-right-extra" aria-hidden="true"></b>
-                         </span>
-                         <!-- <button class="btn arrow-guides-right fa-chevron-right"></button> -->
-                         
-                         
-                         
-                         </div>
-          </section>
-
-          <section>
-                     <div class="carousel1">
-                         <h5><b>Telenovelas</b></h5>
-                    </div>
-
-                    <div id="wrapper">
-  
-                         <span id="controlL" class="left-controls" role="button" aria-label="See Previous Modules">
-                         <b class="fa fa-chevron-left fa-chevron-left-extra" aria-hidden="true"></b>
-                         </span>
-                         
-                         <div class="module-section clearfix">
-                         <!-- <button class="btn arrow-guides fa-chevron-left"></button> -->
-                         <ul id="content" class="lista">
-                         
-                         
-                         
-                         </ul>
-                         
-                         
-                         
-                         </div><!--end of module-section-->
-                         
-                         <span id="controlR" class="right-controls" role="button" aria-label="See Previous Modules">
-                         <b class="fa fa-chevron-right fa-chevron-right-extra" aria-hidden="true"></b>
-                         </span>
-                         <!-- <button class="btn arrow-guides-right fa-chevron-right"></button> -->
-                         
-                         
-                         
-                         </div>
-          </section>
 
           <section>
                      <div class="carousel1">
@@ -618,43 +288,10 @@
                          </span>
                          
                          <div class="module-section clearfix">
-                         <!-- <button class="btn arrow-guides fa-chevron-left"></button> -->
-                         <ul id="content" class="lista">
                          
+                         <ul id="content6" class="lista">
                          
-                         
-                         </ul>
-                         
-                         
-                         
-                         </div><!--end of module-section-->
-                         
-                         <span id="controlR" class="right-controls" role="button" aria-label="See Previous Modules">
-                         <b class="fa fa-chevron-right fa-chevron-right-extra" aria-hidden="true"></b>
-                         </span>
-                         <!-- <button class="btn arrow-guides-right fa-chevron-right"></button> -->
-                         
-                         
-                         
-                         </div>
-          </section>
-
-          <section>
-                     <div class="carousel1">
-                         <h5><b>Programas de EE.UU.</b></h5>
-                    </div>
-
-                    <div id="wrapper">
-  
-                         <span id="controlL" class="left-controls" role="button" aria-label="See Previous Modules">
-                         <b class="fa fa-chevron-left fa-chevron-left-extra" aria-hidden="true"></b>
-                         </span>
-                         
-                         <div class="module-section clearfix">
-                         <!-- <button class="btn arrow-guides fa-chevron-left"></button> -->
-                         <ul id="content" class="lista">
-                         
-                         
+                              <input type="hidden" id="cod-cat-5" value="5">
                          
                          </ul>
                          
@@ -665,78 +302,13 @@
                          <span id="controlR" class="right-controls" role="button" aria-label="See Previous Modules">
                          <b class="fa fa-chevron-right fa-chevron-right-extra" aria-hidden="true"></b>
                          </span>
-                         <!-- <button class="btn arrow-guides-right fa-chevron-right"></button> -->
+                        
                          
                          
                          
                          </div>
           </section>
 
-          <section>
-                     <div class="carousel1">
-                         <h5><b>Dramas de TV dignos de maratones ganadores del Emmy</b></h5>
-                    </div>
-
-                    <div id="wrapper">
-  
-                         <span id="controlL" class="left-controls" role="button" aria-label="See Previous Modules">
-                         <b class="fa fa-chevron-left fa-chevron-left-extra" aria-hidden="true"></b>
-                         </span>
-                         
-                         <div class="module-section clearfix">
-                         <!-- <button class="btn arrow-guides fa-chevron-left"></button> -->
-                         <ul id="content" class="lista">
-                         
-                         
-                         
-                         </ul>
-                         
-                         
-                         
-                         </div><!--end of module-section-->
-                         
-                         <span id="controlR" class="right-controls" role="button" aria-label="See Previous Modules">
-                         <b class="fa fa-chevron-right fa-chevron-right-extra" aria-hidden="true"></b>
-                         </span>
-                         <!-- <button class="btn arrow-guides-right fa-chevron-right"></button> -->
-                         
-                         
-                         
-                         </div>
-          </section>
-
-          <section>
-                     <div class="carousel1">
-                         <h5><b>Series de EE.UU. premiadas dignas de maratón</b></h5>
-                    </div>
-
-                    <div id="wrapper">
-  
-                         <span id="controlL" class="left-controls" role="button" aria-label="See Previous Modules">
-                         <b class="fa fa-chevron-left fa-chevron-left-extra" aria-hidden="true"></b>
-                         </span>
-                         
-                         <div class="module-section clearfix">
-                         <!-- <button class="btn arrow-guides fa-chevron-left"></button> -->
-                         <ul id="content" class="lista">
-                         
-                         
-                         
-                         </ul>
-                         
-                         
-                         
-                         </div><!--end of module-section-->
-                         
-                         <span id="controlR" class="right-controls" role="button" aria-label="See Previous Modules">
-                         <b class="fa fa-chevron-right fa-chevron-right-extra" aria-hidden="true"></b>
-                         </span>
-                         <!-- <button class="btn arrow-guides-right fa-chevron-right"></button> -->
-                         
-                         
-                         
-                         </div>
-          </section>
 
           <section>
                      <div class="carousel1">
@@ -750,10 +322,10 @@
                          </span>
                          
                          <div class="module-section clearfix">
-                         <!-- <button class="btn arrow-guides fa-chevron-left"></button> -->
-                         <ul id="content" class="lista">
                          
-                         
+                         <ul id="content7" class="lista">
+                              <input type="hidden" id="cod-cat-6" value="6">
+
                          </ul>
                          
                          
@@ -763,10 +335,7 @@
                          <span id="controlR" class="right-controls" role="button" aria-label="See Previous Modules">
                          <b class="fa fa-chevron-right fa-chevron-right-extra" aria-hidden="true"></b>
                          </span>
-                         <!-- <button class="btn arrow-guides-right fa-chevron-right"></button> -->
-                         
-                         
-                         
+
                          </div>
           </section>
 
@@ -782,11 +351,9 @@
                          </span>
                          
                          <div class="module-section clearfix">
-                         <!-- <button class="btn arrow-guides fa-chevron-left"></button> -->
-                         <ul id="content" class="lista">
                          
-                         
-                         
+                         <ul id="content8" class="lista">
+                        
                          </ul>
                          
                          
@@ -796,113 +363,10 @@
                          <span id="controlR" class="right-controls" role="button" aria-label="See Previous Modules">
                          <b class="fa fa-chevron-right fa-chevron-right-extra" aria-hidden="true"></b>
                          </span>
-                         <!-- <button class="btn arrow-guides-right fa-chevron-right"></button> -->
-                         
-                         
                          
                          </div>
           </section>
 
-          <section>
-                     <div class="carousel1">
-                         <h5><b>Programas de TV sombríos</b></h5>
-                    </div>
-
-                    <div id="wrapper">
-  
-                         <span id="controlL" class="left-controls" role="button" aria-label="See Previous Modules">
-                         <b class="fa fa-chevron-left fa-chevron-left-extra" aria-hidden="true"></b>
-                         </span>
-                         
-                         <div class="module-section clearfix">
-                         <!-- <button class="btn arrow-guides fa-chevron-left"></button> -->
-                         <ul id="content" class="lista">
-                         
-                         
-                 
-                         
-                         </ul>
-                         
-                         
-                         
-                         </div><!--end of module-section-->
-                         
-                         <span id="controlR" class="right-controls" role="button" aria-label="See Previous Modules">
-                         <b class="fa fa-chevron-right fa-chevron-right-extra" aria-hidden="true"></b>
-                         </span>
-                         <!-- <button class="btn arrow-guides-right fa-chevron-right"></button> -->
-                         
-                         
-                         
-                         </div>
-          </section>
-
-          <section>
-                     <div class="carousel1">
-                         <h5><b>Programas de crímen de EE.UU.</b></h5>
-                    </div>
-
-                    <div id="wrapper">
-  
-                         <span id="controlL" class="left-controls" role="button" aria-label="See Previous Modules">
-                         <b class="fa fa-chevron-left fa-chevron-left-extra" aria-hidden="true"></b>
-                         </span>
-                         
-                         <div class="module-section clearfix">
-                         <!-- <button class="btn arrow-guides fa-chevron-left"></button> -->
-                         <ul id="content" class="lista">
-                         
-                         
-                 
-                         
-                         </ul>
-                         
-                         
-                         
-                         </div><!--end of module-section-->
-                         
-                         <span id="controlR" class="right-controls" role="button" aria-label="See Previous Modules">
-                         <b class="fa fa-chevron-right fa-chevron-right-extra" aria-hidden="true"></b>
-                         </span>
-                         <!-- <button class="btn arrow-guides-right fa-chevron-right"></button> -->
-                         
-                         
-                         
-                         </div>
-          </section>
-
-          <section>
-                     <div class="carousel1">
-                         <h5><b>Porque viste ##nombre de X serie##</b></h5>
-                    </div>
-
-                    <div id="wrapper">
-  
-                         <span id="controlL" class="left-controls" role="button" aria-label="See Previous Modules">
-                         <b class="fa fa-chevron-left fa-chevron-left-extra" aria-hidden="true"></b>
-                         </span>
-                         
-                         <div class="module-section clearfix">
-                         <!-- <button class="btn arrow-guides fa-chevron-left"></button> -->
-                         <ul id="content" class="lista">
-                         
-                         
-                         
-                         </ul>
-                         
-                         
-                         
-                         </div><!--end of module-section-->
-                         
-                         <span id="controlR" class="right-controls" role="button" aria-label="See Previous Modules">
-                         <b class="fa fa-chevron-right fa-chevron-right-extra" aria-hidden="true"></b>
-                         </span>
-                         <!-- <button class="btn arrow-guides-right fa-chevron-right"></button> -->
-                         
-                         
-                         
-                         </div>
-          </section>
 
           <section>
                      <div class="carousel1">
@@ -916,12 +380,11 @@
                          </span>
                          
                          <div class="module-section clearfix">
-                         <!-- <button class="btn arrow-guides fa-chevron-left"></button> -->
-                         <ul id="content" class="lista">
                          
+                         <ul id="content9" class="lista">
                          
+                              <input type="hidden" id="cod-cat-7" value="7">
                  
-                         
                          </ul>
                          
                          
@@ -931,46 +394,10 @@
                          <span id="controlR" class="right-controls" role="button" aria-label="See Previous Modules">
                          <b class="fa fa-chevron-right fa-chevron-right-extra" aria-hidden="true"></b>
                          </span>
-                         <!-- <button class="btn arrow-guides-right fa-chevron-right"></button> -->
-                         
-                         
-                         
+                        
                          </div>
           </section>
 
-          <section>
-                     <div class="carousel1">
-                         <h5><b>Series y programas de TV inquietantes</b></h5>
-                    </div>
-
-                    <div id="wrapper">
-  
-                         <span id="controlL" class="left-controls" role="button" aria-label="See Previous Modules">
-                         <b class="fa fa-chevron-left fa-chevron-left-extra" aria-hidden="true"></b>
-                         </span>
-                         
-                         <div class="module-section clearfix">
-                         <!-- <button class="btn arrow-guides fa-chevron-left"></button> -->
-                         <ul id="content" class="lista">
-                         
-                         
-                 
-                         
-                         </ul>
-                         
-                         
-                         
-                         </div><!--end of module-section-->
-                         
-                         <span id="controlR" class="right-controls" role="button" aria-label="See Previous Modules">
-                         <b class="fa fa-chevron-right fa-chevron-right-extra" aria-hidden="true"></b>
-                         </span>
-                         <!-- <button class="btn arrow-guides-right fa-chevron-right"></button> -->
-                         
-                         
-                         
-                         </div>
-          </section>
 
           <section>
                      <div class="carousel1">
@@ -984,12 +411,9 @@
                          </span>
                          
                          <div class="module-section clearfix">
-                         <!-- <button class="btn arrow-guides fa-chevron-left"></button> -->
-                         <ul id="content" class="lista">
                          
-                         
-                 
-                         
+                         <ul id="content10" class="lista">
+                              <input type="hidden" id="cod-cat-8" value="8">
                          </ul>
                          
                          
@@ -999,277 +423,6 @@
                          <span id="controlR" class="right-controls" role="button" aria-label="See Previous Modules">
                          <b class="fa fa-chevron-right fa-chevron-right-extra" aria-hidden="true"></b>
                          </span>
-                         <!-- <button class="btn arrow-guides-right fa-chevron-right"></button> -->
-                         
-                         
-                         
-                         </div>
-          </section>
-
-          <section>
-                     <div class="carousel1">
-                         <h5><b>Porque viste ##nombre de X serie#</b></h5>
-                    </div>
-
-                    <div id="wrapper">
-  
-                         <span id="controlL" class="left-controls" role="button" aria-label="See Previous Modules">
-                         <b class="fa fa-chevron-left fa-chevron-left-extra" aria-hidden="true"></b>
-                         </span>
-                         
-                         <div class="module-section clearfix">
-                         <!-- <button class="btn arrow-guides fa-chevron-left"></button> -->
-                         <ul id="content" class="lista">
-                         
-                         
-                 
-                         
-                         </ul>
-                         
-                         
-                         
-                         </div><!--end of module-section-->
-                         
-                         <span id="controlR" class="right-controls" role="button" aria-label="See Previous Modules">
-                         <b class="fa fa-chevron-right fa-chevron-right-extra" aria-hidden="true"></b>
-                         </span>
-                         <!-- <button class="btn arrow-guides-right fa-chevron-right"></button> -->
-                         
-                         
-                         
-                         </div>
-          </section>
-
-          <section>
-                     <div class="carousel1">
-                         <h5><b>Dramas de TV emocionantes</b></h5>
-                    </div>
-
-                    <div id="wrapper">
-  
-                         <span id="controlL" class="left-controls" role="button" aria-label="See Previous Modules">
-                         <b class="fa fa-chevron-left fa-chevron-left-extra" aria-hidden="true"></b>
-                         </span>
-                         
-                         <div class="module-section clearfix">
-                         <!-- <button class="btn arrow-guides fa-chevron-left"></button> -->
-                         <ul id="content" class="lista">
-                         
-                         
-                 
-                         
-                         </ul>
-                         
-                         
-                         
-                         </div><!--end of module-section-->
-                         
-                         <span id="controlR" class="right-controls" role="button" aria-label="See Previous Modules">
-                         <b class="fa fa-chevron-right fa-chevron-right-extra" aria-hidden="true"></b>
-                         </span>
-                         <!-- <button class="btn arrow-guides-right fa-chevron-right"></button> -->
-                         
-                         
-                         
-                         </div>
-          </section>
-
-          <section>
-                     <div class="carousel1">
-                         <h5><b>Programas melosos</b></h5>
-                    </div>
-
-                    <div id="wrapper">
-  
-                         <span id="controlL" class="left-controls" role="button" aria-label="See Previous Modules">
-                         <b class="fa fa-chevron-left fa-chevron-left-extra" aria-hidden="true"></b>
-                         </span>
-                         
-                         <div class="module-section clearfix">
-                         <!-- <button class="btn arrow-guides fa-chevron-left"></button> -->
-                         <ul id="content" class="lista">
-                         
-                         
-                 
-                         
-                         </ul>
-                         
-                         
-                         
-                         </div><!--end of module-section-->
-                         
-                         <span id="controlR" class="right-controls" role="button" aria-label="See Previous Modules">
-                         <b class="fa fa-chevron-right fa-chevron-right-extra" aria-hidden="true"></b>
-                         </span>
-                         <!-- <button class="btn arrow-guides-right fa-chevron-right"></button> -->
-                         
-                         
-                         
-                         </div>
-          </section>
-
-          <section>
-                     <div class="carousel1">
-                         <h5><b>Porque viste #nombre de X serie#</b></h5>
-                    </div>
-
-                    <div id="wrapper">
-  
-                         <span id="controlL" class="left-controls" role="button" aria-label="See Previous Modules">
-                         <b class="fa fa-chevron-left fa-chevron-left-extra" aria-hidden="true"></b>
-                         </span>
-                         
-                         <div class="module-section clearfix">
-                         <!-- <button class="btn arrow-guides fa-chevron-left"></button> -->
-                         <ul id="content" class="lista">
-                         
-                         
-                         
-                         </ul>
-                         
-                         
-                         
-                         </div><!--end of module-section-->
-                         
-                         <span id="controlR" class="right-controls" role="button" aria-label="See Previous Modules">
-                         <b class="fa fa-chevron-right fa-chevron-right-extra" aria-hidden="true"></b>
-                         </span>
-                         <!-- <button class="btn arrow-guides-right fa-chevron-right"></button> -->
-                         
-                         
-                         
-                         </div>
-          </section>
-
-          <section>
-                     <div class="carousel1">
-                         <h5><b>Programas de TV emocionantes</b></h5>
-                    </div>
-
-                    <div id="wrapper">
-  
-                         <span id="controlL" class="left-controls" role="button" aria-label="See Previous Modules">
-                         <b class="fa fa-chevron-left fa-chevron-left-extra" aria-hidden="true"></b>
-                         </span>
-                         
-                         <div class="module-section clearfix">
-                         <!-- <button class="btn arrow-guides fa-chevron-left"></button> -->
-                         <ul id="content" class="lista">
-                         
-                         
-                 
-                         
-                         </ul>
-                         
-                         
-                         
-                         </div><!--end of module-section-->
-                         
-                         <span id="controlR" class="right-controls" role="button" aria-label="See Previous Modules">
-                         <b class="fa fa-chevron-right fa-chevron-right-extra" aria-hidden="true"></b>
-                         </span>
-                         <!-- <button class="btn arrow-guides-right fa-chevron-right"></button> -->
-                         
-                         
-                         
-                         </div>
-          </section>
-
-          <section>
-                     <div class="carousel1">
-                         <h5><b>Programas de TV con mujeres protagonistas</b></h5>
-                    </div>
-
-                    <div id="wrapper">
-  
-                         <span id="controlL" class="left-controls" role="button" aria-label="See Previous Modules">
-                         <b class="fa fa-chevron-left fa-chevron-left-extra" aria-hidden="true"></b>
-                         </span>
-                         
-                         <div class="module-section clearfix">
-                         <!-- <button class="btn arrow-guides fa-chevron-left"></button> -->
-                         <ul id="content" class="lista">
-                         
-                         
-                         
-                         </ul>
-                         
-                         
-                         
-                         </div><!--end of module-section-->
-                         
-                         <span id="controlR" class="right-controls" role="button" aria-label="See Previous Modules">
-                         <b class="fa fa-chevron-right fa-chevron-right-extra" aria-hidden="true"></b>
-                         </span>
-                         <!-- <button class="btn arrow-guides-right fa-chevron-right"></button> -->
-                         
-                         
-                         
-                         </div>
-          </section>
-
-          <section>
-                     <div class="carousel1">
-                         <h5><b>Programas de TV violentos</b></h5>
-                    </div>
-
-                    <div id="wrapper">
-  
-                         <span id="controlL" class="left-controls" role="button" aria-label="See Previous Modules">
-                         <b class="fa fa-chevron-left fa-chevron-left-extra" aria-hidden="true"></b>
-                         </span>
-                         
-                         <div class="module-section clearfix">
-                         <!-- <button class="btn arrow-guides fa-chevron-left"></button> -->
-                         <ul id="content" class="lista">
-                         
-                         
-                 
-                         
-                         </ul>
-                         
-                         
-                         
-                         </div><!--end of module-section-->
-                         
-                         <span id="controlR" class="right-controls" role="button" aria-label="See Previous Modules">
-                         <b class="fa fa-chevron-right fa-chevron-right-extra" aria-hidden="true"></b>
-                         </span>
-                         <!-- <button class="btn arrow-guides-right fa-chevron-right"></button> -->
-                         
-                         
-                         
-                         </div>
-          </section>
-
-          <section>
-                     <div class="carousel1">
-                         <h5><b>Dramas de TV</b></h5>
-                    </div>
-
-                    <div id="wrapper">
-  
-                         <span id="controlL" class="left-controls" role="button" aria-label="See Previous Modules">
-                         <b class="fa fa-chevron-left fa-chevron-left-extra" aria-hidden="true"></b>
-                         </span>
-                         
-                         <div class="module-section clearfix">
-                         <!-- <button class="btn arrow-guides fa-chevron-left"></button> -->
-                         <ul id="content" class="lista">
-                         
-                         
-                         </ul>
-                         
-                         
-                         
-                         </div><!--end of module-section-->
-                         
-                         <span id="controlR" class="right-controls" role="button" aria-label="See Previous Modules">
-                         <b class="fa fa-chevron-right fa-chevron-right-extra" aria-hidden="true"></b>
-                         </span>
-                         <!-- <button class="btn arrow-guides-right fa-chevron-right"></button> -->
-                         
-                         
                          
                          </div>
           </section>
@@ -1286,41 +439,9 @@
                          </span>
                          
                          <div class="module-section clearfix">
-                         <!-- <button class="btn arrow-guides fa-chevron-left"></button> -->
-                         <ul id="content" class="lista">
-                         
-                         
-                         </ul>
-                         
-                         
-                         
-                         </div><!--end of module-section-->
-                         
-                         <span id="controlR" class="right-controls" role="button" aria-label="See Previous Modules">
-                         <b class="fa fa-chevron-right fa-chevron-right-extra" aria-hidden="true"></b>
-                         </span>
-                         <!-- <button class="btn arrow-guides-right fa-chevron-right"></button> -->
-                         
-                         
-                         
-                         </div>
-          </section>
-
-          <section>
-                     <div class="carousel1">
-                         <h5><b>Porque viste #nombre X serie#</b></h5>
-                    </div>
-
-                    <div id="wrapper">
-  
-                         <span id="controlL" class="left-controls" role="button" aria-label="See Previous Modules">
-                         <b class="fa fa-chevron-left fa-chevron-left-extra" aria-hidden="true"></b>
-                         </span>
-                         
-                         <div class="module-section clearfix">
-                         <!-- <button class="btn arrow-guides fa-chevron-left"></button> -->
-                         <ul id="content" class="lista">
-                         
+                        
+                         <ul id="content11" class="lista">
+                              <input type="hidden" id="cod-cat-9" value="9">
                          
                          </ul>
                          
@@ -1331,12 +452,13 @@
                          <span id="controlR" class="right-controls" role="button" aria-label="See Previous Modules">
                          <b class="fa fa-chevron-right fa-chevron-right-extra" aria-hidden="true"></b>
                          </span>
-                         <!-- <button class="btn arrow-guides-right fa-chevron-right"></button> -->
+                        
                          
                          
                          
                          </div>
           </section>
+
 
           <section>
                      <div class="carousel1">
@@ -1350,10 +472,11 @@
                          </span>
                          
                          <div class="module-section clearfix">
-                         <!-- <button class="btn arrow-guides fa-chevron-left"></button> -->
-                         <ul id="content" class="lista">
+                         
+                         <ul id="content12" class="lista">
                          
                          
+
                          
                          </ul>
                          
@@ -1364,7 +487,6 @@
                          <span id="controlR" class="right-controls" role="button" aria-label="See Previous Modules">
                          <b class="fa fa-chevron-right fa-chevron-right-extra" aria-hidden="true"></b>
                          </span>
-                         <!-- <button class="btn arrow-guides-right fa-chevron-right"></button> -->
                          
                          
                          
@@ -1379,9 +501,9 @@
                             <tbody>
                                 <tr>
                                     <td><a href="#">Compañía</a></td>
-                                    <td><a href="#">Acerca de Twitter Ads</a></td>
+                                    <td><a href="#">Acerca de Netflix</a></td>
                                     <td><a href="#">Documentación</a></td>
-                                    <td><a href="#">Cómo usar Twitter</a></td>
+                                    <td><a href="#">Cómo usar Netflix</a></td>
                                    
                                 </tr>
     
@@ -1403,7 +525,7 @@
     
                                 <tr>
                                     <td><a href="#">Blog</a></td>
-                                    <td><a href="#">Ayuda de Twitter Ads</a></td>
+                                    <td><a href="#">Ayuda de Netflix</a></td>
                                     <td><a href="#">Blog para desarrolladores</a></td>
                                     <td><a href="#">Reglas y politicas</a></td>
                                 
