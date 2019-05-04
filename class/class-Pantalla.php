@@ -125,5 +125,17 @@
 
 		}
 
+		public function pantallaInicio($conexion){
+
+			$instruccion = "SELECT CODIGO_PANTALLA, NOMBRE_PANTALLA FROM TBL_PANTALLAS WHERE CODIGO_PANTALLA = $this->codigo_pantalla";
+
+			$resultado = array();
+
+			$resultado = $conexion->obtenerFila($instruccion);
+
+			return json_encode($resultado);
+			
+		}
+
 	}
 ?>

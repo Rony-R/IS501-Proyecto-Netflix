@@ -124,7 +124,23 @@
             echo $u11->obtenerIdUsuario($conexion);
         break;
 
-        case "''":
+        case "'sesion-inicio'":
+            session_start();
+
+            $_SESSION["idPantalla"] = $_POST["id"];
+
+            if($_SESSION["idPantalla"] != ""){
+                echo "1";
+                //header("Location: Inicio.php");
+            }
+            else
+                echo "0";
+
+        break;
+
+        case "'pantalla-inicio'":
+            $p3 = new Pantalla($_POST["id"], null, null, null, null, null, null, null, null);
+            echo $p3->pantallaInicio($conexion);
         break;
 
         case "''":
