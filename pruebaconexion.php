@@ -6,12 +6,6 @@
     $conexion;
 
     $conexion = new PDO($db, $usuario, $password);
-    $c = oci_pconnect($usuario, $password,$db);
-
-    if($c)
-       echo "exito";
-       else
-        echo "fallo";
 
     if($conexion)
        echo "exito";

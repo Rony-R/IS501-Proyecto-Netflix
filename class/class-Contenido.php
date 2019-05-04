@@ -12,6 +12,7 @@
 		private $urlMiniatura;
 		private $descripcion;
 		private $fecha_subida;
+		private $codigo_categoria;
 
 		public function __construct($codigo_contenido,
                                     $codigo_tipo_contenido,
@@ -22,7 +23,8 @@
                                     $urlMiniatura,
                                     $nombre_contenido,
                                     $descripcion,
-                                    $fecha_subida){
+																		$fecha_subida,
+																		$codigo_categoria){
 			$this->codigo_contenido = $codigo_contenido;
 			$this->codigo_tipo_contenido = $codigo_tipo_contenido;
 			$this->codigo_estudio = $codigo_estudio;
@@ -33,6 +35,7 @@
 			$this->urlMiniatura = $urlMiniatura;
 			$this->descripcion = $descripcion;
 			$this->fecha_subida = $fecha_subida;
+			$this->codigo_categoria = $codigo_categoria;
         }
         
         //Getters y Setters
@@ -99,6 +102,16 @@
 		public function setFecha_subida($fecha_subida){
 			$this->fecha_subida = $fecha_subida;
 		}
+
+		public function getCodigo_categoria(){
+			return $this->codigo_categoria;
+		}
+		public function setCodigo_categoria($codigo_categoria){
+			$this->codigo_categoria = $codigo_categoria;
+		}
+
+
+
 		public function toString(){
 			return "Codigo_contenido: " . $this->codigo_contenido . 
 				" Codigo_tipo_contenido: " . $this->codigo_tipo_contenido . 
@@ -125,6 +138,31 @@
 					else
 						return 0;
 					//	return $instruccion;
+				}
+
+				public function obtenerContenido($conexion){
+
+					$instruccion = "WITH NUM_CONTENIDO AS (
+													SELECT CODIGO_CATEGORIA, COUNT(*) CANTIDAD_CONTENIDO
+													FROM TBL_CATEGOIAS_X_CONTENIDO
+													GROUP BY CODIGO_CATEGORIA
+													)
+													SELECT A.CODIGO_CATEGORIA, A.CODIGO_CONTENIDO, B.URL_MINIATURA, C.CANTIDAD_CONTENIDO
+													FROM TBL_CATEGOIAS_X_CONTENIDO A
+													LEFT JOIN TBL_CONTENIDO B
+													ON (A.CODIGO_CONTENIDO = B.CODIGO_CONTENIDO)
+													LEFT JOIN NUM_CONTENIDO C
+													ON (A.CODIGO_CATEGORIA = C.CODIGO_CATEGORIA)
+													WHERE A.CODIGO_CATEGORIA = $this->codigo_categoria";
+		
+					$resultado = array();
+		
+					$resultado = $conexion->obtenerFila2($instruccion);
+		
+					return json_encode($resultado);
+		
+					//return $instruccion;
+		
 				}
 
 	}
