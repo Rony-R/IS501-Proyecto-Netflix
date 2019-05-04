@@ -39,7 +39,7 @@
                             <div class="collapse navbar-collapse" id="navbarCollapse" style="float=left;">
                               <ul class="navbar-nav nav-margen" >
                                 <li class="nav-item active">
-                                     <a class="nav-link" href="" style="font-size=50rem"><b>Inicio</b></a>      
+                                     <a class="nav-link" href=""  style="font-size=50rem"><b>Inicio</b></a>      
                                 </li>
 
                                 <li class="nav-item active">
@@ -115,8 +115,8 @@
                     </div>
                     <br>
                     <div class="btn" role="group">
-                         <button type="button" id="btn-1y2" class="btn btn-secondary"><i class="fas fa-play"></i> Reproducir</button>
-                         <button type="button" id="btn-1y2" class="btn btn-secondary"><i class="fas fa-plus"></i> Mi Lista</button>
+                         <button type="button" id="mostrar" class="btn btn-secondary btn-1y2"><i class="fas fa-play"></i> Reproducir</button>
+                         <button type="button" id="" class="btn btn-secondary btn-1y2"><i class="fas fa-plus"></i> Mi Lista</button>
                     </div>
                     <br>
                     <div id="texto1">                       
@@ -126,110 +126,7 @@
 
                </div>
 
-                    <div class="carousel1">
-                         <h5><b>Continuar viendo contenido de #######</b></h5>
-                    </div>
-
-                    <div id="wrapper">
-  
-                         <span id="controlL" class="left-controls" role="button" aria-label="See Previous Modules">
-                         <b class="fa fa-chevron-left fa-chevron-left-extra" aria-hidden="true"></b>
-                         </span>
-                         
-                         <div class="module-section clearfix">
-                         <!-- <button class="btn arrow-guides fa-chevron-left"></button> -->
-                         <ul id="categoria1" class="lista">
-                              <input type="hidden" id="cod-cat-1" value="1">
-                         
-                         <li class="card ">
-                              <div class="inside-top">
-                              <img src="img/series/casapapel/1.jpg" id="img">
-                              </div>
-                         </li>
-                         <li class="card"  id="c2">
-                              <div class="inside-top"  id="cont2" >
-                              <img src="img/series/outlander/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/breakingbad/1.jpg" id="img"> 
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/flash/portada.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/TWD/portada.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/you/portada.png" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/stranger/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/innocents/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/increibles/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/revenant/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/rosie/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/ninos/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/alien/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/bird/1.jpg" id="img">
-                              </div>
-                         </li>
-                 
-                         
-                         </ul>
-                         
-                         
-                         
-                         </div><!--end of module-section-->
-                         
-                         <span id="controlR" class="right-controls" role="button" aria-label="See Previous Modules">
-                         <b class="fa fa-chevron-right fa-chevron-right-extra" aria-hidden="true"></b>
-                         </span>
-                         <!-- <button class="btn arrow-guides-right fa-chevron-right"></button> -->
-           
-               </div>
-       
-         
-          </section>
-
-          <section>
+               
                      <div class="carousel1">
                          <h5><b>Populares en Netflix</b></h5>
                     </div>
@@ -241,95 +138,22 @@
                          </span>
                          
                          <div class="module-section clearfix">
-                         <!-- <button class="btn arrow-guides fa-chevron-left"></button> -->
-                         <ul id="content" class="lista">
-                         
-                         <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/casapapel/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/outlander/4.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/breakingbad/1.jpg" id="img"> 
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/flash/portada.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/TWD/portada.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/you/portada.png" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/stranger/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/innocents/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/increibles/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/revenant/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/rosie/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/ninos/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/alien/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/bird/1.jpg" id="img">
-                              </div>
-                         </li>
-                 
-                         
-                         </ul>
-                         
-                         
+                        
+                              <ul id="content" class="lista">
+                                   <input type="hidden" id="cod-cat-1" value="1">
+
+                              </ul>
                          
                          </div><!--end of module-section-->
                          
                          <span id="controlR" class="right-controls" role="button" aria-label="See Previous Modules">
                          <b class="fa fa-chevron-right fa-chevron-right-extra" aria-hidden="true"></b>
                          </span>
-                         <!-- <button class="btn arrow-guides-right fa-chevron-right"></button> -->
-                         
-                         
-                         
-                         </div>
+
+                    </div>
+          
+       
+         
           </section>
 
           <section>
@@ -344,94 +168,17 @@
                          </span>
                          
                          <div class="module-section clearfix">
-                         <!-- <button class="btn arrow-guides fa-chevron-left"></button> -->
-                         <ul id="content" class="lista">
-                         
-                         <li class="card effect1">
-                              <div class="inside-top">
-                              <img src="img/series/casapapel/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/outlander/4.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/breakingbad/1.jpg" id="img"> 
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/flash/portada.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/TWD/portada.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/you/portada.png" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/stranger/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/innocents/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/increibles/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/revenant/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/rosie/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/ninos/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/alien/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/bird/1.jpg" id="img">
-                              </div>
-                         </li>
-                 
-                         
-                         </ul>
-                         
-                         
-                         
+                      
+                              <ul id="content2" class="lista">
+                                   <input type="hidden" id="cod-cat-2" value="2">
+                              </ul>
+
                          </div><!--end of module-section-->
                          
                          <span id="controlR" class="right-controls" role="button" aria-label="See Previous Modules">
                          <b class="fa fa-chevron-right fa-chevron-right-extra" aria-hidden="true"></b>
                          </span>
-                         <!-- <button class="btn arrow-guides-right fa-chevron-right"></button> -->
-                         
-                         
-                         
+          
                          </div>
           </section>
 
@@ -447,80 +194,9 @@
                          </span>
                          
                          <div class="module-section clearfix">
-                         <!-- <button class="btn arrow-guides fa-chevron-left"></button> -->
+                         
                          <ul id="content" class="lista">
                          
-                         <li class="card effect1">
-                              <div class="inside-top">
-                              <img src="img/series/casapapel/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/outlander/4.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/breakingbad/1.jpg" id="img"> 
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/flash/portada.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/TWD/portada.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/you/portada.png" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/stranger/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/innocents/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/increibles/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/revenant/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/rosie/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/ninos/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/alien/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/bird/1.jpg" id="img">
-                              </div>
-                         </li>
-                 
                          
                          </ul>
                          
@@ -531,7 +207,7 @@
                          <span id="controlR" class="right-controls" role="button" aria-label="See Previous Modules">
                          <b class="fa fa-chevron-right fa-chevron-right-extra" aria-hidden="true"></b>
                          </span>
-                         <!-- <button class="btn arrow-guides-right fa-chevron-right"></button> -->
+                         
                          
                          
                          
@@ -553,77 +229,6 @@
                          <!-- <button class="btn arrow-guides fa-chevron-left"></button> -->
                          <ul id="content" class="lista">
                          
-                         <li class="card effect1">
-                              <div class="inside-top">
-                              <img src="img/series/casapapel/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/outlander/4.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/breakingbad/1.jpg" id="img"> 
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/flash/portada.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/TWD/portada.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/you/portada.png" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/stranger/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/innocents/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/increibles/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/revenant/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/rosie/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/ninos/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/alien/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/bird/1.jpg" id="img">
-                              </div>
-                         </li>
-                 
                          
                          </ul>
                          
@@ -656,77 +261,6 @@
                          <!-- <button class="btn arrow-guides fa-chevron-left"></button> -->
                          <ul id="content" class="lista">
                          
-                         <li class="card effect1">
-                              <div class="inside-top">
-                              <img src="img/series/casapapel/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/outlander/4.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/breakingbad/1.jpg" id="img"> 
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/flash/portada.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/TWD/portada.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/you/portada.png" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/stranger/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/innocents/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/increibles/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/revenant/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/rosie/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/ninos/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/alien/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/bird/1.jpg" id="img">
-                              </div>
-                         </li>
-                 
                          
                          </ul>
                          
@@ -759,78 +293,7 @@
                          <!-- <button class="btn arrow-guides fa-chevron-left"></button> -->
                          <ul id="content" class="lista">
                          
-                         <li class="card effect1">
-                              <div class="inside-top">
-                              <img src="img/series/casapapel/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/outlander/4.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/breakingbad/1.jpg" id="img"> 
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/flash/portada.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/TWD/portada.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/you/portada.png" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/stranger/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/innocents/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/increibles/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/revenant/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/rosie/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/ninos/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/alien/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/bird/1.jpg" id="img">
-                              </div>
-                         </li>
-                 
-                         
+                        
                          </ul>
                          
                          
@@ -859,80 +322,9 @@
                          </span>
                          
                          <div class="module-section clearfix">
-                         <!-- <button class="btn arrow-guides fa-chevron-left"></button> -->
+                         
                          <ul id="content" class="lista">
                          
-                         <li class="card effect1">
-                              <div class="inside-top">
-                              <img src="img/series/casapapel/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/outlander/4.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/breakingbad/1.jpg" id="img"> 
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/flash/portada.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/TWD/portada.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/you/portada.png" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/stranger/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/innocents/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/increibles/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/revenant/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/rosie/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/ninos/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/alien/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/bird/1.jpg" id="img">
-                              </div>
-                         </li>
-                 
                          
                          </ul>
                          
@@ -943,9 +335,6 @@
                          <span id="controlR" class="right-controls" role="button" aria-label="See Previous Modules">
                          <b class="fa fa-chevron-right fa-chevron-right-extra" aria-hidden="true"></b>
                          </span>
-                         <!-- <button class="btn arrow-guides-right fa-chevron-right"></button> -->
-                         
-                         
                          
                          </div>
           </section>
@@ -965,78 +354,7 @@
                          <!-- <button class="btn arrow-guides fa-chevron-left"></button> -->
                          <ul id="content" class="lista">
                          
-                         <li class="card effect1">
-                              <div class="inside-top">
-                              <img src="img/series/casapapel/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/outlander/4.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/breakingbad/1.jpg" id="img"> 
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/flash/portada.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/TWD/portada.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/you/portada.png" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/stranger/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/innocents/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/increibles/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/revenant/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/rosie/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/ninos/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/alien/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/bird/1.jpg" id="img">
-                              </div>
-                         </li>
-                 
-                         
+                        
                          </ul>
                          
                          
@@ -1068,76 +386,7 @@
                          <!-- <button class="btn arrow-guides fa-chevron-left"></button> -->
                          <ul id="content" class="lista">
                          
-                         <li class="card effect1">
-                              <div class="inside-top">
-                              <img src="img/series/casapapel/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/outlander/4.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/breakingbad/1.jpg" id="img"> 
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/flash/portada.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/TWD/portada.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/you/portada.png" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/stranger/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/innocents/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/increibles/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/revenant/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/rosie/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/ninos/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/alien/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/bird/1.jpg" id="img">
-                              </div>
-                         </li>
+                         
                  
                          
                          </ul>
@@ -1171,76 +420,7 @@
                          <!-- <button class="btn arrow-guides fa-chevron-left"></button> -->
                          <ul id="content" class="lista">
                          
-                         <li class="card effect1">
-                              <div class="inside-top">
-                              <img src="img/series/casapapel/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/outlander/4.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/breakingbad/1.jpg" id="img"> 
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/flash/portada.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/TWD/portada.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/you/portada.png" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/stranger/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/innocents/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/increibles/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/revenant/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/rosie/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/ninos/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/alien/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/bird/1.jpg" id="img">
-                              </div>
-                         </li>
+                         
                  
                          
                          </ul>
@@ -1274,76 +454,7 @@
                          <!-- <button class="btn arrow-guides fa-chevron-left"></button> -->
                          <ul id="content" class="lista">
                          
-                         <li class="card effect1">
-                              <div class="inside-top">
-                              <img src="img/series/casapapel/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/outlander/4.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/breakingbad/1.jpg" id="img"> 
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/flash/portada.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/TWD/portada.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/you/portada.png" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/stranger/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/innocents/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/increibles/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/revenant/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/rosie/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/ninos/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/alien/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/bird/1.jpg" id="img">
-                              </div>
-                         </li>
+                         
                  
                          
                          </ul>
@@ -1377,76 +488,7 @@
                          <!-- <button class="btn arrow-guides fa-chevron-left"></button> -->
                          <ul id="content" class="lista">
                          
-                         <li class="card effect1">
-                              <div class="inside-top">
-                              <img src="img/series/casapapel/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/outlander/4.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/breakingbad/1.jpg" id="img"> 
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/flash/portada.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/TWD/portada.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/you/portada.png" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/stranger/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/innocents/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/increibles/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/revenant/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/rosie/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/ninos/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/alien/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/bird/1.jpg" id="img">
-                              </div>
-                         </li>
+                         
                  
                          
                          </ul>
@@ -1480,76 +522,7 @@
                          <!-- <button class="btn arrow-guides fa-chevron-left"></button> -->
                          <ul id="content" class="lista">
                          
-                         <li class="card effect1">
-                              <div class="inside-top">
-                              <img src="img/series/casapapel/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/outlander/4.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/breakingbad/1.jpg" id="img"> 
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/flash/portada.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/TWD/portada.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/you/portada.png" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/stranger/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/innocents/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/increibles/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/revenant/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/rosie/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/ninos/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/alien/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/bird/1.jpg" id="img">
-                              </div>
-                         </li>
+                         
                  
                          
                          </ul>
@@ -1583,77 +556,6 @@
                          <!-- <button class="btn arrow-guides fa-chevron-left"></button> -->
                          <ul id="content" class="lista">
                          
-                         <li class="card effect1">
-                              <div class="inside-top">
-                              <img src="img/series/casapapel/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/outlander/4.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/breakingbad/1.jpg" id="img"> 
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/flash/portada.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/TWD/portada.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/you/portada.png" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/stranger/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/innocents/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/increibles/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/revenant/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/rosie/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/ninos/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/alien/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/bird/1.jpg" id="img">
-                              </div>
-                         </li>
-                 
                          
                          </ul>
                          
@@ -1686,77 +588,7 @@
                          <!-- <button class="btn arrow-guides fa-chevron-left"></button> -->
                          <ul id="content" class="lista">
                          
-                         <li class="card effect1">
-                              <div class="inside-top">
-                              <img src="img/series/casapapel/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/outlander/4.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/breakingbad/1.jpg" id="img"> 
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/flash/portada.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/TWD/portada.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/you/portada.png" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/stranger/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/innocents/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/increibles/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/revenant/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/rosie/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/ninos/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/alien/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/bird/1.jpg" id="img">
-                              </div>
-                         </li>
-                 
+                         
                          
                          </ul>
                          
@@ -1789,77 +621,7 @@
                          <!-- <button class="btn arrow-guides fa-chevron-left"></button> -->
                          <ul id="content" class="lista">
                          
-                         <li class="card effect1">
-                              <div class="inside-top">
-                              <img src="img/series/casapapel/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/outlander/4.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/breakingbad/1.jpg" id="img"> 
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/flash/portada.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/TWD/portada.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/you/portada.png" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/stranger/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/innocents/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/increibles/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/revenant/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/rosie/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/ninos/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/alien/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/bird/1.jpg" id="img">
-                              </div>
-                         </li>
-                 
+                         
                          
                          </ul>
                          
@@ -1892,77 +654,7 @@
                          <!-- <button class="btn arrow-guides fa-chevron-left"></button> -->
                          <ul id="content" class="lista">
                          
-                         <li class="card effect1">
-                              <div class="inside-top">
-                              <img src="img/series/casapapel/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/outlander/4.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/breakingbad/1.jpg" id="img"> 
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/flash/portada.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/TWD/portada.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/you/portada.png" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/stranger/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/innocents/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/increibles/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/revenant/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/rosie/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/ninos/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/alien/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/bird/1.jpg" id="img">
-                              </div>
-                         </li>
-                 
+                         
                          
                          </ul>
                          
@@ -1995,77 +687,7 @@
                          <!-- <button class="btn arrow-guides fa-chevron-left"></button> -->
                          <ul id="content" class="lista">
                          
-                         <li class="card effect1">
-                              <div class="inside-top">
-                              <img src="img/series/casapapel/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/outlander/4.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/breakingbad/1.jpg" id="img"> 
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/flash/portada.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/TWD/portada.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/you/portada.png" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/stranger/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/innocents/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/increibles/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/revenant/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/rosie/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/ninos/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/alien/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/bird/1.jpg" id="img">
-                              </div>
-                         </li>
-                 
+                         
                          
                          </ul>
                          
@@ -2098,77 +720,7 @@
                          <!-- <button class="btn arrow-guides fa-chevron-left"></button> -->
                          <ul id="content" class="lista">
                          
-                         <li class="card effect1">
-                              <div class="inside-top">
-                              <img src="img/series/casapapel/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/outlander/4.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/breakingbad/1.jpg" id="img"> 
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/flash/portada.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/TWD/portada.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/you/portada.png" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/stranger/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/innocents/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/increibles/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/revenant/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/rosie/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/ninos/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/alien/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/bird/1.jpg" id="img">
-                              </div>
-                         </li>
-                 
+                         
                          
                          </ul>
                          
@@ -2201,77 +753,6 @@
                          <!-- <button class="btn arrow-guides fa-chevron-left"></button> -->
                          <ul id="content" class="lista">
                          
-                         <li class="card effect1">
-                              <div class="inside-top">
-                              <img src="img/series/casapapel/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/outlander/4.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/breakingbad/1.jpg" id="img"> 
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/flash/portada.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/TWD/portada.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/you/portada.png" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/stranger/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/innocents/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/increibles/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/revenant/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/rosie/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/ninos/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/alien/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/bird/1.jpg" id="img">
-                              </div>
-                         </li>
-                 
                          
                          </ul>
                          
@@ -2304,77 +785,7 @@
                          <!-- <button class="btn arrow-guides fa-chevron-left"></button> -->
                          <ul id="content" class="lista">
                          
-                         <li class="card effect1">
-                              <div class="inside-top">
-                              <img src="img/series/casapapel/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/outlander/4.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/breakingbad/1.jpg" id="img"> 
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/flash/portada.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/TWD/portada.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/you/portada.png" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/stranger/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/innocents/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/increibles/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/revenant/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/rosie/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/ninos/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/alien/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/bird/1.jpg" id="img">
-                              </div>
-                         </li>
-                 
+                         
                          
                          </ul>
                          
@@ -2407,76 +818,7 @@
                          <!-- <button class="btn arrow-guides fa-chevron-left"></button> -->
                          <ul id="content" class="lista">
                          
-                         <li class="card effect1">
-                              <div class="inside-top">
-                              <img src="img/series/casapapel/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/outlander/4.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/breakingbad/1.jpg" id="img"> 
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/flash/portada.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/TWD/portada.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/you/portada.png" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/stranger/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/innocents/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/increibles/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/revenant/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/rosie/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/ninos/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/alien/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/bird/1.jpg" id="img">
-                              </div>
-                         </li>
+                         
                  
                          
                          </ul>
@@ -2510,76 +852,7 @@
                          <!-- <button class="btn arrow-guides fa-chevron-left"></button> -->
                          <ul id="content" class="lista">
                          
-                         <li class="card effect1">
-                              <div class="inside-top">
-                              <img src="img/series/casapapel/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/outlander/4.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/breakingbad/1.jpg" id="img"> 
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/flash/portada.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/TWD/portada.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/you/portada.png" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/stranger/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/innocents/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/increibles/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/revenant/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/rosie/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/ninos/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/alien/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/bird/1.jpg" id="img">
-                              </div>
-                         </li>
+                         
                  
                          
                          </ul>
@@ -2613,77 +886,7 @@
                          <!-- <button class="btn arrow-guides fa-chevron-left"></button> -->
                          <ul id="content" class="lista">
                          
-                         <li class="card effect1">
-                              <div class="inside-top">
-                              <img src="img/series/casapapel/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/outlander/4.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/breakingbad/1.jpg" id="img"> 
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/flash/portada.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/TWD/portada.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/you/portada.png" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/stranger/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/innocents/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/increibles/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/revenant/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/rosie/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/ninos/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/alien/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/bird/1.jpg" id="img">
-                              </div>
-                         </li>
-                 
+                         
                          
                          </ul>
                          
@@ -2716,76 +919,7 @@
                          <!-- <button class="btn arrow-guides fa-chevron-left"></button> -->
                          <ul id="content" class="lista">
                          
-                         <li class="card effect1">
-                              <div class="inside-top">
-                              <img src="img/series/casapapel/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/outlander/4.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/breakingbad/1.jpg" id="img"> 
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/flash/portada.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/TWD/portada.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/you/portada.png" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/stranger/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/innocents/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/increibles/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/revenant/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/rosie/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/ninos/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/alien/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/bird/1.jpg" id="img">
-                              </div>
-                         </li>
+                         
                  
                          
                          </ul>
@@ -2819,76 +953,7 @@
                          <!-- <button class="btn arrow-guides fa-chevron-left"></button> -->
                          <ul id="content" class="lista">
                          
-                         <li class="card effect1">
-                              <div class="inside-top">
-                              <img src="img/series/casapapel/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/outlander/4.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/breakingbad/1.jpg" id="img"> 
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/flash/portada.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/TWD/portada.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/you/portada.png" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/stranger/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/innocents/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/increibles/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/revenant/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/rosie/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/ninos/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/alien/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/bird/1.jpg" id="img">
-                              </div>
-                         </li>
+                         
                  
                          
                          </ul>
@@ -2922,76 +987,7 @@
                          <!-- <button class="btn arrow-guides fa-chevron-left"></button> -->
                          <ul id="content" class="lista">
                          
-                         <li class="card effect1">
-                              <div class="inside-top">
-                              <img src="img/series/casapapel/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/outlander/4.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/breakingbad/1.jpg" id="img"> 
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/flash/portada.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/TWD/portada.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/you/portada.png" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/stranger/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/innocents/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/increibles/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/revenant/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/rosie/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/ninos/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/alien/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/bird/1.jpg" id="img">
-                              </div>
-                         </li>
+                         
                  
                          
                          </ul>
@@ -3025,76 +1021,7 @@
                          <!-- <button class="btn arrow-guides fa-chevron-left"></button> -->
                          <ul id="content" class="lista">
                          
-                         <li class="card effect1">
-                              <div class="inside-top">
-                              <img src="img/series/casapapel/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/outlander/4.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/breakingbad/1.jpg" id="img"> 
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/flash/portada.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/TWD/portada.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/you/portada.png" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/stranger/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/innocents/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/increibles/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/revenant/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/rosie/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/ninos/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/alien/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/bird/1.jpg" id="img">
-                              </div>
-                         </li>
+                         
                  
                          
                          </ul>
@@ -3128,76 +1055,7 @@
                          <!-- <button class="btn arrow-guides fa-chevron-left"></button> -->
                          <ul id="content" class="lista">
                          
-                         <li class="card effect1">
-                              <div class="inside-top">
-                              <img src="img/series/casapapel/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/outlander/4.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/breakingbad/1.jpg" id="img"> 
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/flash/portada.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/TWD/portada.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/you/portada.png" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/stranger/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/innocents/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/increibles/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/revenant/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/rosie/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/ninos/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/alien/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/bird/1.jpg" id="img">
-                              </div>
-                         </li>
+                         
                  
                          
                          </ul>
@@ -3231,76 +1089,7 @@
                          <!-- <button class="btn arrow-guides fa-chevron-left"></button> -->
                          <ul id="content" class="lista">
                          
-                         <li class="card effect1">
-                              <div class="inside-top">
-                              <img src="img/series/casapapel/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/outlander/4.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/breakingbad/1.jpg" id="img"> 
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/flash/portada.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/TWD/portada.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/you/portada.png" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/stranger/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/innocents/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/increibles/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/revenant/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/rosie/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/ninos/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/alien/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/bird/1.jpg" id="img">
-                              </div>
-                         </li>
+                         
                  
                          
                          </ul>
@@ -3334,77 +1123,7 @@
                          <!-- <button class="btn arrow-guides fa-chevron-left"></button> -->
                          <ul id="content" class="lista">
                          
-                         <li class="card effect1">
-                              <div class="inside-top">
-                              <img src="img/series/casapapel/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/outlander/4.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/breakingbad/1.jpg" id="img"> 
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/flash/portada.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/TWD/portada.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/you/portada.png" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/stranger/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/innocents/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/increibles/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/revenant/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/rosie/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/ninos/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/alien/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/bird/1.jpg" id="img">
-                              </div>
-                         </li>
-                 
+                         
                          
                          </ul>
                          
@@ -3437,76 +1156,7 @@
                          <!-- <button class="btn arrow-guides fa-chevron-left"></button> -->
                          <ul id="content" class="lista">
                          
-                         <li class="card effect1">
-                              <div class="inside-top">
-                              <img src="img/series/casapapel/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/outlander/4.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/breakingbad/1.jpg" id="img"> 
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/flash/portada.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/TWD/portada.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/you/portada.png" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/stranger/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/innocents/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/increibles/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/revenant/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/rosie/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/ninos/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/alien/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/bird/1.jpg" id="img">
-                              </div>
-                         </li>
+                         
                  
                          
                          </ul>
@@ -3540,77 +1190,7 @@
                          <!-- <button class="btn arrow-guides fa-chevron-left"></button> -->
                          <ul id="content" class="lista">
                          
-                         <li class="card effect1">
-                              <div class="inside-top">
-                              <img src="img/series/casapapel/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/outlander/4.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/breakingbad/1.jpg" id="img"> 
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/flash/portada.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/TWD/portada.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/you/portada.png" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/stranger/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/innocents/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/increibles/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/revenant/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/rosie/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/ninos/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/alien/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/bird/1.jpg" id="img">
-                              </div>
-                         </li>
-                 
+                         
                          
                          </ul>
                          
@@ -3643,76 +1223,7 @@
                          <!-- <button class="btn arrow-guides fa-chevron-left"></button> -->
                          <ul id="content" class="lista">
                          
-                         <li class="card effect1">
-                              <div class="inside-top">
-                              <img src="img/series/casapapel/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/outlander/4.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/breakingbad/1.jpg" id="img"> 
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/flash/portada.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/TWD/portada.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/you/portada.png" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/stranger/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/innocents/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/increibles/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/revenant/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/rosie/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/ninos/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/alien/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/bird/1.jpg" id="img">
-                              </div>
-                         </li>
+                         
                  
                          
                          </ul>
@@ -3746,77 +1257,6 @@
                          <!-- <button class="btn arrow-guides fa-chevron-left"></button> -->
                          <ul id="content" class="lista">
                          
-                         <li class="card effect1">
-                              <div class="inside-top">
-                              <img src="img/series/casapapel/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/outlander/4.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/breakingbad/1.jpg" id="img"> 
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/flash/portada.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/TWD/portada.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/you/portada.png" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/stranger/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/innocents/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/increibles/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/revenant/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/rosie/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/ninos/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/alien/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/bird/1.jpg" id="img">
-                              </div>
-                         </li>
-                 
                          
                          </ul>
                          
@@ -3849,77 +1289,6 @@
                          <!-- <button class="btn arrow-guides fa-chevron-left"></button> -->
                          <ul id="content" class="lista">
                          
-                         <li class="card effect1">
-                              <div class="inside-top">
-                              <img src="img/series/casapapel/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/outlander/4.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/breakingbad/1.jpg" id="img"> 
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/flash/portada.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/TWD/portada.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/you/portada.png" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/stranger/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/innocents/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/increibles/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/revenant/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/rosie/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/ninos/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/alien/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/bird/1.jpg" id="img">
-                              </div>
-                         </li>
-                 
                          
                          </ul>
                          
@@ -3952,77 +1321,6 @@
                          <!-- <button class="btn arrow-guides fa-chevron-left"></button> -->
                          <ul id="content" class="lista">
                          
-                         <li class="card effect1">
-                              <div class="inside-top">
-                              <img src="img/series/casapapel/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/outlander/4.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/breakingbad/1.jpg" id="img"> 
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/flash/portada.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/TWD/portada.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/you/portada.png" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/stranger/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/innocents/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/increibles/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/revenant/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/rosie/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/ninos/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/alien/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/bird/1.jpg" id="img">
-                              </div>
-                         </li>
-                 
                          
                          </ul>
                          
@@ -4055,77 +1353,7 @@
                          <!-- <button class="btn arrow-guides fa-chevron-left"></button> -->
                          <ul id="content" class="lista">
                          
-                         <li class="card effect1">
-                              <div class="inside-top">
-                              <img src="img/series/casapapel/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card" id="c2">
-                              <div class="inside-top" id="cont">
-                              <img src="img/series/outlander/4.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/breakingbad/1.jpg" id="img"> 
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/flash/portada.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/TWD/portada.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/you/portada.png" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/stranger/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/series/innocents/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/increibles/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/revenant/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/rosie/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/ninos/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/alien/1.jpg" id="img">
-                              </div>
-                         </li>
-                              <li class="card">
-                              <div class="inside-top">
-                              <img src="img/peliculas/bird/1.jpg" id="img">
-                              </div>
-                         </li>
-                 
+                         
                          
                          </ul>
                          

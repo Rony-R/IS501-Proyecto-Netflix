@@ -11,43 +11,415 @@ $(document).ready(function(){
             $('#texto1').replaceWith('<div id="texto1"><h5><b>Ver la temporada 4</b></h5><p style="text-align : justify;">Seremos testigos del regreso de Ragnar a Wessex. Por otro lado, Lagertha tratará de mantenerse en el poder en Kattegat y comenzará una relación amorosa. Además, veremos a Bjorn surcando el Mediterráneo.</p></div>')
         },37000);
     
-//mostrar contenido
-var codigo = "codCat="+$("#cod-cat-1").val();
+//mostrar contenido categoria 1
+
         
-console.log(codigo);
+        var codigo = "codCat="+$("#cod-cat-1").val();
+                
+        console.log(codigo);
+
+                        $.ajax({
+                            
+                            url: "ajax/contenido.php?accion='obtener-contenido'",
+                            data:codigo,
+                            dataType: "json",
+                            method: "POST",
+                            success: function(respuesta){
+
+                                console.log(respuesta);
+                                
+                                    for(var i=0; i<respuesta[0].CANTIDAD_CONTENIDO; i++){
+                                        $("#content").append(`
+                                            <li class="card"  id="card-${respuesta[i].CODIGO_CONTENIDO}">
+                                            <div class="inside-top"  id="detalle${respuesta[i].CODIGO_CONTENIDO}" >
+                                            <img src="${respuesta[i].URL_MINIATURA}" id="img">
+                                            </div>
+                                            </li> 
+                                        `);
+                                    }
+                                                    
+                                    
+                                
+                            },
+                            error: function(e){
+                            console.log("Ocurrio un error!!!: " +e);
+                            }
+                        
+                });
+});
+
+   
+//mostrar contenido categoria 2
+
+        
+var codigo2 = "codCat="+$("#cod-cat-2").val();
+                
+console.log(codigo2);
 
                 $.ajax({
                     
                     url: "ajax/contenido.php?accion='obtener-contenido'",
-                    data:codigo,
+                    data:codigo2,
                     dataType: "json",
                     method: "POST",
                     success: function(respuesta){
 
-                        alert("Consulta detalle: " +respuesta);
-                        /*
-                              for(var i=0; i<respuesta[0].CANTIDAD_CONTENIDO; i++){
-                                $("#div-pantallas").append(
-                                  '<div id="pantalla-'+ respuesta[i].CODIGO_PANTALLA +'">'+
-                                    '<a href="Inicio.php"><img class="min-user" src="img/usr-1.png"></a>'+
-                                    '<p class="white-text center-text mt-2 mr-3">'+ respuesta[i].NOMBRE_PANTALLA +'</p>'+
-                                  '</div>'
-                                );
-                              }
-                        */
-                             
+                        console.log(respuesta);
                         
-                            },
-                            error: function(e){
-                              console.log("Ocurrio un error!!!: " +e);
+                            for(var i=0; i<respuesta[0].CANTIDAD_CONTENIDO; i++){
+                                $("#content2").append(`
+                                    <li class="card"  id="card-${respuesta[i].CODIGO_CONTENIDO}">
+                                    <div class="inside-top"  id="detalle${respuesta[i].CODIGO_CONTENIDO}" >
+                                    <img src="${respuesta[i].URL_MINIATURA}" id="img">
+                                    </div>
+                                    </li> 
+                                `);
                             }
+                                            
+                            
                         
-                });
+                    },
+                    error: function(e){
+                    console.log("Ocurrio un error!!!: " +e);
+                    }
+                
+        });
+
+//mostrar contenido categoria 3
+
+        
+var codigo3 = "codCat="+$("#cod-cat-3").val();
+                
+console.log(codigo3);
+
+                $.ajax({
+                    
+                    url: "ajax/contenido.php?accion='obtener-contenido'",
+                    data:codigo3,
+                    dataType: "json",
+                    method: "POST",
+                    success: function(respuesta){
+
+                        console.log(respuesta);
+                        
+                            for(var i=0; i<respuesta[0].CANTIDAD_CONTENIDO; i++){
+                                $("#content3").append(`
+                                    <li class="card"  id="card-${respuesta[i].CODIGO_CONTENIDO}">
+                                    <div class="inside-top"  id="detalle${respuesta[i].CODIGO_CONTENIDO}" >
+                                    <img src="${respuesta[i].URL_MINIATURA}" id="img">
+                                    </div>
+                                    </li> 
+                                `);
+                            }
+                                            
+                            
+                        
+                    },
+                    error: function(e){
+                    console.log("Ocurrio un error!!!: " +e);
+                    }
+                
+        });
+
+//mostrar contenido categoria 4
+
+        
+var codigo4 = "codCat="+$("#cod-cat-4").val();
+                
+console.log(codigo4);
+
+                $.ajax({
+                    
+                    url: "ajax/contenido.php?accion='obtener-contenido'",
+                    data:codigo4,
+                    dataType: "json",
+                    method: "POST",
+                    success: function(respuesta){
+
+                        console.log(respuesta);
+                        
+                            for(var i=0; i<respuesta[0].CANTIDAD_CONTENIDO; i++){
+                                $("#content4").append(`
+                                    <li class="card"  id="card-${respuesta[i].CODIGO_CONTENIDO}">
+                                    <div class="inside-top"  id="detalle${respuesta[i].CODIGO_CONTENIDO}" >
+                                    <img src="${respuesta[i].URL_MINIATURA}" id="img">
+                                    </div>
+                                    </li> 
+                                `);
+                            }
+                                            
+                            
+                        
+                    },
+                    error: function(e){
+                    console.log("Ocurrio un error!!!: " +e);
+                    }
+                
+        });
 
 
-//mostrar detalle del contenido
+//mostrar contenido categoria 5
+
+        
+var codigo5 = "codCat="+$("#cod-cat-5").val();
+                
+console.log(codigo5);
+
+                $.ajax({
+                    
+                    url: "ajax/contenido.php?accion='obtener-contenido'",
+                    data:codigo5,
+                    dataType: "json",
+                    method: "POST",
+                    success: function(respuesta){
+
+                        console.log(respuesta);
+                        
+                            for(var i=0; i<respuesta[0].CANTIDAD_CONTENIDO; i++){
+                                $("#content5").append(`
+                                    <li class="card"  id="card-${respuesta[i].CODIGO_CONTENIDO}">
+                                    <div class="inside-top"  id="detalle${respuesta[i].CODIGO_CONTENIDO}" >
+                                    <img src="${respuesta[i].URL_MINIATURA}" id="img">
+                                    </div>
+                                    </li> 
+                                `);
+                            }
+                                            
+                            
+                        
+                    },
+                    error: function(e){
+                    console.log("Ocurrio un error!!!: " +e);
+                    }
+                
+        });
+
+
+//mostrar contenido categoria 6
+
+        
+var codigo6 = "codCat="+$("#cod-cat-6").val();
+                
+console.log(codigo6);
+
+                $.ajax({
+                    
+                    url: "ajax/contenido.php?accion='obtener-contenido'",
+                    data:codigo6,
+                    dataType: "json",
+                    method: "POST",
+                    success: function(respuesta){
+
+                        console.log(respuesta);
+                        
+                            for(var i=0; i<respuesta[0].CANTIDAD_CONTENIDO; i++){
+                                $("#content6").append(`
+                                    <li class="card"  id="card-${respuesta[i].CODIGO_CONTENIDO}">
+                                    <div class="inside-top"  id="detalle${respuesta[i].CODIGO_CONTENIDO}" >
+                                    <img src="${respuesta[i].URL_MINIATURA}" id="img">
+                                    </div>
+                                    </li> 
+                                `);
+                            }
+                                            
+                            
+                        
+                    },
+                    error: function(e){
+                    console.log("Ocurrio un error!!!: " +e);
+                    }
+                
+        });
+
+
+//mostrar contenido categoria 7
+
+        
+var codigo7 = "codCat="+$("#cod-cat-7").val();
+                
+console.log(codigo7);
+
+                $.ajax({
+                    
+                    url: "ajax/contenido.php?accion='obtener-contenido'",
+                    data:codigo7,
+                    dataType: "json",
+                    method: "POST",
+                    success: function(respuesta){
+
+                        console.log(respuesta);
+                        
+                            for(var i=0; i<respuesta[0].CANTIDAD_CONTENIDO; i++){
+                                $("#content7").append(`
+                                    <li class="card"  id="card-${respuesta[i].CODIGO_CONTENIDO}">
+                                    <div class="inside-top"  id="detalle${respuesta[i].CODIGO_CONTENIDO}" >
+                                    <img src="${respuesta[i].URL_MINIATURA}" id="img">
+                                    </div>
+                                    </li> 
+                                `);
+                            }
+                                            
+                            
+                        
+                    },
+                    error: function(e){
+                    console.log("Ocurrio un error!!!: " +e);
+                    }
+                
+        });
+
+//mostrar contenido categoria 8
+
+        
+var codigo8 = "codCat="+$("#cod-cat-8").val();
+                
+console.log(codigo8);
+
+                $.ajax({
+                    
+                    url: "ajax/contenido.php?accion='obtener-contenido'",
+                    data:codigo8,
+                    dataType: "json",
+                    method: "POST",
+                    success: function(respuesta){
+
+                        console.log(respuesta);
+                        
+                            for(var i=0; i<respuesta[0].CANTIDAD_CONTENIDO; i++){
+                                $("#content8").append(`
+                                    <li class="card"  id="card-${respuesta[i].CODIGO_CONTENIDO}">
+                                    <div class="inside-top"  id="detalle${respuesta[i].CODIGO_CONTENIDO}" >
+                                    <img src="${respuesta[i].URL_MINIATURA}" id="img">
+                                    </div>
+                                    </li> 
+                                `);
+                            }
+                                            
+                            
+                        
+                    },
+                    error: function(e){
+                    console.log("Ocurrio un error!!!: " +e);
+                    }
+                
+        });
+
+//mostrar contenido categoria 9
+
+        
+var codigo9 = "codCat="+$("#cod-cat-9").val();
+                
+console.log(codigo9);
+
+                $.ajax({
+                    
+                    url: "ajax/contenido.php?accion='obtener-contenido'",
+                    data:codigo9,
+                    dataType: "json",
+                    method: "POST",
+                    success: function(respuesta){
+
+                        console.log(respuesta);
+                        
+                            for(var i=0; i<respuesta[0].CANTIDAD_CONTENIDO; i++){
+                                $("#content9").append(`
+                                    <li class="card"  id="card-${respuesta[i].CODIGO_CONTENIDO}">
+                                    <div class="inside-top"  id="detalle${respuesta[i].CODIGO_CONTENIDO}" >
+                                    <img src="${respuesta[i].URL_MINIATURA}" id="img">
+                                    </div>
+                                    </li> 
+                                `);
+                            }
+                                            
+                            
+                        
+                    },
+                    error: function(e){
+                    console.log("Ocurrio un error!!!: " +e);
+                    }
+                
+        });
+
+
+//mostrar contenido categoria 10
+
+        
+var codigo10 = "codCat="+$("#cod-cat-10").val();
+                
+console.log(codigo10);
+
+                $.ajax({
+                    
+                    url: "ajax/contenido.php?accion='obtener-contenido'",
+                    data:codigo10,
+                    dataType: "json",
+                    method: "POST",
+                    success: function(respuesta){
+
+                        console.log(respuesta);
+                        
+                            for(var i=0; i<respuesta[0].CANTIDAD_CONTENIDO; i++){
+                                $("#content10").append(`
+                                    <li class="card"  id="card-${respuesta[i].CODIGO_CONTENIDO}">
+                                    <div class="inside-top"  id="detalle${respuesta[i].CODIGO_CONTENIDO}" >
+                                    <img src="${respuesta[i].URL_MINIATURA}" id="img">
+                                    </div>
+                                    </li> 
+                                `);
+                            }
+                                            
+                            
+                        
+                    },
+                    error: function(e){
+                    console.log("Ocurrio un error!!!: " +e);
+                    }
+                
+        });
+
+//mostrar contenido categoria 11
+
+        
+var codigo11 = "codCat="+$("#cod-cat-11").val();
+                
+console.log(codigo11);
+
+                $.ajax({
+                    
+                    url: "ajax/contenido.php?accion='obtener-contenido'",
+                    data:codigo11,
+                    dataType: "json",
+                    method: "POST",
+                    success: function(respuesta){
+
+                        console.log(respuesta);
+                        
+                            for(var i=0; i<respuesta[0].CANTIDAD_CONTENIDO; i++){
+                                $("#content11").append(`
+                                    <li class="card"  id="card-${respuesta[i].CODIGO_CONTENIDO}">
+                                    <div class="inside-top"  id="detalle${respuesta[i].CODIGO_CONTENIDO}" >
+                                    <img src="${respuesta[i].URL_MINIATURA}" id="img">
+                                    </div>
+                                    </li> 
+                                `);
+                            }
+                                            
+                            
+                        
+                    },
+                    error: function(e){
+                    console.log("Ocurrio un error!!!: " +e);
+                    }
+                
+        });
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /*
-			var elemento=document.getElementById("c2");
+//mostrar detalle del contenido
+
+			var elemento=document.getElementById("card-2");
             
             elemento.onmouseover = function(e) {
                 
@@ -86,7 +458,7 @@ console.log(codigo);
 
 				// pelicula
  
-                 document.getElementById("cont2").innerHTML=`<div style="position:absolute; margin-top:18%; max-width:400px; padding:5px">
+                 document.getElementById("detalle2").innerHTML=`<div style="position:absolute; margin-top:18%; max-width:400px; padding:5px">
                                                                <div style="float:left; width:200px"> 
                                                                <button id="add-lista" type="button" class="btn btn-link" style="color:red; margin:-1.5% 0;padding:0; font-size:14px;"> <i class="fas fa-play-circle" ></i></i></button>
                                                                 <h6 id="nombre-contenido" style="margin:-2.5% 0;">Outlander</h6>
@@ -132,4 +504,46 @@ console.log(codigo);
   
 
 */
-});
+
+
+
+
+
+
+
+//mostrar contenido
+/*
+$("#mostrar").click(function(){
+var codigo = "codCat="+$("#cod-cat-1").val();
+        
+console.log(codigo);
+
+                $.ajax({
+                    
+                    url: "ajax/contenido.php?accion='obtener-contenido'",
+                    data:codigo,
+                    dataType: "json",
+                    method: "POST",
+                    success: function(respuesta){
+
+                        console.log(respuesta);
+                        /*
+                              for(var i=0; i<respuesta[0].CANTIDAD_CONTENIDO; i++){
+                                $("#div-pantallas").append(
+                                  '<div id="pantalla-'+ respuesta[i].CODIGO_PANTALLA +'">'+
+                                    '<a href="Inicio.php"><img class="min-user" src="img/usr-1.png"></a>'+
+                                    '<p class="white-text center-text mt-2 mr-3">'+ respuesta[i].NOMBRE_PANTALLA +'</p>'+
+                                  '</div>'
+                                );
+                              }
+                        
+                             
+                        
+                            },
+                            error: function(e){
+                              console.log("Ocurrio un error!!!: " +e);
+                            }
+                        
+                });
+
+            });*/
