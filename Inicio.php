@@ -138,15 +138,16 @@
                          
                          <div class="module-section clearfix">
                          <!-- <button class="btn arrow-guides fa-chevron-left"></button> -->
-                         <ul id="content" class="lista">
+                         <ul id="categoria1" class="lista">
+                              <input type="hidden" id="cod-cat-1" value="1">
                          
-                         <li class="card effect1">
+                         <li class="card ">
                               <div class="inside-top">
                               <img src="img/series/casapapel/1.jpg" id="img">
                               </div>
                          </li>
-                              <li class="card"  id="c2">
-                              <div class="inside-top"  id="cont2">
+                         <li class="card"  id="c2">
+                              <div class="inside-top"  id="cont2" >
                               <img src="img/series/outlander/1.jpg" id="img">
                               </div>
                          </li>
@@ -222,10 +223,8 @@
                          <b class="fa fa-chevron-right fa-chevron-right-extra" aria-hidden="true"></b>
                          </span>
                          <!-- <button class="btn arrow-guides-right fa-chevron-right"></button> -->
-                         
-                         
-                         
-                         </div>
+           
+               </div>
        
          
           </section>
@@ -245,7 +244,7 @@
                          <!-- <button class="btn arrow-guides fa-chevron-left"></button> -->
                          <ul id="content" class="lista">
                          
-                         <li class="card effect1">
+                         <li class="card">
                               <div class="inside-top">
                               <img src="img/series/casapapel/1.jpg" id="img">
                               </div>
