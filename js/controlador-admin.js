@@ -42,7 +42,7 @@ $("#btn-agregar").click(function(){
      fechaa = (fecha.getDate() + "/" + (fecha.getMonth() +1) + "/" + fecha. getFullYear());
     
 
-    var datos = "tipo="+$("#slc-tipo").val() +"&"+
+    var datosContenido = "tipo="+$("#slc-tipo").val() +"&"+
                 "estudio=" +$("#slc-estudio").val() +"&"+
                 "idioma=" +$("#slc-idiomas").val() +"&"+
                 "edad=" +$("#slc-edad").val() +"&"+
@@ -52,93 +52,165 @@ $("#btn-agregar").click(function(){
                 "descripcion=" +$("#txt-descripcion").val() +"&"+
                 "fechaSubida=" + fechaa ;
 
-    var parametro = "unidad=5"+"&"+
+    var datosPeli = "unidad=5"+"&"+
                     "duracion="+$("#txt-duracion").val();
 
+    var nombreContenido = "nombre=" +$("#txt-nombre").val();
 
-    console.log(datos);
-    console.log(parametro);
+    if($("#slc-tipo").val() == 1){//PELICULAS
 
- //peticion ajax para guardar contenido
+      //peticion ajax para guardar contenido
     $.ajax({
-      url: "ajax/administrador.php?accion='agregar-contenido'",
-      data: datos,
+      url: "ajax/api.php?accion='insert-contenido'",
+      data: datosContenido,
       method: "POST",
       success: function(respuesta){
-        console.log(respuesta);
-        alert("consulta:"+respuesta);
+
+        if(respuesta == 1){
+
+          $.ajax({
+            url: "ajax/api.php?accion='obtener-id-conteido'",
+            data: nombreContenido,
+            method: "POST",
+            dataType: "json",
+            success: function(respuesta){
+              var idCont = "&idContenido=" +respuesta.CODIGO_CONTENIDO;
+
+              insertarPelicula(datosPeli, idCont);
+            }
+          });
+
+        }
+        
       },
       error: function(){
         console.error(error);
       }
     });
+
+    }
+    else{//SERIES
+
+      $.ajax({
+        url: "ajax/api.php?accion='insert-contenido'",
+        data: datosContenido,
+        method: "POST",
+        success: function(respuesta){
+  
+          if(respuesta == 1){
+  
+            $.ajax({
+              url: "ajax/api.php?accion='obtener-id-conteido'",
+              data: nombreContenido,
+              method: "POST",
+              dataType: "json",
+              success: function(respuesta){
+                var idCont = "&idContenido=" +respuesta.CODIGO_CONTENIDO;
+  
+                insertarTemporada(idCont);
+              }
+            });
+  
+          }
+          
+        },
+        error: function(){
+          console.error(error);
+        }
+      });
+
+    }
+  
+  });
 
 //peticion ajax para guardar pelicula
+function insertarPelicula(data, id){
+
+  var param = data + id;
+
+  $.ajax({
+    url: "ajax/api.php?accion='insert-pelicula'",
+    data: param,
+    method: "POST",
+    success: function(respuesta){
+      console.log(respuesta);
+
+    },
+    error: function(){
+      console.error(error);
+    }
+  });
+  
+}
+function insertarTemporada(id){
+
+  ////================================================agregar una temporada ========================================================================
+    $("#agregar-temp").click(function(){
+
+      var datosTemporada = "numTemp="+$("#txt-temporada").val()+"&"+
+                  "descripcion="+$("#descripcion-temp").val()+ id;
+
+      //alert("Datos temporada= " +datosTemporada);
+
+    //peticion ajax para guardar la temporada
+      $.ajax({
+        url: "ajax/api.php?accion='insert-temporada'",
+        data: datosTemporada,
+        method: "POST",
+        success: function(respuesta){
+
+          $.ajax({
+            url: "ajax/api.php?accion='obtener-id-temporada'",
+            data: datosTemporada,
+            method: "POST",
+            dataType: "json",
+            success: function(respuesta){
+              //alert("El codigo de la temporada es: " +respuesta.CODIGO_REGISTRO_TEMPORADA);
+              var codTemporada = "&codtemp=" +respuesta.CODIGO_REGISTRO_TEMPORADA;
+
+              insertarEpisodio(codTemporada);
+
+            }
+          });
+          
+        },
+        error: function(){
+          console.error(error);
+        }
+      });
+
+    });
+
+}
+
+function insertarEpisodio(cod){
+
+  //================================================agregar un episodio ========================================================================
+  $("#guardar-episodio").click(function(){
+
+    var datosEpisodio = "nombre="+$("#txt-episodio").val()+"&"+
+                "duracion="+$("#duracion-ep").val()+"&"+
+                "numEpisodio="+$("#num-ep").val()+"&"+
+                "descripcion="+$("#descripcion-ep").val()+ cod;
+
+
+    //alert("Datos episodios: " +datosEpisodio);
+
+  //peticion ajax para guardar un episodio
     $.ajax({
-      url: "ajax/administrador.php?accion='agregar-pelicula'",
-      data: parametro,
+      url: "ajax/api.php?accion='insertar-episodio'",
+      data: datosEpisodio,
       method: "POST",
       success: function(respuesta){
         console.log(respuesta);
-  
+        window.location.reload();
       },
       error: function(){
         console.error(error);
       }
     });
-  
+
+
   });
 
-////================================================agregar una temporada ========================================================================
-$("#agregar-temp").click(function(){
-
-  var datos = "numTemp="+$("#txt-temporada").val()+"&"+
-              "descripcion="+$("#descripcion-temp").val();
-
-
-  console.log(datos);
-
-
-//peticion ajax para guardar la temporada
-  $.ajax({
-    url: "ajax/administrador.php?accion='agregar-temporada'",
-    data: datos,
-    method: "POST",
-    success: function(respuesta){
-      console.log(respuesta);
-      alert("consulta:"+respuesta);
-    },
-    error: function(){
-      console.error(error);
-    }
-  });
-
-});
-
-//================================================agregar un episodio ========================================================================
-$("#guardar-episodio").click(function(){
-
-  var datos = "nombre="+$("#txt-episodio").val()+"&"+
-              "duracion="+$("#duracion-ep").val()+"&"+
-              "numEpisodio="+$("#num-ep").val()+"&"+
-              "descripcion="+$("#descripcion-ep").val();
-
-
-  console.log(datos);
-
-
-//peticion ajax para guardar la temporada
-  $.ajax({
-    url: "ajax/administrador.php?accion='agregar-episodio'",
-    data: datos,
-    method: "POST",
-    success: function(respuesta){
-      console.log(respuesta);
-      alert("consulta:"+respuesta);
-    },
-    error: function(){
-      console.error(error);
-    }
-  });
-
-});
+}

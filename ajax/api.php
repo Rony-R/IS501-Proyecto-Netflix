@@ -2,8 +2,11 @@
 
     include("../class/class-Conexion.php");
     include("../class/class-Contenido.php");
+    include("../class/class-Episodio.php");
     include("../class/class-Pantalla.php");
+    include("../class/class-Pelicula.php");
     include("../class/class-Regis-Tarjeta.php");
+    include("../class/class-Temporada.php");
     include("../class/class-Usuario.php");
 
     $conexion = new Conexion();
@@ -16,7 +19,7 @@
         break;
 
         case "'insertar-registro-tarjeta'":
-            $r1 = new Regis_Tarjeta(null, null, $_POST["tipo-tarj"], $_POST["nombre-tarj"], $_POST["apellido-tarj"], $_POST["num-tarj"], $_POST["codigo-cvv"], $_POST["fecha-venc-tarj"]);
+            $r1 = new Regis_Tarjeta(null, $_POST["codusuario"], $_POST["tipo-tarj"], $_POST["nombre-tarj"], $_POST["apellido-tarj"], $_POST["num-tarj"], $_POST["codigo-cvv"], $_POST["fecha-venc-tarj"]);
             echo $r1->insertarTarjeta($conexion);
         break;
 
@@ -143,10 +146,34 @@
             echo $p3->pantallaInicio($conexion);
         break;
 
-        case "''":
+        case "'insert-contenido'":
+            $c1 = new Contenido(null, $_POST["tipo"], $_POST["estudio"], $_POST["idioma"], $_POST["edad"], $_POST["nombre"], $_POST["urlcontenido"], $_POST["urlimg"], $_POST["descripcion"], $_POST["fechaSubida"], null);
+            echo $c1->insertarContenido($conexion);
         break;
 
-        case "''":
+        case "'insert-pelicula'":
+            $peli1 = new Pelicula($_POST["idContenido"], $_POST["unidad"], $_POST["duracion"]);
+            echo $peli1->insertarPelicula($conexion);
+        break;
+
+        case "'insert-temporada'":
+            $temporada1 = new Temporada(null, $_POST["idContenido"], $_POST["numTemp"], $_POST["descripcion"]);
+            echo $temporada1->insertarTemporada($conexion);
+        break;
+
+        case "'insertar-episodio'":
+            $ep1 = new Episodio(null, $_POST["codtemp"], null, $_POST["duracion"], $_POST["nombre"], $_POST["numEpisodio"], $_POST["descripcion"]);
+            echo $ep1->insertarEpisodio($conexion);
+        break;
+
+        case "'obtener-id-conteido'":
+            $c66 = new Contenido (null, null, null, null, null, null, null, null, $_POST["nombre"], null, null);
+            echo $c66->obtenerIdCont($conexion);
+        break;
+
+        case "'obtener-id-temporada'":
+            $temporada3 = new Temporada(null, $_POST["idContenido"], $_POST["numTemp"], $_POST["descripcion"]);
+            echo $temporada3->obtenerIdTemporada($conexion);
         break;
 
         case "''":

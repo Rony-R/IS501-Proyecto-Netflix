@@ -340,6 +340,8 @@ $("#btn-iniciar-membresia").click(function(){
                                 "&codigo-cvv="+ $("#txt-codigo-CVV").val() + 
                                 "&fecha-venc-tarj="+ $("#txt-fecha-vencimiento").val();
 
+        var user = "usuario=" + $("#input-correo").val();
+
         //alert("Parametros Usuario: " + parametrosUsuarios);
         //alert("Parametros Tarjeta" + parametrosTarjeta);
 
@@ -352,15 +354,14 @@ $("#btn-iniciar-membresia").click(function(){
 
                 if(respuesta == 1){
                     $.ajax({
-                        url: "ajax/api.php?accion='insertar-registro-tarjeta'",
+                        url: "ajax/api.php?accion='obtener-id'",
                         method: "POST",
-                        data:parametrosTarjeta,
+                        dataType: "json",
+                        data: user,
                         success: function(respuesta){
-                            //alert("Consulta insert tarjeta: " +respuesta);
+                            var id = "codusuario=" +respuesta.CODIGO;
 
-                            if(respuesta == 1){
-                                window.location = "sesion.html";
-                            }
+                            insertarTarjeta(parametrosTarjeta, id);
 
                         },
                         error: function(e){
@@ -384,3 +385,28 @@ $("#btn-iniciar-membresia").click(function(){
     }  
 
 });
+
+function insertarTarjeta(datos, idUsuario){
+
+    var param = datos + "&" + idUsuario;
+    
+    //alert("Parametros para la tarjeta: " +param);
+
+    $.ajax({
+        url: "ajax/api.php?accion='insertar-registro-tarjeta'",
+        method: "POST",
+        data:param,
+        success: function(respuesta){
+            //alert("Consulta insert tarjeta: " +respuesta);
+
+            if(respuesta == 1){
+                window.location = "sesion.html";
+            }
+
+        },
+        error: function(e){
+            console.log(e);
+        }
+    });
+
+}

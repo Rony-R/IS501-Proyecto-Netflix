@@ -126,19 +126,6 @@
         }
         
 				//Otros metodos
-				
-				public function insertarContenido($conexion){
-
-					$instruccion = "CALL P_INSERTAR_CONTENIDO($this->codigo_tipo_contenido, $this->codigo_estudio, $this->codigo_idioma, $this->codigo_calif_edad, '$this->nombre_contenido', '$this->urlVideo', '$this->urlMiniatura', '$this->descripcion', $this->fecha_subida)";
-		
-					$result = $conexion->ejecutarConsulta($instruccion);
-		
-					if($result)
-						return 1;
-					else
-						return 0;
-					//	return $instruccion;
-				}
 
 				public function obtenerContenido($conexion){
 
@@ -163,6 +150,33 @@
 		
 					//return $instruccion;
 		
+				}
+
+				public function insertarContenido($conexion){
+
+					$sql = "CALL P_INSERTAR_CONTENIDO ($this->codigo_tipo_contenido, $this->codigo_estudio, $this->codigo_idioma, $this->codigo_calif_edad, '$this->urlVideo', '$this->nombre_contenido', '$this->urlMiniatura', '$this->descripcion', to_date('$this->fecha_subida', 'DD/MM/YYYY'))";
+
+					$result = $conexion->ejecutarConsulta($sql);
+
+					if($result)
+						return 1;
+					else
+						return 0;
+
+					//return $sql;
+
+				}
+
+				public function obtenerIdCont($conexion){
+
+					$instruccion = "SELECT CODIGO_CONTENIDO FROM TBL_CONTENIDO WHERE NOMBRE_CONTENIDO = '$this->descripcion'";
+
+					$result = array();
+
+					$result = $conexion->obtenerFila($instruccion);
+
+					return json_encode($result);
+
 				}
 
 	}
