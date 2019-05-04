@@ -2,6 +2,7 @@
 
 	class Contenido{
 
+    
 		private $codigo_contenido;
 		private $codigo_tipo_contenido;
 		private $codigo_estudio;
@@ -13,6 +14,7 @@
 		private $descripcion;
 		private $fecha_subida;
 		private $codigo_categoria;
+		
 
 		public function __construct($codigo_contenido,
                                     $codigo_tipo_contenido,
@@ -122,25 +124,15 @@
 				" UrlVideo: " . $this->urlVideo . 
 				" UrlMiniatura: " . $this->urlMiniatura .
 				" Descripcion: " . $this->descripcion . 
-				" Fecha_subida: " . $this->fecha_subida;
+				" Fecha_subida: " . $this->fecha_subida .
+				" Codigo_categoria: " . $this->codigo_categoria;
         }
         
 				//Otros metodos
 
 				public function obtenerContenido($conexion){
 
-					$instruccion = "WITH NUM_CONTENIDO AS (
-													SELECT CODIGO_CATEGORIA, COUNT(*) CANTIDAD_CONTENIDO
-													FROM TBL_CATEGOIAS_X_CONTENIDO
-													GROUP BY CODIGO_CATEGORIA
-													)
-													SELECT A.CODIGO_CATEGORIA, A.CODIGO_CONTENIDO, B.URL_MINIATURA, C.CANTIDAD_CONTENIDO
-													FROM TBL_CATEGOIAS_X_CONTENIDO A
-													LEFT JOIN TBL_CONTENIDO B
-													ON (A.CODIGO_CONTENIDO = B.CODIGO_CONTENIDO)
-													LEFT JOIN NUM_CONTENIDO C
-													ON (A.CODIGO_CATEGORIA = C.CODIGO_CATEGORIA)
-													WHERE A.CODIGO_CATEGORIA = $this->codigo_categoria";
+					$instruccion = "WITH NUM_CONTENIDO AS (SELECT CODIGO_CATEGORIA, COUNT(*) CANTIDAD_CONTENIDO FROM TBL_CATEGOIAS_X_CONTENIDO GROUP BY CODIGO_CATEGORIA) SELECT A.CODIGO_CATEGORIA, A.CODIGO_CONTENIDO, B.URL_MINIATURA, C.CANTIDAD_CONTENIDO FROM TBL_CATEGOIAS_X_CONTENIDO A LEFT JOIN TBL_CONTENIDO B ON (A.CODIGO_CONTENIDO = B.CODIGO_CONTENIDO) LEFT JOIN NUM_CONTENIDO C ON (A.CODIGO_CATEGORIA = C.CODIGO_CATEGORIA) WHERE A.CODIGO_CATEGORIA = $this->codigo_categoria";
 		
 					$resultado = array();
 		

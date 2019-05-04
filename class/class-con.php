@@ -30,6 +30,13 @@
             return $fila;
         }
 
+        public function obtenerFila2($sql){
+            $stmt = $this->conexion->prepare($sql);
+            $stmt->execute();
+            $fila = $stmt->fetchAll();
+            return $fila;
+        }
+
         public function commit(){
             $this->conexion->commit();
         }
@@ -38,19 +45,19 @@
             $this->conexion->rollback();
         }
 
-        public function numFilas($sql){
-            $stmt = $this->conexion->prepare($sql);
-            $stmt->execute();
-            $num = $stmt->rowCount();
-            return $num;
-        }
-
         public function numColumnas($sql){
         	$stmt = $this->conexion->prepare($sql);
         	$stmt->execute();
         	$numcol = $stmt->fetch();
         	return $numcol;
         }
+
+        public function obtenerIdInsert($sql){
+            $stmt = $this->conexion->query($sql);
+            $id = $stmt->lastInsertId(); 
+            return $id;
+        }
+	
 	
 	}
 ?>
