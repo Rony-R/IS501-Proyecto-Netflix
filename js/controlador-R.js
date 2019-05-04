@@ -333,7 +333,7 @@ $("#btn-iniciar-membresia").click(function(){
                                  "&contra="+$("#input-contra").val() +
                                  "&telefono="+$("#input-telefono").val();
 
-        var parametrosTarjeta = "&tipo-tarj="+ $("#slc-tipo-tarjeta").val() + 
+        var parametrosTarjeta = "tipo-tarj="+ $("#slc-tipo-tarjeta").val() + 
                                 "&nombre-tarj="+ $("#txt-nombre").val() + 
                                 "&apellido-tarj="+ $("#txt-apellido").val() + 
                                 "&num-tarj="+ $("#txt-numero-tarjeta").val() + 
@@ -348,22 +348,32 @@ $("#btn-iniciar-membresia").click(function(){
             method: "POST",
             data:parametrosUsuarios,
             success: function(respuesta){
-                alert("Respuesta consulta insert usuario: " +respuesta);
+                //alert("Consulta insert usuario: " +respuesta);
+
+                if(respuesta == 1){
+                    $.ajax({
+                        url: "ajax/api.php?accion='insertar-registro-tarjeta'",
+                        method: "POST",
+                        data:parametrosTarjeta,
+                        success: function(respuesta){
+                            //alert("Consulta insert tarjeta: " +respuesta);
+
+                            if(respuesta == 1){
+                                window.location = "sesion.html";
+                            }
+
+                        },
+                        error: function(e){
+                            console.log(e);
+                        }
+                    });
+                }
+                else
+                    window.location.reload();
+
             },
             error: function(e){
                 alert("Ocurrio un error!!!");
-                console.log(e);
-            }
-        });
-
-        $.ajax({
-            url: "ajax/api.php?accion='insertar-registro-tarjeta'",
-            method: "POST",
-            data:parametrosTarjeta,
-            success: function(respuesta){
-                alert("Respuesta consulta insert tarjeta: " +respuesta);
-            },
-            error: function(e){
                 console.log(e);
             }
         });
