@@ -75,7 +75,7 @@
                 </div>
 
                 <div class="col-lg-8">
-                    <input id="nombre-pantalla" class="form-control bg-dark white-text plc-inp" type="text" placeholder="Nombre Pantalla">
+                    <input id="nombre-nuevo" class="form-control bg-dark white-text plc-inp" type="text" placeholder="Nuevo nombre Pantalla">
                     <p class="mt-2 mb-0 white-text">Idioma:</p>
                     <select class="form-control bg-dark white-text" id="slc-idiomas">
                       <option value="1">Español</option>

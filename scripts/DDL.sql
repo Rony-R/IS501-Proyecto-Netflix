@@ -125,10 +125,10 @@ CREATE TABLE tbl_episodios (
     codigo_episodio          INTEGER NOT NULL,
     codigo_temporada         INTEGER NOT NULL,
     codigo_unidad_duracion   INTEGER NOT NULL,
-    nombre_episodio          VARCHAR2(150) NOT NULL,
+    duracion_episodio        INTEGER NOT NULL,
+    nombre_episodio          VARCHAR2(150),
     numero_episodio          INTEGER NOT NULL,
-    descripcion_episodio     VARCHAR2(150) NOT NULL,
-    duracion_episodio        INTEGER NOT NULL
+    descripcion_episodio     VARCHAR2(150) NOT NULL
 );
 
 ALTER TABLE tbl_episodios ADD CONSTRAINT tbl_episodios_pk PRIMARY KEY ( codigo_episodio );
@@ -181,7 +181,7 @@ CREATE TABLE tbl_historial_pago (
     fecha_inicio                DATE NOT NULL,
     fecha_fin                   DATE NOT NULL,
     numero_tarjeta              VARCHAR2(150) NOT NULL,
-    monto_pago                  INTEGER NOT NULL
+    monto_pago                  NUMBER(4, 2) NOT NULL
 );
 
 ALTER TABLE tbl_historial_pago ADD CONSTRAINT tbl_historial_pago_pk PRIMARY KEY ( codigo_registro_historial );
@@ -318,13 +318,6 @@ CREATE TABLE tbl_reproduccion (
 
 ALTER TABLE tbl_reproduccion ADD CONSTRAINT tip_rep_pk PRIMARY KEY ( codigo_config_reproduccion );
 
-CREATE TABLE tbl_series (
-    codigo_contenido      INTEGER NOT NULL,
-    cantidad_temporadas   INTEGER NOT NULL
-);
-
-ALTER TABLE tbl_series ADD CONSTRAINT tbl_series_pk PRIMARY KEY ( codigo_contenido );
-
 CREATE TABLE tbl_sombras_fuentes (
     codigo_sombra   INTEGER NOT NULL,
     nombre_sombra   VARCHAR2(30) NOT NULL
@@ -357,13 +350,13 @@ ALTER TABLE tbl_subtitulos_x_trailer ADD CONSTRAINT tbl_subtitulos_x_trailer_pk 
                                                                                               codigo_trailer );
 
 CREATE TABLE tbl_temporadas (
-    codigo_temporada        INTEGER NOT NULL,
-    codigo_serie            INTEGER NOT NULL,
-    numero_temporada        INTEGER NOT NULL,
-    descripcion_temporada   VARCHAR2(500) NOT NULL
+    codigo_registro_temporada   INTEGER NOT NULL,
+    codigo_serie                INTEGER NOT NULL,
+    numero_temporada            INTEGER NOT NULL,
+    descripcion_temporada       VARCHAR2(500) NOT NULL
 );
 
-ALTER TABLE tbl_temporadas ADD CONSTRAINT tbl_episodios_series_pk PRIMARY KEY ( codigo_temporada );
+ALTER TABLE tbl_temporadas ADD CONSTRAINT tbl_episodios_series_pk PRIMARY KEY ( codigo_registro_temporada );
 
 CREATE TABLE tbl_tipo_contenido (
     codigo_tipo_contenido   INTEGER NOT NULL,
@@ -530,7 +523,7 @@ ALTER TABLE tbl_pantallas_x_dispositivo
 
 ALTER TABLE tbl_episodios
     ADD CONSTRAINT epi_tem_fk FOREIGN KEY ( codigo_temporada )
-        REFERENCES tbl_temporadas ( codigo_temporada );
+        REFERENCES tbl_temporadas ( codigo_registro_temporada );
 
 ALTER TABLE tbl_episodios
     ADD CONSTRAINT epi_uni_fk FOREIGN KEY ( codigo_unidad_duracion )
@@ -648,10 +641,6 @@ ALTER TABLE tbl_registro_tarjeta
     ADD CONSTRAINT reg_tar_tip_tar_fk FOREIGN KEY ( codigo_tipo_tarjeta )
         REFERENCES tbl_tipos_tarjetas ( codigo_tipo_tarjeta );
 
-ALTER TABLE tbl_series
-    ADD CONSTRAINT ser_con_fk FOREIGN KEY ( codigo_contenido )
-        REFERENCES tbl_contenido ( codigo_contenido );
-
 ALTER TABLE tbl_subtitulos
     ADD CONSTRAINT sub_idi_fk FOREIGN KEY ( codigo_idioma )
         REFERENCES tbl_idiomas ( codigo_idioma );
@@ -705,8 +694,8 @@ ALTER TABLE tbl_control_parental
         REFERENCES tbl_usuarios ( codigo_usuario );
 
 ALTER TABLE tbl_temporadas
-    ADD CONSTRAINT tem_ser_fk FOREIGN KEY ( codigo_serie )
-        REFERENCES tbl_series ( codigo_contenido );
+    ADD CONSTRAINT tem_con_fk FOREIGN KEY ( codigo_serie )
+        REFERENCES tbl_contenido ( codigo_contenido );
 
 ALTER TABLE tbl_tipo_plan
     ADD CONSTRAINT tip_pla_uni_fk FOREIGN KEY ( codigo_unidad_pago )

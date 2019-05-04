@@ -62,7 +62,7 @@
                   </div>
 
                   <div class="form-group">
-                    <input type="text" class="form-control" id="txt-fecha-vencimiento" placeholder="Fecha de Vencimiento (MM/AA)" value="">
+                    <input type="date" class="form-control" id="txt-fecha-vencimiento" placeholder="Fecha de Vencimiento (MM/AA)" value="">
                     <div class="valid-feedback">Este campo esta correcto!</div>
                     <div class="invalid-feedback">Este campo esta vacio o incorrecto</div>
                   </div>

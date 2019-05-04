@@ -51,6 +51,12 @@
         	$numcol = $stmt->fetch();
         	return $numcol;
         }
+
+        public function obtenerIdInsert($sql){
+            $stmt = $this->conexion->query($sql);
+            $id = $stmt->lastInsertId(); 
+            return $id;
+        }
 	
 	}
 ?>

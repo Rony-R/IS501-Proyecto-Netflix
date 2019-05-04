@@ -114,17 +114,27 @@
 
 		public function actualizarPantalla($conexion){
 
-			$sql = "CALL P_ACTUALIZAR_PANTALLA ($this->codigo_madurez, $this->codigo_idioma_lenguaje, '$this->nombre_pantalla', 'null', '$this->correo_pantalla', $this->codigo_usuario)";
+			$instruccion = "CALL P_ACTUALIZAR_PANTALLA ($this->codigo_madurez, $this->codigo_idioma_lenguaje, '$this->nombre_pantalla','$this->correo_pantalla', $this->codigo_usuario)";
 
-			$ql = "Hola BEBE";
-			/*$result = $conexion->ejecutarConsulta($instruccion);
+			$result = $conexion->ejecutarConsulta($instruccion);
 
 			if($result)
 				return 1;
 			else
-				return 0;*/
-			return $ql;
+				return 0;
 
+		}
+
+		public function pantallaInicio($conexion){
+
+			$instruccion = "SELECT CODIGO_PANTALLA, NOMBRE_PANTALLA FROM TBL_PANTALLAS WHERE CODIGO_PANTALLA = $this->codigo_pantalla";
+
+			$resultado = array();
+
+			$resultado = $conexion->obtenerFila($instruccion);
+
+			return json_encode($resultado);
+			
 		}
 
 	}

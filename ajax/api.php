@@ -11,12 +11,12 @@
     switch($_GET["accion"]){
 
         case "'insertar-usuario'":
-            $usuario = new Usuario(9, $_POST["tipo-plan"], $_POST["genero"], $_POST["correo"], $_POST["contra"], $_POST["telefono"]);
+            $usuario = new Usuario(null, $_POST["tipo-plan"], $_POST["genero"], $_POST["correo"], $_POST["contra"], $_POST["telefono"]);
             echo $usuario->insertarUsuario($conexion);
         break;
 
         case "'insertar-registro-tarjeta'":
-            $r1 = new Regis_Tarjeta(1, $_POST["***codigo del usuario***"], $_POST["tipo-tarj"], $_POST["nombre-tarj"], $_POST["apellido-tarj"], $_POST["num-tarj"], $_POST["codigo-cvv"], $_POST["fecha-venc-tarj"]);
+            $r1 = new Regis_Tarjeta(null, null, $_POST["tipo-tarj"], $_POST["nombre-tarj"], $_POST["apellido-tarj"], $_POST["num-tarj"], $_POST["codigo-cvv"], $_POST["fecha-venc-tarj"]);
             echo $r1->insertarTarjeta($conexion);
         break;
 
@@ -38,20 +38,6 @@
 
         break;
 
-        /*case "'sesion-pantallas'":
-            session_start();
-
-            $_SESSION["Creadas"] = $_POST["creadas"];
-            $_SESSION["Posibles"] = $_POST["posibles"];
-            $_SESSION["CodUsuario"] = $_POST["usuario"];
-
-            if($_SESSION["Creadas"] != "" && $_SESSION["Posibles"] != "")
-                echo ("1");
-            else
-                echo ("0");
-
-        break;*/
-
         case "'sesion-id'":
             session_start();
 
@@ -69,18 +55,13 @@
             echo $u2->obtenerPantallas($conexion);
         break;
 
-        case "'nombre-pantallas'":
-            $u3 = new Usuario ($_POST["idUser"], null, null, null, null, null);
-            echo $u3->obtenerNombrePantallas($conexion);
-        break;
-
         case "'insertar-pantalla'":
             $p1 = new Pantalla(null, $_POST["codusuario"], $_POST["madurez"], $_POST["idioma"], $_POST["estiloSub"], $_POST["confiRepro"], $_POST["nombre"], null, null);
             echo $p1->insertarPantalla($conexion);
         break;
 
-        case "'actualizar-pantalla''":
-            $p2 = new Pantalla(null, $_POST["usuario"], $_POST["madurez"], $_POST["idioma"], null, null, $_POST["nombre"], $_POST["nom-pant-viejo"], null);
+        case "'actualizar-pantalla'":
+            $p2 = new Pantalla(null, $_POST["id-usuario"], $_POST["madurez-nuevo"], $_POST["idioma-nuevo"], null, null, $_POST["nombre-nuevo"], $_POST["nombre-viejo"], null);
             echo $p2->actualizarPantalla($conexion);
         break;
 
@@ -143,7 +124,23 @@
             echo $u11->obtenerIdUsuario($conexion);
         break;
 
-        case "''":
+        case "'sesion-inicio'":
+            session_start();
+
+            $_SESSION["idPantalla"] = $_POST["id"];
+
+            if($_SESSION["idPantalla"] != ""){
+                echo "1";
+                //header("Location: Inicio.php");
+            }
+            else
+                echo "0";
+
+        break;
+
+        case "'pantalla-inicio'":
+            $p3 = new Pantalla($_POST["id"], null, null, null, null, null, null, null, null);
+            echo $p3->pantallaInicio($conexion);
         break;
 
         case "''":

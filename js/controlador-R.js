@@ -340,35 +340,33 @@ $("#btn-iniciar-membresia").click(function(){
                                 "&codigo-cvv="+ $("#txt-codigo-CVV").val() + 
                                 "&fecha-venc-tarj="+ $("#txt-fecha-vencimiento").val();
 
-        alert("Parametros Usuario: " + parametrosUsuarios)
-        alert("Parametros Tarjeta" + parametrosTarjeta);
+        //alert("Parametros Usuario: " + parametrosUsuarios);
+        //alert("Parametros Tarjeta" + parametrosTarjeta);
 
-        /*$.ajax({
+        $.ajax({
             url: "ajax/api.php?accion='insertar-usuario'",
             method: "POST",
             data:parametrosUsuarios,
-            dataType: "json",
             success: function(respuesta){
-                alert(respuesta);
+                alert("Respuesta consulta insert usuario: " +respuesta);
             },
             error: function(e){
                 alert("Ocurrio un error!!!");
                 console.log(e);
             }
-        });*/
+        });
 
-        /*$.ajax({
+        $.ajax({
             url: "ajax/api.php?accion='insertar-registro-tarjeta'",
             method: "POST",
             data:parametrosTarjeta,
-            dataType: "json",
             success: function(respuesta){
-                alert(respuesta.mensaje);
+                alert("Respuesta consulta insert tarjeta: " +respuesta);
             },
             error: function(e){
                 console.log(e);
             }
-        });*/
+        });
 
     }
     else{

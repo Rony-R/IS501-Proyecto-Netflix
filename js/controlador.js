@@ -208,8 +208,8 @@ function pantallasUsuario1(codigo){
 
       for(var i=0; i<respuesta[0].PANTALLAS_CREADAS; i++){
         $("#div-pantallas").append(
-          '<div id="pantalla-'+ respuesta[i].CODIGO_PANTALLA +'">'+
-            '<a href="Inicio.php"><img class="min-user" src="img/usr-1.png"></a>'+
+          '<div id="'+ respuesta[i].CODIGO_PANTALLA +'">'+
+            '<a onclick="pantallaInicio('+respuesta[i].CODIGO_PANTALLA+')" href="Inicio.php"><img class="min-user" src="img/usr-1.png"></a>'+
             '<p class="white-text center-text mt-2 mr-3">'+ respuesta[i].NOMBRE_PANTALLA +'</p>'+
           '</div>'
         );
@@ -229,6 +229,25 @@ function pantallasUsuario1(codigo){
       console.log("Ocurrio un error!!!: " +e);
     }
 
+  });
+
+}
+
+function pantallaInicio(id){
+
+  var idPantalla = "id=" +id;
+
+  $.ajax({
+    url: "ajax/api.php?accion='sesion-inicio'",
+    data: idPantalla,
+    method: "POST",
+    success: function(respuesta){
+      //window.location = "Inicio.php";
+      console.log("respuesta sesion-inicio:" +respuesta);
+    },
+    error: function(e){
+      console.log("Ocurrio un error en pantalla-inicio");
+    }
   });
 
 }
@@ -762,11 +781,11 @@ $("#insert-pantalla").click(function(){
 
 $("#actualizar-pantalla").click(function(){
 
-  var datos = "nombre=" +$("#nombre-pantalla").val() +
-              "&idioma=" +$("#slc-idiomas").val() +
-              "&madurez=" +$("#slc-madurez").val() +
-              "&usuario=" +$("#idmanage").val() +
-              "&nom-pant-viejo=" +$("#nombre-pantalla").val();
+  var datos = "nombre-nuevo=" +$("#nombre-nuevo").val() +
+              "&idioma-nuevo=" +$("#slc-idiomas").val() +
+              "&madurez-nuevo=" +$("#slc-madurez").val() +
+              "&id-usuario=" +$("#idmanage").val() +
+              "&nombre-viejo=" +$("#nombre-pantalla").val();
 
   var cu = $("#idmanage").val()
 
@@ -775,14 +794,13 @@ $("#actualizar-pantalla").click(function(){
     data: datos,
     method: "POST",
     success: function(respuesta){
-      alert("Update Pantalla: " +respuesta);
-      /*if(respuesta ==1){
+      if(respuesta ==1){
         pantallasUsuario1(cu);
         window.location = "users.php";
       }
       else{
         alert("No se actualizo");
-      }*/
+      }
 
     },
     error: function(){
