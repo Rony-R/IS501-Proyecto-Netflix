@@ -25,7 +25,7 @@ if($_POST["peticion"]=="actualizar-registro"){
     :P_COD_RGB_COLOR_VENTANA,
     :p_mensaje,
     :p_codigo_resultado); end;');
-     oci_bind_by_name($ACTUALIZAR, ':P_CODIGO_PANTALLA',$_POST["codigo_pantalla"]);
+     oci_bind_by_name($ACTUALIZAR, ':P_CODIGO_PANTALLA',$_SESSION["idPantalla"]);
      oci_bind_by_name($ACTUALIZAR, ':P_NOMBRE_FUENTE',$_POST["nombre_fuente"]); 
      oci_bind_by_name($ACTUALIZAR, ':P_COD_RGB_COLOR_FUENTE',$_POST["cod_rgb_color_fuente"]);
      oci_bind_by_name($ACTUALIZAR, ':P_TAMANIO_FUENTE',$_POST["tamanio_fuente"]);
@@ -63,7 +63,7 @@ if($_POST["peticion"]=="actualizar-registro"){
 
     $CREAR = oci_parse($conexion , 'begin  P_CREAR_ESTILO_SUB(:P_CODIGO_PANTALLA,
     :p_mensaje,:p_codigo_resultado); end;');
-    oci_bind_by_name($CREAR, ':P_CODIGO_PANTALLA',$_POST["codigo_pantalla"]);
+    oci_bind_by_name($CREAR, ':P_CODIGO_PANTALLA',$_SESSION["idPantalla"]);
     oci_bind_by_name($CREAR, ':p_mensaje',$p_mensaje_1,100);
     oci_bind_by_name($CREAR, ':p_codigo_resultado',$p_codigo_mensaje_1,100);
     oci_execute($CREAR); 
@@ -83,7 +83,7 @@ if($_POST["peticion"]=="actualizar-registro"){
     :P_COD_RGB_COLOR_VENTANA,
     :p_mensaje,
     :p_codigo_resultado); end;');
-     oci_bind_by_name($INICIALIZAR, ':P_CODIGO_PANTALLA',$_POST["codigo_pantalla"]);
+     oci_bind_by_name($INICIALIZAR, ':P_CODIGO_PANTALLA',$_SESSION["idPantalla"]);
      oci_bind_by_name($INICIALIZAR, ':P_NOMBRE_FUENTE',$nombre_fuente,100); 
      oci_bind_by_name($INICIALIZAR, ':P_COD_RGB_COLOR_FUENTE',$cod_rgb_color_fuente,100);
      oci_bind_by_name($INICIALIZAR, ':P_TAMANIO_FUENTE',$tamanio_fuente,100);
@@ -120,7 +120,7 @@ if($_POST["peticion"]=="guardar-config-CR"){
     $ACTUALIZAR = oci_parse($conexion , 'begin P_ACTUALIZAR_CONFIG_REP(:P_CODIGO_PANTALLA,:P_CODIGO_T_USO_DATO,
     :P_CODIGO_T_REPROD,:p_mensaje,:p_codigo_resultado); end;');
 
-    oci_bind_by_name($ACTUALIZAR, ':P_CODIGO_PANTALLA',$_POST["codigo_pantalla"]);
+    oci_bind_by_name($ACTUALIZAR, ':P_CODIGO_PANTALLA',$_SESSION["idPantalla"]);
     oci_bind_by_name($ACTUALIZAR, ':P_CODIGO_T_USO_DATO',$_POST["uso-dato"]); 
     oci_bind_by_name($ACTUALIZAR, ':P_CODIGO_T_REPROD',$_POST["tipo-reproduccion"]); 
    
@@ -149,7 +149,7 @@ if($_POST["peticion"]=="guardar-config-CR"){
 
     $CREAR_1 = oci_parse($conexion , 'begin P_CREAR_CONFIG_REP(:P_CODIGO_PANTALLA,:P_MENSAJE,:P_CODIGO_RESULTADO)
     ; end;');
-    oci_bind_by_name($CREAR_1, ':P_CODIGO_PANTALLA',$_POST["codigo_pantalla"]);
+    oci_bind_by_name($CREAR_1, ':P_CODIGO_PANTALLA',$_SESSION["idPantalla"]);
     oci_bind_by_name($CREAR_1, ':p_mensaje',$p_mensaje_1,100);
     oci_bind_by_name($CREAR_1, ':p_codigo_resultado',$p_codigo_mensaje_1,100);
     oci_execute($CREAR_1); 
@@ -168,7 +168,7 @@ if($_POST["peticion"]=="guardar-config-CR"){
         :p_mensaje,
         :p_codigo_resultado); end;');
 
-     oci_bind_by_name($INICIALIZAR_1, ':P_CODIGO_PANTALLA',$_POST["codigo_pantalla"]);
+     oci_bind_by_name($INICIALIZAR_1, ':P_CODIGO_PANTALLA',$_SESSION["idPantalla"]);
      oci_bind_by_name($INICIALIZAR_1, ':P_CODIGO_T_USO_DATO',$P_CODIGO_T_USO_DATO,100); 
      oci_bind_by_name($INICIALIZAR_1, ':P_CODIGO_T_REPROD',$P_CODIGO_T_REPROD,100);
      oci_bind_by_name($INICIALIZAR_1, ':p_mensaje',$p_mensaje,100);
@@ -184,5 +184,5 @@ if($_POST["peticion"]=="guardar-config-CR"){
      echo json_encode($respuesta);
 
  }
-
+ 
 ?>
