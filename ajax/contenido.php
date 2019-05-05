@@ -6,10 +6,10 @@
 
     $conexion = new Conexion();
 
-    $contenido = new Contenido (null, null, null, null, null, null, null, null, null, null, 2);
+  
+  /*   $contenido = new Contenido (null, null, null, null, null, null, null, null, null, null, 2);
     echo $contenido->obtenerContenido($conexion);
-
-  /*  switch($_GET["accion"]){
+ switch($_GET["accion"]){*/
 
         case "'obtener-contenido'":
             $contenido = new Contenido (null, null, null, null, null, null, null, null, null, null, $_POST["codCat"]);
@@ -25,7 +25,7 @@
             $contenido = new Contenido (null, null, null, null, null, null, null, null, null, null, $_POST["codCat"]);
             echo $contenido->obtenerContenido3($conexion);
         break;
-    }*/
+    }
 
     
 ?>
