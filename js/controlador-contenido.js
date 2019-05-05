@@ -30,30 +30,49 @@ $(document).ready(function(){
                                 
                                     for(var i=0; i<respuesta[0].CANTIDAD_CONTENIDO; i++){
                                         $("#content").append(`
-                                            <li class="card"  id="card-${respuesta[i].CODIGO_CONTENIDO}">
+                                            <li class="card"  id="card-${respuesta[i].CODIGO_CONTENIDO}" value="${respuesta[i].CODIGO_CONTENIDO}">
                                             <div class="inside-top"  id="detalle${respuesta[i].CODIGO_CONTENIDO}" >
-                                            <img src="${respuesta[i].URL_MINIATURA}" id="img">
+                                                <img src="${respuesta[i].URL_MINIATURA}" id="img">
                                             </div>
                                             </li> 
                                         `);
+                                        if (respuesta[i].CODIGO_TIPO_CONTENIDO = 1) {
+                                            document.getElementById("detalle"+respuesta[i].CODIGO_CONTENIDO).innerHTML=`<div style="position:absolute; margin-top:18%; max-width:400px; padding:5px">
+                                                                                                            <div style="float:left; width:200px"> 
+                                                                                                            <button id="add-lista" type="button" class="btn btn-link" style="color:red; margin:-1.5% 0;padding:0; font-size:14px;"> <i class="fas fa-play-circle" ></i></i></button>
+                                                                                                                <h6 id="nombre-contenido" style="margin:-2.5% 0;">${respuesta[i].NOMBRE_CONTENIDO}</h6>
+                                                                                                                <p style="color:#38A454;text-shadow:2px gray; float:left; font-size:11px"><b>98% de coincidencia</b></p>
+                                                                                                                <div id="cat-edad" style="border:1px solid white; float:left; width:25px;font-size:10px; height:14px; margin-left:5px;padding-bottom:3px; text-align:center"><p>${respuesta[i].NOMBRE_CALIF}</p></div>
+                                                                                                                <p id="duracion" style="font-size:9px; width:40px; float:left; margin-left:5px; padding-top:2px"><b>${respuesta[i].DURACION_PELI} min</b></p>
+                                                                                                             <!--   <p id="generos" style="font-size:10px ;float:left;margin:-1.5% 0;">genero1 • genero2 • genero3</p>-->
+                                                                                                            </div>
+                                                                                                                <div style="width:15px; height:25px; float:left; margin:15px 0 0 15px">
+                                                                                                                    <button id="like" type="button" class="btn btn-link" style="color:white; margin:-2.5% 0; padding:0; font-size:9px;"> <i class="fas fa-thumbs-up"></i></button>
+                                                                                                                    <button id="dislike" type="button" class="btn btn-link" style="color:white; margin:-2.5% 0; padding:0; font-size:9px;"> <i class="fas fa-thumbs-down"></i></button>
+                                                                                                                    <button id="add-lista" type="button" class="btn btn-link" style="color:white; margin:-2.5% 0;padding:0; font-size:9px;"> <i class="fas fa-plus-circle"></i></button>       
+                                                                                                                </div>
+                                                                                                                <br><br><br>
+                                                                                                                <button id="despliegue" type="button" class="btn btn-link" style="color:white; margin-left:50%;padding:0; font-size:11px;"> <i class="fas fa-chevron-down"></i></button>
+                                                                                                                
+                                                                                                            </div>
+                                                                                                            <img src="${respuesta[i].URL_MINIATURA}" id="img">`;
+                                        }
                                     }
-                                                    
-                                    
-                                
+
                             },
                             error: function(e){
                             console.log("Ocurrio un error!!!: " +e);
                             }
                         
-                });
+                        });
+                        
 
-
-   
 //mostrar contenido categoria 2
 
         
 var codigo2 = "codCat="+$("#cod-cat-2").val();
-                
+
+               
 console.log(codigo2);
 
                 $.ajax({
@@ -74,6 +93,27 @@ console.log(codigo2);
                                     </div>
                                     </li> 
                                 `);
+                                if (respuesta[i].CODIGO_TIPO_CONTENIDO = 1) {
+                                    document.getElementById("detalle"+respuesta[i].CODIGO_CONTENIDO).innerHTML=`<div style="position:absolute; margin-top:18%; max-width:400px; padding:5px">
+                                                                                                    <div style="float:left; width:200px"> 
+                                                                                                    <button id="add-lista" type="button" class="btn btn-link" style="color:red; margin:-1.5% 0;padding:0; font-size:14px;"> <i class="fas fa-play-circle" ></i></i></button>
+                                                                                                        <h6 id="nombre-contenido" style="margin:-2.5% 0;">${respuesta[i].NOMBRE_CONTENIDO}</h6>
+                                                                                                        <p style="color:#38A454;text-shadow:2px gray; float:left; font-size:11px"><b>98% de coincidencia</b></p>
+                                                                                                        <div id="cat-edad" style="border:1px solid white; float:left; width:25px;font-size:10px; height:14px; margin-left:5px;padding-bottom:3px; text-align:center"><p>${respuesta[i].NOMBRE_CALIF}</p></div>
+                                                                                                        <p id="duracion" style="font-size:9px; width:40px; float:left; margin-left:5px; padding-top:2px"><b>${respuesta[i].DURACION_PELI} min</b></p>
+                                                                                                     <!--   <p id="generos" style="font-size:10px ;float:left;margin:-1.5% 0;">genero1 • genero2 • genero3</p>-->
+                                                                                                    </div>
+                                                                                                        <div style="width:15px; height:25px; float:left; margin:15px 0 0 15px">
+                                                                                                            <button id="like" type="button" class="btn btn-link" style="color:white; margin:-2.5% 0; padding:0; font-size:9px;"> <i class="fas fa-thumbs-up"></i></button>
+                                                                                                            <button id="dislike" type="button" class="btn btn-link" style="color:white; margin:-2.5% 0; padding:0; font-size:9px;"> <i class="fas fa-thumbs-down"></i></button>
+                                                                                                            <button id="add-lista" type="button" class="btn btn-link" style="color:white; margin:-2.5% 0;padding:0; font-size:9px;"> <i class="fas fa-plus-circle"></i></button>       
+                                                                                                        </div>
+                                                                                                        <br><br><br>
+                                                                                                        <button id="despliegue" type="button" class="btn btn-link" style="color:white; margin-left:50%;padding:0; font-size:11px;"> <i class="fas fa-chevron-down"></i></button>
+                                                                                                        
+                                                                                                    </div>
+                                                                                                    <img src="${respuesta[i].URL_MINIATURA}" id="img">`;
+                                }
                             }
                                             
                             
@@ -110,6 +150,27 @@ console.log(codigo3);
                                     </div>
                                     </li> 
                                 `);
+                                if (respuesta[i].CODIGO_TIPO_CONTENIDO = 1) {
+                                    document.getElementById("detalle"+respuesta[i].CODIGO_CONTENIDO).innerHTML=`<div style="position:absolute; margin-top:18%; max-width:400px; padding:5px">
+                                                                                                    <div style="float:left; width:200px"> 
+                                                                                                    <button id="add-lista" type="button" class="btn btn-link" style="color:red; margin:-1.5% 0;padding:0; font-size:14px;"> <i class="fas fa-play-circle" ></i></i></button>
+                                                                                                        <h6 id="nombre-contenido" style="margin:-2.5% 0;">${respuesta[i].NOMBRE_CONTENIDO}</h6>
+                                                                                                        <p style="color:#38A454;text-shadow:2px gray; float:left; font-size:11px"><b>98% de coincidencia</b></p>
+                                                                                                        <div id="cat-edad" style="border:1px solid white; float:left; width:25px;font-size:10px; height:14px; margin-left:5px;padding-bottom:3px; text-align:center"><p>${respuesta[i].NOMBRE_CALIF}</p></div>
+                                                                                                        <p id="duracion" style="font-size:9px; width:40px; float:left; margin-left:5px; padding-top:2px"><b>${respuesta[i].DURACION_PELI} min</b></p>
+                                                                                                     <!--   <p id="generos" style="font-size:10px ;float:left;margin:-1.5% 0;">genero1 • genero2 • genero3</p>-->
+                                                                                                    </div>
+                                                                                                        <div style="width:15px; height:25px; float:left; margin:15px 0 0 15px">
+                                                                                                            <button id="like" type="button" class="btn btn-link" style="color:white; margin:-2.5% 0; padding:0; font-size:9px;"> <i class="fas fa-thumbs-up"></i></button>
+                                                                                                            <button id="dislike" type="button" class="btn btn-link" style="color:white; margin:-2.5% 0; padding:0; font-size:9px;"> <i class="fas fa-thumbs-down"></i></button>
+                                                                                                            <button id="add-lista" type="button" class="btn btn-link" style="color:white; margin:-2.5% 0;padding:0; font-size:9px;"> <i class="fas fa-plus-circle"></i></button>       
+                                                                                                        </div>
+                                                                                                        <br><br><br>
+                                                                                                        <button id="despliegue" type="button" class="btn btn-link" style="color:white; margin-left:50%;padding:0; font-size:11px;"> <i class="fas fa-chevron-down"></i></button>
+                                                                                                        
+                                                                                                    </div>
+                                                                                                    <img src="${respuesta[i].URL_MINIATURA}" id="img">`;
+                                }
                             }
                                             
                             
@@ -146,6 +207,27 @@ console.log(codigo4);
                                     </div>
                                     </li> 
                                 `);
+                                if (respuesta[i].CODIGO_TIPO_CONTENIDO = 1) {
+                                    document.getElementById("detalle"+respuesta[i].CODIGO_CONTENIDO).innerHTML=`<div style="position:absolute; margin-top:18%; max-width:400px; padding:5px">
+                                                                                                    <div style="float:left; width:200px"> 
+                                                                                                    <button id="add-lista" type="button" class="btn btn-link" style="color:red; margin:-1.5% 0;padding:0; font-size:14px;"> <i class="fas fa-play-circle" ></i></i></button>
+                                                                                                        <h6 id="nombre-contenido" style="margin:-2.5% 0;">${respuesta[i].NOMBRE_CONTENIDO}</h6>
+                                                                                                        <p style="color:#38A454;text-shadow:2px gray; float:left; font-size:11px"><b>98% de coincidencia</b></p>
+                                                                                                        <div id="cat-edad" style="border:1px solid white; float:left; width:25px;font-size:10px; height:14px; margin-left:5px;padding-bottom:3px; text-align:center"><p>${respuesta[i].NOMBRE_CALIF}</p></div>
+                                                                                                        <p id="duracion" style="font-size:9px; width:40px; float:left; margin-left:5px; padding-top:2px"><b>${respuesta[i].DURACION_PELI} min</b></p>
+                                                                                                     <!--   <p id="generos" style="font-size:10px ;float:left;margin:-1.5% 0;">genero1 • genero2 • genero3</p>-->
+                                                                                                    </div>
+                                                                                                        <div style="width:15px; height:25px; float:left; margin:15px 0 0 15px">
+                                                                                                            <button id="like" type="button" class="btn btn-link" style="color:white; margin:-2.5% 0; padding:0; font-size:9px;"> <i class="fas fa-thumbs-up"></i></button>
+                                                                                                            <button id="dislike" type="button" class="btn btn-link" style="color:white; margin:-2.5% 0; padding:0; font-size:9px;"> <i class="fas fa-thumbs-down"></i></button>
+                                                                                                            <button id="add-lista" type="button" class="btn btn-link" style="color:white; margin:-2.5% 0;padding:0; font-size:9px;"> <i class="fas fa-plus-circle"></i></button>       
+                                                                                                        </div>
+                                                                                                        <br><br><br>
+                                                                                                        <button id="despliegue" type="button" class="btn btn-link" style="color:white; margin-left:50%;padding:0; font-size:11px;"> <i class="fas fa-chevron-down"></i></button>
+                                                                                                        
+                                                                                                    </div>
+                                                                                                    <img src="${respuesta[i].URL_MINIATURA}" id="img">`;
+                                }
                             }
                                             
                             
@@ -183,6 +265,27 @@ console.log(codigo5);
                                     </div>
                                     </li> 
                                 `);
+                                if (respuesta[i].CODIGO_TIPO_CONTENIDO = 1) {
+                                    document.getElementById("detalle"+respuesta[i].CODIGO_CONTENIDO).innerHTML=`<div style="position:absolute; margin-top:18%; max-width:400px; padding:5px">
+                                                                                                    <div style="float:left; width:200px"> 
+                                                                                                    <button id="add-lista" type="button" class="btn btn-link" style="color:red; margin:-1.5% 0;padding:0; font-size:14px;"> <i class="fas fa-play-circle" ></i></i></button>
+                                                                                                        <h6 id="nombre-contenido" style="margin:-2.5% 0;">${respuesta[i].NOMBRE_CONTENIDO}</h6>
+                                                                                                        <p style="color:#38A454;text-shadow:2px gray; float:left; font-size:11px"><b>98% de coincidencia</b></p>
+                                                                                                        <div id="cat-edad" style="border:1px solid white; float:left; width:25px;font-size:10px; height:14px; margin-left:5px;padding-bottom:3px; text-align:center"><p>${respuesta[i].NOMBRE_CALIF}</p></div>
+                                                                                                        <p id="duracion" style="font-size:9px; width:40px; float:left; margin-left:5px; padding-top:2px"><b>${respuesta[i].DURACION_PELI} min</b></p>
+                                                                                                     <!--   <p id="generos" style="font-size:10px ;float:left;margin:-1.5% 0;">genero1 • genero2 • genero3</p>-->
+                                                                                                    </div>
+                                                                                                        <div style="width:15px; height:25px; float:left; margin:15px 0 0 15px">
+                                                                                                            <button id="like" type="button" class="btn btn-link" style="color:white; margin:-2.5% 0; padding:0; font-size:9px;"> <i class="fas fa-thumbs-up"></i></button>
+                                                                                                            <button id="dislike" type="button" class="btn btn-link" style="color:white; margin:-2.5% 0; padding:0; font-size:9px;"> <i class="fas fa-thumbs-down"></i></button>
+                                                                                                            <button id="add-lista" type="button" class="btn btn-link" style="color:white; margin:-2.5% 0;padding:0; font-size:9px;"> <i class="fas fa-plus-circle"></i></button>       
+                                                                                                        </div>
+                                                                                                        <br><br><br>
+                                                                                                        <button id="despliegue" type="button" class="btn btn-link" style="color:white; margin-left:50%;padding:0; font-size:11px;"> <i class="fas fa-chevron-down"></i></button>
+                                                                                                        
+                                                                                                    </div>
+                                                                                                    <img src="${respuesta[i].URL_MINIATURA}" id="img">`;
+                                }
                             }
                                             
                             
@@ -199,7 +302,7 @@ console.log(codigo5);
 
         
 var codigo6 = "codCat="+$("#cod-cat-6").val();
-                
+               
 console.log(codigo6);
 
                 $.ajax({
@@ -220,6 +323,27 @@ console.log(codigo6);
                                     </div>
                                     </li> 
                                 `);
+                                if (respuesta[i].CODIGO_TIPO_CONTENIDO = 1) {
+                                    document.getElementById("detalle"+respuesta[i].CODIGO_CONTENIDO).innerHTML=`<div style="position:absolute; margin-top:18%; max-width:400px; padding:5px">
+                                                                                                    <div style="float:left; width:200px"> 
+                                                                                                    <button id="add-lista" type="button" class="btn btn-link" style="color:red; margin:-1.5% 0;padding:0; font-size:14px;"> <i class="fas fa-play-circle" ></i></i></button>
+                                                                                                        <h6 id="nombre-contenido" style="margin:-2.5% 0;">${respuesta[i].NOMBRE_CONTENIDO}</h6>
+                                                                                                        <p style="color:#38A454;text-shadow:2px gray; float:left; font-size:11px"><b>98% de coincidencia</b></p>
+                                                                                                        <div id="cat-edad" style="border:1px solid white; float:left; width:25px;font-size:10px; height:14px; margin-left:5px;padding-bottom:3px; text-align:center"><p>${respuesta[i].NOMBRE_CALIF}</p></div>
+                                                                                                        <p id="duracion" style="font-size:9px; width:40px; float:left; margin-left:5px; padding-top:2px"><b>${respuesta[i].DURACION_PELI} min</b></p>
+                                                                                                     <!--   <p id="generos" style="font-size:10px ;float:left;margin:-1.5% 0;">genero1 • genero2 • genero3</p>-->
+                                                                                                    </div>
+                                                                                                        <div style="width:15px; height:25px; float:left; margin:15px 0 0 15px">
+                                                                                                            <button id="like" type="button" class="btn btn-link" style="color:white; margin:-2.5% 0; padding:0; font-size:9px;"> <i class="fas fa-thumbs-up"></i></button>
+                                                                                                            <button id="dislike" type="button" class="btn btn-link" style="color:white; margin:-2.5% 0; padding:0; font-size:9px;"> <i class="fas fa-thumbs-down"></i></button>
+                                                                                                            <button id="add-lista" type="button" class="btn btn-link" style="color:white; margin:-2.5% 0;padding:0; font-size:9px;"> <i class="fas fa-plus-circle"></i></button>       
+                                                                                                        </div>
+                                                                                                        <br><br><br>
+                                                                                                        <button id="despliegue" type="button" class="btn btn-link" style="color:white; margin-left:50%;padding:0; font-size:11px;"> <i class="fas fa-chevron-down"></i></button>
+                                                                                                        
+                                                                                                    </div>
+                                                                                                    <img src="${respuesta[i].URL_MINIATURA}" id="img">`;
+                                }
                             }
                                             
                             
@@ -230,7 +354,7 @@ console.log(codigo6);
                     }
                 
         });
-
+        
 
 //mostrar contenido categoria 7
 
@@ -257,6 +381,27 @@ console.log(codigo7);
                                     </div>
                                     </li> 
                                 `);
+                                if (respuesta[i].CODIGO_TIPO_CONTENIDO = 1) {
+                                    document.getElementById("detalle"+respuesta[i].CODIGO_CONTENIDO).innerHTML=`<div style="position:absolute; margin-top:18%; max-width:400px; padding:5px">
+                                                                                                    <div style="float:left; width:200px"> 
+                                                                                                    <button id="add-lista" type="button" class="btn btn-link" style="color:red; margin:-1.5% 0;padding:0; font-size:14px;"> <i class="fas fa-play-circle" ></i></i></button>
+                                                                                                        <h6 id="nombre-contenido" style="margin:-2.5% 0;">${respuesta[i].NOMBRE_CONTENIDO}</h6>
+                                                                                                        <p style="color:#38A454;text-shadow:2px gray; float:left; font-size:11px"><b>98% de coincidencia</b></p>
+                                                                                                        <div id="cat-edad" style="border:1px solid white; float:left; width:25px;font-size:10px; height:14px; margin-left:5px;padding-bottom:3px; text-align:center"><p>${respuesta[i].NOMBRE_CALIF}</p></div>
+                                                                                                        <p id="duracion" style="font-size:9px; width:40px; float:left; margin-left:5px; padding-top:2px"><b>${respuesta[i].DURACION_PELI} min</b></p>
+                                                                                                     <!--   <p id="generos" style="font-size:10px ;float:left;margin:-1.5% 0;">genero1 • genero2 • genero3</p>-->
+                                                                                                    </div>
+                                                                                                        <div style="width:15px; height:25px; float:left; margin:15px 0 0 15px">
+                                                                                                            <button id="like" type="button" class="btn btn-link" style="color:white; margin:-2.5% 0; padding:0; font-size:9px;"> <i class="fas fa-thumbs-up"></i></button>
+                                                                                                            <button id="dislike" type="button" class="btn btn-link" style="color:white; margin:-2.5% 0; padding:0; font-size:9px;"> <i class="fas fa-thumbs-down"></i></button>
+                                                                                                            <button id="add-lista" type="button" class="btn btn-link" style="color:white; margin:-2.5% 0;padding:0; font-size:9px;"> <i class="fas fa-plus-circle"></i></button>       
+                                                                                                        </div>
+                                                                                                        <br><br><br>
+                                                                                                        <button id="despliegue" type="button" class="btn btn-link" style="color:white; margin-left:50%;padding:0; font-size:11px;"> <i class="fas fa-chevron-down"></i></button>
+                                                                                                        
+                                                                                                    </div>
+                                                                                                    <img src="${respuesta[i].URL_MINIATURA}" id="img">`;
+                                }
                             }
                                             
                             
@@ -293,6 +438,27 @@ console.log(codigo8);
                                     </div>
                                     </li> 
                                 `);
+                                if (respuesta[i].CODIGO_TIPO_CONTENIDO = 1) {
+                                    document.getElementById("detalle"+respuesta[i].CODIGO_CONTENIDO).innerHTML=`<div style="position:absolute; margin-top:18%; max-width:400px; padding:5px">
+                                                                                                    <div style="float:left; width:200px"> 
+                                                                                                    <button id="add-lista" type="button" class="btn btn-link" style="color:red; margin:-1.5% 0;padding:0; font-size:14px;"> <i class="fas fa-play-circle" ></i></i></button>
+                                                                                                        <h6 id="nombre-contenido" style="margin:-2.5% 0;">${respuesta[i].NOMBRE_CONTENIDO}</h6>
+                                                                                                        <p style="color:#38A454;text-shadow:2px gray; float:left; font-size:11px"><b>98% de coincidencia</b></p>
+                                                                                                        <div id="cat-edad" style="border:1px solid white; float:left; width:25px;font-size:10px; height:14px; margin-left:5px;padding-bottom:3px; text-align:center"><p>${respuesta[i].NOMBRE_CALIF}</p></div>
+                                                                                                        <p id="duracion" style="font-size:9px; width:40px; float:left; margin-left:5px; padding-top:2px"><b>${respuesta[i].DURACION_PELI} min</b></p>
+                                                                                                     <!--   <p id="generos" style="font-size:10px ;float:left;margin:-1.5% 0;">genero1 • genero2 • genero3</p>-->
+                                                                                                    </div>
+                                                                                                        <div style="width:15px; height:25px; float:left; margin:15px 0 0 15px">
+                                                                                                            <button id="like" type="button" class="btn btn-link" style="color:white; margin:-2.5% 0; padding:0; font-size:9px;"> <i class="fas fa-thumbs-up"></i></button>
+                                                                                                            <button id="dislike" type="button" class="btn btn-link" style="color:white; margin:-2.5% 0; padding:0; font-size:9px;"> <i class="fas fa-thumbs-down"></i></button>
+                                                                                                            <button id="add-lista" type="button" class="btn btn-link" style="color:white; margin:-2.5% 0;padding:0; font-size:9px;"> <i class="fas fa-plus-circle"></i></button>       
+                                                                                                        </div>
+                                                                                                        <br><br><br>
+                                                                                                        <button id="despliegue" type="button" class="btn btn-link" style="color:white; margin-left:50%;padding:0; font-size:11px;"> <i class="fas fa-chevron-down"></i></button>
+                                                                                                        
+                                                                                                    </div>
+                                                                                                    <img src="${respuesta[i].URL_MINIATURA}" id="img">`;
+                                }
                             }
                                             
                             
@@ -329,6 +495,28 @@ console.log(codigo9);
                                     </div>
                                     </li> 
                                 `);
+
+                                if (respuesta[i].CODIGO_TIPO_CONTENIDO = 1) {
+                                    document.getElementById("detalle"+respuesta[i].CODIGO_CONTENIDO).innerHTML=`<div style="position:absolute; margin-top:18%; max-width:400px; padding:5px">
+                                                                                                    <div style="float:left; width:200px"> 
+                                                                                                    <button id="add-lista" type="button" class="btn btn-link" style="color:red; margin:-1.5% 0;padding:0; font-size:14px;"> <i class="fas fa-play-circle" ></i></i></button>
+                                                                                                        <h6 id="nombre-contenido" style="margin:-2.5% 0;">${respuesta[i].NOMBRE_CONTENIDO}</h6>
+                                                                                                        <p style="color:#38A454;text-shadow:2px gray; float:left; font-size:11px"><b>98% de coincidencia</b></p>
+                                                                                                        <div id="cat-edad" style="border:1px solid white; float:left; width:25px;font-size:10px; height:14px; margin-left:5px;padding-bottom:3px; text-align:center"><p>${respuesta[i].NOMBRE_CALIF}</p></div>
+                                                                                                        <p id="duracion" style="font-size:9px; width:40px; float:left; margin-left:5px; padding-top:2px"><b>${respuesta[i].DURACION_PELI} min</b></p>
+                                                                                                     <!--   <p id="generos" style="font-size:10px ;float:left;margin:-1.5% 0;">genero1 • genero2 • genero3</p>-->
+                                                                                                    </div>
+                                                                                                        <div style="width:15px; height:25px; float:left; margin:15px 0 0 15px">
+                                                                                                            <button id="like" type="button" class="btn btn-link" style="color:white; margin:-2.5% 0; padding:0; font-size:9px;"> <i class="fas fa-thumbs-up"></i></button>
+                                                                                                            <button id="dislike" type="button" class="btn btn-link" style="color:white; margin:-2.5% 0; padding:0; font-size:9px;"> <i class="fas fa-thumbs-down"></i></button>
+                                                                                                            <button id="add-lista" type="button" class="btn btn-link" style="color:white; margin:-2.5% 0;padding:0; font-size:9px;"> <i class="fas fa-plus-circle"></i></button>       
+                                                                                                        </div>
+                                                                                                        <br><br><br>
+                                                                                                        <button id="despliegue" type="button" class="btn btn-link" style="color:white; margin-left:50%;padding:0; font-size:11px;"> <i class="fas fa-chevron-down"></i></button>
+                                                                                                        
+                                                                                                    </div>
+                                                                                                    <img src="${respuesta[i].URL_MINIATURA}" id="img">`;
+                                }
                             }
                                             
                             
@@ -341,7 +529,7 @@ console.log(codigo9);
         });
 
    
-//mostrar contenido categoria 1
+//mostrar contenido categoria 10
 
         
 var codigo10 = "codCat="+$("#cod-cat-10").val();
@@ -366,6 +554,27 @@ console.log(codigo10);
                                     </div>
                                     </li> 
                                 `);
+                                if (respuesta[i].CODIGO_TIPO_CONTENIDO = 1) {
+                                    document.getElementById("detalle"+respuesta[i].CODIGO_CONTENIDO).innerHTML=`<div style="position:absolute; margin-top:18%; max-width:400px; padding:5px">
+                                                                                                    <div style="float:left; width:200px"> 
+                                                                                                    <button id="add-lista" type="button" class="btn btn-link" style="color:red; margin:-1.5% 0;padding:0; font-size:14px;"> <i class="fas fa-play-circle" ></i></i></button>
+                                                                                                        <h6 id="nombre-contenido" style="margin:-2.5% 0;">${respuesta[i].NOMBRE_CONTENIDO}</h6>
+                                                                                                        <p style="color:#38A454;text-shadow:2px gray; float:left; font-size:11px"><b>98% de coincidencia</b></p>
+                                                                                                        <div id="cat-edad" style="border:1px solid white; float:left; width:25px;font-size:10px; height:14px; margin-left:5px;padding-bottom:3px; text-align:center"><p>${respuesta[i].NOMBRE_CALIF}</p></div>
+                                                                                                        <p id="duracion" style="font-size:9px; width:40px; float:left; margin-left:5px; padding-top:2px"><b>${respuesta[i].DURACION_PELI} min</b></p>
+                                                                                                     <!--   <p id="generos" style="font-size:10px ;float:left;margin:-1.5% 0;">genero1 • genero2 • genero3</p>-->
+                                                                                                    </div>
+                                                                                                        <div style="width:15px; height:25px; float:left; margin:15px 0 0 15px">
+                                                                                                            <button id="like" type="button" class="btn btn-link" style="color:white; margin:-2.5% 0; padding:0; font-size:9px;"> <i class="fas fa-thumbs-up"></i></button>
+                                                                                                            <button id="dislike" type="button" class="btn btn-link" style="color:white; margin:-2.5% 0; padding:0; font-size:9px;"> <i class="fas fa-thumbs-down"></i></button>
+                                                                                                            <button id="add-lista" type="button" class="btn btn-link" style="color:white; margin:-2.5% 0;padding:0; font-size:9px;"> <i class="fas fa-plus-circle"></i></button>       
+                                                                                                        </div>
+                                                                                                        <br><br><br>
+                                                                                                        <button id="despliegue" type="button" class="btn btn-link" style="color:white; margin-left:50%;padding:0; font-size:11px;"> <i class="fas fa-chevron-down"></i></button>
+                                                                                                        
+                                                                                                    </div>
+                                                                                                    <img src="${respuesta[i].URL_MINIATURA}" id="img">`;
+                                }
                             }
                                             
                             
@@ -380,38 +589,8 @@ console.log(codigo10);
     });
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /*
-//mostrar detalle del contenido
-
-			var elemento=document.getElementById("card-2");
             
             elemento.onmouseover = function(e) {
-                
-                $.ajax({
-                    url: "ajax/contenido.php?accion='obtener-info-contenido'",
-                    dataType: "json",
-                    method: "GET",
-                    success: function(respuesta){
-                
-                      alert("Consulta detalle: " +respuesta);
-                /*
-                      for(var i=0; i<respuesta[0].PANTALLAS_CREADAS; i++){
-                        $("#div-pantallas").append(
-                          '<div id="pantalla-'+ respuesta[i].CODIGO_PANTALLA +'">'+
-                            '<a href="Inicio.php"><img class="min-user" src="img/usr-1.png"></a>'+
-                            '<p class="white-text center-text mt-2 mr-3">'+ respuesta[i].NOMBRE_PANTALLA +'</p>'+
-                          '</div>'
-                        );
-                      
-            
-                     
-                
-                    },
-                    error: function(e){
-                      console.log("Ocurrio un error!!!: " +e);
-                    }
-                
-                  });
-
 
 
 
@@ -462,51 +641,7 @@ console.log(codigo10);
                                                             </div>
                                                             <img src="img/series/outlander/1.jpg" id="img">`;
                                                             
-            };
+            };*/
+
+
             
-  
-
-*/
-
-
-
-
-
-
-
-//mostrar contenido
-/*
-$("#mostrar").click(function(){
-var codigo = "codCat="+$("#cod-cat-1").val();
-        
-console.log(codigo);
-
-                $.ajax({
-                    
-                    url: "ajax/contenido.php?accion='obtener-contenido'",
-                    data:codigo,
-                    dataType: "json",
-                    method: "POST",
-                    success: function(respuesta){
-
-                        console.log(respuesta);
-                        /*
-                              for(var i=0; i<respuesta[0].CANTIDAD_CONTENIDO; i++){
-                                $("#div-pantallas").append(
-                                  '<div id="pantalla-'+ respuesta[i].CODIGO_PANTALLA +'">'+
-                                    '<a href="Inicio.php"><img class="min-user" src="img/usr-1.png"></a>'+
-                                    '<p class="white-text center-text mt-2 mr-3">'+ respuesta[i].NOMBRE_PANTALLA +'</p>'+
-                                  '</div>'
-                                );
-                              }
-                        
-                             
-                        
-                            },
-                            error: function(e){
-                              console.log("Ocurrio un error!!!: " +e);
-                            }
-                        
-                });
-
-            });*/

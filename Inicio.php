@@ -156,7 +156,7 @@
          
           </section>
 
-          <section>
+         <section>
                      <div class="carousel1">
                          <h5><b>Tendencias</b></h5>
                     </div>
@@ -173,7 +173,7 @@
                                    <input type="hidden" id="cod-cat-2" value="2">
                               </ul>
 
-                         </div><!--end of module-section-->
+                         </div>
                          
                          <span id="controlR" class="right-controls" role="button" aria-label="See Previous Modules">
                          <b class="fa fa-chevron-right fa-chevron-right-extra" aria-hidden="true"></b>
