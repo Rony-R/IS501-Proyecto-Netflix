@@ -44,11 +44,14 @@ $(document).ready(function(){
                                     
 
                                        var video = $("#card-"+respuesta[i].CODIGO_CONTENIDO); 
-                                        var url = $("#card-"+respuesta[i].CODIGO_CONTENIDO).val();                                                               
-                                        video.click(function() {                                                              
-                                            $("#prueba").html(`
+                                       var url = $("#card-"+respuesta[i].CODIGO_CONTENIDO).val();
+
+                                       video.click(function() {   
+                                                                                                    
+                                          console.log(url);
+                                        /* $("#prueba").html(`
                                             <video autoplay controls src="${url}" style="position:absolute; heigth:100%; width:100%"></video>
-                                           `);
+                                           `);*/
                                         });
                                  
                                          
