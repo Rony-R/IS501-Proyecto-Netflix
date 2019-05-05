@@ -29,10 +29,10 @@
             <a class="nav-link" href="#">Programas de TV<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item ">
-            <a class="nav-link" href="#">Películas<span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="peliculas.php">Películas<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item ">
-              <a class="nav-link" href="#">Agregados recientemente<span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="actividad-reciente.php">Agregados recientemente<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item ">
             <a class="nav-link" href="miLista.php">Mi lista<span class="sr-only">(current)</span></a>
