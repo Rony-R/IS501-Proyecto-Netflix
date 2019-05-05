@@ -337,7 +337,7 @@
 
                          </div>
           </section>
-
+<!--
           <section>
                      <div class="carousel1">
                          <h5><b>Series</b></h5>
@@ -357,14 +357,14 @@
                          
                          
                          
-                         </div><!--end of module-section-->
+                         </div>
                          
                          <span id="controlR" class="right-controls" role="button" aria-label="See Previous Modules">
                          <b class="fa fa-chevron-right fa-chevron-right-extra" aria-hidden="true"></b>
                          </span>
                          
                          </div>
-          </section>
+          </section>-->
 
 
           <section>
@@ -491,38 +491,7 @@
           </section>
 
 
-          <section>
-                     <div class="carousel1">
-                         <h5><b>Mi lista</b></h5>
-                    </div>
-
-                    <div id="wrapper">
-  
-                         <span id="controlL" class="left-controls" role="button" aria-label="See Previous Modules">
-                         <b class="fa fa-chevron-left fa-chevron-left-extra" aria-hidden="true"></b>
-                         </span>
-                         
-                         <div class="module-section clearfix">
-                         
-                         <ul id="content12" class="lista">
-                         
-                         
-
-                         
-                         </ul>
-                         
-                         
-                         
-                         </div><!--end of module-section-->
-                         
-                         <span id="controlR" class="right-controls" role="button" aria-label="See Previous Modules">
-                         <b class="fa fa-chevron-right fa-chevron-right-extra" aria-hidden="true"></b>
-                         </span>
-                         
-                         
-                         
-                         </div>
-          </section>
+         
 
           <input type="txt" class="d-none" id="idinicio" value="<?php echo $_SESSION["CodUsuario"];?>">
           <input type="txt" class="d-none" id="idpant" value="<?php echo $_SESSION["idPantalla"];?>">
