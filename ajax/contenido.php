@@ -6,7 +6,7 @@
 
     $conexion = new Conexion();
 
-  /*  $contenido = new Contenido (null, null, null, null, null, null, null, null, null, null, 2);
+  /*  $contenido = new Contenido (null, null, null, null, null, null, null, null, null, null, 4);
     echo $contenido->obtenerContenido($conexion);*/
 
     switch($_GET["accion"]){

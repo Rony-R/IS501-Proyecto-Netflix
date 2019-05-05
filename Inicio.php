@@ -70,7 +70,7 @@
                                 </li>
 
                                 <li class="nav-item active">
-                                  <a class="nav-link" href="#" style="padding-rigth:25px; padding-left:25px">NIÑOS</a>
+                                  <a class="nav-link" href="#" style="padding-rigth:25px; padding-left:25px"></a>
                                 </li>
 
                                 <li class="nav-item active">
@@ -88,7 +88,6 @@
                                                   
                                              </div>
                                            
-                                             <a class="dropdown-item" href="#">Niños</a>
                                              <a class="dropdown-item" href="manage.php">Administrar perfiles</a>
                                              <hr>
                                              <a class="dropdown-item" href="account.php"><b>Cuenta</b></a>
