@@ -134,7 +134,7 @@ function insertarPelicula(data, id){
     method: "POST",
     success: function(respuesta){
       console.log(respuesta);
-
+      window.location.reload();
     },
     error: function(){
       console.error(error);

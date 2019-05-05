@@ -81,16 +81,19 @@
                               <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
                                    <div class="btn-group" role="group" style="margin-left: 18px">
                                         <button id="btnGroupDrop1" type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:white">
-                                             <img style="width:30px" src="img/profile.png">
+                                             
                                         </button>
                                         <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                                             <img style="width:30px; float:left" src="img/profile.png"><a class="dropdown-item" href="#">Cuenta2</a>
-                                             <a class="dropdown-item" href="#">Niños</a>
+
+                                             <div id="pantallas-inicio">
+                                                  
+                                             </div>
+                                           
                                              <a class="dropdown-item" href="manage.php">Administrar perfiles</a>
                                              <hr>
                                              <a class="dropdown-item" href="account.php"><b>Cuenta</b></a>
                                              <a class="dropdown-item" href="#"><b>Centro de Ayuda</b></a>
-                                             <a class="dropdown-item" onclick="cerrarSesion()"><b>Cerrar sesión en Netflix</b></a>
+                                             <a class="dropdown-item" onclick="cerrarSesion()"><b>Cerrar sesión</b></a>
                                              
 
                                         </div>

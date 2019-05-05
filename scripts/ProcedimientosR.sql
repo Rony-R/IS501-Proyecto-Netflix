@@ -1,6 +1,6 @@
 
 --Linea para desbloquear la consola:
-SET SERVEROUTPUT ON;
+--SET SERVEROUTPUT ON;
 
 --Insertar una pantalla:
 CREATE OR REPLACE PROCEDURE P_INSERTAR_PANTALLA(
@@ -24,7 +24,7 @@ EXCEPTION
 END;
 
 --Ejecucion:
-CALL P_INSERTAR_PANTALLA(2, 3, 1, 0, 0, 'Nombre 1');
+--CALL P_INSERTAR_PANTALLA(2, 3, 1, 0, 0, 'Nombre 1');
 
 
 
@@ -53,7 +53,7 @@ EXCEPTION
 END;
 
 --Ejecucion:
-CALL P_ACTUALIZAR_PANTALLA (1, 1, 'Nuevo Nombre','Nombre Viejo', 1);
+--CALL P_ACTUALIZAR_PANTALLA (1, 1, 'Nuevo Nombre','Nombre Viejo', 1);
 
 
 
@@ -77,7 +77,7 @@ EXCEPTION
 END;
 
 --Ejecucion:
-CALL P_ACTUALIZAR_CORREO('rony@gmail.com', 'rony2@gmail.com');
+--CALL P_ACTUALIZAR_CORREO('rony@gmail.com', 'rony2@gmail.com');
 
 
 
@@ -102,7 +102,7 @@ EXCEPTION
 END;
 
 --Ejecucion:
-CALL P_ACTUALIZAR_CONTRA('rony', 'rony2');
+--CALL P_ACTUALIZAR_CONTRA('rony', 'rony2');
 
 
 
@@ -127,7 +127,7 @@ EXCEPTION
 END;
 
 --Ejecucion:
-CALL P_ACTUALIZAR_TELEFONO('98351400', 'rony2@gmail.com');
+--CALL P_ACTUALIZAR_TELEFONO('98351400', 'rony2@gmail.com');
 
 
 --Eliminar telefono
@@ -151,7 +151,7 @@ EXCEPTION
 END;
 
 --Ejecucion:
-CALL P_ELIMINAR_TELEFONO('98351400', 'rony2@gmail.com');
+--CALL P_ELIMINAR_TELEFONO('98351400', 'rony2@gmail.com');
 
 
 
@@ -185,7 +185,7 @@ EXCEPTION
 END;
 
 --Ejecucion:
-CALL P_ACTUALIZAR_INFO_PAGO(1, 1, 'Roni', 'rodriguez', '123123123', '12/20', '0000');
+--CALL P_ACTUALIZAR_INFO_PAGO(1, 1, 'Roni', 'rodriguez', '123123123', '12/20', '0000');
 
 
 --Insertar Usuario
@@ -209,7 +209,7 @@ EXCEPTION
 END;
 
 --Ejecucion:
-CALL P_INSERTAR_USUARIO(1, 1, 'RONY@GMAIL.COM', 'RONY', '9999999');
+--CALL P_INSERTAR_USUARIO(1, 1, 'RONY@GMAIL.COM', 'RONY', '9999999');
 
 
 --Insertar Tarjeta
@@ -235,7 +235,7 @@ EXCEPTION
 END;
 
 --Ejecucion:
-CALL P_INSERTAR_TARJETA (21, 1, 'Pepa', 'Pig', '2193823721', '112233', TO_DATE('2019-05-01', 'YYYY-MM-DD'));
+--CALL P_INSERTAR_TARJETA (21, 1, 'Pepa', 'Pig', '2193823721', '112233', TO_DATE('2019-05-01', 'YYYY-MM-DD'));
 
 
 ---***** SIGNE *****
@@ -265,7 +265,7 @@ EXCEPTION
 END; 
 
 --Ejecucion:
-CALL P_INSERTAR_CONTENIDO (1, 4, 2, 3, 'img/1/miniaturas/min-min polar', 'Polar', 'img/1/videos/vid polar', 'peli de polar', to_date('4/5/2019', 'DD/MM/YYYY'));
+--CALL P_INSERTAR_CONTENIDO (1, 4, 2, 3, 'img/1/miniaturas/min-min polar', 'Polar', 'img/1/videos/vid polar', 'peli de polar', to_date('4/5/2019', 'DD/MM/YYYY'));
 
 
 --Insertar tabla pelis
@@ -287,7 +287,7 @@ EXCEPTION
 END;
 
 --Ejecucion:
-CALL P_INSERTAR_PELI(1, 5, 90);
+--CALL P_INSERTAR_PELI(1, 5, 90);
 
 
 --Insertar tabla temporadas
@@ -309,7 +309,7 @@ EXCEPTION
 END;
 
 --Ejecucion:
-CALL P_INSERTAR_TEMPORADA(1, 2, 'descripcion');
+--CALL P_INSERTAR_TEMPORADA(1, 2, 'descripcion');
 
 
 --Insertr un episodio
@@ -334,7 +334,7 @@ EXCEPTION
 END;
 
 --Ejecucion:
-CALL P_INSERTAR_EPISODIO (1, 1, 123, 'NOMBRE', 3, 'DESC');
+--CALL P_INSERTAR_EPISODIO (1, 1, 123, 'NOMBRE', 3, 'DESC');
 
 
 

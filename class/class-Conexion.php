@@ -3,7 +3,7 @@
 	class Conexion{
 
 		private $db = "oci:dbname=XE";
-		private $usuario = "NETFLIX";
+		private $usuario = "NET8";
         private $password = "oracle";
         private $conexion;
 
