@@ -71,7 +71,7 @@
                                 </li>
 
                                 <li class="nav-item active">
-                                  <a class="nav-link" href="#" style="padding-left:25px">NIÑOS</a>
+                                 
                                 </li>
 
                                 <li class="nav-item active">
@@ -115,9 +115,9 @@
                 <tbody>
                     <tr>
                         <td><a href="#">Compañía</a></td>
-                        <td><a href="#">Acerca de Twitter Ads</a></td>
+                        <td><a href="#">Acerca de netflix Ads</a></td>
                         <td><a href="#">Documentación</a></td>
-                        <td><a href="#">Cómo usar Twitter</a></td>
+                        <td><a href="#">Cómo usar netflix</a></td>
                                    
                     </tr>
     

@@ -268,7 +268,7 @@
       <!-- Modal content-->
       <div class="modal-content" style="background-color:black">
         <div class="modal-header">
-          <h4 class="modal-title" style="color:white"><b> CREAR NUEVA CUENTA</b></h4>
+          <h4 class="modal-title" style="color:white"><b> REGISTRAR EPISODIO Y TEMP </b></h4>
         </div>
         <div class="modal-body" style="background-color:rgb(255, 255, 255);" class="col-12 col-sm-12 col-md-6 col-lg-6 form-control">
           

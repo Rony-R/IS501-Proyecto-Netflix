@@ -21,8 +21,7 @@ $(document).ready(function(){
 
 
 function inicializar_config() {
-    var codigo_pantalla=3;
-    var parametros="codigo_pantalla="+codigo_pantalla+"&peticion=inicializar-registro";
+    var parametros="peticion=inicializar-registro";
     console.log(parametros);
     $.ajax({
       url:"ajax/api-2.php",
@@ -30,21 +29,6 @@ function inicializar_config() {
       method:"POST",
       dataType:"json",
       success:function(respuesta){
-        console.log(respuesta.p_mensaje_1);            
-        console.log(respuesta.p_codigo_mensaje_1); 
-        console.log(respuesta.codigo_respuesta);  
-        console.log(respuesta.nombre_fuente);        
-        console.log(respuesta.cod_rgb_color_fuente); 
-        console.log(respuesta.tamanio_fuente);       
-        console.log(respuesta.nombre_sombra);         
-        console.log(respuesta.cod_rgb_color_sombra); 
-        console.log(respuesta.cod_rgb_color_fondo);  
-        console.log(respuesta.cod_rgb_color_ventana);
-        console.log(respuesta.p_mensaje);            
-        console.log(respuesta.p_codigo_mensaje);  
-     
-
-
         if(respuesta.tamanio_fuente=='10pt')
            document.getElementById("lbl-tam-text").innerHTML= "Pequeño"; 
         if(respuesta.tamanio_fuente=='15pt')
@@ -484,7 +468,6 @@ $("#color-ventana-azul-turquesa").click(function(){
 /*Botones*/
 
 $("#btn-guardar").click(function(){
-    var codigo_pantalla=3;
     var nombre_fuente = document.getElementById("div-text").style.fontFamily;                  
     var cod_rgb_color_fuente  = document.getElementById("color-fuente").style.backgroundColor;
     var tamanio_fuente = document.getElementById("div-text").style.fontSize;                     
@@ -493,8 +476,7 @@ $("#btn-guardar").click(function(){
     var cod_rgb_color_fondo = document.getElementById("color-fondo").style.backgroundColor;      
     var cod_rgb_color_ventana =document.getElementById("color-ventana").style.backgroundColor;   
    
-    var parametros="codigo_pantalla="+codigo_pantalla+
-     "&nombre_fuente="+nombre_fuente+"&cod_rgb_color_fuente="+cod_rgb_color_fuente+  
+    var parametros="nombre_fuente="+nombre_fuente+"&cod_rgb_color_fuente="+cod_rgb_color_fuente+  
     "&tamanio_fuente="+tamanio_fuente+"&nombre_sombra="+nombre_sombra+ 
     "&cod_rgb_color_sombra="+ cod_rgb_color_sombra+"&cod_rgb_color_fondo="+cod_rgb_color_fondo+
     "&cod_rgb_color_ventana="+cod_rgb_color_ventana+"&peticion=actualizar-registro";

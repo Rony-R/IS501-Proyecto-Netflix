@@ -216,7 +216,7 @@
                         <label class="row txt-gray ml-1">AJUSTES</label>
                     </td>
                     <td class="b-d">
-                        <a href="#" class="row ml-4">Controles parentales</a>
+                        <a href="control-parental.php" class="row ml-4">Controles parentales</a>
                         <a href="#" class="row ml-4">Prueba de participación</a>
                         <a href="#" class="row ml-4">Administrar dispositivos de descarga</a>
                         <a href="#" class="row ml-4">Activar un dispositivo</a>
@@ -233,11 +233,11 @@
                     <td>
                         <span class="row txt-blck ml-4">IMG USUARIO - NOMBRE-USUARIO</span>
                         <a href="#" class="row ml-4">Idioma</a>
-                        <a href="#" class="row ml-4">Ajustes de reproducción</a>
-                        <a href="#" class="row ml-4">Apariencia de subtítulos</a>
+                        <a href="config_reproduccion.php" class="row ml-4">Ajustes de reproducción</a>
+                        <a href="config_subtitulos.php" class="row ml-4">Apariencia de subtítulos</a>
                     </td>
                     <td>
-                        <a href="#" class="row ml-95">Actividad de visualización</a>
+                        <a href="actividad-reciente.php" class="row ml-95">Actividad de visualización</a>
                         <a href="#" class="row ml-95">Calificaciones</a>
                         <a href="manage.html" class="row ml-95">Gestionar perfiles</a>
                         <a href="#" class="row ml-95">Añadir email de perfil</a>
