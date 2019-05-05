@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-$conexion = oci_connect('NET4', 'oracle', 'localhost/XE');
+$conexion = oci_connect('NET6', 'oracle', 'localhost/XE');
 if (!$conexion ) {
     $e = oci_error();
     trigger_error(htmlentities($e['message'], ENT_QUOTES), E_USER_ERROR);
