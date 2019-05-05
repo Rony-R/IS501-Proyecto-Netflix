@@ -18,7 +18,7 @@
     <link rel="icon" type="image/png" href="img/favicon.ico">
 
 </head>
-<body>
+<body id="prueba">
           <header>
                 <nav class="navbar navbar-expand-md navbar-dark fixed-top " role="navigation">
                  <div class="container">
