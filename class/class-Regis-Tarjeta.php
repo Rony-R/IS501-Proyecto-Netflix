@@ -106,7 +106,7 @@
 
 				public function insertarTarjeta($con){
 
-					$sql = "CALL P_INSERTAR_TARJETA ($this->codigo_tipo_tarjeta, '$this->nombre_usuario', '$this->apellido_usuario', '$this->numero_de_tarjeta', '$this->codigo_de_seguridad', TO_DATE('$this->fecha_vencimiento', 'YYYY-MM-DD'))";
+					$sql = "CALL P_INSERTAR_TARJETA ($this->codigo_usuario ,$this->codigo_tipo_tarjeta, '$this->nombre_usuario', '$this->apellido_usuario', '$this->numero_de_tarjeta', '$this->codigo_de_seguridad', TO_DATE('$this->fecha_vencimiento', 'YYYY-MM-DD'))";
 
 					$r = $con->ejecutarConsulta($sql);
 

@@ -35,18 +35,21 @@
 			return "Codigo_pelicula: " . $this->codigo_pelicula . 
 				" Codigo_unidad: " . $this->codigo_unidad . 
 				" Duracion_peli: " . $this->duracion_peli;
-        }
+		}
+		
+		//Otros metodos
         
         public function insertarPelicula($conexion){
 
-            $instruccion = "CALL P_INSERTAR_PELI( $this->codigo_unidad, $this->duracion_peli)";
+			$sql = "CALL P_INSERTAR_PELI($this->codigo_pelicula, $this->codigo_unidad, $this->duracion_peli)";
 
-            $result = $conexion->ejecutarConsulta($instruccion);
+			$result = $conexion->ejecutarConsulta($sql);
 
-            if($result)
-                return 1;
-            else
-                return 0;
+			if($result)
+				return 1;
+			else
+				return 0;
+
         }
 
 	}

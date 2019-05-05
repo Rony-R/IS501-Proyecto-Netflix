@@ -151,48 +151,6 @@
     </div>';
     break;
 
-    /*case "'pantallas'":
-
-    $n1 = $_POST["pos"] - $_POST["crea"];
-
-    for($i=0; $i<$_POST["crea"]; $i++)
-    {
-        echo'
-        <div id="user-'.$i.'">
-            <a href="Inicio.php"><img class="min-user" src="img/usr-1.png"></a>
-            <p class="white-text center-text mt-2 mr-3">User'.$i.'</p>
-        </div>';
-    }
-
-    for($i=0; $i<$n1; $i++)
-    {
-        echo'
-        <div id="user-'.$i.'">
-            <a data-toggle="modal" data-target="#modal-agregar"><img class="min-user" src="img/newUser.png"></a>
-            <p class="white-text center-text mt-2 mr-3">User'.$i.'</p>
-        </div>';
-    }
-
-    break;*/
-
-    /*case "'pantallas-2'":
-
-    for($i=0; $i<$_POST["crea"]; $i++)
-    {
-        echo'
-        <div class="dim-div-usr column mt-3" id="user-'.$i.'">
-            <div class="top">
-              <img class="min-user img-opcty" src="img/usr-1.png">
-              <div class="row">
-                <i id="user-'.$i.'" class="fas fa-edit edit-icon3 ml-3 white-text" data-toggle="modal" data-target="#modal-editar"></i>
-                <p class="white-text center-text mr-3 ml-3">User'.$i.'</p>
-              </div>
-            </div>
-        </div>';
-    }
-
-    break;*/
-
     case "'table-account'":
     echo'
     <table cellspacing="4" cellpadding="9" class="mb-5">

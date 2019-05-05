@@ -171,7 +171,7 @@
 
                                     <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12 col-12" style="margin-bottom:5px">
                                         <select name="edad" id="slc-edad" class="form-control" >
-                                            <option value="" selected disabled>Edad</option>
+                                            <option value="" selected disabled>Calif edad</option>
                                             <option value="1">A</option>
                                             <option value="2">+12</option>
                                             <option value="3">+18</option>
@@ -185,7 +185,7 @@
                                                        
 
                                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" style="margin-bottom:5px">
-                                        <input class="form-control" type="text" placeholder="URL" id="url-contenido">
+                                        <input class="form-control" type="text" placeholder="URL Video" id="url-contenido">
                                     </div>
 
 
